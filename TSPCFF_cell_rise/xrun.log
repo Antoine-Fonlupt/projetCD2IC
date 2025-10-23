@@ -1,0 +1,53 @@
+xrun(64): 21.09-s006: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	21.09-s006: Started on Oct 23, 2025 at 17:19:30 CEST
+xrun
+	-disable_sem2009
+	-input probes.tcl
+	-spectre_args +errpreset=conservative
+	amsXrunControl.scs
+	-top testbench
+	testbench.sv
+	board.vams
+	cmos_transition.vams
+	TSPCFF.vams
+file: testbench.sv
+	module worklib.testbench:sv
+		errors: 0, warnings: 0
+file: TSPCFF.vams
+	units      = "A";
+	    |
+xmvlog: *E,NDRDF (/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/spectre/etc/ahdl/disciplines.vams,66|5): Nature/discipline redefined "Current", [3.4.1(AMSLRM)].
+(`include file: /comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/spectre/etc/ahdl/disciplines.vams line 66, `include file: INV.vams line 5, file: TSPCFF.vams line 6)
+	access     = I;
+	              |
+xmvlog: *E,AFAD (/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/spectre/etc/ahdl/disciplines.vams,67|15): access func "I" is already defined for nature "Current".
+(`include file: /comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/spectre/etc/ahdl/disciplines.vams line 67, `include file: INV.vams line 5, file: TSPCFF.vams line 6)
+	units      = "V";
+	    |
+xmvlog: *E,NDRDF (/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/spectre/etc/ahdl/disciplines.vams,98|5): Nature/discipline redefined "Voltage", [3.4.1(AMSLRM)].
+(`include file: /comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/spectre/etc/ahdl/disciplines.vams line 98, `include file: INV.vams line 5, file: TSPCFF.vams line 6)
+	access     = V;
+	              |
+xmvlog: *E,AFAD (/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/spectre/etc/ahdl/disciplines.vams,99|15): access func "V" is already defined for nature "Voltage".
+(`include file: /comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/spectre/etc/ahdl/disciplines.vams line 99, `include file: INV.vams line 5, file: TSPCFF.vams line 6)
+	potential    Voltage;
+	        |
+xmvlog: *E,NDRDF (/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/spectre/etc/ahdl/disciplines.vams,130|9): Nature/discipline redefined "electrical",[3.4.1(AMSLRM)].
+(`include file: /comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/spectre/etc/ahdl/disciplines.vams line 130, `include file: INV.vams line 5, file: TSPCFF.vams line 6)
+	potential    Voltage;
+	        |
+xmvlog: *E,NDRDF (/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/spectre/etc/ahdl/disciplines.vams,136|9): Nature/discipline redefined "voltage",[3.4.1(AMSLRM)].
+(`include file: /comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/spectre/etc/ahdl/disciplines.vams line 136, `include file: INV.vams line 5, file: TSPCFF.vams line 6)
+	potential    Current;
+	        |
+xmvlog: *E,NDRDF (/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/spectre/etc/ahdl/disciplines.vams,140|9): Nature/discipline redefined "current",[3.4.1(AMSLRM)].
+(`include file: /comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/spectre/etc/ahdl/disciplines.vams line 140, `include file: INV.vams line 5, file: TSPCFF.vams line 6)
+  electrical Q ;
+               |
+xmvlog: *E,ACCNAME (TSPCFF.vams,19|15): Access function used as analog signal name.
+	module worklib.TSPCFF:vams
+		errors: 1, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 7, warnings: 0
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	21.09-s006: Exiting on Oct 23, 2025 at 17:19:34 CEST  (total: 00:00:04)

@@ -1,0 +1,181 @@
+//
+//
+#1 "nosuchfile.sp" 1
+simulator lang=spectre version=2.0 
+local __cds_internal_stub_node__
+ahdl_include "xcelium.d/AMSD/ahdlSimDB/worklib__cmos_transition__vams__0x10000001_behavioral.flex.va"
+ahdl_include "xcelium.d/AMSD/ahdlSimDB/worklib__board__vams__0x10000001_behavioral.flex.va"
+ahdl_include "xcelium.d/AMSD/ahdlSimDB/connectLib__E2L_2_dynsup__module__0x10000001_behavioral.flex.va"
+
+#38 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+simulator lang=spectre version=2.0 binding=vlog insensitive=no
+subckt connectLib__E2L_2_dynsup__module__0x10000001 Ain(Ain)
+local Ain
+local evdd
+local evss
+
+#43 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters vsup_min=0.5
+
+#45 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters vthi=0.6666666666666666
+
+#46 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters vtlo=0.3333333333333333
+
+#47 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters vtol=((vthi)-(vtlo))/(4)
+
+#48 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters vtlox=(vtlo)+(vtol)
+
+#49 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters vthix=(vthi)-(vtol)
+
+#50 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters tr=2e-10
+
+#51 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters tf=tr
+
+#52 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters ttol_t=((tr)+(tf))/(20)
+
+#53 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters tdelay=0
+
+#54 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters txdel=(4)*(tr)
+
+#55 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters ttol_c=(tr)/(4)
+
+#56 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters debug=0
+
+#57 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters vsup_low_output_x=0
+
+#58 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters vinlimit=2.4
+
+#59 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters vddlimit=2.4
+
+#62 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters vsup_off=(vsup_min)-(vtol)
+
+#65 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters nox=0
+
+#66 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters enable_x=!(nox)
+
+#80 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters vddnet="testbench.bdut.vdd"
+
+#81 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters vssnet="testbench.bdut.vss"
+parameters termcurs=0
+
+#38 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+_cds_internal_E2L_2_dynsup_ (Ain evdd evss) connectLib__E2L_2_dynsup__module__0x10000001_behavioral debug=debug enable_x=enable_x nox=nox tdelay=tdelay tf=tf tr=tr ttol_c=ttol_c ttol_t=ttol_t txdel=txdel vddlimit=vddlimit vddnet=vddnet vinlimit=vinlimit vssnet=vssnet vsup_low_output_x=vsup_low_output_x vsup_min=vsup_min vsup_off=vsup_off vthi=vthi vthix=vthix vtlo=vtlo vtlox=vtlox vtol=vtol
+
+# output connect stmts for $analog_node_alias()
+connect evdd testbench.bdut.vdd
+connect evss testbench.bdut.vss
+
+ends
+
+
+#46 "/cal/exterieurs/prats-25/Desktop/Cadence45nm/INV_cell_fall/cmos_transition.vams;AMS:8"
+simulator lang=spectre version=2.0 binding=vlog insensitive=no
+subckt worklib__cmos_transition__vams__0x10000001 dout(dout)
+local dout
+
+#71 "/cal/exterieurs/prats-25/Desktop/Cadence45nm/INV_cell_fall/cmos_transition.vams;AMS:8"
+parameters slew_lower_threshold_pct=0.3
+
+#72 "/cal/exterieurs/prats-25/Desktop/Cadence45nm/INV_cell_fall/cmos_transition.vams;AMS:8"
+parameters slew_upper_threshold_pct=0.7
+
+#74 "/cal/exterieurs/prats-25/Desktop/Cadence45nm/INV_cell_fall/cmos_transition.vams;AMS:8"
+parameters power_voltage=1.1
+
+#77 "/cal/exterieurs/prats-25/Desktop/Cadence45nm/INV_cell_fall/cmos_transition.vams;AMS:8"
+parameters default_delay=2e-09
+parameters termcurs=0
+
+#46 "/cal/exterieurs/prats-25/Desktop/Cadence45nm/INV_cell_fall/cmos_transition.vams;AMS:8"
+_cds_internal_cmos_transition_ (dout) worklib__cmos_transition__vams__0x10000001_behavioral default_delay=default_delay power_voltage=power_voltage slew_lower_threshold_pct=slew_lower_threshold_pct slew_upper_threshold_pct=slew_upper_threshold_pct
+ends
+
+
+#6 "/cal/exterieurs/prats-25/Desktop/Cadence45nm/INV_cell_fall/INV.vams;AMS:8"
+simulator lang=spectre version=2.0 binding=vlog insensitive=no
+subckt worklib__INV__vams__0x10000001 VDD(VDD) VSS(VSS) A(A) Y(Y)
+local A
+local VDD
+local VSS
+local Y
+
+#12 "/cal/exterieurs/prats-25/Desktop/Cadence45nm/INV_cell_fall/INV.vams;AMS:8"
+mn0 (d=Y g=A s=VSS b=VSS) g45n1svt l=4.5e-08 w=2.6e-07
+
+#13 "/cal/exterieurs/prats-25/Desktop/Cadence45nm/INV_cell_fall/INV.vams;AMS:8"
+mp0 (d=Y g=A s=VDD b=VDD) g45p1svt l=4.5e-08 w=3.9e-07
+ends
+
+
+#21 "/cal/exterieurs/prats-25/Desktop/Cadence45nm/INV_cell_fall/board.vams;AMS:8"
+simulator lang=spectre version=2.0 binding=vlog insensitive=no
+subckt worklib__board__vams__0x10000001 din_logic(din_logic) tt_val(tt_val) delay_val(delay_val) dout_electrical(dout_electrical)
+local delay_val
+local din_electrical
+local din_logic
+local dout_electrical
+local tmp
+local tt_val
+local vdd
+
+#50 "/cal/exterieurs/prats-25/Desktop/Cadence45nm/INV_cell_fall/board.vams;AMS:8"
+parameters power_voltage=1.1
+
+#51 "/cal/exterieurs/prats-25/Desktop/Cadence45nm/INV_cell_fall/board.vams;AMS:8"
+parameters slew_lower_threshold_pct=0.3
+
+#52 "/cal/exterieurs/prats-25/Desktop/Cadence45nm/INV_cell_fall/board.vams;AMS:8"
+parameters slew_upper_threshold_pct=0.7
+parameters termcurs=0
+ground vss
+
+#88 "/cal/exterieurs/prats-25/Desktop/Cadence45nm/INV_cell_fall/board.vams;AMS:8"
+cmos_tr (dout=din_electrical) worklib__cmos_transition__vams__0x10000001 
+
+#92 "/cal/exterieurs/prats-25/Desktop/Cadence45nm/INV_cell_fall/board.vams;AMS:8"
+dut (VDD=vdd VSS=vss A=din_electrical Y=dout_electrical) worklib__INV__vams__0x10000001 
+
+#21 "/cal/exterieurs/prats-25/Desktop/Cadence45nm/INV_cell_fall/board.vams;AMS:8"
+_cds_internal_board_ (dout_electrical din_electrical vdd tmp) worklib__board__vams__0x10000001_behavioral power_voltage=power_voltage slew_lower_threshold_pct=slew_lower_threshold_pct slew_upper_threshold_pct=slew_upper_threshold_pct
+ends
+
+
+#8 "/cal/exterieurs/prats-25/Desktop/Cadence45nm/INV_cell_fall/testbench.sv;AMS:8"
+simulator lang=spectre version=2.0 binding=vlog insensitive=no
+subckt worklib__testbench__sv__0x10000001 
+
+#14 "/cal/exterieurs/prats-25/Desktop/Cadence45nm/INV_cell_fall/testbench.sv;AMS:8"
+parameters digital_tick=10
+dout__E2L_2_dynsup__electrical (dout__E2L_2_dynsup__electrical__Ain) connectLib__E2L_2_dynsup__module__0x10000001 debug=0 enable_x=1 nox=0 tdelay=0 tf=2e-11 tr=2e-11 ttol_c=5e-12 ttol_t=2e-12 txdel=8e-11 vddlimit=2.4 vddnet="testbench.bdut.vdd" vinlimit=2.4 vssnet="testbench.bdut.vss" vsup_low_output_x=0 vsup_min=0.5 vsup_off=0.416667 vthi=0.666667 vthix=0.583333 vtlo=0.333333 vtlox=0.416667 vtol=0.0833333
+
+#27 "/cal/exterieurs/prats-25/Desktop/Cadence45nm/INV_cell_fall/testbench.sv;AMS:8"
+bdut (din_logic=bdut___dUmmY_pORt_0_ dout_electrical=dout__E2L_2_dynsup__electrical__Ain tt_val=bdut___dUmmY_pORt_1_ delay_val=bdut___dUmmY_pORt_2_) worklib__board__vams__0x10000001 
+ends
+
+simulator lang=spectre version=2.0 insensitive=no
+testbench  worklib__testbench__sv__0x10000001 
+//
+//
+#1 "nosuchfile.sp" 1
+simulator lang=spectre version=2.0 
+include "amsXrunControl.scs"

@@ -1,0 +1,308 @@
+xrun(64): 21.09-s006: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	21.09-s006: Started on Oct 23, 2025 at 16:19:14 CEST
+xrun
+	-disable_sem2009
+	-input probes.tcl
+	-spectre_args +errpreset=conservative
+	amsXrunControl.scs
+	-top testbench
+	testbench.sv
+	board.vams
+	cmos_transition.vams
+	INV.vams
+Recompiling... reason: file './board.vams' is newer than expected.
+	expected: Thu Oct 23 16:00:24 2025
+	actual:   Thu Oct 23 16:12:26 2025
+file: testbench.sv
+	module worklib.testbench:sv
+		errors: 0, warnings: 0
+file: board.vams
+	module worklib.board:vams
+		errors: 0, warnings: 0
+xrun: *W,SPCWRN: The program encountered one or more warnings while processing the input SPICE file(s) in the AMSD flow. For details, see the following messages.
+amsspice: *Warning (amsXrunControl.scs,7): Redundant parameter 'connrules=CR_dynsup_full_fast' may not be supported in future.
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		testbench
+	Discipline resolution Pass...
+	Doing auto-insertion of connection elements...
+	Connect Rules applied are:
+		ddiscrete_dynsup_full_fast_cr
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.testbench:sv <0x15fe4451>
+			streams:   6, words:  8932
+		worklib.board:vams <0x1d5ffc72>
+			streams:   3, words:  1593
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                   5      16
+		Registers:                39     202
+		Scalar wires:             10       -
+		Vectored wires:            3       -
+		Named events:              1       6
+		Always blocks:            14      65
+		Initial blocks:           17      73
+		Cont. assignments:         4      18
+		Pseudo assignments:        3       3
+		Interconnect:              7       -
+		Simulation timescale:  100fs
+	Writing initial simulation snapshot: worklib.testbench:sv
+Loading snapshot worklib.testbench:sv .................... Done
+Simulating in AMS-SIE mode...
+	Starting analog simulation engine...
+AMSD Flexible Release Matrix --- using Spectre from installation:
+    /comelec/softs/opt/Cadence/releases/SPECTRE211/bin/spectre
+AMSD: Using spectre solver with arguments: -ahdllibdir xcelium.d/AMSD/ahdlSimDB +errpreset=conservative.
+xcelium> source /comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/xcelium/files/xmsimrc
+xcelium> source /comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/xcelium/files/amsrc
+xcelium> #
+xcelium> # Database settings
+xcelium> #
+xcelium> database -open ams_database -into psf -default
+Created default SHM database ams_database
+xcelium> 
+xcelium> #
+xcelium> # Probe settings
+xcelium> #
+xcelium> probe -create -database ams_database -all -depth all
+xmsim: *W,PRLDYN: The design contains dynamic objects. The "-all" option excludes dynamic objects to improve performance. To enable probing of dynamic objects the "-all -dynamic" options should be added to the probe command.
+xmsim: *W,PRNTAL: Some objects excluded from probe (-access -R).
+Created probe 1
+xcelium> probe -create -emptyok -database ams_database -flow -ports -index  {testbench.bdut.dut}
+Created probe 2
+xcelium> # And start the simulation
+xcelium> run 
+
+Spectre (R) Circuit Simulator
+Version 21.1.0.246.isr4 64bit -- 6 Jan 2022
+Copyright (C) 1989-2021 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: prats-25   Host: tp-3a107-06   HostID: C289678E   PID: 2811782
+Memory  available: 10.9597 GB  physical: 16.4402 GB
+Linux   : Debian GNU/Linux 12 (bookworm)
+CPU Type: 12th Gen Intel(R) Core(TM) i7-12700
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [1646.7] (  1 ),  1 [3566.7] (),  2 [3475.9] (  3 )
+                 3 [964.0] (),  4 [3178.9] (  5 ),  5 [1003.3] (),  6 [3481.2] (  7 )
+                 7 [800.0] (),  8 [3594.8] (  9 ),  9 [800.0] (), 10 [2789.0] ( 11 )
+                11 [800.0] (), 12 [799.1] ( 13 ), 13 [2207.6] (), 14 [2796.3] ( 15 )
+                15 [800.0] (), 16 [800.0] (), 17 [800.0] (), 18 [800.0] (), 19 [800.0] ()
+        
+System load averages (1min, 5min, 15min) : 1.4 %, 1.9 %, 1.9 %
+Hyperthreading is enabled
+
+
+Simulating `amsXrunControl.ams' on tp-3a107-06 at 4:19:26 PM, Thur Oct 23, 2025 (process id: 2811782).
+Current working directory: /cal/exterieurs/prats-25/Desktop/Cadence45nm/INV_cell_fall
+Command line:
+     \
+        /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/bin/spectre  \
+        -64 amsXrunControl.ams +config  \
+        /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +errpreset=conservative  \
+        -raw psf  \
+        +ams_control=xcelium.d/AMSD/ams_ctrl/ams_ctrl_2810824_tp-3a107-06
+Licensing Information:
+[16:19:26.445385] Configured Lic search path (20.02-p002): 30000@cadence.cnfm.fr
+
+Licensing Information:
+[16:19:26.001624] Periodic Lic check successful
+
+Loading /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /cal/exterieurs/prats-25/Desktop/Cadence45nm/INV_cell_fall/amsXrunControl.ams
+
+Notice from spectre during circuit read-in.
+    Configuration file used: `/comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file:  /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /cal/exterieurs/prats-25/Desktop/Cadence45nm/INV_cell_fall/xcelium.d/AMSD/ahdlSimDB/worklib__cmos_transition__vams__0x10000001_behavioral.flex.va
+Reading file:  /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/spectre/etc/ahdl/constants.vams
+Reading file:  /cal/exterieurs/prats-25/Desktop/Cadence45nm/INV_cell_fall/xcelium.d/AMSD/ahdlSimDB/worklib__board__vams__0x10000001_behavioral.flex.va
+Reading file:  /cal/exterieurs/prats-25/Desktop/Cadence45nm/INV_cell_fall/xcelium.d/AMSD/ahdlSimDB/connectLib__E2L_2_dynsup__module__0x10000001_behavioral.flex.va
+Reading file:  /cal/exterieurs/prats-25/Desktop/Cadence45nm/INV_cell_fall/amsXrunControl.scs
+Reading link:  /cal/exterieurs/prats-25/Desktop/Cadence45nm/INV_cell_fall/../models
+Reading file:  /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045.scs
+Reading file:  /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045_mos.scs
+Reading file:  /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045_diode.scs
+Reading file:  /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045_bipolar.scs
+Reading file:  /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045_mimcap.scs
+Reading file:  /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045_moscap.scs
+Reading file:  /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045_resistor.scs
+Reading file:  /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045_inductor.scs
+Reading file:  /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 354.732 ms, elapsed = 1.23475 s.
+Time accumulated: CPU = 396.605 ms, elapsed = 1.23476 s.
+Peak resident memory used = 130 Mbytes.
+
+Existing shared object for module worklib__cmos_transition__vams__0x10000001_behavioral is up to date.
+Installed compiled interface for worklib__cmos_transition__vams__0x10000001_behavioral.
+Opening directory xcelium.d/AMSD/ahdlSimDB/amsXrunControl.ahdlSimDB/ (775)
+Created directory xcelium.d/AMSD/ahdlSimDB/amsXrunControl.ahdlSimDB//0bad33b247728435f9b2a460ef5c49de.worklib__board__vams__0x10000001_behavioral.ahdlcmi/ (775)
+Created directory xcelium.d/AMSD/ahdlSimDB/amsXrunControl.ahdlSimDB//0bad33b247728435f9b2a460ef5c49de.worklib__board__vams__0x10000001_behavioral.ahdlcmi/Linux-64/ (775)
+Compiling ahdlcmi module library for worklib__board__vams__0x10000001_behavioral.
+Finished compilation in 1.24 s (elapsed) for worklib__board__vams__0x10000001_behavioral.
+Installed compiled interface for worklib__board__vams__0x10000001_behavioral.
+Reading link:  /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/spectre/etc/ahdl/constants.h
+
+
+Existing shared object for module connectLib__E2L_2_dynsup__module__0x10000001_behavioral_c0_0_c1_1 is up to date.
+Installed compiled interface for connectLib__E2L_2_dynsup__module__0x10000001_behavioral_c0_0_c1_1.
+Existing shared object for module bsource_2b273e is up to date.
+Installed compiled interface for bsource_2b273e.
+Time for Elaboration: CPU = 27.914 ms, elapsed = 1.3404 s.
+Time accumulated: CPU = 424.559 ms, elapsed = 2.5752 s.
+Peak resident memory used = 145 Mbytes.
+
+
+Time for EDB Visiting: CPU = 590 us, elapsed = 3.6881 ms.
+Time accumulated: CPU = 425.197 ms, elapsed = 2.57893 s.
+Peak resident memory used = 145 Mbytes.
+
+
+Notice from spectre during topology check.
+    No connections to node `testbench.bdut___dUmmY_pORt_0_'.
+    No connections to node `testbench.bdut___dUmmY_pORt_1_'.
+    No connections to node `testbench.bdut___dUmmY_pORt_2_'.
+    Only one connection to node `testbench.bdut.tmp'.
+    No DC path from node `testbench.bdut___dUmmY_pORt_0_' to ground, Gmin installed to provide path.
+    No DC path from node `testbench.bdut___dUmmY_pORt_1_' to ground, Gmin installed to provide path.
+    No DC path from node `testbench.bdut___dUmmY_pORt_2_' to ground, Gmin installed to provide path.
+    No DC path from node `testbench.bdut.tmp' to ground, Gmin installed to provide path.
+
+
+Global user options:
+               temp = 25
+               save = selected
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 12
+              bsim4 2     
+     bsource_2b273e 2     
+worklib__board__vams__0x10000001_behavioral 1     
+worklib__cmos_transition__vams__0x10000001_behavioral 1     
+connectLib__E2L_2_dynsup__module__0x10000001_behavioral 1     
+
+Analysis and control statement inventory:
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 33    
+
+Time for parsing: CPU = 1.533 ms, elapsed = 11.1589 ms.
+Time accumulated: CPU = 426.778 ms, elapsed = 2.59014 s.
+Peak resident memory used = 149 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+***********************************************
+Transient Analysis `tran': time = (0 s -> 1 ms)
+***********************************************
+DC simulation time: CPU = 1.432 ms, elapsed = 4.8852 ms.
+
+Opening the PSFXL file psf/tran.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 1 ms
+    step = 1 us
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = trap
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   6       (current)
+                 save   32      (voltage)
+                 others 8       
+
+Simulation stopped via $stop(1) at time 2030 NS + 0
+./testbench.sv:125    $stop ;
+xcelium> quit
+`AutoStop = yes'. Analysis finished at 2.03001 us.
+
+Number of accepted tran steps =             44891
+
+Maximum value achieved for any signal of each quantity: 
+V: V(testbench.bdut.dut.mp0:int_d) = 1.315 V
+I: I(testbench.bdut.dut:3) = 213.8 uA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+          maxstep = 50 ps, default 10 us (conservative)
+   -   Features that may significantly slowing down simulation
+          iprobe = 33.33 % of total equations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (1.1 %)       2 (2.8 %)       4 (1.2 %)       6 (5.7 %)
+         8 (17.7 %)     10 (41.6 %)     12 (2.3 %)      14 (2.3 %)
+        Total: 78.4%
+Initial condition solution time: CPU = 1.472 ms, elapsed = 4.92406 ms.
+Intrinsic tran analysis time:    CPU = 875.087 ms, elapsed = 918.431 ms.
+
+**** AMSD: Mixed-Signal Activity Statistics ****
+Number of A-to-D events:                     298
+  Number of A-to-D events in IEs:            298
+Number of D-to-A events:                     165
+  Number of D-to-A events in IEs:              2
+Number of VHDL-AMS Breaks:                     0
+Number of direct digital accesses:               2
+
+Total time required for tran analysis `tran': CPU = 879.271 ms, elapsed = 930.691 ms.
+Time accumulated: CPU = 1.33282 s, elapsed = 4.56973 s.
+Peak resident memory used = 193 Mbytes.
+
+Simulation complete via transient analysis stoptime at time 2030006250 FS
+Licensing Information:
+Lic Summary:
+[16:19:30.339817] Cdslmd servers:30000@cadence.cnfm.fr
+[16:19:30.339843] Feature usage summary:
+[16:19:30.339843] Virtuoso_Multi_mode_Simulation
+[16:19:30.339843] Spectre_AMS_MMSIM_Lk
+
+
+Aggregate audit (4:19:30 PM, Thur Oct 23, 2025):
+Time used: CPU = 1.34 s, elapsed = 4.59 s, util. = 29.3%.
+Time spent in licensing: elapsed = 692 ms, percentage of total = 15.1%.
+Peak memory used = 193 Mbytes.
+Simulation started at: 4:19:26 PM, Thur Oct 23, 2025, ended at: 4:19:30 PM, Thur Oct 23, 2025, with elapsed time (wall clock): 4.59 s.
+spectre completes with 0 errors, 0 warnings, and 10 notices.
+TOOL:	xrun(64)	21.09-s006: Exiting on Oct 23, 2025 at 16:19:30 CEST  (total: 00:00:16)

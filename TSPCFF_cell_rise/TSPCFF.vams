@@ -1,0 +1,50 @@
+// In order to check signal definitions
+`default_nettype none
+// In order to avoid confusion between Q ports and charges...
+`define VAMS_ELEC_DIS_ONLY
+`include "disciplines.vams"
+`include "INV.vams"
+
+
+module TSPCFF ( CK, D, Q, VDD, VSS );
+  inout       CK, D, Q, VDD, VSS ;
+
+  parameter l0 = 4.5e-08;
+  parameter wn0 = 145e-9 ;
+  parameter wp0 = 214e-9 ;
+
+  electrical VDD ;
+  electrical VSS ;
+  electrical D ;
+  electrical Q ;
+  electrical Qb ;
+  electrical CK ;
+  electrical CKb ;
+  electrical a ;
+  electrical b ;
+  electrical c ;
+  electrical x ;
+  electrical y ;
+
+  // CLK inverter
+  INV clkinv(.VDD(VDD) , .VSS(VSS) , .X(CK) , .Y(CKb) ) ;
+
+  // Q inverter
+  INV qinv(.VDD(VDD) , .VSS(VSS) , .X(Qb) , .Y(Q) ) ;
+
+  // ligne 1
+  g45p1svt #( .l(l0), .w(wp0))  mp1 ( .d(x) , .g(D) , .s(VDD), .b(VDD));
+  g45p1svt #( .l(l0), .w(wp0))  mp2 ( .d(b) , .g(CKb) , .s(VDD), .b(VDD));
+  g45p1svt #( .l(l0), .w(wp0))  mp3 ( .d(c) , .g(y) , .s(VDD), .b(VDD));
+
+  // ligne 2
+  g45n1svt #( .l(l0), .w(wn0))  mn4 ( .d(a) , .g(CKb) , .s(x), .b(VSS));
+  g45p1svt #( .l(l0), .w(wp0))  mp4 ( .d(y) , .g(x) , .s(b), .b(VDD));
+  g45p1svt #( .l(l0), .w(wp0))  mp5 ( .d(Qb) , .g(CKb) , .s(c), .b(VDD));
+
+  // ligne 3
+  g45n1svt #( .l(l0), .w(wn0))  mn1 ( .d(a) , .g(D) , .s(VSS), .b(VSS));
+  g45n1svt #( .l(l0), .w(wn0))  mn2 ( .d(y) , .g(CKb) , .s(VSS), .b(VSS));
+  g45n1svt #( .l(l0), .w(wn0))  mn3 ( .d(Qb) , .g(y) , .s(VSS), .b(VSS));
+  
+endmodule

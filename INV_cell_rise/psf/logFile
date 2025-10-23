@@ -1,0 +1,55 @@
+HEADER
+"PSFversion" "1.00"
+"Log Generator" "drlLog rev. 1.0"
+"Log Time Stamp" "Thu Oct 23 16:27:23 2025"
+"psfversion" ""
+"simulator" "spectre"
+"version" "21.1.0.246.isr4"
+"date" "4:27:23 PM, Thur Oct 23, 2025"
+"design" "//"
+"signalNameType" "spectre"
+"simMode" "Spectre"
+"measdgt" 0
+"ingold" 2
+"sst2usecolon" 0
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING *
+)
+VALUE
+"tran-tran" "analysisInst" (
+"tran"
+"psf.trn"
+"SST2"
+""
+("time")
+"Transient Analysis `tran': time = (0 s -> 1 ms)"
+) PROP(
+"data_type" "swept_scalar"
+"UUID" "tp-3a107-06|x86_64|2823956|1761229641|0"
+"dataset_logical_name" "tran-tran"
+"dataset_partition_priority" 1
+"dataset_partition_type" "digital"
+)
+
+"tran-tran" "analysisInst" (
+"tran"
+"tran.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `tran': time = (0 s -> 1 ms)"
+) PROP(
+"data_type" "swept_scalar"
+"UUID" "tp-3a107-06|x86_64|2823956|1761229641|0"
+"dataset_logical_name" "tran-tran"
+"dataset_partition_priority" 0
+"dataset_partition_type" "analog"
+)
+
+END

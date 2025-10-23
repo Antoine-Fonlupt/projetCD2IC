@@ -1,0 +1,6 @@
+s1(23Oct2025:16:12:49):  xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams INV.vams 
+s2(23Oct2025:16:15:01):  xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams INV.vams 
+s3(23Oct2025:16:20:27):  xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams INV.vams 
+s4(23Oct2025:16:25:37):  xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams INV.vams 
+s5(23Oct2025:16:26:18):  xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams INV.vams 
+s6(23Oct2025:16:27:11):  xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams INV.vams 

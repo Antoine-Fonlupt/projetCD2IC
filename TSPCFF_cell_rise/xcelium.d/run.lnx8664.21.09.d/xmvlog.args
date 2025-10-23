@@ -1,0 +1,26 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/run.lnx8664.21.09.d
+-RUNMODE
+-AUTO_USE_REFFILE
+-AMSINPUT
+testbench.sv
+board.vams
+cmos_transition.vams
+TSPCFF.vams
+-CDSLIB
+./xcelium.d/run.lnx8664.21.09.d/cdsrun.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.21.09.d/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/run.lnx8664.21.09.d/xllibs
+-ALLOWUNBOUND
+-HASVLOGAMSINPUT
+-hastop
+-amscommfile
+./xcelium.d/AMSD/ams_spice_in/amscomm.list

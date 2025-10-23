@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      prats-25
+HostName                       tp-3a107-06.enst.fr
+ProcessIdentifier              2689191
+ProcessCreationTime_UTC        1761223832
+ProcessCreationTime_Readable   Thu Oct 23 14:50:32 2025 CEST
+AppIdentifier                  /comelec/softs/opt/Cadence/releases/IC618/tools.lnx86/dfII/bin/64bit/viva
+OSType                         lnx86
+ReasonForPlacingEditLock       Set lock by hiiLockFile
+FilePathUsedToEditLock         /cal/exterieurs/prats-25/Desktop/Cadence45nm/INV_fall_transition/CDS.log
+TimeEditLocked                 Thu Oct 23 14:50:33 2025 CEST

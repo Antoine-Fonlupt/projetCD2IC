@@ -1,0 +1,19 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(23Oct2025:15:45:48):( xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams INV.vams )
+s2::(23Oct2025:15:48:17):( xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams INV.vams )
+s3::(23Oct2025:15:50:12):( xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams INV.vams )
+s4::(23Oct2025:15:51:07):( xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams INV.vams )
+s5::(23Oct2025:15:52:32):( xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams INV.vams )
+s6::(23Oct2025:15:53:51):( xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams INV.vams )
+s7::(23Oct2025:15:54:09):( xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams INV.vams )
+s8::(23Oct2025:15:55:57):( xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams INV.vams )
+s9::(23Oct2025:15:56:41):( xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams INV.vams )
+s10::(23Oct2025:15:57:20):( xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams INV.vams )
+s11::(23Oct2025:15:58:02):( xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams INV.vams )
+s12::(23Oct2025:15:58:48):( xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams INV.vams )
+s13::(23Oct2025:15:59:33):( xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams INV.vams )
+s14::(23Oct2025:16:00:27):( xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams INV.vams )
+s15::(23Oct2025:16:19:14):( xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams INV.vams )
