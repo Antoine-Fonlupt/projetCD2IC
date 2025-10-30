@@ -78,7 +78,7 @@ begin:simu
    /*
     setup clk and d to 0
     wait for stable signals (#(digital_tick)
-    setup clk to 1, in order to store a 0 in the d fliflop
+    setup clk to 1, in order tQ, o store a 0 in the d fliflop
     wait for stable signals…
     setup clk to 0,
     wait for stable signals

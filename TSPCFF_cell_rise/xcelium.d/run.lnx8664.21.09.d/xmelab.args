@@ -1,0 +1,29 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-SPECTRE_ARGS
+"-ahdllibdir xcelium.d/AMSD/ahdlSimDB"
+-DISABLE_SEM2009
+-SPECTRE_ARGS
++errpreset=conservative
+-AMSINPUT
+amsXrunControl.scs
+-ANALOGCONTROL
+amsXrunControl.scs
+-MESSAGES
+testbench
+-AMSELAB
+-DMS_ELAB_REPORT
+9
+-XLMODE
+./xcelium.d/run.lnx8664.21.09.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/run.lnx8664.21.09.d/cds.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.21.09.d/hdl.var
+-WORK
+worklib
+-IRUNHASTOP
+-HASXLMODE

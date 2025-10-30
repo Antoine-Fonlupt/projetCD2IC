@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      afonlupt-25
+HostName                       tp-3a107-06.enst.fr
+ProcessIdentifier              56273
+ProcessCreationTime_UTC        1761835130
+ProcessCreationTime_Readable   Thu Oct 30 15:38:50 2025 CET
+AppIdentifier                  /comelec/softs/opt/Cadence/releases/IC618/tools.lnx86/dfII/bin/64bit/viva
+OSType                         lnx86
+ReasonForPlacingEditLock       Set lock by hiiLockFile
+FilePathUsedToEditLock         /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/CDS.log.1
+TimeEditLocked                 Thu Oct 30 15:38:50 2025 CET

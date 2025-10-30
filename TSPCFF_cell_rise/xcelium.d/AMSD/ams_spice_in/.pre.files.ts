@@ -1,4 +1,4 @@
-1761229781 /cal/exterieurs/prats-25/Desktop/Cadence45nm/TSPCFF_cell_rise/amsXrunControl.scs
+1761829943 /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/amsXrunControl.scs
 1613999086 /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045.scs
 1612518846 /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045_mos.scs
 1612518846 /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045_diode.scs

@@ -1,0 +1,81 @@
+\# Program start time:     UTC 2025.10.30 14:58:17.651
+\# Local time: CET (UTC+01:00) 2025.10.30 15:58:17.651
+\o Program:		@(#)$CDS: viva version 6.1.8-64b 06/29/2021 19:15 (sjfhw316) $
+\o Hierarchy:		/comelec/softs/opt/Cadence/releases/IC618/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.19  (64-bit addresses)
+\# Command line:	/comelec/softs/opt/Cadence/releases/IC618/tools.lnx86/dfII/bin/64bit/viva -datadir psf
+\# Host name (type):	tp-3a107-06 (x86_64)
+\# Operating system:	Linux 6.1.0-40-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.153-1 (2025-09-20)
+\# Linux /etc/issue:	Debian GNU/Linux 12 \n \l
+\# X display name (WxH):	:0.0 (1920x1080)
+\# Available geometry:			TL(0:27) BR(1919:1079)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12101007)
+\# X resource pool:	base 0x4400000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        783 MB
+\# Available memory:	     16,769 MB
+\# System memory:	     19,583 MB
+\# Maximum memory size:	     18,850 MB
+\# Max mem available:	     16,819 MB
+\# Initial memory used:	         50 MB
+\#        process size:	        587 MB
+\# Thread usage limits (effective/default):	maxthreads 62496/62496 maxload 20.00/20.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		afonlupt-25
+\o Working Directory:	tp-3a107-06:/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise
+\# Process Id:		67418
+\o 
+\o COPYRIGHT (C) 1992-2021  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2021  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.22s.
+\o Loading ams.cxt 
+\o Loading auCore.cxt 
+\p > 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading viva.cxt 
+\o Loading oasis.cxt 
+\# Memory report: using         155 MB, process size 748 MB at UTC 2025.10.30 14:58:21.275
+\a hiResizeWindow(swindow(1) list(-5:-5 1915:1024))
+\r t
+\a hiSetCurrentWindow(window(2))
+\r t
+\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran")
+\r t
+\# Available memory:         16,754 MB at UTC 2025.10.30 14:58:28.037
+\# Memory report: Maximum memory size now 16,928 MB at UTC 2025.10.30 14:58:28.037
+\# Thread usage report: 25 active threads, active load 1.40 at UTC 2025.10.30 14:58:28.037
+\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench")
+\r t
+\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/bdut/dut/clkinv/mn0")
+\r t
+\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/bdut/dut/clkinv")
+\r t
+\# Memory report: using         337 MB, process size 2,276 MB at UTC 2025.10.30 14:59:00.091
+\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/bdut/dut/qinv/mn0")
+\r t
+\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/bdut/dut/qinv")
+\r t
+\a _ddtUpdateGraph(awvGetCurrentWindow()->vivaSession _vivaMapSubwinId(awvGetCurrentWindow()->vivaSession awvGetCurrentWindow() awvGetCurrentSubwindow(awvGetCurrentWindow())) nil nil)
+\r (("rectTrace[1.1.1]" "rectTrace[1.1.2]" "rectTrace[1.1.3]" "rectTrace[1.1.4]") nil nil nil)
+\a _ddtUpdateGraph(awvGetCurrentWindow()->vivaSession _vivaMapSubwinId(awvGetCurrentWindow()->vivaSession awvGetCurrentWindow() awvGetCurrentSubwindow(awvGetCurrentWindow())) nil nil)
+\r nil
+\a _ddtUpdateGraph(awvGetCurrentWindow()->vivaSession _vivaMapSubwinId(awvGetCurrentWindow()->vivaSession awvGetCurrentWindow() awvGetCurrentSubwindow(awvGetCurrentWindow())) nil nil)
+\r nil
+\a _ddtUpdateGraph(awvGetCurrentWindow()->vivaSession _vivaMapSubwinId(awvGetCurrentWindow()->vivaSession awvGetCurrentWindow() awvGetCurrentSubwindow(awvGetCurrentWindow())) nil nil)
+\r nil

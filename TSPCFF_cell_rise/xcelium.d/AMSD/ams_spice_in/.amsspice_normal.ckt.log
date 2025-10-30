@@ -1,0 +1,65 @@
+
+Spectre (R) Circuit Simulator
+Version 21.1.0.246.isr4 64bit -- 6 Jan 2022
+Copyright (C) 1989-2021 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: afonlupt-25   Host: tp-3a107-06   HostID: C289678E   PID: 74377
+Memory  available: 11.7963 GB  physical: 16.4402 GB
+Linux   : Debian GNU/Linux 12 (bookworm)
+CPU Type: 12th Gen Intel(R) Core(TM) i7-12700
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [872.7] (  1 ),  1 [800.0] (),  2 [800.0] (  3 )
+                 3 [986.6] (),  4 [800.0] (  5 ),  5 [800.0] (),  6 [997.1] (  7 )
+                 7 [800.0] (),  8 [865.8] (  9 ),  9 [800.0] (), 10 [977.1] ( 11 )
+                11 [800.0] (), 12 [965.7] ( 13 ), 13 [1000.0] (), 14 [961.0] ( 15 )
+                15 [800.0] (), 16 [800.0] (), 17 [800.0] (), 18 [800.0] (), 19 [800.0] ()
+        
+System load averages (1min, 5min, 15min) : 3.6 %, 1.8 %, 1.4 %
+Hyperthreading is enabled
+
+
+Simulating `./xcelium.d/AMSD/ams_spice_in/.amsspice_normal.ckt' on tp-3a107-06 at 4:08:28 PM, Thur Oct 30, 2025 (process id: 74377).
+Current working directory: /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise
+Environment variable:
+    SPECTRE_DEFAULTS=
+Command line:
+     \
+        /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/bin/spectre  \
+        -64 ./xcelium.d/AMSD/ams_spice_in/.amsspice_normal.ckt -noraw  \
+        -va,amsspice_normal -ahdllibdir  \
+        xcelium.d/AMSD/ams_spice_in/ahdlSimDB =log  \
+        ./xcelium.d/AMSD/ams_spice_in/.amsspice_normal.ckt.log +mts  \
+        -token  \
+        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080FE71B870359768D3A13CC50411B6749FEA2FE10B0F887DC39431F37A3ED44FD9B63EAA3E399863C0B43FE90F319762DDE32DA06B33CF30D4AD2FE90460FB7490A83DEEB8537F10B0AB26FC2E208F7CC5E43FA97B60CC7181A40DEE3C7ECB2A80A83DED3C50FB10B0A83DED3C50FB10B0C13E92552F9279B30000426B
+
+Licensing Information:
+[16:08:28.445385] Configured Lic search path (20.02-p002): 30000@cadence.cnfm.fr
+
+Loading /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/xcelium.d/AMSD/ams_spice_in/.amsspice_normal.ckt
+Reading file:  /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/amsXrunControl.scs
+Reading link:  /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/../models
+Reading file:  /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045.scs
+Reading file:  /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045_mos.scs
+Reading file:  /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045_diode.scs
+Reading file:  /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045_bipolar.scs
+Reading file:  /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045_mimcap.scs
+Reading file:  /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045_moscap.scs
+Reading file:  /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045_resistor.scs
+Reading file:  /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045_inductor.scs
+Time for NDB Parsing: CPU = 290.111 ms, elapsed = 531.225 ms.
+Time accumulated: CPU = 319.124 ms, elapsed = 531.236 ms.
+Peak resident memory used = 126 Mbytes.
+
+Licensing Information:
+Lic Summary:
+[16:08:29.482049] Cdslmd servers:30000@cadence.cnfm.fr
+[16:08:29.482059] Feature usage summary:
+
