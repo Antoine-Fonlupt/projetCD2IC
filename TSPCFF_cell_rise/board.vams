@@ -103,7 +103,7 @@ cmos_transition cmos_clk_tr(.din(clk_logic),
 
 // The device under test is simply connected to the signals.
 // All gates from the gsclib045 may be used in this netlist.
-TSPCFF dut (.CK(clk_electrical), .D(din_electrical), .QQ(dout_electrical), .VDD(VDD), .VSS(VSS)); //QQ is not a mistake
+TSPCFF dut (.CK(clk_electrical), .D(din_electrical), .QQ(dout_electrical), .VDD(vdd), .VSS(vss)); //QQ is not a mistake
 
 
 ///////////////////////////////////////////////////////////////

@@ -133,7 +133,7 @@ mp0 (d=Y g=A s=VDD b=VDD) g45p1svt l=4.5e-08 w=WP
 ends
 
 
-#21 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
+#22 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
 simulator lang=spectre version=2.0 binding=vlog insensitive=no
 subckt worklib__TSPCFF__vams__0x10000001 CK(CK) D(D) QQ(QQ) VDD(VDD) VSS(VSS)
 local CK
@@ -149,46 +149,46 @@ local c
 local x
 local y
 
-#24 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
+#25 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
 parameters l0=4.5e-08
 
-#25 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
+#26 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
 parameters wn0=1.45e-07
 
-#26 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
+#27 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
 parameters wp0=2.14e-07
 
-#42 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
+#43 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
 clkinv (VDD=VDD VSS=VSS A=CK Y=CKb) worklib__INV__vams__0x10000001 WN=1.45e-07 WP=2.15e-07
 
-#45 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
+#46 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
 qinv (VDD=VDD VSS=VSS A=Qb Y=QQ) worklib__INV__vams__0x10000001 WN=2.6e-07 WP=3.9e-07
 
-#48 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
+#49 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
 mp1 (d=x g=D s=VDD b=VDD) g45p1svt l=l0 w=wp0
 
-#49 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
+#50 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
 mp2 (d=b g=CKb s=VDD b=VDD) g45p1svt l=l0 w=wp0
 
-#50 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
+#51 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
 mp3 (d=c g=y s=VDD b=VDD) g45p1svt l=l0 w=wp0
 
-#53 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
+#54 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
 mn4 (d=x g=CKb s=a b=VSS) g45n1svt l=l0 w=wn0
 
-#54 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
+#55 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
 mp4 (d=y g=x s=b b=VDD) g45p1svt l=l0 w=wp0
 
-#55 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
+#56 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
 mp5 (d=Qb g=CKb s=c b=VDD) g45p1svt l=l0 w=wp0
 
-#58 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
+#59 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
 mn1 (d=a g=D s=VSS b=VSS) g45n1svt l=l0 w=wn0
 
-#59 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
+#60 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
 mn2 (d=y g=CKb s=VSS b=VSS) g45n1svt l=l0 w=wn0
 
-#60 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
+#61 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
 mn3 (d=Qb g=y s=VSS b=VSS) g45n1svt l=l0 w=wn0
 ends
 
@@ -196,8 +196,6 @@ ends
 #17 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/board.vams;AMS:8"
 simulator lang=spectre version=2.0 binding=vlog insensitive=no
 subckt worklib__board__vams__0x10000001 clk_logic(clk_logic) din_logic(din_logic) din_tt_val(din_tt_val) clk_tt_val(clk_tt_val) din_delay_val(din_delay_val) clk_delay_val(clk_delay_val) dout_electrical(dout_electrical)
-local VDD
-local VSS
 local clk_delay_val
 local clk_electrical
 local clk_logic
@@ -228,7 +226,7 @@ cmos_tr (dout=din_electrical) worklib__cmos_transition__vams__0x10000001
 cmos_clk_tr (dout=clk_electrical) worklib__cmos_transition__vams__0x10000001 
 
 #106 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/board.vams;AMS:8"
-dut (CK=clk_electrical D=din_electrical QQ=dout_electrical VDD=VDD VSS=VSS) worklib__TSPCFF__vams__0x10000001 
+dut (CK=clk_electrical D=din_electrical QQ=dout_electrical VDD=vdd VSS=vss) worklib__TSPCFF__vams__0x10000001 
 
 #17 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/board.vams;AMS:8"
 _cds_internal_board_ (dout_electrical clk_electrical vdd tmp) worklib__board__vams__0x10000001_behavioral power_voltage=power_voltage slew_lower_threshold_pct=slew_lower_threshold_pct slew_upper_threshold_pct=slew_upper_threshold_pct

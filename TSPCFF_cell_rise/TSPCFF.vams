@@ -18,6 +18,7 @@ module INV ( VDD , VSS , A , Y );
 endmodule
 
 
+
 module TSPCFF ( CK, D, QQ, VDD, VSS );
   inout       CK, D, QQ, VDD, VSS ;
 
@@ -40,10 +41,10 @@ module TSPCFF ( CK, D, QQ, VDD, VSS );
 
   // CLK inverter
   INV #(.WN(145e-9), .WP(215e-9)) clkinv (.VDD(VDD) , .VSS(VSS) , .A(CK) , .Y(CKb) ) ; // Sizes from the schematics, see perso.telecomparistech.fr/mathieu/ECE5IC04_TP/project/environment.html
-
+  // INV  clkinv (.VDD(VDD) , .VSS(VSS) , .A(CK) , .Y(CKb) );
   // Q inverter
   INV #(.WN(260e-9), .WP(390e-9)) qinv (.VDD(VDD) , .VSS(VSS) , .A(Qb) , .Y(QQ) ) ;
-
+  // INV qinv (.VDD(VDD) , .VSS(VSS) , .A(Qb) , .Y(QQ) ) ;
   // ligne 1
   g45p1svt #( .l(l0), .w(wp0))  mp1 ( .d(x) , .g(D) , .s(VDD), .b(VDD));
   g45p1svt #( .l(l0), .w(wp0))  mp2 ( .d(b) , .g(CKb) , .s(VDD), .b(VDD));
