@@ -1,0 +1,16 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-disable_sem2009
+-input
+probes.tcl
+-spectre_args
++errpreset=conservative
+amsXrunControl.scs
+-top
+testbench
+testbench.sv
+board.vams
+cmos_transition.vams
+TSPCFF.vams
