@@ -3,7 +3,19 @@
 // In order to avoid confusion between Q ports and charges...
 `define VAMS_ELEC_DIS_ONLY
 `include "disciplines.vams"
-`include "INV.vams"
+
+module INV ( VDD , VSS , A , Y );
+  inout       VDD ,  VSS ,  A , Y ;
+  parameter WN=145e-9 ;
+  parameter WP=214e-9 ;
+  
+  electrical VDD ;
+  electrical VSS ;
+  electrical A ;
+  electrical Y ;
+  g45n1svt #( .l(4.5e-08), .w(WN))  mn0 ( .d(Y) , .g(A) , .s(VSS), .b(VSS));
+  g45p1svt #( .l(4.5e-08), .w(WP))  mp0 ( .d(Y) , .g(A) , .s(VDD) , .b(VDD));
+endmodule
 
 
 module TSPCFF ( CK, D, Q, VDD, VSS );
@@ -18,6 +30,7 @@ module TSPCFF ( CK, D, Q, VDD, VSS );
   electrical D ;
   electrical Q ;
   electrical Qb ;
+  electrical Qinter;
   electrical CK ;
   electrical CKb ;
   electrical a ;
@@ -27,10 +40,10 @@ module TSPCFF ( CK, D, Q, VDD, VSS );
   electrical y ;
 
   // CLK inverter
-  INV clkinv(.VDD(VDD) , .VSS(VSS) , .X(CK) , .Y(CKb) ) ;
+  INV #(.WN(145e-9), .WP(215e-9)) clkinv (.VDD(VDD) , .VSS(VSS) , .X(CK) , .Y(CKb) ) ; // Sizes from the schematics, see perso.telecomparistech.fr/mathieu/ECE5IC04_TP/project/environment.html
 
   // Q inverter
-  INV qinv(.VDD(VDD) , .VSS(VSS) , .X(Qb) , .Y(Q) ) ;
+  INV #(.WN(260e-9), .WP(390e-9)) qinv (.VDD(VDD) , .VSS(VSS) , .X(Qb) , .Y(Q) ) ;
 
   // ligne 1
   g45p1svt #( .l(l0), .w(wp0))  mp1 ( .d(x) , .g(D) , .s(VDD), .b(VDD));
