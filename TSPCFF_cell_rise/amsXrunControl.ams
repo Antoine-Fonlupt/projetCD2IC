@@ -174,7 +174,7 @@ mp2 (d=b g=CKb s=VDD b=VDD) g45p1svt l=l0 w=wp0
 mp3 (d=c g=y s=VDD b=VDD) g45p1svt l=l0 w=wp0
 
 #53 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
-mn4 (d=a g=CKb s=x b=VSS) g45n1svt l=l0 w=wn0
+mn4 (d=x g=CKb s=a b=VSS) g45n1svt l=l0 w=wn0
 
 #54 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/TSPCFF.vams;AMS:8"
 mp4 (d=y g=x s=b b=VDD) g45p1svt l=l0 w=wp0

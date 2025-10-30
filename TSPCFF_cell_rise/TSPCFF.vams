@@ -50,7 +50,7 @@ module TSPCFF ( CK, D, QQ, VDD, VSS );
   g45p1svt #( .l(l0), .w(wp0))  mp3 ( .d(c) , .g(y) , .s(VDD), .b(VDD));
 
   // ligne 2
-  g45n1svt #( .l(l0), .w(wn0))  mn4 ( .d(a) , .g(CKb) , .s(x), .b(VSS));
+  g45n1svt #( .l(l0), .w(wn0))  mn4 ( .d(x) , .g(CKb) , .s(a), .b(VSS));
   g45p1svt #( .l(l0), .w(wp0))  mp4 ( .d(y) , .g(x) , .s(b), .b(VDD));
   g45p1svt #( .l(l0), .w(wp0))  mp5 ( .d(Qb) , .g(CKb) , .s(c), .b(VDD));
 
