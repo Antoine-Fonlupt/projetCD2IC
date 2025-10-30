@@ -2,5 +2,13 @@
 // File created by:  xrun
 // Do not modify this file
 
-s1::(23Oct2025:17:14:54):( xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams TSPCFF.vams )
-s2::(23Oct2025:17:19:30):( xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams TSPCFF.vams )
+s1::(30Oct2025:14:59:05):( xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams TSPCFF.vams )
+s2::(30Oct2025:15:02:41):( xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams TSPCFF.vams )
+s3::(30Oct2025:15:04:36):( xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams TSPCFF.vams )
+s4::(30Oct2025:15:05:32):( xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams TSPCFF.vams )
+s5::(30Oct2025:15:07:55):( xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams TSPCFF.vams )
+s6::(30Oct2025:15:12:38):( xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams TSPCFF.vams )
+s7::(30Oct2025:15:17:53):( xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams TSPCFF.vams )
+s8::(30Oct2025:15:19:47):( xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams TSPCFF.vams )
+s9::(30Oct2025:15:22:14):( xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams TSPCFF.vams )
+s10::(30Oct2025:15:23:00):( xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams TSPCFF.vams )

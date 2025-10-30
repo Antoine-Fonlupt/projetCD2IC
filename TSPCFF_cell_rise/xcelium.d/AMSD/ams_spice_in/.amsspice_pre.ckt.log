@@ -5,23 +5,23 @@ Copyright (C) 1989-2021 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: prats-25   Host: tp-3a107-06   HostID: C289678E   PID: 2892900
-Memory  available: 10.7241 GB  physical: 16.4402 GB
+User: afonlupt-25   Host: tp-3a107-06   HostID: C289678E   PID: 46480
+Memory  available: 12.1476 GB  physical: 16.4402 GB
 Linux   : Debian GNU/Linux 12 (bookworm)
 CPU Type: 12th Gen Intel(R) Core(TM) i7-12700
         Socket: Processors [Frequency] (Hyperthreaded Processor)
-        0:       0 [800.0] (  1 ),  1 [994.2] (),  2 [981.5] (  3 )
-                 3 [956.7] (),  4 [800.0] (  5 ),  5 [984.4] (),  6 [800.0] (  7 )
-                 7 [800.0] (),  8 [893.8] (  9 ),  9 [800.0] (), 10 [801.8] ( 11 )
-                11 [801.4] (), 12 [971.6] ( 13 ), 13 [800.0] (), 14 [800.3] ( 15 )
-                15 [811.1] (), 16 [800.6] (), 17 [800.0] (), 18 [800.0] (), 19 [800.0] ()
+        0:       0 [917.6] (  1 ),  1 [660.4] (),  2 [968.3] (  3 )
+                 3 [800.0] (),  4 [977.0] (  5 ),  5 [800.0] (),  6 [991.5] (  7 )
+                 7 [800.0] (),  8 [817.0] (  9 ),  9 [800.0] (), 10 [993.4] ( 11 )
+                11 [800.0] (), 12 [945.8] ( 13 ), 13 [800.0] (), 14 [951.3] ( 15 )
+                15 [800.0] (), 16 [800.0] (), 17 [800.0] (), 18 [800.0] (), 19 [800.0] ()
         
-System load averages (1min, 5min, 15min) : 2.7 %, 1.9 %, 1.8 %
+System load averages (1min, 5min, 15min) : 2.7 %, 2.2 %, 2.1 %
 Hyperthreading is enabled
 
 
-Simulating `./xcelium.d/AMSD/ams_spice_in/./.amsspice_pre.ckt' on tp-3a107-06 at 5:19:33 PM, Thur Oct 23, 2025 (process id: 2892900).
-Current working directory: /cal/exterieurs/prats-25/Desktop/Cadence45nm/TSPCFF_cell_rise
+Simulating `./xcelium.d/AMSD/ams_spice_in/./.amsspice_pre.ckt' on tp-3a107-06 at 3:23:10 PM, Thur Oct 30, 2025 (process id: 46480).
+Current working directory: /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise
 Environment variable:
     SPECTRE_DEFAULTS=
 Command line:
@@ -32,20 +32,20 @@ Command line:
         xcelium.d/AMSD/ams_spice_in/ahdlSimDB =log  \
         ./xcelium.d/AMSD/ams_spice_in/./.amsspice_pre.ckt.log +mts  \
         -token  \
-        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080FE71B870359768D3A13CC50411B6749FEA2FE10B0F887DC39431F37A3ED44FD9EB2FB063238B7DC3BD10E17135D560C2BA79B66668CA76D4B969D90E50FB3080A83DEEB8537F10B0BA64AF7B62CE639DE43FA97B60CC7181A40FEE3C7ECB2A82A83DED3C50FB10B0A83DED3C50FB10B0C0C7AABF1778784A0000427F
+        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080FE71B870359768D3A13CC50411B6749FEA2FE10B0F887DC39431F37A3ED44FD9EB2FB063238B7DC3BD10E17135D560C2BE78BC36629A72D5BF68DF0A50FB3080A83DEEB8537F10B0AB26FC2E208F7CC5E43FA97B60CC7181A40DEE3C7ECB2A80A83DED3C50FB10B0A83DED3C50FB10B0C13E99F7243079B30000425B
 
 Licensing Information:
-[17:19:33.445377] Configured Lic search path (20.02-p002): 30000@cadence.cnfm.fr
+[15:23:10.445281] Configured Lic search path (20.02-p002): 30000@cadence.cnfm.fr
 
 Loading /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
 Loading /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
 Loading /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
 Loading /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
 Loading /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
-Reading file:  /cal/exterieurs/prats-25/Desktop/Cadence45nm/TSPCFF_cell_rise/xcelium.d/AMSD/ams_spice_in/.amsspice_pre.ckt
+Reading file:  /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/xcelium.d/AMSD/ams_spice_in/.amsspice_pre.ckt
 Reading file:  /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/spectre/etc/configs/spectre.cfg
-Reading file:  /cal/exterieurs/prats-25/Desktop/Cadence45nm/TSPCFF_cell_rise/amsXrunControl.scs
-Reading link:  /cal/exterieurs/prats-25/Desktop/Cadence45nm/TSPCFF_cell_rise/../models
+Reading file:  /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/amsXrunControl.scs
+Reading link:  /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise/../models
 Reading file:  /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045.scs
 Reading file:  /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045_mos.scs
 Reading file:  /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045_diode.scs
@@ -54,12 +54,12 @@ Reading file:  /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spec
 Reading file:  /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045_moscap.scs
 Reading file:  /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045_resistor.scs
 Reading file:  /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045_inductor.scs
-Time for NDB Parsing: CPU = 292.314 ms, elapsed = 655.712 ms.
-Time accumulated: CPU = 333.117 ms, elapsed = 655.724 ms.
-Peak resident memory used = 125 Mbytes.
+Time for NDB Parsing: CPU = 292.523 ms, elapsed = 646.123 ms.
+Time accumulated: CPU = 323.233 ms, elapsed = 646.132 ms.
+Peak resident memory used = 126 Mbytes.
 
 Licensing Information:
 Lic Summary:
-[17:19:33.436267] Cdslmd servers:30000@cadence.cnfm.fr
-[17:19:33.436273] Feature usage summary:
+[15:23:10.401514] Cdslmd servers:30000@cadence.cnfm.fr
+[15:23:10.401520] Feature usage summary:
 

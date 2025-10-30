@@ -1,0 +1,9 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-DISABLE_SEM2009
+-SPECTRE_ARGS
++errpreset=conservative
+
+testbench

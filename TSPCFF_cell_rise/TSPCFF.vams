@@ -18,8 +18,8 @@ module INV ( VDD , VSS , A , Y );
 endmodule
 
 
-module TSPCFF ( CK, D, Q, VDD, VSS );
-  inout       CK, D, Q, VDD, VSS ;
+module TSPCFF ( CK, D, QQ, VDD, VSS );
+  inout       CK, D, QQ, VDD, VSS ;
 
   parameter l0 = 4.5e-08;
   parameter wn0 = 145e-9 ;
@@ -28,9 +28,8 @@ module TSPCFF ( CK, D, Q, VDD, VSS );
   electrical VDD ;
   electrical VSS ;
   electrical D ;
-  electrical Q ;
+  electrical QQ ; // Q is a builtin function, can't be overwritten, this is not a mistake
   electrical Qb ;
-  electrical Qinter;
   electrical CK ;
   electrical CKb ;
   electrical a ;
@@ -40,10 +39,10 @@ module TSPCFF ( CK, D, Q, VDD, VSS );
   electrical y ;
 
   // CLK inverter
-  INV #(.WN(145e-9), .WP(215e-9)) clkinv (.VDD(VDD) , .VSS(VSS) , .X(CK) , .Y(CKb) ) ; // Sizes from the schematics, see perso.telecomparistech.fr/mathieu/ECE5IC04_TP/project/environment.html
+  INV #(.WN(145e-9), .WP(215e-9)) clkinv (.VDD(VDD) , .VSS(VSS) , .A(CK) , .Y(CKb) ) ; // Sizes from the schematics, see perso.telecomparistech.fr/mathieu/ECE5IC04_TP/project/environment.html
 
   // Q inverter
-  INV #(.WN(260e-9), .WP(390e-9)) qinv (.VDD(VDD) , .VSS(VSS) , .X(Qb) , .Y(Q) ) ;
+  INV #(.WN(260e-9), .WP(390e-9)) qinv (.VDD(VDD) , .VSS(VSS) , .A(Qb) , .Y(QQ) ) ;
 
   // ligne 1
   g45p1svt #( .l(l0), .w(wp0))  mp1 ( .d(x) , .g(D) , .s(VDD), .b(VDD));
