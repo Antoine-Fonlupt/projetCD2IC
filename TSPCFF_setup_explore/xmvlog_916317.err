@@ -1,0 +1,70 @@
+csi-xmvlog - CSI: Command line:
+xmvlog
+    -f /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/xcelium.d/run.lnx8664.21.09.d/xmvlog.args
+        -XLMODE ./xcelium.d/run.lnx8664.21.09.d
+        -RUNMODE
+        -AUTO_USE_REFFILE
+        -AMSINPUT
+        testbench.sv
+        board.vams
+        cmos_transition.vams
+        TSPCFF.vams
+        -CDSLIB ./xcelium.d/run.lnx8664.21.09.d/cdsrun.lib
+        -HDLVAR ./xcelium.d/run.lnx8664.21.09.d/hdlrun.var
+        -MESSAGES
+        -UPDATE
+        -XLLIBSTORE ./xcelium.d/run.lnx8664.21.09.d/xllibs
+        -ALLOWUNBOUND
+        -HASVLOGAMSINPUT
+        -hastop
+        -amscommfile ./xcelium.d/AMSD/ams_spice_in/amscomm.list
+    -CHECK_VERSION TOOL:	xrun(64)	21.09-s006
+    -LOG_FD 4
+
+csi-xmvlog - CSI: *F,INTERR: INTERNAL EXCEPTION
+-----------------------------------------------------------------
+The tool has encountered an unexpected condition and must exit.
+Contact Cadence Design Systems customer support about this
+problem and provide enough information to help us reproduce it,
+including the logfile that contains this error message.
+  TOOL:	xmvlog(64)	21.09-s006
+  HOSTNAME: tp-3a107-06
+  OPERATING SYSTEM: Linux 6.1.0-40-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.153-1 (2025-09-20) x86_64
+  MESSAGE: xal_p4_5_preprocessing: xal_abv_decls_top has additional items and cannot be freed
+-----------------------------------------------------------------
+
+csi-xmvlog - CSI: Cadence Support Investigation, recording details
+Verilog Syntax Tree: root (VST_ROOT) in compilation_unit worklib.\$unit_0x3c0a8496 :compilation_unit (VST)
+	Decompile: $unit_0x3c0a8496
+Verilog Syntax Tree: compilation unit declaration (VST_D_COMP_UNIT) in compilation_unit worklib.\$unit_0x3c0a8496 :compilation_unit (VST)
+	Scope: $unit_0x3c0a8496
+	Decompile: $unit_0x3c0a8496
+Verilog Syntax Tree: module declaration (VST_D_MODULE) in module worklib.TSPCFF:vams (VST)
+	Scope: TSPCFF
+	Decompile: TSPCFF#(l0,wn0,wp0)
+Intermediate File: root (IF_ROOT) in module worklib.TSPCFF:vams (VST)
+Intermediate File: string (IF_STRING) in module worklib.TSPCFF:vams (VST)
+	Decompile: g45n1svt
+Intermediate File: string (IF_STRING) in module worklib.TSPCFF:vams (VST)
+	Decompile: mn3
+Verilog Syntax Tree: root (VST_ROOT) in module worklib.TSPCFF:vams (VST)
+	Decompile: TSPCFF#(l0,wn0,wp0)
+Verilog Syntax Tree: instance declaration (VST_D_INSTANCE) in module worklib.TSPCFF:vams (VST)
+	Scope: TSPCFF
+	Decompile: mn3
+Verilog Syntax Tree: ams type (VST_T_AMS) in module worklib.TSPCFF:vams (VST)
+	Decompile: ams_node
+Verilog Syntax Tree: ams node declaration (VST_D_AMS_NODE) in module worklib.TSPCFF:vams (VST)
+	Scope: TSPCFF
+	Decompile: unable to decompile type 708
+Verilog Syntax Tree: identifier expression (VST_E_IDENTIFIER) in module worklib.TSPCFF:vams (VST)
+	Scope: TSPCFF
+	Decompile: VSS
+Verilog Syntax Tree: identifier expression (VST_E_IDENTIFIER) in module worklib.TSPCFF:vams (VST)
+	Scope: TSPCFF
+	Decompile: wn0
+Verilog Syntax Tree: hierarchical reference declaration (VST_D_OOMR) in module worklib.TSPCFF:vams (VST)
+	Decompile: g
+Verilog Syntax Tree: attribute nature (VST_NATURE_ATTRIBUTE) in module worklib.TSPCFF:vams (VST)
+	Decompile: unable to decompile type 705
+csi-xmvlog - CSI: investigation complete took 0.008 secs, send this file to Cadence Support

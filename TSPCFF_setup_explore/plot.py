@@ -8,56 +8,36 @@ import numpy as np
 import sys
 
 # Get the title from the results
-Title = sys.argv[1] 
-
-# Read results from simasureu
-tab = np.genfromtxt('measurements.dat', skip_header=1)
-# Loop on each input slope
-for islope in range(0, 7):
-    # Get one dimensional array 
-    ltab = tab[islope]
-    # Get the slope value
-    label = str(ltab[0])
-    # Get the list of pairs (loaad_cap, fall_cell)
-    ltab = np.delete(ltab, 0)
-    # Extract the load_cap values
-    xtab = ltab[0::2]
-    # Extract the output values
-    ytab = ltab[1::2]
-    plt.plot(xtab,ytab, label=label)
-    # print label
-    # print xtab
-    # print ytab
-
-## Le titre
-plt.title(Title)
-plt.xlabel('Load capacitor (ff)')
-plt.ylabel(r'Output rising propagation time (ns)')
-# Now add the legend with some customizations.
-legend = plt.legend(loc='upper left', shadow=True)
-# Now add a line at the maximum allowed slope
-# plt.axhline(y=0.20, hold=None)
-# plt.axhline(y=0.20)
-# and annotate the line
-# plt.annotate("max allowed transition",xy=(12, 0.20))
+if len(sys.argv) > 1:
+    Title = sys.argv[1] 
+    path = 'measurements.dat'
+else:
+    Title = 'NaN'
+    path = './TSPCFF_setup_explore/measurements.dat'
 
 
-plt.show()
+Xs = []
+Ys = []
+with open(path, 'r') as f:
+    header = True
+    for l in f.readlines():
+        u = [i for i in l.replace('\n','').split(' ') if i != '']
+        if not header and u != []:
+            Xs.append(float(u[0]))
+            Ys.append(float(u[-1]))
+        header = False
 
-#xl = np.genfromtxt('results/cumulated_results',  usecols=2)
-#yl = np.genfromtxt('results/cumulated_results',  usecols=0)
-#
-#fig = plt.figure()
-#ax = fig.gca()
-#ax.set_xticks(np.arange(-1000,1000,250))
-#ax.set_yticks(np.arange(-15,15.,2.5))
-#
-## Make a scatter plot
-#plt.scatter(xl,yl,alpha=0.6) 
-##plt.xlim(-1000,1000) 
-##plt.ylim(-15,15) 
-#plt.grid()
-#
+Xs = np.array(Xs)
+Ys = np.array(Ys)
 
+plt.plot(Xs, Ys, '.-', label='Propagation Time')
+plt.plot(Xs, Ys+Xs*0.001, '.-', label='Setup+Propagation Time')
+x0 = Xs[np.argmin(np.abs(Ys+Xs*0.001))]
+plt.plot([x0, x0], [np.min(Ys), np.max(Ys)], 'k--')
 
+plt.title('TSPCFF_setup_explore')
+plt.xlabel('Setup Time [ps]')
+plt.ylabel('Time [ns]')
+plt.yscale('log')
+plt.legend()
 plt.show()

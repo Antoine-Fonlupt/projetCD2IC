@@ -90,3 +90,12 @@
 \r )
 \a hiCloseWindow(swindow(1))
 \r t
+\a hiQuit()
+\# Displaying modal dbox "hiQuitDBox", title "Quit"
+\p > 
+\a hiDBoxOK(hiQuitDBox)
+\r t
+\o Segmentation fault
+\o 
+\# Memory report: on exit            216 MB, process size 2,145 MB at UTC 2025.10.30 16:07:56.835
+\# Memory report: peak usage         344 MB, process size 2,281 MB

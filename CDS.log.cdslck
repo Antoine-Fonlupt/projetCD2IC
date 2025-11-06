@@ -4,13 +4,13 @@
 # Information about current Edit Lock Owner.
 #
 LockStakeVersion               1.1
-LoginName                      prats-25
+LoginName                      afonlupt-25
 HostName                       tp-3a107-06.enst.fr
-ProcessIdentifier              2639361
-ProcessCreationTime_UTC        1761221547
-ProcessCreationTime_Readable   Thu Oct 23 14:12:27 2025 CEST
+ProcessIdentifier              5416
+ProcessCreationTime_UTC        1761830002
+ProcessCreationTime_Readable   Thu Oct 30 14:13:22 2025 CET
 AppIdentifier                  /comelec/softs/opt/Cadence/releases/IC617/tools.lnx86/dfII/bin/64bit/virtuoso
 OSType                         lnx86
 ReasonForPlacingEditLock       Set lock by hiiLockFile
-FilePathUsedToEditLock         /cal/exterieurs/prats-25/Desktop/Cadence45nm/CDS.log
-TimeEditLocked                 Thu Oct 23 14:12:27 2025 CEST
+FilePathUsedToEditLock         /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS.log
+TimeEditLocked                 Thu Oct 30 14:13:22 2025 CET

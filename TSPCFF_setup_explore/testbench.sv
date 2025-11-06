@@ -7,6 +7,7 @@
 
 module testbench;
 
+
 // The testbench will generate "events" for the breadboard. We define here the time interval
 // between two events. The time interval should be long enough to be sure that the DUT (Device
 // Under Test) signals are stable when a measurement is asked to the breadboard.
@@ -25,6 +26,15 @@ real din_delay_val = 0.0    ; // An arbitrary incremental delay added to the inp
 real clk_delay_val = 0.0    ;
 // Real signals used receive measured values from the breadboard 
 real propagation_time   ; // The measured output transition time for a falling output
+
+
+real xn = 50.0*1e-12;
+      real h = 3*1e-12;
+      real xn_old = 0;
+      real f_xn = 0;
+      real f_xnph = 0;
+      real alpha = 2e-12;
+      
 
 // Breadboard instanciation, using connected signals
 board bdut(
@@ -70,9 +80,9 @@ begin:simu
    outfile = $fopen(outfilename,"w") ;
 
    // Write parameter infos on the first line of the resulting file
-   $fwrite(outfile,"islope(ns) ");
+   // $fwrite(outfile,"islope(ns) ");
    for(capa_index=0;capa_index<NBCAPA;capa_index++) 
-   $fwrite(outfile,"slope_value  o_fall(ns) ");
+   $fwrite(outfile,"clk_delay_val(ps)  o_fall(ns) ");
    $fwrite(outfile,"\n") ;
 
    /*
@@ -100,55 +110,55 @@ begin:simu
      // Then we update the value of the input slope
      clk_tt_val = slope_values[slope_index]*1.0e-9  ;
      // And we write the slope value in the file
-     $fwrite(outfile,"%010.6f ",slope_values[slope_index] ) ;
+     //$fwrite(outfile,"%010.6f ",slope_values[slope_index] ) ;
 
      // Secondary loop on the output load capacitor
      for(capa_index=0;capa_index<NBCAPA;capa_index++) 
      begin
 
       // Add 4th loop here
-      for (clk_delay_val_index = 10; clk_delay_val_index>=0; clk_delay_val_index--)
+      clk_delay_val = 100.0*1e-12;
+
+      
+      while(((xn-xn_old)>0.2e-12) || ((xn-xn_old)<-0.2e-12))
       begin
-         clk_delay_val = clk_delay_val_index*10.0e-12;
-       // We wait on tick in order to be sure that the DUT is "quiet"
-        // #(digital_tick) ; 
+         
+         clk_delay_val = xn;
+         load_capacitor_val = capa_values[capa_index]*1.0e-15  ;
+         #(digital_tick) ;
+          clk = 1'b1 ;
+          #(digital_tick) ;
+          clk = 1'b0 ;
+          #(digital_tick) ;
+          din = 1'b1 ;
+          clk = 1'b1 ;
+          #(digital_tick) ;
+          clk = 1'b0 ;
+          din = 1'b0 ;
+        f_xn = propagation_time + clk_delay_val;
 
-       // Then we update the value of the input slope
-       load_capacitor_val = capa_values[capa_index]*1.0e-15  ;
+          clk_delay_val = xn+h;
+         load_capacitor_val = capa_values[capa_index]*1.0e-15  ;
+         #(digital_tick) ;
+          clk = 1'b1 ;
+          #(digital_tick) ;
+          clk = 1'b0 ;
+          #(digital_tick) ;
+          din = 1'b1 ;
+          clk = 1'b1 ;
+          #(digital_tick) ;
+          clk = 1'b0 ;
+          din = 1'b0 ;
+        f_xnph = propagation_time + clk_delay_val;
 
-         // And we write the clk delay value in the file
-         $fwrite(outfile,"%010.6f ", clk_delay_val ) ;
+        xn_old = xn;
+         xn = xn - alpha*(f_xnph-f_xn)/h;
+        
 
-       // Then we wait on tick in order to be sure that the DUT is "quiet"
-       #(digital_tick) ;
-
-       // Then we generate a rising event on din
-        clk = 1'b1 ;
-        #(digital_tick) ;
-        clk = 1'b0 ;
-        #(digital_tick) ;
-        din = 1'b1 ;
-        clk = 1'b1 ;
-        #(digital_tick) ;
-
-       // Then check if we have an expected value
-       // For an invertor it is simply not(din) 
-       //if(dout != dout_ref) begin
-       //    $fdisplay(STDERR,"\033[91m testbench: at time %0t: din:%0d, dout:%0d \033[0m", $realtime,din,dout) ;
-       //    $fdisplay(STDERR,"\033[92m testbench: ERROR detected from testbench\033[0m" ) ;
-       //    $fflush(STDERR) ;
-       //    $fflush(outfile) ;
-       //    $finish ;
-       //end
-
-       // Then we get the measured propagation time for a falling output as well as the transition time
-       // and write it to the file
-       $fwrite(outfile,"%010.6f ",propagation_time/1.0e-9 ) ;
-
-       // Then we wait on tick in order to be sure that the DUT is "quiet"
-       #(digital_tick) ;
-      clk = 1'b0 ;
-      din = 1'b0 ;
+         $fwrite(outfile,"%010.4f ", clk_delay_val*1e12 ) ;
+       $fwrite(outfile,"%010.6f \n",propagation_time/1.0e-9 ) ;
+      
+       
       end
      end
      $fwrite(outfile,"\n") ;

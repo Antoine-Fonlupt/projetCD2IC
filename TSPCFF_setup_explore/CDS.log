@@ -1,5 +1,5 @@
-\# Program start time:     UTC 2025.10.30 15:45:44.990
-\# Local time: CET (UTC+01:00) 2025.10.30 16:45:44.990
+\# Program start time:     UTC 2025.11.06 13:08:32.389
+\# Local time: CET (UTC+01:00) 2025.11.06 14:08:32.389
 \o Program:		@(#)$CDS: viva version 6.1.8-64b 06/29/2021 19:15 (sjfhw316) $
 \o Hierarchy:		/comelec/softs/opt/Cadence/releases/IC618/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.8-64b.500.19  (64-bit addresses)
@@ -13,23 +13,23 @@
 \# Depth of Visual (Root):	24 (24)
 \# Number of Planes Used:	24
 \# X version:		11.0 (vendor release 12101007)
-\# X resource pool:	base 0x4200000, mask 0x1fffff (2097151), shift 0
+\# X resource pool:	base 0x3c00000, mask 0x1fffff (2097151), shift 0
 \# 			current id 0x0, current max 0x1ffffa (2097146)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	        793 MB
-\# Available memory:	     16,745 MB
+\# Initial sbrk value:	        906 MB
+\# Available memory:	     16,904 MB
 \# System memory:	     19,583 MB
-\# Maximum memory size:	     18,839 MB
-\# Max mem available:	     16,795 MB
-\# Initial memory used:	         50 MB
-\#        process size:	        587 MB
+\# Maximum memory size:	     18,725 MB
+\# Max mem available:	     16,953 MB
+\# Initial memory used:	         49 MB
+\#        process size:	        586 MB
 \# Thread usage limits (effective/default):	maxthreads 62496/62496 maxload 20.00/20.00
 \# Qt version:		5.9.1
 \# Window Manager:	other
 \# User Name:		afonlupt-25
 \o Working Directory:	tp-3a107-06:/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore
-\# Process Id:		94932
+\# Process Id:		859741
 \o 
 \o COPYRIGHT (C) 1992-2021  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           (C) 1992-2021  UNIX SYSTEMS Laboratories INC.,
@@ -42,7 +42,7 @@
 \o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
 \o Use/reproduction/disclosure is subject to restriction
 \o set forth at FAR 1252.227-19 or its equivalent.
-\o Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.23s.
+\o Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.37s.
 \o Loading ams.cxt 
 \o Loading auCore.cxt 
 \p > 
@@ -50,30 +50,68 @@
 \o Loading awv.cxt 
 \o Loading viva.cxt 
 \o Loading oasis.cxt 
-\# Memory report: using         161 MB, process size 758 MB at UTC 2025.10.30 15:45:50.717
-\a hiResizeWindow(swindow(1) list(-5:-5 1915:1024))
-\r t
+\# Memory report: using         154 MB, process size 746 MB at UTC 2025.11.06 13:08:37.677
 \a hiSetCurrentWindow(window(2))
 \r t
 \a rdbSetCurrentDirectory("unbound" "./psf/tran-tran")
 \r t
-\# Available memory:         16,743 MB at UTC 2025.10.30 15:45:55.155
-\# Memory report: Maximum memory size now 16,917 MB at UTC 2025.10.30 15:45:55.155
-\# Thread usage report: 25 active threads, active load 1.40 at UTC 2025.10.30 15:45:55.155
-\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/bdut")
-\r t
-\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/simu")
-\r t
-\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/dout__E2L_2_dynsup__electrical")
-\r t
 \a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench")
 \r t
+\# Available memory:         16,876 MB at UTC 2025.11.06 13:08:42.597
+\# Memory report: Maximum memory size now 17,037 MB at UTC 2025.11.06 13:08:42.597
+\# Thread usage report: 25 active threads, active load 1.40 at UTC 2025.11.06 13:08:42.597
+\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/simu")
+\r t
 \a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/bdut")
 \r t
-\# Memory report: using         337 MB, process size 2,276 MB at UTC 2025.10.30 15:46:43.865
-\a _ddtUpdateGraph(awvGetCurrentWindow()->vivaSession _vivaMapSubwinId(awvGetCurrentWindow()->vivaSession awvGetCurrentWindow() awvGetCurrentSubwindow(awvGetCurrentWindow())) nil nil)
-\r (("wRealTrace[1.1.1]" "digitalTrace[1.1.1]" "digitalTrace[1.1.2]") nil nil nil)
-\a _ddtUpdateGraph(awvGetCurrentWindow()->vivaSession _vivaMapSubwinId(awvGetCurrentWindow()->vivaSession awvGetCurrentWindow() awvGetCurrentSubwindow(awvGetCurrentWindow())) nil nil)
-\r (("wRealTrace[1.1.1]" "digitalTrace[1.1.1]" "digitalTrace[1.1.2]" "rectTrace[1.1.1]") nil nil nil)
+\# Memory report: using         324 MB, process size 2,259 MB at UTC 2025.11.06 13:08:47.751
+\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench")
+\r t
+\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "deleteObjects")
+\r t
+\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "splitAllStrips")
+\r t
+\a hiResizeWindow(swindow(1) list(-5:-5 1915:1024))
+\r t
+\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "deleteObjects")
+\r t
+\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "deleteObjects")
+\r t
+\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "deleteObjects")
+\r t
+\a hiSetCurrentWindow(window(2))
+\r t
+\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/bdut")
+\r t
+\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "stopPreparedMeasurementSignalListener")
+\r t
+\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "deleteObjects")
+\r t
+\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "deleteObjects")
+\r t
+\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "deleteObjects")
+\r t
+\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/bdut/dut")
+\r t
+\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/bdut/cmos_tr")
+\r t
+\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/bdut/cmos_clk_tr")
+\r t
+\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/bdut/cmos_tr")
+\r t
+\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/bdut/cmos_clk_tr")
+\r t
+\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/bdut/cmos_tr")
+\r t
+\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "deleteObjects")
+\r t
+\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/bdut/cmos_clk_tr")
+\r t
+\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/bdut/cmos_tr")
+\r t
 \o Fatal error: glibc detected an invalid stdio handle
 \o Aborted
+\# Memory report: Maximum memory size now 16,681 MB at UTC 2025.11.06 13:24:51.598
+\a hiCloseWindow(swindow(1))
+\r t
+\# Memory report: Maximum memory size now 16,295 MB at UTC 2025.11.06 14:32:21.598

@@ -1,0 +1,3 @@
+SOFTINCLUDE /comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/inca/files/IEEE_vhdlams/cds.lib
+define worklib ../worklib
+define vhdlspice_skeletons ../vhdlspice_skeletons

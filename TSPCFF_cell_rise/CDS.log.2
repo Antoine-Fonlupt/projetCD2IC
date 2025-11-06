@@ -99,3 +99,16 @@
 \r t
 \a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench")
 \r t
+\o Fatal error: glibc detected an invalid stdio handle
+\o Aborted
+\a hiQuit()
+\# Displaying modal dbox "hiQuitDBox", title "Quit"
+\p > 
+\a hiCloseWindow(swindow(1))
+\r t
+\a hiDBoxOK(hiQuitDBox)
+\r t
+\o Segmentation fault
+\o 
+\# Memory report: on exit            230 MB, process size 2,160 MB at UTC 2025.10.30 16:07:53.172
+\# Memory report: peak usage         358 MB, process size 2,297 MB

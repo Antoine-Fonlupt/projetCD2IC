@@ -1,0 +1,203 @@
+\o Program:		@(#)$CDS: libManager version 6.1.7 - CAT35 08/11/2017 18:55 (sjfhw311) $
+\o Sub version:		sub-version  s054 
+\o Arguments:		-mpssession virtuoso5416 -mpshost tp-3a107-06 
+\o Working Directory:	tp-3a107-06:/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC
+\o 64-bit offsets
+\o Qt version: 		4.8.5
+\o Log file is "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/./libManager.log".
+\o Opening libManager window.
+\a nrSetCurrentWindow(cdsLibManager)
+\o changeWorkingDir("/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o MPS service: map window
+\o Library Manager customization server connected.
+\a nrResizeWindow(cdsLibManager list(654 291 602 491))
+\a cdsLibManager->libListBox->value = "giolib045"
+\a cdsLibManager->libLineEdit->value = "giolib045"
+\a cdsLibManager->libListBox->value = "gpdk045"
+\a cdsLibManager->libLineEdit->value = "gpdk045"
+\a nrResizeWindow(cdsLibManager list(-5 22 1920 1029))
+\a cdsLibManager->showCatsToggle->value = t
+\a cdsLibManager->QToolButton7->value = t
+\a cdsLibManager->showCategoriesAction->value = t
+\a cdsLibManager->libCatsTreeView->value = "Everything"
+\a cdsLibManager->catLineEdit->value = "Everything"
+\a cdsLibManager->libCatsTreeView->value = "mos"
+\a cdsLibManager->catLineEdit->value = "mos"
+\a nrListItemAction(cdsLibManager->libCatsTreeView "mos" 0)
+\a editCategory->categoryNameEdit->value = "mos"
+\o ERROR (CLM-118): Cannot get edit lock on "/comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/gpdk045/mos.Cat".
+\o QUESTION (CLM-170): You do not have write permission.\n\nDo you still want to continue?
+\a nrSetWindowVisibility(genericDialog "show")
+\o Category edit cannot proceed without category file being locked or checked out.
+\a nrSetCurrentWindow(genericDialog)
+\a nrResizeWindow(genericDialog list(647 462 615 149))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "nmos1v"
+\a cdsLibManager->cellLineEdit->value = "nmos1v"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "nmos1v"
+\a cdsLibManager->cellLineEdit->value = "nmos1v"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 0 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libCatsTreeView->value = nil
+\a cdsLibManager->catLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "gpdk045"
+\a cdsLibManager->libLineEdit->value = "gpdk045"
+\a cdsLibManager->libCatsTreeView->value = "Everything"
+\a cdsLibManager->catLineEdit->value = "Everything"
+\a cdsLibManager->libCatsTreeView->value = nil
+\a cdsLibManager->catLineEdit->value = ""
+\a cdsLibManager->libCatsTreeView->value = "Everything"
+\a cdsLibManager->catLineEdit->value = "Everything"
+\a cdsLibManager->libCatsTreeView->value = "mos"
+\a cdsLibManager->catLineEdit->value = "mos"
+\a cdsLibManager->cellListBox->value = "nmos1v"
+\a cdsLibManager->cellLineEdit->value = "nmos1v"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "nmos1v"
+\a cdsLibManager->cellLineEdit->value = "nmos1v"
+\a lmgrLogShowPopup("mainListPopup1" 40 8 2 "nmos1v")
+\a cdsLibManager->viewListBox->value = "auCdl"
+\a cdsLibManager->viewLineEdit->value = "auCdl"
+\a cdsLibManager->viewListBox->value = "hspiceD"
+\a cdsLibManager->viewLineEdit->value = "hspiceD"
+\a cdsLibManager->viewListBox->value = "ivpcell"
+\a cdsLibManager->viewLineEdit->value = "ivpcell"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = "spectre"
+\a cdsLibManager->viewLineEdit->value = "spectre"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "spectre"
+\a cdsLibManager->viewLineEdit->value = "spectre"
+\a cdsLibManager->viewListBox->value = "ivpcell"
+\a cdsLibManager->viewLineEdit->value = "ivpcell"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 4 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libCatsTreeView->value = nil
+\a cdsLibManager->catLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "gpdk045"
+\a cdsLibManager->libLineEdit->value = "gpdk045"
+\a cdsLibManager->libCatsTreeView->value = "Everything"
+\a cdsLibManager->catLineEdit->value = "Everything"
+\a cdsLibManager->libCatsTreeView->value = nil
+\a cdsLibManager->catLineEdit->value = ""
+\a cdsLibManager->libCatsTreeView->value = "Everything"
+\a cdsLibManager->catLineEdit->value = "Everything"
+\a cdsLibManager->libCatsTreeView->value = "mos"
+\a cdsLibManager->catLineEdit->value = "mos"
+\a cdsLibManager->cellListBox->value = "nmos1v"
+\a cdsLibManager->cellLineEdit->value = "nmos1v"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->catLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->libCatsTreeView->value = nil
+\a cdsLibManager->libCatsTreeView->value = "mos"
+\a cdsLibManager->catLineEdit->value = "mos"
+\a cdsLibManager->cellListBox->value = "nmos1v"
+\a cdsLibManager->cellLineEdit->value = "nmos1v"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a lmgrLogShowPopup("mainListPopup2" 27 84 2 "layout")
+\a lmgrLogShowPopup("mainListPopup2" 24 82 2 "layout")
+\a nrListItemExpand(cdsLibManager->libListBox "GSCLIB045" t)
+\a cdsLibManager->libListBox->value = "GSCLIB045/gsclib045"
+\a cdsLibManager->libLineEdit->value = "gsclib045"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libCatsTreeView->value = nil
+\a cdsLibManager->catLineEdit->value = ""
+\a cdsLibManager->libCatsTreeView->value = "Everything"
+\a cdsLibManager->catLineEdit->value = "Everything"
+\a nrListItemExpand(cdsLibManager->libCatsTreeView "FF" t)
+\a cdsLibManager->libCatsTreeView->value = "FF/DFF"
+\a cdsLibManager->catLineEdit->value = "DFF"
+\a cdsLibManager->cellListBox->value = "DFFHQX1"
+\a cdsLibManager->cellLineEdit->value = "DFFHQX1"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a lmgrLogShowPopup("mainListPopup2" 48 76 2 "schematic")
+\a lmgrLogShowPopup("mainListPopup2" 54 81 2 "schematic")
+\a cdsLibManager->fileOpenWithButton->value = t
+\o MPS request: edit design
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libCatsTreeView->value = nil
+\a cdsLibManager->catLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "GSCLIB045"
+\a cdsLibManager->libLineEdit->value = "GSCLIB045"
+\a cdsLibManager->libCatsTreeView->value = "Everything"
+\a cdsLibManager->catLineEdit->value = "Everything"
+\a cdsLibManager->libListBox->value = "GSCLIB045/gsclib045"
+\a cdsLibManager->libLineEdit->value = "gsclib045"
+\a cdsLibManager->libCatsTreeView->value = nil
+\a cdsLibManager->catLineEdit->value = ""
+\a cdsLibManager->libCatsTreeView->value = "Everything"
+\a cdsLibManager->catLineEdit->value = "Everything"
+\a cdsLibManager->libCatsTreeView->value = nil
+\a cdsLibManager->catLineEdit->value = ""
+\a cdsLibManager->libCatsTreeView->value = "Everything"
+\a cdsLibManager->catLineEdit->value = "Everything"
+\a cdsLibManager->libCatsTreeView->value = "FF/DFF"
+\a cdsLibManager->catLineEdit->value = "DFF"
+\a cdsLibManager->cellListBox->value = "DFFHQX1"
+\a cdsLibManager->cellLineEdit->value = "DFFHQX1"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrListItemExpand(cdsLibManager->libListBox "GSCLIB045" t)
+\a nrListItemExpand(cdsLibManager->libCatsTreeView "FF" t)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a _lmgrCloseIconify("cdsLibManager" 1)

@@ -66,7 +66,7 @@ xcelium> #
 xcelium> probe -create -database ams_database -all -depth all
 xmsim: *W,PRLDYN: The design contains dynamic objects. The "-all" option excludes dynamic objects to improve performance. To enable probing of dynamic objects the "-all -dynamic" options should be added to the probe command.
 xmsim: *W,PRNTAL: Some objects excluded from probe (-access -R).
-Created probe 1
+Created probe 11
 xcelium> probe -create -emptyok -database ams_database -flow -ports -index  {testbench.bdut.dut}
 Created probe 2
 xcelium> # And start the simulation
