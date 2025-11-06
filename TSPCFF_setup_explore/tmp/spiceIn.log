@@ -1,0 +1,346 @@
+===================
+Spice In Log File
+===================
+Parameter file: /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/tools/spiceIn/spiceIn.params
+Import Parameters:
+	Netlist file name: TSPCFF_setup_explore/tmp/TSPCFF.cdl
+	Output library name: TSPCFF_LIB
+	Output View Type: schematic
+	Schematic view name: schematic
+	Netlist view name: netlist_tmp
+	Reference Library List: analogLib gpdk045 TSPCFF_LIB 
+	Device-mapping file name: /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/tools/spiceIn/dev.map
+	Master Cell for Ground: gnd
+	Cells to be Overwritten: <all>
+	Schematic Generation command-line arguments: -MIN_CROSSOVERS -asg 
+	Schematic Generation parameter file: /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/tools/spiceIn/conn2sch.params
+	Simulator: auCdl
+	Output Simulator: spectre
+	paramCaseValue: default
+	Parser: ASSURA
+	Language: CDL
+WARNING (SPICEIN-99): 'Import Subcircuit List' is not found in the specification, hence setting it to
+default empty value and importing all sub-circuits in the netlist.
+INFO (SPICEIN-100): SpiceIn successfully parsed the cdl netlist file 'TSPCFF_setup_explore/tmp/TSPCFF.cdl'.
+
+Importing SUBKCT 'INV' in Library 'TSPCFF_LIB'
+	Subckt Pin: Created net VDD!.
+	Created Subckt Terminal VDD!.
+	Subckt Pin: Created net VSS!.
+	Created Subckt Terminal VSS!.
+	Subckt Pin: Created net A.
+	Created Subckt Terminal A.
+	Subckt Pin: Created net Y.
+	Created Subckt Terminal Y.
+	Subckt termOrder created in CDF
+Created propName='WN'; propType='string'; propVal='1.45E-07'.
+Created propName='WP'; propType='string'; propVal='2.14E-07'.
+	Instance: Mmn0
+	Instance has master: 'mos' model/subtype: 'g45n1svt'
+			Model name matches in device map's propMatch construct
+
+		Master Cell 'mos[g45n1svt]' mapped to 'nmos1v'.
+		Did not find 'analogLib.nmos1v:symbol'.
+		Master Cellview: 'gpdk045.nmos1v:symbol' found.
+	Created instance 'Mmn0'.
+		Instance Terminal: Found net Y
+		Created connection between net 'Y' and term 'D'
+		Instance Terminal: Found net A
+		Created connection between net 'A' and term 'G'
+		Instance Terminal: Found net VSS!
+		Created connection between net 'VSS!' and term 'S'
+		Instance Terminal: Found net VSS!
+		Created connection between net 'VSS!' and term 'B'
+		CDF parameter not found for 'subtype'. User property will be cretated
+		Created propName='subtype'; propType='string'; propVal='g45n1svt'.
+		In CDF...		Created propName='model'; propType='string'; propVal='g45n1svt'.
+		CDF Type is 'string' and the value given in netlist is 'float' - hence converting to 'string'
+		In CDF...		Created propName='l'; propType='string'; propVal='4.5E-08'.
+		In CDF...		Created propName='w'; propType='string'; propVal='pPar("WN")'.
+		In CDF...		Created propName='fw'; propType='string'; propVal='pPar("WN")'.
+		CDF Type is 'string' and the value given in netlist is 'float' - hence converting to 'string'
+		In CDF...		Created propName='fingers'; propType='string'; propVal='1'.
+	Instance: Mmp0
+	Instance has master: 'mos' model/subtype: 'g45p1svt'
+			Model name matches in device map's propMatch construct
+
+		Master Cell 'mos[g45p1svt]' mapped to 'pmos1v'.
+		Did not find 'analogLib.pmos1v:symbol'.
+		Master Cellview: 'gpdk045.pmos1v:symbol' found.
+	Created instance 'Mmp0'.
+		Instance Terminal: Found net Y
+		Created connection between net 'Y' and term 'D'
+		Instance Terminal: Found net A
+		Created connection between net 'A' and term 'G'
+		Instance Terminal: Found net VDD!
+		Created connection between net 'VDD!' and term 'S'
+		Instance Terminal: Found net VDD!
+		Created connection between net 'VDD!' and term 'B'
+		CDF parameter not found for 'subtype'. User property will be cretated
+		Created propName='subtype'; propType='string'; propVal='g45p1svt'.
+		In CDF...		Created propName='model'; propType='string'; propVal='g45p1svt'.
+		CDF Type is 'string' and the value given in netlist is 'float' - hence converting to 'string'
+		In CDF...		Created propName='l'; propType='string'; propVal='4.5E-08'.
+		In CDF...		Created propName='w'; propType='string'; propVal='pPar("WP")'.
+		In CDF...		Created propName='fw'; propType='string'; propVal='pPar("WP")'.
+		CDF Type is 'string' and the value given in netlist is 'float' - hence converting to 'string'
+		In CDF...		Created propName='fingers'; propType='string'; propVal='1'.
+Netlist view created for Subckt: INV
+Schematic view created for Subckt: INV
+
+
+Importing SUBKCT 'TSPCFF' in Library 'TSPCFF_LIB'
+	Subckt Pin: Created net CK.
+	Created Subckt Terminal CK.
+	Subckt Pin: Created net D.
+	Created Subckt Terminal D.
+	Subckt Pin: Created net QQ.
+	Created Subckt Terminal QQ.
+	Subckt Pin: Created net VDD!.
+	Created Subckt Terminal VDD!.
+	Subckt Pin: Created net VSS!.
+	Created Subckt Terminal VSS!.
+	Subckt termOrder created in CDF
+Created propName='l0'; propType='string'; propVal='4.5E-08'.
+Created propName='wn0'; propType='string'; propVal='1.45E-07'.
+Created propName='wp0'; propType='string'; propVal='2.14E-07'.
+	Instance: Xclkinv
+	Instance has master: 'INV' model/subtype: 'INV'
+	Created instance 'Xclkinv'.
+		Instance Terminal: Found net VDD!
+		Created connection between net 'VDD!' and term 'VDD!'
+		Instance Terminal: Found net VSS!
+		Created connection between net 'VSS!' and term 'VSS!'
+		Instance Terminal: Found net CK
+		Created connection between net 'CK' and term 'A'
+		Instance Terminal: Created net CKb
+		Created connection between net 'CKb' and term 'Y'
+		CDF Type is 'string' and the value given in netlist is 'float' - hence converting to 'string'
+		In CDF...		Created propName='WN'; propType='string'; propVal='1.45E-07'.
+		CDF Type is 'string' and the value given in netlist is 'float' - hence converting to 'string'
+		In CDF...		Created propName='WP'; propType='string'; propVal='2.15E-07'.
+	Instance: Xqinv
+	Instance has master: 'INV' model/subtype: 'INV'
+	Created instance 'Xqinv'.
+		Instance Terminal: Found net VDD!
+		Created connection between net 'VDD!' and term 'VDD!'
+		Instance Terminal: Found net VSS!
+		Created connection between net 'VSS!' and term 'VSS!'
+		Instance Terminal: Created net Qb
+		Created connection between net 'Qb' and term 'A'
+		Instance Terminal: Found net QQ
+		Created connection between net 'QQ' and term 'Y'
+		CDF Type is 'string' and the value given in netlist is 'float' - hence converting to 'string'
+		In CDF...		Created propName='WN'; propType='string'; propVal='2.6E-07'.
+		CDF Type is 'string' and the value given in netlist is 'float' - hence converting to 'string'
+		In CDF...		Created propName='WP'; propType='string'; propVal='3.9E-07'.
+	Instance: Mmp1
+	Instance has master: 'mos' model/subtype: 'g45p1svt'
+			Model name matches in device map's propMatch construct
+
+		Master Cell 'mos[g45p1svt]' mapped to 'pmos1v'.
+		Master Cellview: 'gpdk045.pmos1v:symbol' found.
+	Created instance 'Mmp1'.
+		Instance Terminal: Created net x
+		Created connection between net 'x' and term 'D'
+		Instance Terminal: Found net D
+		Created connection between net 'D' and term 'G'
+		Instance Terminal: Found net VDD!
+		Created connection between net 'VDD!' and term 'S'
+		Instance Terminal: Found net VDD!
+		Created connection between net 'VDD!' and term 'B'
+		CDF parameter not found for 'subtype'. User property will be cretated
+		Created propName='subtype'; propType='string'; propVal='g45p1svt'.
+		In CDF...		Created propName='model'; propType='string'; propVal='g45p1svt'.
+		In CDF...		Created propName='l'; propType='string'; propVal='pPar("l0")'.
+		In CDF...		Created propName='w'; propType='string'; propVal='pPar("wp0")'.
+		In CDF...		Created propName='fw'; propType='string'; propVal='pPar("wp0")'.
+		CDF Type is 'string' and the value given in netlist is 'float' - hence converting to 'string'
+		In CDF...		Created propName='fingers'; propType='string'; propVal='1'.
+	Instance: Mmp2
+	Instance has master: 'mos' model/subtype: 'g45p1svt'
+			Model name matches in device map's propMatch construct
+
+		Master Cell 'mos[g45p1svt]' mapped to 'pmos1v'.
+		Master Cellview: 'gpdk045.pmos1v:symbol' found.
+	Created instance 'Mmp2'.
+		Instance Terminal: Created net b
+		Created connection between net 'b' and term 'D'
+		Instance Terminal: Found net CKb
+		Created connection between net 'CKb' and term 'G'
+		Instance Terminal: Found net VDD!
+		Created connection between net 'VDD!' and term 'S'
+		Instance Terminal: Found net VDD!
+		Created connection between net 'VDD!' and term 'B'
+		CDF parameter not found for 'subtype'. User property will be cretated
+		Created propName='subtype'; propType='string'; propVal='g45p1svt'.
+		In CDF...		Created propName='model'; propType='string'; propVal='g45p1svt'.
+		In CDF...		Created propName='l'; propType='string'; propVal='pPar("l0")'.
+		In CDF...		Created propName='w'; propType='string'; propVal='pPar("wp0")'.
+		In CDF...		Created propName='fw'; propType='string'; propVal='pPar("wp0")'.
+		CDF Type is 'string' and the value given in netlist is 'float' - hence converting to 'string'
+		In CDF...		Created propName='fingers'; propType='string'; propVal='1'.
+	Instance: Mmp3
+	Instance has master: 'mos' model/subtype: 'g45p1svt'
+			Model name matches in device map's propMatch construct
+
+		Master Cell 'mos[g45p1svt]' mapped to 'pmos1v'.
+		Master Cellview: 'gpdk045.pmos1v:symbol' found.
+	Created instance 'Mmp3'.
+		Instance Terminal: Created net c
+		Created connection between net 'c' and term 'D'
+		Instance Terminal: Created net y
+		Created connection between net 'y' and term 'G'
+		Instance Terminal: Found net VDD!
+		Created connection between net 'VDD!' and term 'S'
+		Instance Terminal: Found net VDD!
+		Created connection between net 'VDD!' and term 'B'
+		CDF parameter not found for 'subtype'. User property will be cretated
+		Created propName='subtype'; propType='string'; propVal='g45p1svt'.
+		In CDF...		Created propName='model'; propType='string'; propVal='g45p1svt'.
+		In CDF...		Created propName='l'; propType='string'; propVal='pPar("l0")'.
+		In CDF...		Created propName='w'; propType='string'; propVal='pPar("wp0")'.
+		In CDF...		Created propName='fw'; propType='string'; propVal='pPar("wp0")'.
+		CDF Type is 'string' and the value given in netlist is 'float' - hence converting to 'string'
+		In CDF...		Created propName='fingers'; propType='string'; propVal='1'.
+	Instance: Mmn4
+	Instance has master: 'mos' model/subtype: 'g45n1svt'
+			Model name matches in device map's propMatch construct
+
+		Master Cell 'mos[g45n1svt]' mapped to 'nmos1v'.
+		Master Cellview: 'gpdk045.nmos1v:symbol' found.
+	Created instance 'Mmn4'.
+		Instance Terminal: Found net x
+		Created connection between net 'x' and term 'D'
+		Instance Terminal: Found net CKb
+		Created connection between net 'CKb' and term 'G'
+		Instance Terminal: Created net a
+		Created connection between net 'a' and term 'S'
+		Instance Terminal: Found net VSS!
+		Created connection between net 'VSS!' and term 'B'
+		CDF parameter not found for 'subtype'. User property will be cretated
+		Created propName='subtype'; propType='string'; propVal='g45n1svt'.
+		In CDF...		Created propName='model'; propType='string'; propVal='g45n1svt'.
+		In CDF...		Created propName='l'; propType='string'; propVal='pPar("l0")'.
+		In CDF...		Created propName='w'; propType='string'; propVal='pPar("wn0")'.
+		In CDF...		Created propName='fw'; propType='string'; propVal='pPar("wn0")'.
+		CDF Type is 'string' and the value given in netlist is 'float' - hence converting to 'string'
+		In CDF...		Created propName='fingers'; propType='string'; propVal='1'.
+	Instance: Mmp4
+	Instance has master: 'mos' model/subtype: 'g45p1svt'
+			Model name matches in device map's propMatch construct
+
+		Master Cell 'mos[g45p1svt]' mapped to 'pmos1v'.
+		Master Cellview: 'gpdk045.pmos1v:symbol' found.
+	Created instance 'Mmp4'.
+		Instance Terminal: Found net y
+		Created connection between net 'y' and term 'D'
+		Instance Terminal: Found net x
+		Created connection between net 'x' and term 'G'
+		Instance Terminal: Found net b
+		Created connection between net 'b' and term 'S'
+		Instance Terminal: Found net VDD!
+		Created connection between net 'VDD!' and term 'B'
+		CDF parameter not found for 'subtype'. User property will be cretated
+		Created propName='subtype'; propType='string'; propVal='g45p1svt'.
+		In CDF...		Created propName='model'; propType='string'; propVal='g45p1svt'.
+		In CDF...		Created propName='l'; propType='string'; propVal='pPar("l0")'.
+		In CDF...		Created propName='w'; propType='string'; propVal='pPar("wp0")'.
+		In CDF...		Created propName='fw'; propType='string'; propVal='pPar("wp0")'.
+		CDF Type is 'string' and the value given in netlist is 'float' - hence converting to 'string'
+		In CDF...		Created propName='fingers'; propType='string'; propVal='1'.
+	Instance: Mmp5
+	Instance has master: 'mos' model/subtype: 'g45p1svt'
+			Model name matches in device map's propMatch construct
+
+		Master Cell 'mos[g45p1svt]' mapped to 'pmos1v'.
+		Master Cellview: 'gpdk045.pmos1v:symbol' found.
+	Created instance 'Mmp5'.
+		Instance Terminal: Found net Qb
+		Created connection between net 'Qb' and term 'D'
+		Instance Terminal: Found net CKb
+		Created connection between net 'CKb' and term 'G'
+		Instance Terminal: Found net c
+		Created connection between net 'c' and term 'S'
+		Instance Terminal: Found net VDD!
+		Created connection between net 'VDD!' and term 'B'
+		CDF parameter not found for 'subtype'. User property will be cretated
+		Created propName='subtype'; propType='string'; propVal='g45p1svt'.
+		In CDF...		Created propName='model'; propType='string'; propVal='g45p1svt'.
+		In CDF...		Created propName='l'; propType='string'; propVal='pPar("l0")'.
+		In CDF...		Created propName='w'; propType='string'; propVal='pPar("wp0")'.
+		In CDF...		Created propName='fw'; propType='string'; propVal='pPar("wp0")'.
+		CDF Type is 'string' and the value given in netlist is 'float' - hence converting to 'string'
+		In CDF...		Created propName='fingers'; propType='string'; propVal='1'.
+	Instance: Mmn1
+	Instance has master: 'mos' model/subtype: 'g45n1svt'
+			Model name matches in device map's propMatch construct
+
+		Master Cell 'mos[g45n1svt]' mapped to 'nmos1v'.
+		Master Cellview: 'gpdk045.nmos1v:symbol' found.
+	Created instance 'Mmn1'.
+		Instance Terminal: Found net a
+		Created connection between net 'a' and term 'D'
+		Instance Terminal: Found net D
+		Created connection between net 'D' and term 'G'
+		Instance Terminal: Found net VSS!
+		Created connection between net 'VSS!' and term 'S'
+		Instance Terminal: Found net VSS!
+		Created connection between net 'VSS!' and term 'B'
+		CDF parameter not found for 'subtype'. User property will be cretated
+		Created propName='subtype'; propType='string'; propVal='g45n1svt'.
+		In CDF...		Created propName='model'; propType='string'; propVal='g45n1svt'.
+		In CDF...		Created propName='l'; propType='string'; propVal='pPar("l0")'.
+		In CDF...		Created propName='w'; propType='string'; propVal='pPar("wn0")'.
+		In CDF...		Created propName='fw'; propType='string'; propVal='pPar("wn0")'.
+		CDF Type is 'string' and the value given in netlist is 'float' - hence converting to 'string'
+		In CDF...		Created propName='fingers'; propType='string'; propVal='1'.
+	Instance: Mmn2
+	Instance has master: 'mos' model/subtype: 'g45n1svt'
+			Model name matches in device map's propMatch construct
+
+		Master Cell 'mos[g45n1svt]' mapped to 'nmos1v'.
+		Master Cellview: 'gpdk045.nmos1v:symbol' found.
+	Created instance 'Mmn2'.
+		Instance Terminal: Found net y
+		Created connection between net 'y' and term 'D'
+		Instance Terminal: Found net CKb
+		Created connection between net 'CKb' and term 'G'
+		Instance Terminal: Found net VSS!
+		Created connection between net 'VSS!' and term 'S'
+		Instance Terminal: Found net VSS!
+		Created connection between net 'VSS!' and term 'B'
+		CDF parameter not found for 'subtype'. User property will be cretated
+		Created propName='subtype'; propType='string'; propVal='g45n1svt'.
+		In CDF...		Created propName='model'; propType='string'; propVal='g45n1svt'.
+		In CDF...		Created propName='l'; propType='string'; propVal='pPar("l0")'.
+		In CDF...		Created propName='w'; propType='string'; propVal='pPar("wn0")'.
+		In CDF...		Created propName='fw'; propType='string'; propVal='pPar("wn0")'.
+		CDF Type is 'string' and the value given in netlist is 'float' - hence converting to 'string'
+		In CDF...		Created propName='fingers'; propType='string'; propVal='1'.
+	Instance: Mmn3
+	Instance has master: 'mos' model/subtype: 'g45n1svt'
+			Model name matches in device map's propMatch construct
+
+		Master Cell 'mos[g45n1svt]' mapped to 'nmos1v'.
+		Master Cellview: 'gpdk045.nmos1v:symbol' found.
+	Created instance 'Mmn3'.
+		Instance Terminal: Found net Qb
+		Created connection between net 'Qb' and term 'D'
+		Instance Terminal: Found net y
+		Created connection between net 'y' and term 'G'
+		Instance Terminal: Found net VSS!
+		Created connection between net 'VSS!' and term 'S'
+		Instance Terminal: Found net VSS!
+		Created connection between net 'VSS!' and term 'B'
+		CDF parameter not found for 'subtype'. User property will be cretated
+		Created propName='subtype'; propType='string'; propVal='g45n1svt'.
+		In CDF...		Created propName='model'; propType='string'; propVal='g45n1svt'.
+		In CDF...		Created propName='l'; propType='string'; propVal='pPar("l0")'.
+		In CDF...		Created propName='w'; propType='string'; propVal='pPar("wn0")'.
+		In CDF...		Created propName='fw'; propType='string'; propVal='pPar("wn0")'.
+		CDF Type is 'string' and the value given in netlist is 'float' - hence converting to 'string'
+		In CDF...		Created propName='fingers'; propType='string'; propVal='1'.
+Netlist view created for Subckt: TSPCFF
+Schematic view created for Subckt: TSPCFF
+

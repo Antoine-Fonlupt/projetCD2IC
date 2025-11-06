@@ -1,0 +1,23 @@
+
+*.GLOBAL VSS! VDD!
+
+.subckt TSPCFF  CK D QQ VDD! VSS! l0=4.5e-08 wn0=145e-9 wp0=214e-9
+*.PININFO CK:B D:B QQ:B VDD!:B VSS!:B
+Xclkinv  VDD! VSS! CK CKb INV WN=145e-9 WP=215e-9
+Xqinv  VDD! VSS! Qb QQ INV WN=260e-9 WP=390e-9
+Mmp1  x D VDD! VDD! g45p1svt l="pPar("l0")" w="pPar("wp0")" fw="pPar("wp0")" nf=1
+Mmp2  b CKb VDD! VDD! g45p1svt l="pPar("l0")" w="pPar("wp0")" fw="pPar("wp0")" nf=1
+Mmp3  c y VDD! VDD! g45p1svt l="pPar("l0")" w="pPar("wp0")" fw="pPar("wp0")" nf=1
+Mmn4  x CKb a VSS! g45n1svt l="pPar("l0")" w="pPar("wn0")" fw="pPar("wn0")" nf=1
+Mmp4  y x b VDD! g45p1svt l="pPar("l0")" w="pPar("wp0")" fw="pPar("wp0")" nf=1
+Mmp5  Qb CKb c VDD! g45p1svt l="pPar("l0")" w="pPar("wp0")" fw="pPar("wp0")" nf=1
+Mmn1  a D VSS! VSS! g45n1svt l="pPar("l0")" w="pPar("wn0")" fw="pPar("wn0")" nf=1
+Mmn2  y CKb VSS! VSS! g45n1svt l="pPar("l0")" w="pPar("wn0")" fw="pPar("wn0")" nf=1
+Mmn3  Qb y VSS! VSS! g45n1svt l="pPar("l0")" w="pPar("wn0")" fw="pPar("wn0")" nf=1
+.ends
+
+.subckt INV  VDD! VSS! A Y WN=145e-9 WP=214e-9
+*.PININFO VDD!:B VSS!:B A:B Y:B
+Mmn0  Y A VSS! VSS! g45n1svt l=4.5e-08 w="pPar("WN")" fw="pPar("WN")" nf=1
+Mmp0  Y A VDD! VDD! g45p1svt l=4.5e-08 w="pPar("WP")" fw="pPar("WP")" nf=1
+.ends

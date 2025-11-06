@@ -35,3 +35,4 @@ ASSIGN gsclib045_tech DISPLAY PDKlib
 
 DEFINE avTech /comelec/softs/opt/Cadence/releases/ASSURA41_617/tools/assura/etc/avtech/avTech
 
+DEFINE TSPCFF_LIB /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_LIB

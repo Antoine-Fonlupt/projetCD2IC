@@ -6,11 +6,11 @@
 LockStakeVersion               1.1
 LoginName                      afonlupt-25
 HostName                       tp-3a107-06.enst.fr
-ProcessIdentifier              5416
-ProcessCreationTime_UTC        1761830002
-ProcessCreationTime_Readable   Thu Oct 30 14:13:22 2025 CET
+ProcessIdentifier              931692
+ProcessCreationTime_UTC        1762440504
+ProcessCreationTime_Readable   Thu Nov  6 15:48:24 2025 CET
 AppIdentifier                  /comelec/softs/opt/Cadence/releases/IC617/tools.lnx86/dfII/bin/64bit/virtuoso
 OSType                         lnx86
 ReasonForPlacingEditLock       Set lock by hiiLockFile
 FilePathUsedToEditLock         /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS.log
-TimeEditLocked                 Thu Oct 30 14:13:22 2025 CET
+TimeEditLocked                 Thu Nov  6 15:48:24 2025 CET

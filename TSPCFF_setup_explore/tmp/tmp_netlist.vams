@@ -1,0 +1,86 @@
+//***********************************
+// Auto generated file: do not edit
+//***********************************
+// Blackbox library for ADMS translation
+// from Verilog AMS to CDL netlist
+
+`include "disciplines.vams"
+module g45n1svt (d,g,s,b) ;
+    inout d,g,s,b;
+    electrical d,g,s,b ;
+    parameter integer m=1 ;
+    parameter real l=45e-9 ;
+    parameter real w=260e-9 ;
+endmodule
+
+module g45p1svt (d,g,s,b) ;
+    inout d,g,s,b;
+    electrical d,g,s,b ;
+    parameter integer m=1 ;
+    parameter real l=45e-9 ;
+    parameter real w=260e-9 ;
+endmodule
+
+// In order to check signal definitions
+`default_nettype none
+// In order to avoid confusion between Q ports and charges...
+`define VAMS_ELEC_DIS_ONLY
+`include "disciplines.vams"
+
+module INV ( VDD , VSS , A , Y );
+  inout       VDD ,  VSS ,  A , Y ;
+  parameter WN=145e-9 ;
+  parameter WP=214e-9 ;
+  
+  electrical VDD ;
+  electrical VSS ;
+  electrical A ;
+  electrical Y ;
+  g45n1svt #( .l(4.5e-08), .w(WN))  mn0 ( .d(Y) , .g(A) , .s(VSS), .b(VSS));
+  g45p1svt #( .l(4.5e-08), .w(WP))  mp0 ( .d(Y) , .g(A) , .s(VDD) , .b(VDD));
+endmodule
+
+
+
+module TSPCFF ( CK, D, QQ, VDD, VSS );
+  inout       CK, D, QQ, VDD, VSS ;
+
+  parameter l0 = 4.5e-08;
+  parameter wn0 = 145e-9 ;
+  parameter wp0 = 214e-9 ;
+
+  electrical VDD ;
+  electrical VSS ;
+  electrical D ;
+  electrical QQ ; // Q is a builtin function, can't be overwritten, this is not a mistake
+  electrical Qb ;
+  electrical CK ;
+  electrical CKb ;
+  electrical a ;
+  electrical b ;
+  electrical c ;
+  electrical x ;
+  electrical y ;
+
+  // CLK inverter
+  INV #(.WN(145e-9), .WP(215e-9)) clkinv (.VDD(VDD) , .VSS(VSS) , .A(CK) , .Y(CKb) ) ; // Sizes from the schematics, see perso.telecomparistech.fr/mathieu/ECE5IC04_TP/project/environment.html
+  // INV  clkinv (.VDD(VDD) , .VSS(VSS) , .A(CK) , .Y(CKb) );
+  // Q inverter
+  INV #(.WN(260e-9), .WP(390e-9)) qinv (.VDD(VDD) , .VSS(VSS) , .A(Qb) , .Y(QQ) ) ;
+  // INV qinv (.VDD(VDD) , .VSS(VSS) , .A(Qb) , .Y(QQ) ) ;
+  // ligne 1
+  g45p1svt #( .l(l0), .w(wp0))  mp1 ( .d(x) , .g(D) , .s(VDD), .b(VDD));
+  g45p1svt #( .l(l0), .w(wp0))  mp2 ( .d(b) , .g(CKb) , .s(VDD), .b(VDD));
+  g45p1svt #( .l(l0), .w(wp0))  mp3 ( .d(c) , .g(y) , .s(VDD), .b(VDD));
+
+  // ligne 2
+  g45n1svt #( .l(l0), .w(wn0))  mn4 ( .d(x) , .g(CKb) , .s(a), .b(VSS));
+  g45p1svt #( .l(l0), .w(wp0))  mp4 ( .d(y) , .g(x) , .s(b), .b(VDD));
+  g45p1svt #( .l(l0), .w(wp0))  mp5 ( .d(Qb) , .g(CKb) , .s(c), .b(VDD));
+
+  // ligne 3
+  g45n1svt #( .l(l0), .w(wn0))  mn1 ( .d(a) , .g(D) , .s(VSS), .b(VSS));
+  g45n1svt #( .l(l0), .w(wn0))  mn2 ( .d(y) , .g(CKb) , .s(VSS), .b(VSS));
+  g45n1svt #( .l(l0), .w(wn0))  mn3 ( .d(Qb) , .g(y) , .s(VSS), .b(VSS));
+  
+endmodule

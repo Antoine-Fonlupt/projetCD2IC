@@ -1,1 +1,1 @@
-("DFFHQX1:/\tDFFHQX1 gsclib045 schematic" (("open" (nil hierarchy "/{gsclib045 DFFHQX1 schematic }:r"))) nil)
+("TSPCFF:/\tTSPCFF TSPCFF_LIB layout" (("open" (nil hierarchy "/{TSPCFF_LIB TSPCFF layout }:a"))) nil)("TSPCFF:/\tTSPCFF TSPCFF_LIB schematic" (("open" (nil hierarchy "/{TSPCFF_LIB TSPCFF schematic }:a"))) (((-6.24375 3.21875) (2.775 10.16875)) "a" "Schematics" 4))("DFFHQX1:/\tDFFHQX1 gsclib045 schematic" (("open" (nil hierarchy "/{gsclib045 DFFHQX1 schematic }:r"))) nil)

@@ -115,3 +115,5 @@
 \a hiCloseWindow(swindow(1))
 \r t
 \# Memory report: Maximum memory size now 16,295 MB at UTC 2025.11.06 14:32:21.598
+\o Segmentation fault
+\# Memory report: Maximum memory size now 15,975 MB at UTC 2025.11.06 15:22:41.598
