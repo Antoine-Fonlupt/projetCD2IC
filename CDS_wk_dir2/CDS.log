@@ -896,3 +896,202 @@
 \a hiZoomInAtMouse()
 \i 1.495:1.2
 \r t
+\a hiSetCurrentWindow(window(3))
+\r t
+\a pteSetActiveLpp("Oxide drawing")
+\r nil
+\a pteSetSelectable("Oxide drawing" nil "Layers")
+\r t
+\a pteSetActiveLpp("Oxide drawing")
+\r nil
+\a pteSetSelectable("Oxide drawing" t "Layers")
+\r t
+\a pteShowUsedLPP(t)
+\r t
+\a pteSetSelectable("Oxide drawing" nil "Layers")
+\r t
+\a pteSetActiveLpp("Oxide drawing")
+\r nil
+\a pteSetSelectable("Oxide drawing" t "Layers")
+\r t
+\a leHiQuickAlign()
+\p > 
+\a leHiEditProp()
+\r t
+\a geiPlInvokePlistAction("editorNum0" "cancel")
+\r t
+\a mouseAddPt(t)
+\i 0.208:1.2035
+\r t
+\a leHiEditProp()
+\r t
+\a geiPlChangePlistCategory("editorNum0" "parameter")
+\r t
+\a geiPlChangePlistCategory("editorNum0" "property")
+\r t
+\a geiPlChangePlistCategory("editorNum0" "ROD")
+\r t
+\a geiPlInvokePlistAction("editorNum0" "cancel")
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a mouseSingleSelectPt()
+\i -0.345:1.495
+\r nil
+\a pteSetActiveLpp("PWdummy drawing")
+\r nil
+\a pteSetNoneVisible(?panel "Layers")
+\r t
+\a hiZoomOutAtMouse()
+\i 0.355:1.515
+\r t
+\a pteSetAllVisible(?panel "Layers")
+\r t
+\a hiResizeWindow(window(1) list(824:68 1780:867))
+\r t
+\a hiResizeWindow(window(1) list(823:68 1779:867))
+\r t
+\a hiResizeWindow(window(1) list(664:68 1779:488))
+\r t
+\a techManagerOpenTechToolBox()
+\r t
+\a hiResizeWindow(window(8) list(136:394 456:772))
+\r t
+\a tcDisplayDumpTechForm()
+\r t
+\a hiiSetCurrentForm('tcDumpTechForm)
+\r t
+\a tcDumpTechForm->tcBinaryTFLibCyclic->value="gpdk045"
+\r "gpdk045"
+\a tcDumpTechForm->tcBinaryTFLibCyclic->value="gsclib045_tech"
+\r "gsclib045_tech"
+\a tcDumpTechForm->tcDeviceDisclosure->value= t
+\r t
+\a tcDumpTechForm->tcDeviceDisclosure->value= nil
+\r nil
+\a tcDumpTechForm->tcLoadClassToggle->layerDefinitions->value =  t
+\r t
+\a hiFormDone(tcDumpTechForm)
+\p > 
+\a hiDBoxOK(tcvDBox)
+\r t
+\r t
+\a tcDisplayDumpTechForm()
+\r t
+\a hiFormDone(tcDumpTechForm)
+\p > 
+\a hiDBoxOK(tcvDBox)
+\r t
+\r t
+\a tcDisplaySaveTechForm()
+\p > 
+\a hiiSetCurrentForm('tcSaveTechForm)
+\r t
+\a hiFormDone(tcSaveTechForm)
+\p > 
+\a hiDBoxOK(tcvDBox)
+\r t
+\r t
+\r t
+\a tcDisplayLoadTechForm()
+\p > 
+\a hiiSetCurrentForm('tcLoadTechForm)
+\r t
+\a hiFormCancel(tcLoadTechForm)
+\r t
+\r nil
+\a hiResizeWindow(window(1) list(562:-161 1677:259))
+\r t
+\a hiCloseWindow(window(8))
+\r t
+\a hiResizeWindow(window(1) list(602:0 1717:420))
+\r t
+\a pipoDisplay(transStreamOutNewForm)
+\r t
+\a hiResizeWindow(window(1) list(592:-236 1707:184))
+\r t
+\a _xst_out_setGuiFieldValue( "techLib" "gsclib045_tech" )
+\r t
+\a _xst_out_setGuiFieldValue( "techLib" "gpdk045" )
+\r t
+\a _xst_out_setGuiFieldValue( "techLib" "gsclib045_tech" )
+\r t
+\a _xst_out_layerMapFormOpen(  )
+\r t
+\a _xst_out_layerMapFormClose( "0" )
+\r t
+\a _xst_out_setGuiFieldValue( "techLib" "gpdk045" )
+\r t
+\a hiResizeWindow(swindow(3) list(930:152 1830:842))
+\r t
+\a hiResizeWindow(swindow(3) list(974:152 1874:842))
+\r t
+\a hiSetCurrentWindow(window(7))
+\r t
+\a pteSetOption("contextByLS" t)
+\r t
+\a pteSetOption("contextByLS" nil)
+\r t
+\a pteShowUsedLPP(t)
+\r t
+\a pteSetActiveLpp("Metal1 drawing")
+\r nil
+\a pteSetActiveLpp("Metal1 drawing")
+\r nil
+\a pteSetSelectable("Metal1 drawing" nil "Layers")
+\r t
+\a pteSetActiveLpp("Metal1 drawing")
+\r nil
+\a pteSetSelectable("Metal1 drawing" t "Layers")
+\r t
+\a leHiEditDisplayOptions()
+\r t
+\a hiFormCancel(leDisplayOptionsForm) 
+\r t
+\a hiResizeWindow(swindow(3) list(-5:-5 1915:1024))
+\r t
+\a _deUpdateWindowMenu('leSessionWindowMenu7 7)
+\r t
+\a hiResizeWindow(window(1) list(755:272 1870:692))
+\r t
+\a pipoDisplay(transStreamOutNewForm)
+\a _xst_out_setGuiFieldValue( "techLib" "" )
+\r t
+\a _xst_out_setGuiFieldValue( "techLib" "gpdk045" )
+\r t
+\r t
+\a _xst_out_moreOptionsFormOpen(  )
+\r t
+\a _xst_out_moreOptionsFormCategoryIndex( "1:0" )
+\r t
+\a _xst_out_moreOptionsFormCategoryIndex( "0:1" )
+\r t
+\a _xst_out_moreOptionsFormCategoryIndex( "4" )
+\r t
+\a _xst_out_moreOptionsFormCategoryIndex( "3" )
+\r t
+\a _xst_out_moreOptionsFormCategoryIndex( "2" )
+\r t
+\a _xst_out_moreOptionsFormCategoryIndex( "1:2" )
+\r t
+\a _xst_out_moreOptionsFormCategoryIndex( "1:1" )
+\r t
+\a _xst_out_moreOptionsFormCategoryIndex( "1:0" )
+\r t
+\a _xst_out_moreOptionsFormCategoryIndex( "1:0" )
+\r t
+\a _xst_out_moreOptionsFormCategoryIndex( "0:1" )
+\r t
+\a _xst_out_moreOptionsFormCategoryIndex( "0:0" )
+\r t
+\a _xst_out_moreOptionsFormCategoryIndex( "1:0" )
+\r t
+\a _xst_out_moreOptionsFormClose( "0" )
+\r t
+\a _xst_out_setGuiFieldValue( "virtualMemory" "true" )
+\r t
+\a _xst_out_setGuiFieldValue( "virtualMemory" "false" )
+\r t
+\a _xst_out_mainFormHelp(  )
+\r t
