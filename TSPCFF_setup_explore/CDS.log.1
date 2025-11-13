@@ -109,3 +109,49 @@
 \r (("rectTrace[1.1.1]" "wRealTrace[1.1.4]") nil nil nil)
 \# Memory report: Maximum memory size now 15,998 MB at UTC 2025.11.06 14:57:42.598
 \o Segmentation fault
+\a hiCloseWindow(swindow(1))
+\r t
+\w Qt Warning: The X11 connection broke (error 1). Did the X11 server die?
+\e IO Error 11 (Resource temporarily unavailable) on Display ":0.0" at UTC 2025.11.06 16:31:39.578
+\e Aborting due to fatal X IO error.
+\w *WARNING* Process was terminated with SIGABRT signal
+\o Local time (crash) Thursday 06 November 2025, 05:31:39 PM
+\o INFO (DB-170018): (dbPanic) dumping stack
+\o libvirtuos_sh.so:voStackTrace+58()
+\o viva:dbPanic+444()
+\o libvirtuos_sh.so:voDoAbortFuncs+116()
+\o libvirtuos_sh.so:voSigAbortInfo+255()
+\o libc.so.6:+300138915()
+\o libc.so.6:+300462143()
+\o libc.so.6:gsignal+18()
+\o libc.so.6:abort+211()
+\o viva:gliXIOErrorHandler+561()
+\o viva:_hiEmulateXIOError+27()
+\o viva:_ZL14hiqtMsgHandler9QtMsgTypeRK18QMessageLogContextRK7QString+1399()
+\o 0x7fc005abcb7f
+\o libcdsQt5Core.so.5:_ZNK14QMessageLogger7warningEPKcz+153()
+\o libcdsQt5XcbQpa.so.5:_ZN14QXcbConnection16processXcbEventsEv+1467()
+\o libcdsQt5Core.so.5:_ZN7QObject5eventEP6QEvent+193()
+\o libcdsQt5Widgets.so.5:_ZN19QApplicationPrivate13notify_helperEP7QObjectP6QEvent+156()
+\o libcdsQt5Widgets.so.5:_ZN12QApplication6notifyEP7QObjectP6QEvent+577()
+\o libcdsQt5Core.so.5:_ZN16QCoreApplication15notifyInternal2EP7QObjectP6QEvent+264()
+\o libcdsQt5Core.so.5:_ZN23QCoreApplicationPrivate16sendPostedEventsEP7QObjectiP11QThreadData+733()
+\o 0x7fc005d08253
+\o libglib-2.0.so.0:g_main_context_dispatch+665()
+\o libglib-2.0.so.0:+387197931()
+\o libglib-2.0.so.0:g_main_context_iteration+44()
+\o libcdsQt5Core.so.5:_ZN20QEventDispatcherGlib13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+95()
+\o viva:hiiFillCIWInPortCB+1661()
+\o libil_sh.so:iliBGetc+68()
+\o libil_sh.so:ilGetCharPort+111()
+\o libil_sh.so:_Z12ilFillBufferPcPmiPv+265()
+\o libil_sh.so:_Z7ilyylexP9ILYYSTYPEP9ILYYLTYPEPv+23906()
+\o libil_sh.so:_Z9ilyyparsePvP18iltLocalParserData+2549()
+\o libil_sh.so:ilParserReent+49()
+\o libil_sh.so:ilReadport+537()
+\o libil_sh.so:iliTopLevel+336()
+\o viva:hiMainLoop+1119()
+\o viva:main+343()
+\o libc.so.6:+300053405()
+\o libc.so.6:__libc_start_main+133()
+\o viva:_start+41()

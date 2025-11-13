@@ -1,0 +1,23 @@
+;----------------------------------------------------------------------------
+; @(#)$CDS: assura version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.500.4 07/10/17 21:23 (sjfnl321) $
+; sub-version 4.1_USR5_HF11
+;----------------------------------------------------------------------------
+
+
+;----------------------------------------------------------------------------
+; avParameter Section
+; Created by the Assura UI
+;----------------------------------------------------------------------------
+
+avParameters(
+  ?inputLayout ( "df2" "TSPCFF_LIB" )
+  ?cellName "TSPCFF"
+  ?viewName "layout"
+  ?workingDirectory "./DRC"
+  ?rulesFile "/comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/assuraDRC.rul"
+  ?avrpt t
+  ?dbuPerUU 2000.0
+  ?flagNon45 t
+  ?flagOffGrid (0.005 1.0)
+  ?joinPins top
+)

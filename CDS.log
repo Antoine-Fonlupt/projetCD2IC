@@ -13061,3 +13061,9 @@
 \a hiZoomInAtMouse()
 \i 1.065:0.5
 \r t
+\o No internal errors were found.
+\w *WARNING* Process was terminated with SIGHUP signal
+\o Local time (crash) Thursday 06 November 2025, 05:31:28 PM
+\o X server:          The X.Org Foundation
+\o virtuoso has encountered a fatal internal application error and will now exit.
+\o A crash report file for this error can be found at: /tmp/crashReport_110625_173130_IC6.1.7-64b.500.14_afonlupt-25_tp-3a107-06.log

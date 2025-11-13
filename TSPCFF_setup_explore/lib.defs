@@ -1,0 +1,23 @@
+# OpenAccess File Created by Antoine Fonlupt,,, at Thu Nov 13 14:21:33 2025
+# assisted by CdsLibEditor
+# inlining INCLUDE /comelec/softs/opt/Cadence/releases/IC617/share/cdssetup/dfII/cds.lib
+DEFINE cdsDefTechLib /comelec/softs/opt/Cadence/releases/IC617/tools.lnx86/dfII/etc/cdsDefTechLib
+# inlining INCLUDE /comelec/softs/opt/Cadence/releases/IC617/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+DEFINE basic /comelec/softs/opt/Cadence/releases/IC617/tools.lnx86/dfII/etc/cdslib/basic
+DEFINE US_8ths /comelec/softs/opt/Cadence/releases/IC617/tools.lnx86/dfII/etc/cdslib/sheets/US_8ths
+# inlining INCLUDE /comelec/softs/opt/Cadence/releases/IC617/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+# $Source: /cvsrep/group/cdsLibs/src/cdsLibs/cdslib.spectre,v $
+# $Author: p4admin $
+# $Revision: #1 $
+# $Date: 2017/08/01 $
+# $State: Exp $
+DEFINE rfLib /comelec/softs/opt/Cadence/releases/IC617/tools.lnx86/dfII/samples/artist/rfLib
+DEFINE rfExamples /comelec/softs/opt/Cadence/releases/IC617/tools.lnx86/dfII/samples/artist/rfExamples
+DEFINE ahdlLib /comelec/softs/opt/Cadence/releases/IC617/tools.lnx86/dfII/samples/artist/ahdlLib
+# inlining INCLUDE /comelec/softs/opt/Cadence/releases/IC617/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+DEFINE analogLib /comelec/softs/opt/Cadence/releases/IC617/tools.lnx86/dfII/etc/cdslib/artist/analogLib
+DEFINE functional /comelec/softs/opt/Cadence/releases/IC617/tools.lnx86/dfII/etc/cdslib/artist/functional
+# inlining INCLUDE /comelec/softs/opt/Cadence/releases/IC617/share/cdssetup/hdl/cds.lib
+# inlining INCLUDE /comelec/softs/opt/Cadence/releases/IC617/share/cdssetup/pic/cds.lib
+# inlining INCLUDE /comelec/softs/opt/Cadence/releases/IC617/share/cdssetup/sg/cds.lib
+DEFINE TSPCFF_LIB /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_LIB

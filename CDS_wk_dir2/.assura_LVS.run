@@ -1,0 +1,3 @@
+#!/bin/sh -f
+/comelec/softs/opt/Cadence/releases/ASSURA41_617/tools.lnx86/assura/bin/assura /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/TSPCFF.rsf -cdslib /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/cds.lib -gui
+exit $?

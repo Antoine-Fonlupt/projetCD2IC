@@ -1,0 +1,5 @@
+SOFTINCLUDE /comelec/softs/opt/Cadence/releases/IC617/share/cdssetup/cds.lib
+#Removed by ddDeleteObj: DEFINE TSPCFF2 /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF2
+DEFINE TSPCFF_LIB /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_LIB
+DEFINE avTech /comelec/softs/opt/Cadence/releases/ASSURA41_617/tools.lnx86/assura/etc/avtech/avTech
+DEFINE gpdk045_v_4_0 /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0

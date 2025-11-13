@@ -1,0 +1,254 @@
+\o Program:		@(#)$CDS: libManager version 6.1.7 - CAT35 08/11/2017 18:55 (sjfhw311) $
+\o Sub version:		sub-version  s054 
+\o Arguments:		-unmapped -mpssession virtuoso3133561 -mpshost tp-3a107-06 
+\o Working Directory:	tp-3a107-06:/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2
+\o 64-bit offsets
+\o Qt version: 		4.8.5
+\o changeWorkingDir("/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o Log file is "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/./libManager.log".
+\o Opening libManager window.
+\a nrSetWindowVisibility(cdsLibManager "show")
+\o MPS service: map window
+\a nrSetCurrentWindow(cdsLibManager)
+\o Library Manager customization server connected.
+\a nrResizeWindow(cdsLibManager list(844 323 908 491))
+\a cdsLibManager->libListBox->value = "gpdk045"
+\a cdsLibManager->libLineEdit->value = "gpdk045"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "gpdk045"
+\a cdsLibManager->libLineEdit->value = "gpdk045"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "TSPCFF_LIB"
+\a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
+\a cdsLibManager->cellListBox->value = "TSPCFF"
+\a cdsLibManager->cellLineEdit->value = "TSPCFF"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "TSPCFF_LIB"
+\a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
+\a cdsLibManager->cellListBox->value = "TSPCFF"
+\a cdsLibManager->cellLineEdit->value = "TSPCFF"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "TSPCFF_LIB"
+\a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
+\a cdsLibManager->cellListBox->value = "TSPCFF"
+\a cdsLibManager->cellLineEdit->value = "TSPCFF"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a lmgrLogShowPopup("mainListPopup2" 49 29 2 "schematic")
+\a cdsLibManager->copySimpleButton->value = t
+\a basicCopyForm->CategoryCellsEdit->value = "*"
+\a basicCopyForm->CellsSkipLibraries->value = t
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->ViewsSkipLibraries->value = t
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CopyFromLibrary->value = "GSCLIB045"
+\a basicCopyForm->CopyToLibrary->value = "GSCLIB045"
+\a basicCopyForm->CopyFromLibrary->value = "TSPCFF_LIB"
+\a basicCopyForm->CopyFromCell->value = "TSPCFF"
+\a basicCopyForm->CopyFromView->value = "schematic"
+\a basicCopyForm->CopyToLibrary->value = "TSPCFF_LIB"
+\a basicCopyForm->CopyToCell->value = "TSPCFF"
+\a basicCopyForm->CopyToView->value = "schematic"
+\a basicCopyForm->ViewsViewsToCopy->value = "schematic"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = ""
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "GSCLIB045 US_8ths analogLib avTech basic cdsDefTechLib giolib045 gpdk045 gsclib045 gsclib045_backbias gsclib045_hvt gsclib045_lvt gsclib045_tech"
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "GSCLIB045 US_8ths analogLib avTech basic cdsDefTechLib giolib045 gpdk045 gsclib045 gsclib045_backbias gsclib045_hvt gsclib045_lvt gsclib045_tech"
+\a nrSetWindowVisibility(basicCopyForm "show")
+\a nrSetCurrentWindow(basicCopyForm)
+\a nrResizeWindow(basicCopyForm list(1076 220 444 698))
+\a basicCopyForm->CopyToView->value = "schematic_old"
+\a nrDialogAccept(basicCopyForm)
+\a basicCopyForm->OK->value = t
+\a basicCopyForm->CopyToView->value = "schematic_old"
+\o Beginning simple copy to library "TSPCFF_LIB".
+\o Processing files to be copied...
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(1161 502 273 133))
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(1162 502 273 133))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "TSPCFF_LIB"
+\a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
+\a cdsLibManager->cellListBox->value = "TSPCFF"
+\a cdsLibManager->cellLineEdit->value = "TSPCFF"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "GSCLIB045 US_8ths analogLib avTech basic cdsDefTechLib giolib045 gpdk045 gsclib045 gsclib045_backbias gsclib045_hvt gsclib045_lvt gsclib045_tech"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "schematic_old"
+\a cdsLibManager->viewLineEdit->value = "schematic_old"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a lmgrLogShowPopup("mainListPopup2" 63 8 2 "layout")
+\a cdsLibManager->copySimpleButton->value = t
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->ViewsViewsToCopy->value = ""
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CopyFromCell->value = ""
+\a basicCopyForm->CopyFromView->value = ""
+\a basicCopyForm->CopyToCell->value = ""
+\a basicCopyForm->CopyToView->value = ""
+\a basicCopyForm->CopyFromLibrary->value = ""
+\a basicCopyForm->CopyToLibrary->value = ""
+\a basicCopyForm->CopyFromLibrary->value = "GSCLIB045"
+\a basicCopyForm->CopyToLibrary->value = "GSCLIB045"
+\a basicCopyForm->CopyFromLibrary->value = "TSPCFF_LIB"
+\a basicCopyForm->CopyFromCell->value = "TSPCFF"
+\a basicCopyForm->CopyFromView->value = "layout"
+\a basicCopyForm->CopyToLibrary->value = "TSPCFF_LIB"
+\a basicCopyForm->CopyToCell->value = "TSPCFF"
+\a basicCopyForm->CopyToView->value = "layout"
+\a basicCopyForm->ViewsViewsToCopy->value = "layout"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = ""
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "GSCLIB045 US_8ths analogLib avTech basic cdsDefTechLib giolib045 gpdk045 gsclib045 gsclib045_backbias gsclib045_hvt gsclib045_lvt gsclib045_tech"
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "GSCLIB045 US_8ths analogLib avTech basic cdsDefTechLib giolib045 gpdk045 gsclib045 gsclib045_backbias gsclib045_hvt gsclib045_lvt gsclib045_tech"
+\a nrSetWindowVisibility(basicCopyForm "show")
+\a nrSetCurrentWindow(basicCopyForm)
+\a nrResizeWindow(basicCopyForm list(1076 220 444 698))
+\a basicCopyForm->CopyToView->value = "layout_save"
+\a nrDialogAccept(basicCopyForm)
+\a basicCopyForm->OK->value = t
+\a basicCopyForm->CopyToView->value = "layout_save"
+\o Beginning simple copy to library "TSPCFF_LIB".
+\o Processing files to be copied...
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(1162 502 273 133))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "TSPCFF_LIB"
+\a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
+\a cdsLibManager->cellListBox->value = "TSPCFF"
+\a cdsLibManager->cellLineEdit->value = "TSPCFF"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "GSCLIB045 US_8ths analogLib avTech basic cdsDefTechLib giolib045 gpdk045 gsclib045 gsclib045_backbias gsclib045_hvt gsclib045_lvt gsclib045_tech"
+\a nrSetCurrentWindow(cdsLibManager)
+\a lmgrLogShowPopup("mainListPopup2" 60 7 2 "layout")
+\a cdsLibManager->copySimpleButton->value = t
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->ViewsViewsToCopy->value = ""
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CopyFromCell->value = ""
+\a basicCopyForm->CopyFromView->value = ""
+\a basicCopyForm->CopyToCell->value = ""
+\a basicCopyForm->CopyToView->value = ""
+\a basicCopyForm->CopyFromLibrary->value = ""
+\a basicCopyForm->CopyToLibrary->value = ""
+\a basicCopyForm->CopyFromLibrary->value = "GSCLIB045"
+\a basicCopyForm->CopyToLibrary->value = "GSCLIB045"
+\a basicCopyForm->CopyFromLibrary->value = "TSPCFF_LIB"
+\a basicCopyForm->CopyFromCell->value = "TSPCFF"
+\a basicCopyForm->CopyFromView->value = "layout"
+\a basicCopyForm->CopyToLibrary->value = "TSPCFF_LIB"
+\a basicCopyForm->CopyToCell->value = "TSPCFF"
+\a basicCopyForm->CopyToView->value = "layout"
+\a basicCopyForm->ViewsViewsToCopy->value = "layout"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = ""
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "GSCLIB045 US_8ths analogLib avTech basic cdsDefTechLib giolib045 gpdk045 gsclib045 gsclib045_backbias gsclib045_hvt gsclib045_lvt gsclib045_tech"
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "GSCLIB045 US_8ths analogLib avTech basic cdsDefTechLib giolib045 gpdk045 gsclib045 gsclib045_backbias gsclib045_hvt gsclib045_lvt gsclib045_tech"
+\a nrSetWindowVisibility(basicCopyForm "show")
+\a nrSetCurrentWindow(basicCopyForm)
+\a basicCopyForm->CopyToView->value = "layout_ok"
+\a nrDialogAccept(basicCopyForm)
+\a basicCopyForm->OK->value = t
+\a basicCopyForm->CopyToView->value = "layout_ok"
+\o Beginning simple copy to library "TSPCFF_LIB".
+\o Processing files to be copied...
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(1157 473 273 133))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "TSPCFF_LIB"
+\a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
+\a cdsLibManager->cellListBox->value = "TSPCFF"
+\a cdsLibManager->cellLineEdit->value = "TSPCFF"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "GSCLIB045 US_8ths analogLib avTech basic cdsDefTechLib giolib045 gpdk045 gsclib045 gsclib045_backbias gsclib045_hvt gsclib045_lvt gsclib045_tech"
+\a nrSetCurrentWindow(cdsLibManager)

@@ -1,9 +1,9 @@
-\# Program start time:     UTC 2025.11.06 13:08:32.389
-\# Local time: CET (UTC+01:00) 2025.11.06 14:08:32.389
-\o Program:		@(#)$CDS: viva version 6.1.8-64b 06/29/2021 19:15 (sjfhw316) $
-\o Hierarchy:		/comelec/softs/opt/Cadence/releases/IC618/tools.lnx86/dfII/
-\o Sub version:		sub-version  IC6.1.8-64b.500.19  (64-bit addresses)
-\# Command line:	/comelec/softs/opt/Cadence/releases/IC618/tools.lnx86/dfII/bin/64bit/viva -datadir psf
+\# Program start time:     UTC 2025.11.13 13:26:44.770
+\# Local time: CET (UTC+01:00) 2025.11.13 14:26:44.770
+\o Program:		@(#)$CDS: virtuoso version 6.1.7-64b 09/01/2017 12:09 (sjfhw313) $
+\o Hierarchy:		/comelec/softs/opt/Cadence/releases/IC617/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.7-64b.500.14  (64-bit addresses)
+\# Command line:	/comelec/softs/opt/Cadence/releases/IC617/tools.lnx86/dfII/bin/64bit/virtuoso
 \# Host name (type):	tp-3a107-06 (x86_64)
 \# Operating system:	Linux 6.1.0-40-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.153-1 (2025-09-20)
 \# Linux /etc/issue:	Debian GNU/Linux 12 \n \l
@@ -13,26 +13,26 @@
 \# Depth of Visual (Root):	24 (24)
 \# Number of Planes Used:	24
 \# X version:		11.0 (vendor release 12101007)
-\# X resource pool:	base 0x3c00000, mask 0x1fffff (2097151), shift 0
+\# X resource pool:	base 0x3a00000, mask 0x1fffff (2097151), shift 0
 \# 			current id 0x0, current max 0x1ffffa (2097146)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	        906 MB
-\# Available memory:	     16,904 MB
+\# Initial sbrk value:	        940 MB
+\# Available memory:	     12,808 MB
 \# System memory:	     19,583 MB
-\# Maximum memory size:	     18,725 MB
-\# Max mem available:	     16,953 MB
-\# Initial memory used:	         49 MB
-\#        process size:	        586 MB
+\# Maximum memory size:	     18,739 MB
+\# Max mem available:	     12,905 MB
+\# Initial memory used:	         96 MB
+\#        process size:	        951 MB
 \# Thread usage limits (effective/default):	maxthreads 62496/62496 maxload 20.00/20.00
-\# Qt version:		5.9.1
+\# Qt version:		4.8.5
 \# Window Manager:	other
 \# User Name:		afonlupt-25
 \o Working Directory:	tp-3a107-06:/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore
-\# Process Id:		859741
+\# Process Id:		3125621
 \o 
-\o COPYRIGHT (C) 1992-2021  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
-\o           (C) 1992-2021  UNIX SYSTEMS Laboratories INC.,
+\o COPYRIGHT (C) 1992-2017  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2017  UNIX SYSTEMS Laboratories INC.,
 \o                          Reproduced with permission.
 \o 
 \o This Cadence Design Systems program and online documentation are
@@ -42,78 +42,144 @@
 \o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
 \o Use/reproduction/disclosure is subject to restriction
 \o set forth at FAR 1252.227-19 or its equivalent.
-\o Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.37s.
-\o Loading ams.cxt 
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
 \o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.13s.
 \p > 
-\o Loading dal.cxt 
-\o Loading awv.cxt 
-\o Loading viva.cxt 
-\o Loading oasis.cxt 
-\# Memory report: using         154 MB, process size 746 MB at UTC 2025.11.06 13:08:37.677
-\a hiSetCurrentWindow(window(2))
+\o Loading pe.cxt 
+\a _treeSetOpcGUI(t)
 \r t
-\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran")
+\# Available memory:         12,811 MB at UTC 2025.11.13 13:26:55.171
+\# Memory report: Maximum memory size now 12,990 MB at UTC 2025.11.13 13:26:55.171
+\# Thread usage report: 21 active threads, active load 1.00 at UTC 2025.11.13 13:26:55.171
+\a ddsOpenLibManager()
 \r t
-\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench")
+\i ddCreateLib("TSPCFF_LIB" "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_LIB")
+\t dd:0x3ef888f0
+\p > 
+\i ddsServOpen("TSPCFF_LIB" "TSPCFF" "layout" "edit" nil)
+\o Loading le.cxt 
+\p > 
+\o Loading mpt.cxt 
+\a hiDBoxUser(_icLicLicenseQuestionDBox nil 3)
 \r t
-\# Available memory:         16,876 MB at UTC 2025.11.06 13:08:42.597
-\# Memory report: Maximum memory size now 17,037 MB at UTC 2025.11.06 13:08:42.597
-\# Thread usage report: 25 active threads, active load 1.40 at UTC 2025.11.06 13:08:42.597
-\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/simu")
-\r t
-\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/bdut")
-\r t
-\# Memory report: using         324 MB, process size 2,259 MB at UTC 2025.11.06 13:08:47.751
-\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench")
-\r t
-\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "deleteObjects")
-\r t
-\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "splitAllStrips")
+\o *INFO* (icLic-302) License Virtuoso_Layout_Suite_GXL ("95321") was used to run Layout L.
+\w *WARNING* (TECH-2000152): The attached technology library 'gpdk045' for design library 'TSPCFF_LIB' was not found.
+\w       Attach an existing technology library to the design library or define the missing technology library 'gpdk045' in your cds.lib file.
+\w       The default technology file will be used.
+\w *WARNING* (GE-2125): Failed to get the manufacturing grid (mfgGridResolution) for the technology tech.db associated to the cellview TSPCFF_LIB/TSPCFF/layout.
+\w *WARNING* (GE-2125): Failed to get the manufacturing grid (mfgGridResolution) for the technology tech.db associated to the cellview TSPCFF_LIB/TSPCFF/layout.
+\o (LE-101216): No valid layer-purpose pairs. The first layer-purpose pair "background drawing" is set to
+\o valid.
+\o Loading drdEdit.cxt 
+\o Loading soi.cxt 
+\o Loading wsp.cxt 
+\o Load shared object file /comelec/softs/opt/Cadence/releases/ASSURA41_617/tools.lnx86/assura/lib/64bit/libavview.so
+\o Version:  @(#)$CDS: libavview.so version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.500.4 07/10/17 21:50 (sjfnl321) $
+\# Memory report: using         234 MB, process size 1,127 MB at UTC 2025.11.13 13:31:01.342
+\o The QRC UI context file was successfully loaded
+\o INFO: Adding Quantus QRC SND Analysis into Assura Menu
+\o *INFO* avTech library doesn't exist.
+\o *INFO* The default avTech will be added to list of libraries
+\o Loading layers.cxt 
+\o *INFO* avTech library /comelec/softs/opt/Cadence/releases/ASSURA41_617/tools.lnx86/assura/etc/avtech/avTech was added successfully
+\o Loading lo.cxt 
+\o Loading vb.cxt 
+\o Loading see.cxt 
+\o Loading oi.cxt 
+\o Loading treeAssistant.cxt 
+\o Loading asst.cxt 
+\o Loading mtv.cxt 
+\o Loading leToolbox.cxt 
+\o Loading lce.cxt 
+\o Loading hsm.cxt 
+\a when(dwindow('ptePaletteAssistant1) hiMapWindow(dwindow('ptePaletteAssistant1)))
 \r t
 \a hiResizeWindow(swindow(1) list(-5:-5 1915:1024))
 \r t
-\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "deleteObjects")
+\a hiZoomInAtMouse()
+\i -1.1:2.5
 \r t
-\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "deleteObjects")
+\a hiZoomInAtMouse()
+\i -1.1:2.5
 \r t
-\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "deleteObjects")
-\r t
-\a hiSetCurrentWindow(window(2))
-\r t
-\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/bdut")
-\r t
-\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "stopPreparedMeasurementSignalListener")
-\r t
-\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "deleteObjects")
-\r t
-\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "deleteObjects")
-\r t
-\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "deleteObjects")
-\r t
-\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/bdut/dut")
-\r t
-\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/bdut/cmos_tr")
-\r t
-\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/bdut/cmos_clk_tr")
-\r t
-\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/bdut/cmos_tr")
-\r t
-\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/bdut/cmos_clk_tr")
-\r t
-\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/bdut/cmos_tr")
-\r t
-\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "deleteObjects")
-\r t
-\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/bdut/cmos_clk_tr")
-\r t
-\a rdbSetCurrentDirectory("unbound" "./psf/tran-tran/testbench/bdut/cmos_tr")
-\r t
-\o Fatal error: glibc detected an invalid stdio handle
-\o Aborted
-\# Memory report: Maximum memory size now 16,681 MB at UTC 2025.11.06 13:24:51.598
+\a mouseSingleSelectPt()
+\i -0.7:2.5
+\r nil
+\a hiGetCurrentWindow()->stopLevel = dbGetMaxHierDepth()-1
+\r 31
 \a hiCloseWindow(swindow(1))
 \r t
-\# Memory report: Maximum memory size now 16,295 MB at UTC 2025.11.06 14:32:21.598
-\o Segmentation fault
-\# Memory report: Maximum memory size now 15,975 MB at UTC 2025.11.06 15:22:41.598
+\i ddCreateLib("gpdk045_v_4_0" "/comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0")
+\o Error (cif): 'system error' open for write : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/cdsinfo.tag.
+\o 
+\w *WARNING* ddCreateLib: can not make /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/cdsinfo.tag file for library 'gpdk045_v_4_0'.
+\t dd:0x412b6d90
+\p > 
+\i ddsServOpen("TSPCFF_LIB" "TSPCFF" "layout" "edit" nil)
+\o *INFO* (icLic-302) License Virtuoso_Layout_Suite_GXL ("95321") was used to run Layout L.
+\w *WARNING* (GE-2125): Failed to get the manufacturing grid (mfgGridResolution) for the technology tech.db associated to the cellview TSPCFF_LIB/TSPCFF/layout.
+\w *WARNING* (GE-2125): Failed to get the manufacturing grid (mfgGridResolution) for the technology tech.db associated to the cellview TSPCFF_LIB/TSPCFF/layout.
+\a when(dwindow('ptePaletteAssistant2) hiMapWindow(dwindow('ptePaletteAssistant2)))
+\r t
+\a mouseSingleSelectPt()
+\i 4.9:-1.8
+\r nil
+\a hiGetCurrentWindow()->stopLevel = dbGetMaxHierDepth()-1
+\r 31
+\a mouseSingleSelectPt()
+\i 5.4:1
+\r t
+\a leHiEditProp()
+\w *WARNING* (TECH-2000000): techGetTechFileByLibName: Library not found.
+\w *WARNING* (DB-270172): dbGetAnyInstMaster: Failed to open cellview gsclib045_tech/cellTmpl/layout because cellView database does not exist.
+\w *WARNING* Unable to set cdf instance information for the master cellView of instance I1 does not have a master.
+\w *WARNING* (TECH-2000000): techGetTechFileByLibName: Library not found.
+\w *WARNING* (DB-270172): dbGetAnyInstMaster: Failed to open cellview gsclib045_tech/cellTmpl/layout because cellView database does not exist.
+\w *WARNING* (DB-270230): dbGetCellViewCellType: invalid cellview specified
+\w *WARNING* Unable to set cdf instance information for the master cellView of instance I1 does not have a master.
+\w *WARNING* (DB-270172): dbGetAnyInstMaster: Failed to open cellview gsclib045_tech/cellTmpl/layout because cellView database does not exist.
+\w *WARNING* (DB-270000): dbIsRangeProp: Library gsclib045_tech not found.
+\w *WARNING* (DB-270000): dbIsRangeProp: Library gsclib045_tech not found.
+\w *WARNING* (DB-270172): dbGetAnyInstMaster: Failed to open cellview gsclib045_tech/cellTmpl/layout because cellView database does not exist.
+\w *WARNING* (ROD-1047) rodGetSystemHandle: Unable to get master cvId for ROD instance object "I1"
+\w *WARNING* (TECH-2000000): techGetTechFileByLibName: Library not found.
+\w *WARNING* (TECH-2000000): techGetTechFileByLibName: Library not found.
+\w *WARNING* (TECH-2000000): techGetTechFileByLibName: Library not found.
+\w *WARNING* (TECH-2000000): techGetTechFileByLibName: Library not found.
+\r t
+\a _lePropEditLibBrowserCB("editorNum0", "Edit Instance Properties", "gsclib045_tech", "cellTmpl", "layout")
+\r t
+\a geiPlChangePlistCategory("editorNum0" "property")
+\r t
+\a geiPlChangePlistCategory("editorNum0" "attribute")
+\r t
+\w *WARNING* (TECH-2000000): techGetTechFileByLibName: Library not found.
+\a mouseSingleSelectPt()
+\i 0.6:-2.4
+\r nil
+\a mouseSingleSelectPt()
+\i 0.1:-3.8
+\r nil
+\a mouseSingleSelectPt()
+\i 4.4:-3.1
+\r nil
+\a hiCloseWindow(swindow(2))
+\r t
+\a hiQuit()
+\p > 
+\a hiDBoxOK(hiQuitDBox)
+\r t
+\o 
+\# Memory report: on exit            260 MB, process size 1,155 MB at UTC 2025.11.13 13:41:17.353
+\# Memory report: peak usage         260 MB, process size 1,155 MB
