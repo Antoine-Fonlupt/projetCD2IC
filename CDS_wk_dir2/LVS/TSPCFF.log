@@ -6,22 +6,32 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.500.4 07/10/2017 21:38 (sjfnl321) $
 sub-version 4.1_USR5_HF11, integ signature 2017-07-10-2113
 
-run on tp-3a107-06 from /comelec/softs/opt/Cadence/releases/ASSURA41_617/tools.lnx86/assura/bin/64bit/assura on Thu Nov 13 16:10:44 2025
+run on tp-3a107-06 from /comelec/softs/opt/Cadence/releases/ASSURA41_617/tools.lnx86/assura/bin/64bit/assura on Thu Nov 13 17:05:15 2025
 
 
 Starting /comelec/softs/opt/Cadence/releases/ASSURA41_617//tools.lnx86/assura/bin/aveng /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/TSPCFF.rsf -exec1 -LVS -cdslib /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/cds.lib
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.500.4 07/10/2017 21:38 (sjfnl321) $
 sub-version 4.1_USR5_HF11, integ signature 2017-07-10-2113
 
-run on tp-3a107-06 from /comelec/softs/opt/Cadence/releases/ASSURA41_617/tools.lnx86/assura/bin/64bit/aveng on Thu Nov 13 16:10:45 2025
+run on tp-3a107-06 from /comelec/softs/opt/Cadence/releases/ASSURA41_617/tools.lnx86/assura/bin/64bit/aveng on Thu Nov 13 17:05:15 2025
 
+
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
  Summary Report: TSPCFF.sum
  RSF           : /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/TSPCFF.rsf
  Library Name  : TSPCFF_LIB
  CDSLIB Path   : "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/cds.lib"
  Cell Name     : TSPCFF
  View Name     : layout
- Rules File    : /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/setup/tpt_assura/extract.rul
+ Rules File    : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/./extract.rul
  Options       : -exec1 -LVS -cdslib /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/cds.lib 
  Work Directory: /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS
  Operating Mode: Legacy Mode is Off
@@ -34,12 +44,22 @@ avlck:          you complete the configuration step. This manual is included wit
 avlck:          the Cadence product documentation.
 avlck:   ERROR: The command /comelec/softs/opt/Cadence/releases/ASSURA41_617/share/oa/bin/sysname returned an error status:
                             unknown
-Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.13s.
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.12s.
 @(#)$CDS: dfIIToVdb_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.500.4 07/10/2017 21:49 (sjfnl321) $
 sub-version 4.1_USR5_HF11, integ signature 2017-07-10-2113
 
-run on tp-3a107-06 from /comelec/softs/opt/Cadence/releases/ASSURA41_617/tools.lnx86/assura/bin/64bit/dfIIToVdb on Thu Nov 13 16:10:47 2025
+run on tp-3a107-06 from /comelec/softs/opt/Cadence/releases/ASSURA41_617/tools.lnx86/assura/bin/64bit/dfIIToVdb on Thu Nov 13 17:05:17 2025
 
+
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
 Loading gpdk045/libInit.il ...
 	Loading gpdk045/loadCxt.ile ... done!
 	Loading context 'gpdk045' from library 'gpdk045' ... done!
@@ -90,17 +110,17 @@ Reading the design data...
 Finished dfIIToVdb.
 
 Building the VDB part 2 in background mode.
-avlck:   ERROR: The command /comelec/softs/opt/Cadence/releases/ASSURA41_617/share/oa/bin/sysname returned an error status:
-                            unknown
-avlck:    INFO: Note that OpenAccess (OA) requires running the Configure phase.
-avlck:          See the "OpenAccess Installation and Configuration Guide" before
-avlck:          you complete the configuration step. This manual is included with
-avlck:          the Cadence product documentation.
 
 Building tables for LVS Preprocessing in background mode.
 
 
 Starting /comelec/softs/opt/Cadence/releases/ASSURA41_617/tools.lnx86/assura/bin/vdbToCells /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS TSPCFF
+avlck:    INFO: Note that OpenAccess (OA) requires running the Configure phase.
+avlck:          See the "OpenAccess Installation and Configuration Guide" before
+avlck:          you complete the configuration step. This manual is included with
+avlck:          the Cadence product documentation.
+avlck:   ERROR: The command /comelec/softs/opt/Cadence/releases/ASSURA41_617/share/oa/bin/sysname returned an error status:
+                            unknown
 avlck:    INFO: Note that OpenAccess (OA) requires running the Configure phase.
 avlck:          See the "OpenAccess Installation and Configuration Guide" before
 avlck:          you complete the configuration step. This manual is included with
@@ -117,7 +137,7 @@ Checking out license for Assura_LVS
 Checking out license for Phys_Ver_Sys_LVS_XL
 @(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.500.4 07/10/2017 21:49 (sjfnl321) $
 sub-version 4.1_USR5_HF11, integ signature 2017-07-10-2113
-run on tp-3a107-06 at Thu Nov 13 16:10:51 2025
+run on tp-3a107-06 at Thu Nov 13 17:05:20 2025
 
 *************************************************************** 
 
@@ -135,7 +155,7 @@ Virtuoso Framework License (111) was checked out successfully. Total checkout ti
 @(#)$CDS: dfIIToVldb_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.500.4 07/10/2017 21:48 (sjfnl321) $
 sub-version 4.1_USR5_HF11, integ signature 2017-07-10-2113
 
-run on tp-3a107-06 from /comelec/softs/opt/Cadence/releases/ASSURA41_617/tools.lnx86/assura/bin/64bit/dfIIToVldb on Thu Nov 13 16:10:53 2025
+run on tp-3a107-06 from /comelec/softs/opt/Cadence/releases/ASSURA41_617/tools.lnx86/assura/bin/64bit/dfIIToVldb on Thu Nov 13 17:05:21 2025
 
 
 *************************************************************** 
@@ -148,7 +168,8 @@ run on tp-3a107-06 from /comelec/softs/opt/Cadence/releases/ASSURA41_617/tools.l
 
 *************************************************************** 
 
-*WARNING* No tech lib map file 'assura_tech.lib' or 'pvtech.lib' found
+
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
 Top Cell Library: "TSPCFF_LIB"
 Top Cell Name: "TSPCFF"
 Top Cell View: "schematic"
@@ -208,7 +229,7 @@ Executing: bulk = cellBoundary(root)
 Building the VDB part 3 in background mode.
 
 Finished building the VDB. VDB build times for main process:
-cpu: 0.03  elap: 8  pf: 0  in: 0  out: 80  virt: 101M  phys: 589M
+cpu: 0.04  elap: 6  pf: 0  in: 0  out: 72  virt: 101M  phys: 598M
 
 Running the Task Processor, 1 cells, 2906 steps...
 
@@ -769,19 +790,25 @@ Executing: innerDiaValLyr_g45inda = _measureSIParameter((innerDia IND_SPIRAL_T?5
 Executing: extractMOS("g45n1svt" _nmos1v (poly_conn "G") (ndiff_conn "S" "D") (pwell "B"...
          6 'g45n1svt' created in cell 'TSPCFF layout TSPCFF_LIB'.
 
-Executing: attachParameter(sd_areaS ("ad" "D") ("as" "S") _nmos1v shared)
+Executing: attachParameter(w "w" _nmos1v)
 
-Executing: attachParameter(sd_periS ("pd" "D") ("ps" "S") _nmos1v shared)
+Executing: attachParameter(l "l" _nmos1v)
 
-Executing: attachParameter(width "w" _nmos1v)
+Executing: attachParameter(ad "ad" _nmos1v)
 
-Executing: attachParameter(length "l" _nmos1v)
+Executing: attachParameter(as "as" _nmos1v)
 
-Executing: width = measureParameter(length (_nmos1v butting ndiff_conn) 5e-07)
+Executing: attachParameter(pd "pd" _nmos1v)
 
-Executing: area = measureParameter(area (_nmos1v) 1e-12)
+Executing: attachParameter(ps "ps" _nmos1v)
 
-Executing: length = calculateParameter((area / width))
+Executing: width = measureParameter(length (_nmos1v butting ndiff_conn) 0.5)
+
+Executing: area = measureParameter(area (_nmos1v))
+
+Executing: w = calculateParameter((width * 1e-06))
+
+Executing: l = calculateParameter(((area / width) * 1e-06))
 
 Executing: gL = calculateParameter((len * 1000000.0))
 
@@ -813,19 +840,25 @@ Executing: attachParameter(scc "scc" gate)
 
 Executing: extractMOS("g45n1hvt" _nmos1v_hvt (poly_conn "G") (ndiff_conn "S" "D") (pwell...
 
-Executing: attachParameter(sd_areaS ("ad" "D") ("as" "S") _nmos1v_hvt shared)
+Executing: attachParameter(w "w" _nmos1v_hvt)
 
-Executing: attachParameter(sd_periS ("pd" "D") ("ps" "S") _nmos1v_hvt shared)
+Executing: attachParameter(l "l" _nmos1v_hvt)
 
-Executing: attachParameter(width "w" _nmos1v_hvt)
+Executing: attachParameter(ad "ad" _nmos1v_hvt)
 
-Executing: attachParameter(length "l" _nmos1v_hvt)
+Executing: attachParameter(as "as" _nmos1v_hvt)
 
-Executing: width = measureParameter(length (_nmos1v_hvt butting ndiff_conn) 5e-07)
+Executing: attachParameter(pd "pd" _nmos1v_hvt)
 
-Executing: area = measureParameter(area (_nmos1v_hvt) 1e-12)
+Executing: attachParameter(ps "ps" _nmos1v_hvt)
 
-Executing: length = calculateParameter((area / width))
+Executing: width = measureParameter(length (_nmos1v_hvt butting ndiff_conn) 0.5)
+
+Executing: area = measureParameter(area (_nmos1v_hvt))
+
+Executing: w = calculateParameter((width * 1e-06))
+
+Executing: l = calculateParameter(((area / width) * 1e-06))
 
 Executing: gL = calculateParameter((len * 1000000.0))
 
@@ -857,19 +890,25 @@ Executing: attachParameter(scc "scc" gate)
 
 Executing: extractMOS("g45n1lvt" _nmos1v_lvt (poly_conn "G") (ndiff_conn "S" "D") (pwell...
 
-Executing: attachParameter(sd_areaS ("ad" "D") ("as" "S") _nmos1v_lvt shared)
+Executing: attachParameter(w "w" _nmos1v_lvt)
 
-Executing: attachParameter(sd_periS ("pd" "D") ("ps" "S") _nmos1v_lvt shared)
+Executing: attachParameter(l "l" _nmos1v_lvt)
 
-Executing: attachParameter(width "w" _nmos1v_lvt)
+Executing: attachParameter(ad "ad" _nmos1v_lvt)
 
-Executing: attachParameter(length "l" _nmos1v_lvt)
+Executing: attachParameter(as "as" _nmos1v_lvt)
 
-Executing: width = measureParameter(length (_nmos1v_lvt butting ndiff_conn) 5e-07)
+Executing: attachParameter(pd "pd" _nmos1v_lvt)
 
-Executing: area = measureParameter(area (_nmos1v_lvt) 1e-12)
+Executing: attachParameter(ps "ps" _nmos1v_lvt)
 
-Executing: length = calculateParameter((area / width))
+Executing: width = measureParameter(length (_nmos1v_lvt butting ndiff_conn) 0.5)
+
+Executing: area = measureParameter(area (_nmos1v_lvt))
+
+Executing: w = calculateParameter((width * 1e-06))
+
+Executing: l = calculateParameter(((area / width) * 1e-06))
 
 Executing: gL = calculateParameter((len * 1000000.0))
 
@@ -901,19 +940,25 @@ Executing: attachParameter(scc "scc" gate)
 
 Executing: extractMOS("g45n1nvt" _nmos_12_native (poly_conn "G") (ndiff_conn "S" "D") (p...
 
-Executing: attachParameter(sd_areaS ("ad" "D") ("as" "S") _nmos_12_native shared)
+Executing: attachParameter(w "w" _nmos_12_native)
 
-Executing: attachParameter(sd_periS ("pd" "D") ("ps" "S") _nmos_12_native shared)
+Executing: attachParameter(l "l" _nmos_12_native)
 
-Executing: attachParameter(width "w" _nmos_12_native)
+Executing: attachParameter(ad "ad" _nmos_12_native)
 
-Executing: attachParameter(length "l" _nmos_12_native)
+Executing: attachParameter(as "as" _nmos_12_native)
 
-Executing: width = measureParameter(length (_nmos_12_native butting ndiff_conn) 5e-07)
+Executing: attachParameter(pd "pd" _nmos_12_native)
 
-Executing: area = measureParameter(area (_nmos_12_native) 1e-12)
+Executing: attachParameter(ps "ps" _nmos_12_native)
 
-Executing: length = calculateParameter((area / width))
+Executing: width = measureParameter(length (_nmos_12_native butting ndiff_conn) 0.5)
+
+Executing: area = measureParameter(area (_nmos_12_native))
+
+Executing: w = calculateParameter((width * 1e-06))
+
+Executing: l = calculateParameter(((area / width) * 1e-06))
 
 Executing: gL = calculateParameter((len * 1000000.0))
 
@@ -945,19 +990,25 @@ Executing: attachParameter(scc "scc" gate)
 
 Executing: extractMOS("g45n2svt" _nmos_25 (poly_conn "G") (ndiff_conn "S" "D") (pwell "B...
 
-Executing: attachParameter(sd_areaS ("ad" "D") ("as" "S") _nmos_25 shared)
+Executing: attachParameter(w "w" _nmos_25)
 
-Executing: attachParameter(sd_periS ("pd" "D") ("ps" "S") _nmos_25 shared)
+Executing: attachParameter(l "l" _nmos_25)
 
-Executing: attachParameter(width "w" _nmos_25)
+Executing: attachParameter(ad "ad" _nmos_25)
 
-Executing: attachParameter(length "l" _nmos_25)
+Executing: attachParameter(as "as" _nmos_25)
 
-Executing: width = measureParameter(length (_nmos_25 butting ndiff_conn) 5e-07)
+Executing: attachParameter(pd "pd" _nmos_25)
 
-Executing: area = measureParameter(area (_nmos_25) 1e-12)
+Executing: attachParameter(ps "ps" _nmos_25)
 
-Executing: length = calculateParameter((area / width))
+Executing: width = measureParameter(length (_nmos_25 butting ndiff_conn) 0.5)
+
+Executing: area = measureParameter(area (_nmos_25))
+
+Executing: w = calculateParameter((width * 1e-06))
+
+Executing: l = calculateParameter(((area / width) * 1e-06))
 
 Executing: gL = calculateParameter((len * 1000000.0))
 
@@ -989,19 +1040,25 @@ Executing: attachParameter(scc "scc" gate)
 
 Executing: extractMOS("g45n2nvt" _nmos_25_native (poly_conn "G") (ndiff_conn "S" "D") (p...
 
-Executing: attachParameter(sd_areaS ("ad" "D") ("as" "S") _nmos_25_native shared)
+Executing: attachParameter(w "w" _nmos_25_native)
 
-Executing: attachParameter(sd_periS ("pd" "D") ("ps" "S") _nmos_25_native shared)
+Executing: attachParameter(l "l" _nmos_25_native)
 
-Executing: attachParameter(width "w" _nmos_25_native)
+Executing: attachParameter(ad "ad" _nmos_25_native)
 
-Executing: attachParameter(length "l" _nmos_25_native)
+Executing: attachParameter(as "as" _nmos_25_native)
 
-Executing: width = measureParameter(length (_nmos_25_native butting ndiff_conn) 5e-07)
+Executing: attachParameter(pd "pd" _nmos_25_native)
 
-Executing: area = measureParameter(area (_nmos_25_native) 1e-12)
+Executing: attachParameter(ps "ps" _nmos_25_native)
 
-Executing: length = calculateParameter((area / width))
+Executing: width = measureParameter(length (_nmos_25_native butting ndiff_conn) 0.5)
+
+Executing: area = measureParameter(area (_nmos_25_native))
+
+Executing: w = calculateParameter((width * 1e-06))
+
+Executing: l = calculateParameter(((area / width) * 1e-06))
 
 Executing: gL = calculateParameter((len * 1000000.0))
 
@@ -1033,108 +1090,54 @@ Executing: attachParameter(scc "scc" gate)
 
 Executing: extractMOS("g45ncap1" _nmoscap1v (poly_conn "G") (ndiff_conn "S" "D") (pwell ...
 
-Executing: attachParameter(sd_areaS ("ad" "D") ("as" "S") _nmoscap1v shared)
+Executing: attachParameter(w "w" _nmoscap1v)
 
-Executing: attachParameter(sd_periS ("pd" "D") ("ps" "S") _nmoscap1v shared)
+Executing: attachParameter(l "l" _nmoscap1v)
 
-Executing: attachParameter(width "w" _nmoscap1v)
+Executing: attachParameter(ad "ad" _nmoscap1v)
 
-Executing: attachParameter(length "l" _nmoscap1v)
+Executing: attachParameter(as "as" _nmoscap1v)
 
-Executing: width = measureParameter(length (_nmoscap1v butting ndiff_conn) 5e-07)
+Executing: attachParameter(pd "pd" _nmoscap1v)
 
-Executing: area = measureParameter(area (_nmoscap1v) 1e-12)
-
-Executing: length = calculateParameter((area / width))
-
-Executing: gL = calculateParameter((len * 1000000.0))
-
-Executing: gW = calculateParameter((wid * 1000000.0))
-
-Executing: measureSTI(gate activeArea 50 (output isa isb) (calculateExp (sw / gW / (sa + (gL * 0.5))) (sw / gW / (sb + (gL * 0.5)))))
-
-Executing: SA = calculateParameter((((1 / isa) - (0.5 * gL)) * 1e-06))
-
-Executing: nameParameter(SA "sa")
-
-Executing: SB = calculateParameter((((1 / isb) - (0.5 * gL)) * 1e-06))
-
-Executing: nameParameter(SB "sb")
-
-Executing: SCC_raw = SCB_raw = SCA_raw = measureProximity2(gate mosBase 5.0 (output SCA_...
-
-Executing: sca = calculateParameter(((((1 / wid) * 1) / len) * SCA_raw))
-
-Executing: scb = calculateParameter(((((1 / wid) * 1) / len) * SCB_raw))
-
-Executing: scc = calculateParameter(((((1 / wid) * 1) / len) * SCC_raw))
-
-Executing: attachParameter(sca "sca" gate)
-
-Executing: attachParameter(scb "scb" gate)
-
-Executing: attachParameter(scc "scc" gate)
+Executing: attachParameter(ps "ps" _nmoscap1v)
 
 Executing: extractMOS("g45ncap2" _nmoscap2v (poly_conn "G") (ndiff_conn "S" "D") (pwell ...
 
-Executing: attachParameter(sd_areaS ("ad" "D") ("as" "S") _nmoscap2v shared)
+Executing: attachParameter(w "w" _nmoscap2v)
 
-Executing: attachParameter(sd_periS ("pd" "D") ("ps" "S") _nmoscap2v shared)
+Executing: attachParameter(l "l" _nmoscap2v)
 
-Executing: attachParameter(width "w" _nmoscap2v)
+Executing: attachParameter(ad "ad" _nmoscap2v)
 
-Executing: attachParameter(length "l" _nmoscap2v)
+Executing: attachParameter(as "as" _nmoscap2v)
 
-Executing: width = measureParameter(length (_nmoscap2v butting ndiff_conn) 5e-07)
+Executing: attachParameter(pd "pd" _nmoscap2v)
 
-Executing: area = measureParameter(area (_nmoscap2v) 1e-12)
-
-Executing: length = calculateParameter((area / width))
-
-Executing: gL = calculateParameter((len * 1000000.0))
-
-Executing: gW = calculateParameter((wid * 1000000.0))
-
-Executing: measureSTI(gate activeArea 50 (output isa isb) (calculateExp (sw / gW / (sa + (gL * 0.5))) (sw / gW / (sb + (gL * 0.5)))))
-
-Executing: SA = calculateParameter((((1 / isa) - (0.5 * gL)) * 1e-06))
-
-Executing: nameParameter(SA "sa")
-
-Executing: SB = calculateParameter((((1 / isb) - (0.5 * gL)) * 1e-06))
-
-Executing: nameParameter(SB "sb")
-
-Executing: SCC_raw = SCB_raw = SCA_raw = measureProximity2(gate mosBase 5.0 (output SCA_...
-
-Executing: sca = calculateParameter(((((1 / wid) * 1) / len) * SCA_raw))
-
-Executing: scb = calculateParameter(((((1 / wid) * 1) / len) * SCB_raw))
-
-Executing: scc = calculateParameter(((((1 / wid) * 1) / len) * SCC_raw))
-
-Executing: attachParameter(sca "sca" gate)
-
-Executing: attachParameter(scb "scb" gate)
-
-Executing: attachParameter(scc "scc" gate)
+Executing: attachParameter(ps "ps" _nmoscap2v)
 
 Executing: extractMOS("g45p1svt" _pmos1v (poly_conn "G") (pdiff_conn "S" "D") (nwell_con...
          7 'g45p1svt' created in cell 'TSPCFF layout TSPCFF_LIB'.
 
-Executing: attachParameter(sd_areaS ("ad" "D") ("as" "S") _pmos1v shared)
+Executing: attachParameter(w "w" _pmos1v)
 
-Executing: attachParameter(sd_periS ("pd" "D") ("ps" "S") _pmos1v shared)
+Executing: attachParameter(l "l" _pmos1v)
 
-Executing: attachParameter(width "w" _pmos1v)
+Executing: attachParameter(ad "ad" _pmos1v)
 
-Executing: attachParameter(length "l" _pmos1v)
+Executing: attachParameter(as "as" _pmos1v)
 
-Executing: width = measureParameter(length (_pmos1v butting pdiff_conn) 5e-07)
+Executing: attachParameter(pd "pd" _pmos1v)
 
-Executing: area = measureParameter(area (_pmos1v) 1e-12)
+Executing: attachParameter(ps "ps" _pmos1v)
 
-Executing: length = calculateParameter((area / width))
+Executing: width = measureParameter(length (_pmos1v butting pdiff_conn) 0.5)
+
+Executing: area = measureParameter(area (_pmos1v))
+
+Executing: w = calculateParameter((width * 1e-06))
+
+Executing: l = calculateParameter(((area / width) * 1e-06))
 
 Executing: gL = calculateParameter((len * 1000000.0))
 
@@ -1166,19 +1169,25 @@ Executing: attachParameter(scc "scc" gate)
 
 Executing: extractMOS("g45p1hvt" _pmos1v_hvt (poly_conn "G") (pdiff_conn "S" "D") (nwell...
 
-Executing: attachParameter(sd_areaS ("ad" "D") ("as" "S") _pmos1v_hvt shared)
+Executing: attachParameter(w "w" _pmos1v_hvt)
 
-Executing: attachParameter(sd_periS ("pd" "D") ("ps" "S") _pmos1v_hvt shared)
+Executing: attachParameter(l "l" _pmos1v_hvt)
 
-Executing: attachParameter(width "w" _pmos1v_hvt)
+Executing: attachParameter(ad "ad" _pmos1v_hvt)
 
-Executing: attachParameter(length "l" _pmos1v_hvt)
+Executing: attachParameter(as "as" _pmos1v_hvt)
 
-Executing: width = measureParameter(length (_pmos1v_hvt butting pdiff_conn) 5e-07)
+Executing: attachParameter(pd "pd" _pmos1v_hvt)
 
-Executing: area = measureParameter(area (_pmos1v_hvt) 1e-12)
+Executing: attachParameter(ps "ps" _pmos1v_hvt)
 
-Executing: length = calculateParameter((area / width))
+Executing: width = measureParameter(length (_pmos1v_hvt butting pdiff_conn) 0.5)
+
+Executing: area = measureParameter(area (_pmos1v_hvt))
+
+Executing: w = calculateParameter((width * 1e-06))
+
+Executing: l = calculateParameter(((area / width) * 1e-06))
 
 Executing: gL = calculateParameter((len * 1000000.0))
 
@@ -1210,19 +1219,25 @@ Executing: attachParameter(scc "scc" gate)
 
 Executing: extractMOS("g45p1lvt" _pmos1v_lvt (poly_conn "G") (pdiff_conn "S" "D") (nwell...
 
-Executing: attachParameter(sd_areaS ("ad" "D") ("as" "S") _pmos1v_lvt shared)
+Executing: attachParameter(w "w" _pmos1v_lvt)
 
-Executing: attachParameter(sd_periS ("pd" "D") ("ps" "S") _pmos1v_lvt shared)
+Executing: attachParameter(l "l" _pmos1v_lvt)
 
-Executing: attachParameter(width "w" _pmos1v_lvt)
+Executing: attachParameter(ad "ad" _pmos1v_lvt)
 
-Executing: attachParameter(length "l" _pmos1v_lvt)
+Executing: attachParameter(as "as" _pmos1v_lvt)
 
-Executing: width = measureParameter(length (_pmos1v_lvt butting pdiff_conn) 5e-07)
+Executing: attachParameter(pd "pd" _pmos1v_lvt)
 
-Executing: area = measureParameter(area (_pmos1v_lvt) 1e-12)
+Executing: attachParameter(ps "ps" _pmos1v_lvt)
 
-Executing: length = calculateParameter((area / width))
+Executing: width = measureParameter(length (_pmos1v_lvt butting pdiff_conn) 0.5)
+
+Executing: area = measureParameter(area (_pmos1v_lvt))
+
+Executing: w = calculateParameter((width * 1e-06))
+
+Executing: l = calculateParameter(((area / width) * 1e-06))
 
 Executing: gL = calculateParameter((len * 1000000.0))
 
@@ -1254,19 +1269,25 @@ Executing: attachParameter(scc "scc" gate)
 
 Executing: extractMOS("g45p2svt" _pmos2v (poly_conn "G") (pdiff_conn "S" "D") (nwell_con...
 
-Executing: attachParameter(sd_areaS ("ad" "D") ("as" "S") _pmos2v shared)
+Executing: attachParameter(w "w" _pmos2v)
 
-Executing: attachParameter(sd_periS ("pd" "D") ("ps" "S") _pmos2v shared)
+Executing: attachParameter(l "l" _pmos2v)
 
-Executing: attachParameter(width "w" _pmos2v)
+Executing: attachParameter(ad "ad" _pmos2v)
 
-Executing: attachParameter(length "l" _pmos2v)
+Executing: attachParameter(as "as" _pmos2v)
 
-Executing: width = measureParameter(length (_pmos2v butting pdiff_conn) 5e-07)
+Executing: attachParameter(pd "pd" _pmos2v)
 
-Executing: area = measureParameter(area (_pmos2v) 1e-12)
+Executing: attachParameter(ps "ps" _pmos2v)
 
-Executing: length = calculateParameter((area / width))
+Executing: width = measureParameter(length (_pmos2v butting pdiff_conn) 0.5)
+
+Executing: area = measureParameter(area (_pmos2v))
+
+Executing: w = calculateParameter((width * 1e-06))
+
+Executing: l = calculateParameter(((area / width) * 1e-06))
 
 Executing: gL = calculateParameter((len * 1000000.0))
 
@@ -1298,91 +1319,31 @@ Executing: attachParameter(scc "scc" gate)
 
 Executing: extractMOS("g45pcap1" _pmoscap1v (poly_conn "G") (pdiff_conn "S" "D") (nwell_...
 
-Executing: attachParameter(sd_areaS ("ad" "D") ("as" "S") _pmoscap1v shared)
+Executing: attachParameter(w "w" _pmoscap1v)
 
-Executing: attachParameter(sd_periS ("pd" "D") ("ps" "S") _pmoscap1v shared)
+Executing: attachParameter(l "l" _pmoscap1v)
 
-Executing: attachParameter(width "w" _pmoscap1v)
+Executing: attachParameter(ad "ad" _pmoscap1v)
 
-Executing: attachParameter(length "l" _pmoscap1v)
+Executing: attachParameter(as "as" _pmoscap1v)
 
-Executing: width = measureParameter(length (_pmoscap1v butting pdiff_conn) 5e-07)
+Executing: attachParameter(pd "pd" _pmoscap1v)
 
-Executing: area = measureParameter(area (_pmoscap1v) 1e-12)
-
-Executing: length = calculateParameter((area / width))
-
-Executing: gL = calculateParameter((len * 1000000.0))
-
-Executing: gW = calculateParameter((wid * 1000000.0))
-
-Executing: measureSTI(gate activeArea 50 (output isa isb) (calculateExp (sw / gW / (sa + (gL * 0.5))) (sw / gW / (sb + (gL * 0.5)))))
-
-Executing: SA = calculateParameter((((1 / isa) - (0.5 * gL)) * 1e-06))
-
-Executing: nameParameter(SA "sa")
-
-Executing: SB = calculateParameter((((1 / isb) - (0.5 * gL)) * 1e-06))
-
-Executing: nameParameter(SB "sb")
-
-Executing: SCC_raw = SCB_raw = SCA_raw = measureProximity2(gate mosBase 5.0 (output SCA_...
-
-Executing: sca = calculateParameter(((((1 / wid) * 1) / len) * SCA_raw))
-
-Executing: scb = calculateParameter(((((1 / wid) * 1) / len) * SCB_raw))
-
-Executing: scc = calculateParameter(((((1 / wid) * 1) / len) * SCC_raw))
-
-Executing: attachParameter(sca "sca" gate)
-
-Executing: attachParameter(scb "scb" gate)
-
-Executing: attachParameter(scc "scc" gate)
+Executing: attachParameter(ps "ps" _pmoscap1v)
 
 Executing: extractMOS("g45pcap2" _pmoscap2v (poly_conn "G") (pdiff_conn "S" "D") (nwell_...
 
-Executing: attachParameter(sd_areaS ("ad" "D") ("as" "S") _pmoscap2v shared)
+Executing: attachParameter(w "w" _pmoscap2v)
 
-Executing: attachParameter(sd_periS ("pd" "D") ("ps" "S") _pmoscap2v shared)
+Executing: attachParameter(l "l" _pmoscap2v)
 
-Executing: attachParameter(width "w" _pmoscap2v)
+Executing: attachParameter(ad "ad" _pmoscap2v)
 
-Executing: attachParameter(length "l" _pmoscap2v)
+Executing: attachParameter(as "as" _pmoscap2v)
 
-Executing: width = measureParameter(length (_pmoscap2v butting pdiff_conn) 5e-07)
+Executing: attachParameter(pd "pd" _pmoscap2v)
 
-Executing: area = measureParameter(area (_pmoscap2v) 1e-12)
-
-Executing: length = calculateParameter((area / width))
-
-Executing: gL = calculateParameter((len * 1000000.0))
-
-Executing: gW = calculateParameter((wid * 1000000.0))
-
-Executing: measureSTI(gate activeArea 50 (output isa isb) (calculateExp (sw / gW / (sa + (gL * 0.5))) (sw / gW / (sb + (gL * 0.5)))))
-
-Executing: SA = calculateParameter((((1 / isa) - (0.5 * gL)) * 1e-06))
-
-Executing: nameParameter(SA "sa")
-
-Executing: SB = calculateParameter((((1 / isb) - (0.5 * gL)) * 1e-06))
-
-Executing: nameParameter(SB "sb")
-
-Executing: SCC_raw = SCB_raw = SCA_raw = measureProximity2(gate mosBase 5.0 (output SCA_...
-
-Executing: sca = calculateParameter(((((1 / wid) * 1) / len) * SCA_raw))
-
-Executing: scb = calculateParameter(((((1 / wid) * 1) / len) * SCB_raw))
-
-Executing: scc = calculateParameter(((((1 / wid) * 1) / len) * SCC_raw))
-
-Executing: attachParameter(sca "sca" gate)
-
-Executing: attachParameter(scb "scb" gate)
-
-Executing: attachParameter(scc "scc" gate)
+Executing: attachParameter(ps "ps" _pmoscap2v)
 
 Executing: extractRES("g45rm1" _resm1 (metal1_conn "PLUS" "MINUS") (spiceModel "g45rm1")...
 
@@ -1823,12 +1784,12 @@ Executing: (saveInterconnect (npn_emit "Nimp"))
 Executing: (saveInterconnect (Nburied "Nburied"))
 
 Finished running rules. Task processor time in main process:
-cpu: 0.15  elap: 0  pf: 7  in: 744  out: 720  virt: 145M  phys: 768M
+cpu: 0.13  elap: 0  pf: 0  in: 0  out: 720  virt: 145M  phys: 769M
 
 No output post-processing: This is not a DRC run
 
 Finished building the persistent database.
-cpu: 0.00  elap: 1  pf: 0  in: 0  out: 6456  virt: 150M  phys: 768M
+cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6456  virt: 150M  phys: 769M
 
 
 *****  aveng terminated normally  *****
@@ -1843,10 +1804,16 @@ avlck:          you complete the configuration step. This manual is included wit
 avlck:          the Cadence product documentation.
 avlck:   ERROR: The command /comelec/softs/opt/Cadence/releases/ASSURA41_617/share/oa/bin/sysname returned an error status:
                             unknown
+
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.500.4 07/10/2017 21:38 (sjfnl321) $
 sub-version 4.1_USR5_HF11, integ signature 2017-07-10-2113
 
-run on tp-3a107-06 from /comelec/softs/opt/Cadence/releases/ASSURA41_617/tools.lnx86/assura/bin/64bit/avrpt on Thu Nov 13 16:10:55 2025
+run on tp-3a107-06 from /comelec/softs/opt/Cadence/releases/ASSURA41_617/tools.lnx86/assura/bin/64bit/avrpt on Thu Nov 13 17:05:22 2025
 
 
    Creating Error Database 'TSPCFF'...
@@ -2021,7 +1988,7 @@ Total  errors:                                               0            0
 
    Writing Report into /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/TSPCFF.err ...
 
-avrpt cpu sec:    0.05  elapsed:     0  virtual:    93M
+avrpt cpu sec:    0.03  elapsed:     0  virtual:    93M
 
 Finished /comelec/softs/opt/Cadence/releases/ASSURA41_617//tools.lnx86/assura/bin/avrpt
 
@@ -2033,28 +2000,40 @@ avlck:          the Cadence product documentation.
 avlck:   ERROR: The command /comelec/softs/opt/Cadence/releases/ASSURA41_617/share/oa/bin/sysname returned an error status:
                             unknown
 
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+
 Finished /comelec/softs/opt/Cadence/releases/ASSURA41_617//tools.lnx86/assura/bin/avcallproc
 
 Starting /comelec/softs/opt/Cadence/releases/ASSURA41_617//tools.lnx86/assura/bin/avnx /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/TSPCFF.rsf -exec1 -LVS -cdslib /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/cds.lib
-Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.13s.
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.12s.
+
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
 Checking out license for Assura_LVS
 Checking out license for Phys_Ver_Sys_LVS_XL
 *WARNING* Failed to obtain license for Assura_LVS
 @(#)$CDS: avnx_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.500.4 07/10/2017 21:38 (sjfnl321) $
 sub-version 4.1_USR5_HF11, integ signature 2017-07-10-2113
 
-run on tp-3a107-06 from /comelec/softs/opt/Cadence/releases/ASSURA41_617/tools.lnx86/assura/bin/64bit/avnx on Thu Nov 13 16:11:00 2025
+run on tp-3a107-06 from /comelec/softs/opt/Cadence/releases/ASSURA41_617/tools.lnx86/assura/bin/64bit/avnx on Thu Nov 13 17:05:24 2025
 
 avnx started...
-cpu: 0.05  elap: 0  pf: 18  in: 3192  out: 16  virt: 473M  phys: 862M
+cpu: 0.05  elap: 0  pf: 0  in: 0  out: 16  virt: 472M  phys: 863M
 
-Run time =  1.00 seconds
-CPU time =  0.08 seconds
+Run time =  0.00 seconds
+CPU time =  0.07 seconds
 
                   End of Summary Report
 
 ************************************************************************
-cpu: 0.01  elap: 1  pf: 2  in: 104  out: 12992  virt: 405M  phys: 862M
+cpu: 0.00  elap: 0  pf: 0  in: 0  out: 12992  virt: 405M  phys: 864M
 ***** avnx terminated normally ***** 
 
 
@@ -2071,7 +2050,7 @@ Checking out license for Assura_LVS
 Checking out license for Phys_Ver_Sys_LVS_XL
 @(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.500.4 07/10/2017 21:49 (sjfnl321) $
 sub-version 4.1_USR5_HF11, integ signature 2017-07-10-2113
-run on tp-3a107-06 at Thu Nov 13 16:11:02 2025
+run on tp-3a107-06 at Thu Nov 13 17:05:26 2025
 
 *************************************************************** 
 
@@ -2092,7 +2071,7 @@ Preprocessing layout network phase 1
 Preprocessing schematic network phase 2
 Preprocessing layout network phase 2
 Top cell  TSPCFF schematic TSPCFF_LIB vs TSPCFF layout TSPCFF_LIB
-Schematic and Layout Match
+Compare errors, please see /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/TSPCFF.csm and /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/TSPCFF.cls files.
 cpu=0.00m  wall=0.02m  mem=25.48mb
 
 Finished /comelec/softs/opt/Cadence/releases/ASSURA41_617//tools.lnx86/assura/bin/nvn
@@ -2106,7 +2085,17 @@ Starting /comelec/softs/opt/Cadence/releases/ASSURA41_617//tools.lnx86/assura/bi
 Finished /comelec/softs/opt/Cadence/releases/ASSURA41_617//tools.lnx86/assura/bin/vldbToRpa
 
 Starting /comelec/softs/opt/Cadence/releases/ASSURA41_617//tools.lnx86/assura/bin/ercChk /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/TSPCFF.rsf
-Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.13s.
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.12s.
+
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
 Loading gpdk045/libInit.il ...
 	Loading gpdk045/loadCxt.ile ... done!
 	Loading context 'gpdk045' from library 'gpdk045' ... done!
@@ -2134,6 +2123,12 @@ Finished /comelec/softs/opt/Cadence/releases/ASSURA41_617//tools.lnx86/assura/bi
 
 Starting /comelec/softs/opt/Cadence/releases/ASSURA41_617//tools.lnx86/assura/bin/avcallproc /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/TSPCFF.rsf -trp -exec1
 
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+
+Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+
 Finished /comelec/softs/opt/Cadence/releases/ASSURA41_617//tools.lnx86/assura/bin/avcallproc
 
 
@@ -2141,7 +2136,7 @@ Assura LVS terminated normally.
 
 
 
-Run ended: Thu Nov 13 16:11:06 2025
+Run ended: Thu Nov 13 17:05:29 2025
 
 *****  Assura terminated normally  *****
 

@@ -1,0 +1,26 @@
+# 4
+g45n1svt(MOS): g45n1svt(MOS)
+= D D B
+= G G B
+= S S B
+= B B B
+# 4
+g45p1svt(MOS): g45p1svt(MOS)
+= D D B
+= G G B
+= S S B
+= B B B
+# 12
+TSPCFF schematic TSPCFF_LIB: TSPCFF layout TSPCFF_LIB
+= CKb avC6
+= y avC7
+= Qb avC8
+= a avC12
+= x avC9
+= c avC10
+= b avC11
+= VDD! VDD! I
+= VSS! VSS! I
+= CK CK B
+= D D B
+= QQ QQ B

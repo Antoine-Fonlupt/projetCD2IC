@@ -17,10 +17,10 @@ vuiLVSFormTable = '(
 	runDir  "./LVS"
 	machineLoc  "local"
 	viewRules  t
-	technologyField  "-undefined-"
+	technologyField  "gpdk045_av"
 	runsetField  "default"
-	extract  "/comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/setup/tpt_assura/extract.rul"
-	compare  "/comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/setup/tpt_assura/compare.rul"
+	extract  "/comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/extract.rul"
+	compare  "/comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/compare.rul"
 	switches  ""
 	bind  ""
 	rsfInclude  "/comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/LVSinclude.rsf"
@@ -40,6 +40,10 @@ vuiLVSFormTable = '(
 	layCell  "TSPCFF"
 	layView  "layout"
 	layUseExistingNL  nil
+	extractButton  nil
+	compareButton  nil
+	bindButton  nil
+	rsfIncludeButton  nil
 )
 
 
@@ -89,6 +93,7 @@ vuiLVSschNLoptionFormTable = '(
 	netlistFileHolding  ""
 	netlistLib  ""
 	netlistFile  nil
+	deviceInformationButton  nil
 )
 
 

@@ -13,11 +13,11 @@
 vuiDRCFormTable = '(
 	format  "DFII"
 	vui2dbxor  nil
-	runName  ""
+	runName  "bob"
 	runDir  "./DRC"
 	machineLoc  "local"
 	viewRules  t
-	technologyField  "-undefined-"
+	technologyField  "gpdk045_av"
 	runsetField  "default"
 	rules  "/comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/assuraDRC.rul"
 	switches  ""
@@ -35,6 +35,8 @@ vuiDRCFormTable = '(
 	saveExtracted  nil
 	extractedView  "drc_extracted"
 	areaButton  "Full"
+	rulesButton  nil
+	rsfIncludeButton  nil
 )
 
 

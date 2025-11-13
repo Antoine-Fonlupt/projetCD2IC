@@ -1,0 +1,6 @@
+#!/bin/sh -f
+#--------------------------------------------------------------------------------------
+# THE RUN FILE created by Cadence Extraction Quantus QRC UI Version 15.27-s638
+#--------------------------------------------------------------------------------------
+
+qrc  -log_file /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/qrc.TSPCFF.log -cmd /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/qrc.TSPCFF.ccl

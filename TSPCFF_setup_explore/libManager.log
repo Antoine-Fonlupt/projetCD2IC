@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 6.1.7 - CAT35 08/11/2017 18:55 (sjfhw311) $
 \o Sub version:		sub-version  s054 
-\o Arguments:		-unmapped -mpssession virtuoso3125621 -mpshost tp-3a107-06 
+\o Arguments:		-unmapped -mpssession virtuoso3205553 -mpshost tp-3a107-06 
 \o Working Directory:	tp-3a107-06:/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore
 \o 64-bit offsets
 \o Qt version: 		4.8.5
@@ -13,45 +13,17 @@
 \a nrSetCurrentWindow(cdsLibManager)
 \o Library Manager customization server connected.
 \a nrResizeWindow(cdsLibManager list(844 323 908 491))
-\a nrSetCurrentWindow(cdsLibManager)
-\a lmgrLogShowPopup("mainListPopup0" 141 147 2 "")
-\a cdsLibManager->editChangeRefsButton->value = t
-\a nrSetWindowVisibility(changeRefDialog "show")
-\a nrSetCurrentWindow(changeRefDialog)
-\a nrResizeWindow(changeRefDialog list(953 302 690 533))
-\a changeRefDialog->addButton->value = t
-\o ERROR (CLM-360): Select at least one "In Library" to change its data references.
-\a nrSetWindowVisibility(errorDialog "show")
-\a nrSetCurrentWindow(errorDialog)
-\a nrResizeWindow(errorDialog list(1108 507 380 122))
-\a errorDialog->errorOkButton->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(changeRefDialog)
-\a changeRefDialog->Cancel->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "ahdlLib"
-\a cdsLibManager->libLineEdit->value = "ahdlLib"
-\a cdsLibManager->libListBox->value = "rfLib"
-\a cdsLibManager->libLineEdit->value = "rfLib"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "rfLib"
-\a cdsLibManager->libLineEdit->value = "rfLib"
+\o Searching help for "skill"
+\a cdsLibManager->helpSearchText->value = t
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = "TSPCFF_LIB"
 \a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
 \a cdsLibManager->cellListBox->value = "TSPCFF"
 \a cdsLibManager->cellLineEdit->value = "TSPCFF"
-\a cdsLibManager->cellListBox->value = "INV"
-\a cdsLibManager->cellLineEdit->value = "INV"
-\a cdsLibManager->cellListBox->value = "TSPCFF"
-\a cdsLibManager->cellLineEdit->value = "TSPCFF"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
@@ -63,47 +35,24 @@
 \a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
 \a cdsLibManager->cellListBox->value = "TSPCFF"
 \a cdsLibManager->cellLineEdit->value = "TSPCFF"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "TSPCFF_LIB"
-\a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
-\a cdsLibManager->cellListBox->value = "TSPCFF"
-\a cdsLibManager->cellLineEdit->value = "TSPCFF"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "TSPCFF_LIB"
-\a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
-\a cdsLibManager->cellListBox->value = "TSPCFF"
-\a cdsLibManager->cellLineEdit->value = "TSPCFF"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
 \a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = "gpdk045_v_4_0"
 \a cdsLibManager->libLineEdit->value = "gpdk045_v_4_0"
@@ -113,70 +62,7 @@
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->cellListBox->value = "gpdk045"
 \a cdsLibManager->cellLineEdit->value = "gpdk045"
-\a cdsLibManager->libListBox->value = "US_8ths"
-\a cdsLibManager->libLineEdit->value = "US_8ths"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->libListBox->value = "TSPCFF_LIB"
-\a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
-\a cdsLibManager->cellListBox->value = "TSPCFF"
-\a cdsLibManager->cellLineEdit->value = "TSPCFF"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "functional"
-\a cdsLibManager->libLineEdit->value = "functional"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->libListBox->value = "gpdk045_v_4_0"
-\a cdsLibManager->libLineEdit->value = "gpdk045_v_4_0"
-\a lmgrLogShowPopup("mainListPopup0" 40 149 2 "gpdk045_v_4_0")
-\a cdsLibManager->editDeleteButton->value = t
-\a deleteForm->deleteBothRadioButton->value = t
-\a deleteForm->deleteFilterEdit->value = "*"
-\a deleteForm->notDeleteFilterEdit->value = "*"
-\a nrSetWindowVisibility(deleteForm "show")
-\a nrSetCurrentWindow(deleteForm)
-\a nrResizeWindow(deleteForm list(985 356 627 425))
-\a deleteForm->OK->value = t
-\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
-\a nrSetWindowVisibility(mcMBXDLG "show")
-\a nrSetCurrentWindow(mcMBXDLG)
-\a nrResizeWindow(mcMBXDLG list(1131 454 514 334))
-\a mcMBXDLG->pushButton1->value = t
-\o Warning: Library "gpdk045_v_4_0" -> "/comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0"
-\o doesn't contain a "cdsinfo.tag" identifier to certify the library [CDSLIBRARY].
-\o Deleting 1 library.
-\o Delete needs confirmation for library "gpdk045_v_4_0" -> "/comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0"
-\a libraryDeleteConfirmDialog->libraryDirectoryEdit->value = "/comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0"
-\a libraryDeleteConfirmDialog->skipRadioButton->value = t
-\a nrSetWindowVisibility(libraryDeleteConfirmDialog "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(libraryDeleteConfirmDialog)
-\a nrResizeWindow(libraryDeleteConfirmDialog list(1028 298 541 540))
-\a libraryDeleteConfirmDialog->Cancel->value = t
-\o Delete cancelled.
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "gpdk045_v_4_0"
-\a cdsLibManager->libLineEdit->value = "gpdk045_v_4_0"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "TSPCFF_LIB"
-\a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
-\a cdsLibManager->cellListBox->value = "TSPCFF"
-\a cdsLibManager->cellLineEdit->value = "TSPCFF"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
+\a _lmgrCloseIconify("cdsLibManager" 1)
 \o MPS service: shutdown
 \o libManager is exiting.
 \a nrSetWindowVisibility(cdsLibManager "hide")

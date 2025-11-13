@@ -1,0 +1,17 @@
+; Assura generated file -- DO NOT EDIT --
+; Do NOT rely on the content of this file, it may change.
+;
+2 missing mismatch
+1 1 ((L "avD2_2" "g45n1svt") ()(S "Mmn3" "g45n1svt") () "l on the schematic is a String(\"4.5E-08\") on the layout is a Float(4.5e-08)w on the schematic is a String(\"1.45E-07\") on the layout is a Float(1.45e-07)")
+1 1 ((L "avD2_3" "g45n1svt") ()(S "Mmn2" "g45n1svt") () "l on the schematic is a String(\"4.5E-08\") on the layout is a Float(4.5e-08)w on the schematic is a String(\"1.45E-07\") on the layout is a Float(1.45e-07)")
+1 1 ((L "avD10_6" "g45p1svt") ()(S "Mmp1" "g45p1svt") () "l on the schematic is a String(\"4.5E-08\") on the layout is a Float(4.5e-08)w on the schematic is a String(\"2.14E-07\") on the layout is a Float(2.15e-07)")
+1 1 ((L "avD2_6" "g45n1svt") ()(S "Xqinv/Mmn0" "g45n1svt") () "w on the schematic is a String(\"2.6E-07\") on the layout is a Float(2.6e-07)")
+1 1 ((L "avD10_7" "g45p1svt") ()(S "Xqinv/Mmp0" "g45p1svt") () "w on the schematic is a String(\"3.9E-07\") on the layout is a Float(3.9e-07)")
+1 1 ((L "avD2_1" "g45n1svt") ()(S "Xclkinv/Mmn0" "g45n1svt") () "w on the schematic is a String(\"1.45E-07\") on the layout is a Float(1.45e-07)")
+1 1 ((L "avD10_1" "g45p1svt") ()(S "Xclkinv/Mmp0" "g45p1svt") () "w on the schematic is a String(\"2.15E-07\") on the layout is a Float(2.15e-07)")
+1 1 ((L "avD10_3" "g45p1svt") ()(S "Mmp5" "g45p1svt") () "l on the schematic is a String(\"4.5E-08\") on the layout is a Float(4.5e-08)w on the schematic is a String(\"2.14E-07\") on the layout is a Float(2.15e-07)")
+1 1 ((L "avD10_2" "g45p1svt") ()(S "Mmp3" "g45p1svt") () "l on the schematic is a String(\"4.5E-08\") on the layout is a Float(4.5e-08)w on the schematic is a String(\"2.14E-07\") on the layout is a Float(2.15e-07)")
+1 1 ((L "avD10_4" "g45p1svt") ()(S "Mmp4" "g45p1svt") () "l on the schematic is a String(\"4.5E-08\") on the layout is a Float(4.5e-08)w on the schematic is a String(\"2.14E-07\") on the layout is a Float(2.15e-07)")
+1 1 ((L "avD10_5" "g45p1svt") ()(S "Mmp2" "g45p1svt") () "l on the schematic is a String(\"4.5E-08\") on the layout is a Float(4.5e-08)w on the schematic is a String(\"2.14E-07\") on the layout is a Float(2.15e-07)")
+1 1 ((L "avD2_5" "g45n1svt") ()(S "Mmn4" "g45n1svt") () "l on the schematic is a String(\"4.5E-08\") on the layout is a Float(4.5e-08)w on the schematic is a String(\"1.45E-07\") on the layout is a Float(1.45e-07)")
+1 1 ((L "avD2_4" "g45n1svt") ()(S "Mmn1" "g45n1svt") () "l on the schematic is a String(\"4.5E-08\") on the layout is a Float(4.5e-08)w on the schematic is a String(\"1.45E-07\") on the layout is a Float(1.45e-07)")

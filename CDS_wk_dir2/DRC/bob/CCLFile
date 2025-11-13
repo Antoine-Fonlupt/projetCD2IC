@@ -1,0 +1,60 @@
+#
+# OPTION COMMAND FILE created by Cadence Quantus QRC Extraction Version 15.2.7-s638 from CCL
+#
+capacitance \
+	 -decoupling_factor 1.0 \
+	 -ground_net "VSS!"
+device_reduction \
+	 -m_factor infinite
+extract \
+	 -selection "all" \
+	 -type "rc_coupled"
+extraction_setup \
+	 -array_vias_spacing auto \
+	 -enable_dpt_color_import false \
+	 -macro_cells_type "default" \
+	 -max_fracture_length infinite \
+	 -max_fracture_length_unit "MICRONS" \
+	 -max_via_array_size \
+		"auto" \
+	 -net_name_space "LAYOUT"
+filter_cap \
+	 -exclude_self_cap true
+filter_coupling_cap \
+	 -coupling_cap_threshold_absolute 0.01 \
+	 -coupling_cap_threshold_relative 0.001
+filter_res \
+	 -merge_parallel_res false \
+	 -min_res 0.001
+input_db -type assura \
+	 -design_cell_name "TSPCFF layout TSPCFF_LIB" \
+	 -directory_name "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/DRC" \
+	 -format "DFII" \
+	 -hierarchy_delimiter "/" \
+	 -run_name "bob"
+log_file \
+	 -file_name "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/DRC/qrc.bob.log"
+mos_diffusion_parameter_extraction \
+	 -res "fast"
+output_db -type spice \
+	 -device_finger_delimiter "@" \
+	 -hierarchy_delimiter "/" \
+	 -include_cap_model "false" \
+	 -include_parasitic_cap_model "false" \
+	 -include_parasitic_res_model "false" \
+	 -include_res_model "false" \
+	 -sub_node_char "#"
+output_setup \
+	 -directory_name "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/DRC" \
+	 -file_name "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/bob.sp" \
+	 -net_name_space "SCHEMATIC" \
+	 -temporary_directory_name "bob"
+process_technology \
+	 -technology_corner \
+		"default" \
+	 -technology_library_file "/comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura_tech.lib" \
+	 -technology_name "gpdk045_av" \
+	 -temperature \
+		25.0
+
+

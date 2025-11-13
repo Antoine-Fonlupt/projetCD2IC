@@ -1,12 +1,13 @@
 @(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.500.4 07/10/2017 21:49 (sjfnl321) $
 sub-version 4.1_USR5_HF11, integ signature 2017-07-10-2113
-run on tp-3a107-06 at Thu Nov 13 16:11:02 2025
+run on tp-3a107-06 at Thu Nov 13 17:05:26 2025
 
-Schematic                      | Layout                       | Status
+Schematic                   | Layout                    | Status
 -------------------------------------------------------------------------------
-TSPCFF schematic TSPCFF_LIB    | TSPCFF layout TSPCFF_LIB     | matched     
+TSPCFF schematic TSPCFF_LIB | TSPCFF layout TSPCFF_LIB  | parameter errors   *
 
-Schematic and Layout Match
+Mismatch between Schematic and Layout
+   1 cell matched with parameter errors
 
 Schematic:
   Library:TSPCFF_LIB
@@ -31,5 +32,5 @@ Mismatch  Information
      0 cells have 0 Net mismatches
      0 cells have 0 Device mismatches
      0 cells have 0 Pin mismatches
-     0 cells have 0 Parameter mismatches
+     1 cells have 13 Parameter mismatches
 

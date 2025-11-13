@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      afonlupt-25
+HostName                       tp-3a107-06.enst.fr
+ProcessIdentifier              3208054
+ProcessCreationTime_UTC        1763049825
+ProcessCreationTime_Readable   Thu Nov 13 17:03:45 2025 CET
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_LIB/TSPCFF/layout/layout.oa.cdslck
+TimeEditLocked                 Thu Nov 13 17:04:30 2025 CET

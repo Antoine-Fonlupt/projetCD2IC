@@ -1,0 +1,12 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'TSPCFF layout TSPCFF_LIB':
+  info: Assign pin label "VSS!" at (0.2200, 0.0000) to layer `metal1_conn'.
+  info: Assign pin label "CK" at (0.3800, 0.2200) to layer `metal1_conn'.
+  info: Assign pin label "D" at (1.2850, 0.2300) to layer `metal1_conn'.
+  info: Assign pin label "VDD!" at (0.2350, 1.7050) to layer `metal1_conn'.
+  info: Assign pin label "QQ" at (1.9050, 1.3050) to layer `metal1_conn'.
+
+***** End of Label Report *****
+

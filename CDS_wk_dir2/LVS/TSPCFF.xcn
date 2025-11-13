@@ -89,10 +89,10 @@ model=mos[g45p1svt],g45p1svt
 dfiimodel=mos[g45p1svt],pmos1v#20ivpcell#20gpdk045
 element mos[g45p1svt] _pmos1v_MOS_10 poly_conn pdiff_conn nwell_conn 
 model=mos[g45p1hvt],g45p1hvt
-dfiimodel=mos[g45p1hvt],pmos1v_hvt_hvt#20ivpcell#20gpdk045
+dfiimodel=mos[g45p1hvt],pmos1v_hvt#20ivpcell#20gpdk045
 element mos[g45p1hvt] _pmos1v_hvt_MOS_11 poly_conn pdiff_conn nwell_conn 
 model=mos[g45p1lvt],g45p1lvt
-dfiimodel=mos[g45p1lvt],pmos1v_lvt_lvt#20ivpcell#20gpdk045
+dfiimodel=mos[g45p1lvt],pmos1v_lvt#20ivpcell#20gpdk045
 element mos[g45p1lvt] _pmos1v_lvt_MOS_12 poly_conn pdiff_conn nwell_conn 
 model=mos[g45p2svt],g45p2svt
 dfiimodel=mos[g45p2svt],pmos2v#20ivpcell#20gpdk045

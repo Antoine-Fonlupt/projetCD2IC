@@ -31,7 +31,8 @@ avParameters(
   ?cellName "TSPCFF"
   ?viewName "layout"
   ?workingDirectory "./LVS"
-  ?rulesFile "/comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/setup/tpt_assura/extract.rul"
+  ?technology "gpdk045_av"
+  ?techLib "/comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura_tech.lib"
   ?avrpt t
   ?dbuPerUU 2000.0
   ?joinPins top
@@ -245,52 +246,6 @@ avCompareRules(
 
    ) ;prog
  ) ;procedure( compareIND )
-
-; YM comparaison of transistor sizes
-; with different type of variables
-; string of float.
- procedure( compareMOS( m1, m2)
-    prog( ()
-    ; convert string width of m1 if needed
-    if( type(m1->w)=='string then
-        m1w = atof(m1->w)
-    else
-        m1w = m1->w
-    )
-    ; convert string width of m2 if needed
-    if( type(m2->w)=='string then
-        m2w = atof(m2->w)
-    else
-        m2w = m2->w
-    )
-    ; convert string length of m1 if needed
-    if( type(m1->l)=='string then
-        m1l = atof(m1->l)
-    else
-        m1l = m1->l
-    )
-    ; convert string width of m2 if needed
-    if( type(m2->l)=='string then
-        m2l = atof(m2->l)
-    else
-        m2l = m2->l
-    )
-    ; Debug
-    ;printf( "MOS L1 %g L2 %g W1 %g W2 %g\n" m1l m2l m1w m2w)
-    ; The comparison
-    diffW = 100 * (abs( m1w - m2w ) / m1w )
-    diffL = 100 * (abs( m1l - m2l ) / m1l )
-    Werr = nil
-    Lerr = nil
-    when( diffW > 1.0  Werr = t )
-    when( diffL > 1.0  Lerr = t )
-    when( !Werr && ! Lerr return(nil) )
-    sprintf( msg "Err (Mos geometries differ) L1 %g L2 %g W1 %g W2 %g\n" m1l m2l m1w m2w)
-    return( msg )
-
-  ) ; prog
- ) ; procedure
-
 ; *****************************************************************
 
 ; *****************************************************************
@@ -309,9 +264,7 @@ compareParameter( CAP percent( "w" 0 "l" 0 ) )
 
  compareParameter( DIO percent( "area" 0 "pj" 0 ) )
 
-; compareParameter( MOS percent( "l" 0 "w" 0 ) )
-; compareParameter( MOS percent( "l" 0 ) )
- compareParameter( MOS compareMOS export( "w" "l" ))
+ compareParameter( MOS percent( "l" 0 "w" 0 ) )
 
  compareParameter( RES percent( "w" 0 "l" 0 ) )
 

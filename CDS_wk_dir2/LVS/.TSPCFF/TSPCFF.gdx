@@ -1,0 +1,19 @@
+# 0
+g45n1svt(MOS): g45n1svt(MOS)
+# 0
+g45p1svt(MOS): g45p1svt(MOS)
+# 13
+TSPCFF schematic TSPCFF_LIB: TSPCFF layout TSPCFF_LIB
+S Mmn3 avD2_2
+D Mmn2 avD2_3
+D Mmn1 avD2_4
+D Mmn4 avD2_5
+D Mmp5 avD10_3
+S Mmp4 avD10_4
+D Mmp3 avD10_2
+S Mmp2 avD10_5
+D Mmp1 avD10_6
+D Xqinv/Mmn0 avD2_6
+D Xqinv/Mmp0 avD10_7
+D Xclkinv/Mmn0 avD2_1
+D Xclkinv/Mmp0 avD10_1

@@ -1,0 +1,34 @@
+
+
+  Cadence Quantus QRC Extraction - 64-bit Parasitic Extractor - Version
+15.2.7-s638 Wed Jan  4 18:11:53 PST 2017
+-------------------------------------------------------------------------------------------------------------------
+                                    Copyright 2017 Cadence Design Systems,
+Inc.
+
+
+
+INFO (EXTQRCXOPT-243) : For Assura inputs, if the "output_setup -directory_name" option was not
+specified, it is automatically set to the input directory.
+INFO (LBRCXU-108): Starting
+
+ /comelec/softs/opt/Cadence/releases/ASSURA41_617/tools.lnx86/assura/bin/avRCXxref /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/DRC/bob/__qrc.rcx_cmd -useRunName
+WARNING (LBRCXU-172): m2write fd 10, 1 tries, bytes -1 of 22, errno 9 Bad file descriptor
+
+@(#)$CDS: avRCXxref_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.500.4 07/10/2017 21:38 (sjfnl321) $
+sub-version 4.1_USR5_HF11, integ signature 2017-07-10-2113
+run on tp-3a107-06 at Thu Nov 13 16:28:05 2025
+Reading rsf
+Error: Cannot open LVS results
+        runName=bob
+        directory=/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/DRC
+INFO (LBRCXU-111): Warning /comelec/softs/opt/Cadence/releases/ASSURA41_617/tools.lnx86/assura/bin/avRCXxref exit with bad status
+
+INFO (LBRCXU-112): Warning Status 256
+
+INFO (LBRCXU-113): Warning QRC execution terminated
+
+
+
+*****  aveng fork terminated abnormally  *****
+

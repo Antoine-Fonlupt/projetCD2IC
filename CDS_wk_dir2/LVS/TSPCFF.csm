@@ -1,5 +1,6 @@
-Schematic                      | Layout                       | Status
+Schematic                   | Layout                    | Status
 -------------------------------------------------------------------------------
-TSPCFF schematic TSPCFF_LIB    | TSPCFF layout TSPCFF_LIB     | matched     
+TSPCFF schematic TSPCFF_LIB | TSPCFF layout TSPCFF_LIB  | parameter errors   *
 
-Schematic and Layout Match
+Mismatch between Schematic and Layout
+   1 cell matched with parameter errors
