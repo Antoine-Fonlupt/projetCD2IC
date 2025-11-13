@@ -2,7 +2,7 @@
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.7-64b 09/01/2017 11:59 (sjfhw319) $
           : sub-version  IC6.1.7-64b.500.14 
-Started at: 13-Nov-2025  17:24:29
+Started at: 13-Nov-2025  18:06:58
 User Name : afonlupt-25
 Host Name : tp-3a107-06
 Directory : /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2
@@ -10,6 +10,7 @@ CADENCE Design Systems, Inc.
 ********************************************************************************
 Info: Cellview Rev Num:99,  Tech Rev Num:59
 
+WARNING (XSTRM-20): Output Stream file './TSPCFF.gds' already exists. It will be overwritten.
 INFO (XSTRM-217): Reading the layer map file, /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/gpdk045/gpdk045.layermap
 INFO (XSTRM-162): You have not used the viaMap option. If the OpenAccess design has native oaVia instances, use the -viaMap option for preserving oaVia instances in a Stream Out - Stream In round trip. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design.  For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
 
@@ -23,29 +24,29 @@ layerMap                                /comelec/softs/opt/opus_kits/CADENCE_PDK
 case                                    Preserve
 convertDot                              node
 
-INFO (XSTRM-223): 1. Translating cellView gpdk045/M1_PO/layout as STRUCTURE M1_PO_CDNS_763051069740.
-INFO (XSTRM-223): 2. Translating cellView gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_763051069740.
-INFO (XSTRM-223): 3. Translating cellView gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_763051069741.
-INFO (XSTRM-223): 4. Translating cellView gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_763051069742.
-INFO (XSTRM-223): 5. Translating cellView gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_763051069743.
-INFO (XSTRM-223): 6. Translating cellView gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_763051069744.
-INFO (XSTRM-223): 7. Translating cellView gsclib045_tech/cellTmpl/layout as STRUCTURE cellTmpl_CDNS_763051069745.
-INFO (XSTRM-223): 8. Translating cellView gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_763051069746.
-INFO (XSTRM-223): 9. Translating cellView gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_763051069747.
-INFO (XSTRM-223): 10. Translating cellView gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_763051069748.
-INFO (XSTRM-223): 11. Translating cellView gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_763051069749.
-INFO (XSTRM-223): 12. Translating cellView gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_7630510697410.
-INFO (XSTRM-223): 13. Translating cellView gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_7630510697411.
-INFO (XSTRM-223): 14. Translating cellView gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_7630510697412.
+INFO (XSTRM-223): 1. Translating cellView gpdk045/M1_PO/layout as STRUCTURE M1_PO_CDNS_763053618390.
+INFO (XSTRM-223): 2. Translating cellView gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_763053618390.
+INFO (XSTRM-223): 3. Translating cellView gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_763053618391.
+INFO (XSTRM-223): 4. Translating cellView gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_763053618392.
+INFO (XSTRM-223): 5. Translating cellView gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_763053618393.
+INFO (XSTRM-223): 6. Translating cellView gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_763053618394.
+INFO (XSTRM-223): 7. Translating cellView gsclib045_tech/cellTmpl/layout as STRUCTURE cellTmpl_CDNS_763053618395.
+INFO (XSTRM-223): 8. Translating cellView gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_763053618396.
+INFO (XSTRM-223): 9. Translating cellView gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_763053618397.
+INFO (XSTRM-223): 10. Translating cellView gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_763053618398.
+INFO (XSTRM-223): 11. Translating cellView gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_763053618399.
+INFO (XSTRM-223): 12. Translating cellView gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_7630536183910.
+INFO (XSTRM-223): 13. Translating cellView gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_7630536183911.
+INFO (XSTRM-223): 14. Translating cellView gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_7630536183912.
 INFO (XSTRM-223): 15. Translating cellView TSPCFF_LIB/TSPCFF/layout as STRUCTURE TSPCFF.
 INFO (XSTRM-180): You have not used the objectMap option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the objectMap option to translate/preserve these objects using XStream. For details on the objectMap option, refer to the "Design Data Translator's Reference" guide for XStream.
 
 Summary of Objects Translated:
 	Scalar Instances:                       14
 	Array Instances:                        0
-	Polygons:                               0
-	Paths:                                  2
-	Rectangles:                             219
+	Polygons:                               8
+	Paths:                                  8
+	Rectangles:                             210
 	Lines:                                  0
 	Arcs:                                   0
 	Donuts:                                 0
@@ -60,10 +61,10 @@ Summary of Objects Translated:
 	Standard Vias                           9
 	Custom Vias:                            0
 	CdsGen Vias:                            0
-	Pathsegs:                               54
+	Pathsegs:                               7
 	Text:                                   5
 	TextDisplay:                            0
 	Cells:                                  15
 
-Elapsed Time: 1.0s   User Time: 0.2s   CPU Time: 0.1s   Peak VM: 5840KB
-INFO (XSTRM-234): Translation completed. '0' error(s) and '0' warning(s) found.
+Elapsed Time: 0.6s   User Time: 0.2s   CPU Time: 0.1s   Peak VM: 5844KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '1' warning(s) found.

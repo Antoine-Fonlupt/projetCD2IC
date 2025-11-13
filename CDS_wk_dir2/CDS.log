@@ -549,3 +549,350 @@
 \o Elapsed Time: 1.0s   User Time: 0.2s   CPU Time: 0.1s   Peak VM: 5840KB
 \o INFO (XSTRM-234): Translation completed. '0' error(s) and '0' warning(s) found.
 \o strmout completed.
+\a pipoDisplay(transStreamOutNewForm)
+\r t
+\a _xst_out_mainFormClose(  )
+\r t
+\a hiResizeWindow(window(1) list(0:65 956:864))
+\r t
+\o Info (ccp): Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.12s.
+\o 
+\o Info (ccp): ccpDFIIChecker: Starting ...
+\o Info (ccp): ccpDFIIChecker: End running.
+\o Loading socket.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\i ddsServOpen("TSPCFF_LIB" "TSPCFF" "layout" "edit" nil)
+\a when(dwindow('ptePaletteAssistant2) hiMapWindow(dwindow('ptePaletteAssistant2)))
+\r t
+\a mouseSingleSelectPt()
+\i 3.28:0.33
+\r nil
+\a hiGetCurrentWindow()->stopLevel = dbGetMaxHierDepth()-1
+\r 31
+\a hiResizeWindow(swindow(3) list(-5:-5 1915:1024))
+\r t
+\a hiZoomInAtMouse()
+\i -0.05:0.55
+\r t
+\a hiZoomInAtMouse()
+\i -0.05:0.55
+\r t
+\a hiZoomInAtMouse()
+\i -0.05:0.55
+\r t
+\a hiZoomOutAtMouse()
+\i 0.265:0.39
+\r t
+\a mouseSingleSelectPt()
+\i -0.14:0.65
+\r nil
+\a leHiMerge()
+\p > 
+\a hiZoomInAtMouse()
+\i 0.43:0.925
+\r t
+\a hiZoomInAtMouse()
+\i 0.43:0.925
+\r t
+\a hiZoomInAtMouse()
+\i 0.43:0.925
+\r t
+\a hiZoomOutAtMouse()
+\i 0.455:0.895
+\r t
+\a hiZoomOutAtMouse()
+\i 0.455:0.89
+\r t
+\a hiZoomOutAtMouse()
+\i 0.45:0.89
+\r t
+\a hiZoomInAtMouse()
+\i 1.62:1.005
+\r t
+\a hiZoomInAtMouse()
+\i 1.82:0.905
+\r t
+\a hiZoomInAtMouse()
+\i 1.82:0.905
+\r t
+\a hiZoomOutAtMouse()
+\i 1.835:0.905
+\r t
+\a leHiMerge()
+\p > 
+\a mouseAddPt(t)
+\i 1.7935:0.9165
+\r t
+\a mouseAddPt(t)
+\i 1.8045:0.8695
+\r t
+\a hiZoomOutAtMouse()
+\i 1.835:0.885
+\r t
+\a hiZoomOutAtMouse()
+\i 1.835:0.88
+\r t
+\a mouseAddPt(t)
+\i 2.299:0.9375
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\r nil
+\a mouseSingleSelectPt()
+\i 2.305:0.92
+\r nil
+\a geSelectAllFig()
+\r t
+\a leHiMerge()
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103826): The merge command does not support p&r boundary object. All the other supported objects in
+\w the selected set will be processed.
+\r t
+\a mouseSingleSelectPt()
+\i 2.3:0.915
+\r nil
+\a hiZoomInAtMouse()
+\i 0.365:0.93
+\r t
+\a hiZoomOutAtMouse()
+\i 0.365:0.93
+\r t
+\a hiZoomInAtMouse()
+\i 1.95:1.39
+\r t
+\a hiZoomInAtMouse()
+\i 1.95:1.39
+\r t
+\a hiZoomOutAtMouse()
+\i 1.945:1.22
+\r t
+\a hiZoomOutAtMouse()
+\i 1.94:1.12
+\r t
+\a hiUndo()
+\r t
+\a hiUndo()
+\r t
+\a hiUndo()
+\r t
+\a hiUndo()
+\r nil
+\a hiUndo()
+\r nil
+\a hiUndo()
+\r nil
+\a hiUndo()
+\r nil
+\a hiUndo()
+\r nil
+\a hiUndo()
+\r nil
+\a hiUndo()
+\r nil
+\a hiUndo()
+\r nil
+\a hiUndo()
+\r nil
+\a hiUndo()
+\r nil
+\a hiZoomOutAtMouse()
+\i 0.725:1.75
+\r t
+\a hiZoomOutAtMouse()
+\i 0.72:1.75
+\r t
+\a hiZoomInAtMouse()
+\i 0.93:0.46
+\r t
+\a hiZoomInAtMouse()
+\i 0.96:0.595
+\r t
+\a hiZoomInAtMouse()
+\i 0.99:0.67
+\r t
+\a hiZoomOutAtMouse()
+\i 0.965:0.57
+\r t
+\a hiZoomOutAtMouse()
+\i 0.97:0.57
+\r t
+\a geSelectAllFig()
+\r t
+\a leHiMerge()
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
+\w This happened because either the resultant merged shape was not a pathSeg or
+\w one of the pathSegs being merged was not associated with any route.
+\w *WARNING* (LE-103826): The merge command does not support p&r boundary object. All the other supported objects in
+\w the selected set will be processed.
+\r t
+\a leHiMerge()
+\w *WARNING* (LE-103826): The merge command does not support p&r boundary object. All the other supported objects in
+\w the selected set will be processed.
+\p > 
+\a hiDBoxOK(dBox) 
+\r t
+\p > 
+\a mouseAddPt(t)
+\i 2.416:1.0435
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a mouseSingleSelectPt()
+\i 2.415:0.74
+\r nil
+\a hiZoomInAtMouse()
+\i 0.5:0.78
+\r t
+\a hiZoomInAtMouse()
+\i 0.5:0.78
+\r t
+\a hiZoomOutAtMouse()
+\i 0.51:0.81
+\r t
+\a leHiSave()
+\r t
+\a hiZoomInAtMouse()
+\i -0.135:1.045
+\r t
+\a hiZoomInAtMouse()
+\i -0.135:1.045
+\r t
+\a geSelectAllFig()
+\r t
+\a leHiMerge()
+\w *WARNING* (LE-103826): The merge command does not support p&r boundary object. All the other supported objects in
+\w the selected set will be processed.
+\p > 
+\a hiDBoxOK(dBox) 
+\r t
+\p > 
+\a hiZoomOutAtMouse()
+\i -0.16:1.07
+\r t
+\a mouseAddPt(t)
+\i -0.1435:0.989
+\r t
+\a mouseAddPt(t)
+\i -0.1405:0.9635
+\r t
+\a hiZoomOutAtMouse()
+\i -0.14:0.965
+\r t
+\a hiZoomOutAtMouse()
+\i -0.14:0.965
+\r t
+\a hiZoomInAtMouse()
+\i 1.66:0.935
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a mouseSingleSelectPt()
+\i 2.43:0.835
+\r nil
+\a hiZoomOutAtMouse()
+\i 2.695:0.735
+\r t
+\a hiZoomInAtMouse()
+\i 1.495:1.2
+\r t
