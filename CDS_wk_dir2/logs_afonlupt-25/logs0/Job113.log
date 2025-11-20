@@ -1,0 +1,84 @@
+\# Program start time:     UTC 2025.11.20 19:26:05.946
+\# Local time: CET (UTC+01:00) 2025.11.20 20:26:05.946
+\o Program:		@(#)$CDS: virtuoso version 6.1.7-64b 09/01/2017 12:09 (sjfhw313) $
+\o Hierarchy:		/comelec/softs/opt/Cadence/releases/IC617/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.7-64b.500.14  (64-bit addresses)
+\# Command line:	/comelec/softs/opt/Cadence/releases/IC617/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso307983 -mpshost tp-3a107-06 -davinciService DaVinciService_307983_1763658527 -log /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/logs_afonlupt-25/logs0/Job113.log -licenseLockFileName /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/.tmp_afonlupt-25/.tp-3a107-06_307983 -nograph -nostdin -axlChildIdFlag 113
+\# Host name (type):	tp-3a107-06 (x86_64)
+\# Operating system:	Linux 6.1.0-41-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.158-1 (2025-11-09)
+\# Linux /etc/issue:	Debian GNU/Linux 12 \n \l
+\# X display name (WxH):	tp-3a107-06:80 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			RealVNC Ltd (VNC nograph server, PID 804166)
+\# Depth of Visual (Root):	16 (16)
+\# Number of Planes Used:	16
+\# X version:		11.0 (vendor release 3370)
+\# X resource pool:	base 0x9000000, mask 0x3fffff (4194303), shift 0
+\# 			current id 0x0, current max 0x3ffffa (4194298)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	      1,107 MB
+\# Available memory:	     12,320 MB
+\# System memory:	     19,583 MB
+\# Maximum memory size:	     18,572 MB
+\# Max mem available:	     12,417 MB
+\# Initial memory used:	         96 MB
+\#        process size:	        951 MB
+\# Thread usage limits (effective/default):	maxthreads 62496/62496 maxload 20.00/20.00
+\# Qt version:		4.8.5
+\# Window Manager:	other
+\# User Name:		afonlupt-25
+\o Working Directory:	tp-3a107-06:/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2
+\# Process Id:		804652
+\o 
+\o COPYRIGHT (C) 1992-2017  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2017  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading socket.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\# Memory report: using         199 MB, process size 1,167 MB at UTC 2025.11.20 19:26:11.145
+\o *Info*    Exporting services from client ... 
+\o 
+\# Available memory:         12,303 MB at UTC 2025.11.20 19:26:17.394
+\# Memory report: Maximum memory size now 12,507 MB at UTC 2025.11.20 19:26:17.394
+\# Thread usage report: 21 active threads, active load 1.00 at UTC 2025.11.20 19:26:17.394
+\o *INFO* (icLic-303) virtuoso: PID=804652, Child Mode is true, ICPR Mode is true, Registration Timeout is 180 seconds, Communication Timeout is 180 seconds.
+\o *Info*    Client has finished starting ... 
+\o 
+\p > 
+\o 
+\o *Info*    Received signal SIGTERM.
+\o 
+\o 
+\o Loading simui.cxt 
+\# Memory report: on exit            222 MB, process size 1,195 MB at UTC 2025.11.20 19:30:49.203
+\# Memory report: peak usage         222 MB, process size 1,195 MB

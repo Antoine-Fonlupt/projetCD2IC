@@ -1,0 +1,7 @@
+#!/bin/sh
+cdsVncserver :80
+sleep 3
+cd /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2
+virtuoso -noautostart -mpssession "virtuoso811080" -mpshost "tp-3a107-06" -davinciService "DaVinciService_811080_1763667369" -log '/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/logs_afonlupt-25/logs0/Job2.log'  -licenseLockFileName '/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/.tmp_afonlupt-25/.tp-3a107-06_811080'  -axlChildIdFlag 2 1>/dev/null  2>/dev/null 
+exit $?
+

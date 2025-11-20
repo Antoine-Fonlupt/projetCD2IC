@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 6.1.7 - CAT35 08/11/2017 18:55 (sjfhw311) $
 \o Sub version:		sub-version  s054 
-\o Arguments:		-unmapped -mpssession virtuoso307983 -mpshost tp-3a107-06 
+\o Arguments:		-unmapped -mpssession virtuoso811080 -mpshost tp-3a107-06 
 \o Working Directory:	tp-3a107-06:/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2
 \o 64-bit offsets
 \o Qt version: 		4.8.5
@@ -13,422 +13,26 @@
 \a nrSetCurrentWindow(cdsLibManager)
 \o Library Manager customization server connected.
 \a nrResizeWindow(cdsLibManager list(844 323 908 491))
+\a cdsLibManager->libListBox->value = "GSCLIB045"
+\a cdsLibManager->libLineEdit->value = "GSCLIB045"
 \a cdsLibManager->libListBox->value = "TSPCFF_LIB"
 \a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
+\a cdsLibManager->cellListBox->value = "TSPCFF_v2"
+\a cdsLibManager->cellLineEdit->value = "TSPCFF_v2"
 \a cdsLibManager->cellListBox->value = "TSPCFF"
 \a cdsLibManager->cellLineEdit->value = "TSPCFF"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a lmgrLogShowPopup("mainListPopup2" 78 85 2 "schematic")
-\a cdsLibManager->copySimpleButton->value = t
-\a basicCopyForm->CategoryCellsEdit->value = "*"
-\a basicCopyForm->CellsSkipLibraries->value = t
-\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
-\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
-\a basicCopyForm->ViewsSkipLibraries->value = t
-\a basicCopyForm->ViewsSkipLibrariesEdit->value = "*"
-\a basicCopyForm->CopyFromLibrary->value = "GSCLIB045"
-\a basicCopyForm->CopyToLibrary->value = "GSCLIB045"
-\a basicCopyForm->CopyFromLibrary->value = "TSPCFF_LIB"
-\a basicCopyForm->CopyFromCell->value = "TSPCFF"
-\a basicCopyForm->CopyFromView->value = "schematic"
-\a basicCopyForm->CopyToLibrary->value = "TSPCFF_LIB"
-\a basicCopyForm->CopyToCell->value = "TSPCFF"
-\a basicCopyForm->CopyToView->value = "schematic"
-\a basicCopyForm->ViewsViewsToCopy->value = "schematic"
-\a basicCopyForm->CellsSkipLibrariesEdit->value = ""
-\a basicCopyForm->CellsSkipLibrariesEdit->value = "GSCLIB045 US_8ths analogLib avTech basic cdsDefTechLib giolib045 gpdk045 gsclib045 gsclib045_backbias gsclib045_hvt gsclib045_lvt gsclib045_tech"
-\a basicCopyForm->ViewsSkipLibrariesEdit->value = "GSCLIB045 US_8ths analogLib avTech basic cdsDefTechLib giolib045 gpdk045 gsclib045 gsclib045_backbias gsclib045_hvt gsclib045_lvt gsclib045_tech"
-\a nrSetWindowVisibility(basicCopyForm "show")
-\a nrSetCurrentWindow(basicCopyForm)
-\a nrResizeWindow(basicCopyForm list(1076 220 444 698))
-\a basicCopyForm->CopyToView->value = "schematic_adexl"
-\a nrDialogAccept(basicCopyForm)
-\a basicCopyForm->OK->value = t
-\a basicCopyForm->CopyToView->value = "schematic_adexl"
-\o Beginning simple copy to library "TSPCFF_LIB".
-\o Processing files to be copied...
-\a nrSetWindowVisibility(workingDialogForm "show")
-\a nrSetCurrentWindow(workingDialogForm)
-\a nrResizeWindow(workingDialogForm list(1161 502 273 133))
-\a nrSetWindowVisibility(workingDialogForm "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(workingDialogForm)
-\a nrResizeWindow(workingDialogForm list(1162 502 273 133))
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "TSPCFF_LIB"
-\a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
+\a cdsLibManager->cellListBox->value = "TSPCFF_v2"
+\a cdsLibManager->cellLineEdit->value = "TSPCFF_v2"
 \a cdsLibManager->cellListBox->value = "TSPCFF"
 \a cdsLibManager->cellLineEdit->value = "TSPCFF"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
-\a basicCopyForm->CellsSkipLibrariesEdit->value = "GSCLIB045 US_8ths analogLib avTech basic cdsDefTechLib giolib045 gpdk045 gsclib045 gsclib045_backbias gsclib045_hvt gsclib045_lvt gsclib045_tech"
-\a cdsLibManager->viewListBox->value = "schematic_adexl"
-\a cdsLibManager->viewLineEdit->value = "schematic_adexl"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 5 0)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "TSPCFF_LIB"
-\a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
-\a cdsLibManager->cellListBox->value = "TSPCFF"
-\a cdsLibManager->cellLineEdit->value = "TSPCFF"
-\a cdsLibManager->viewListBox->value = "schematic_adexl"
-\a cdsLibManager->viewLineEdit->value = "schematic_adexl"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic_adexl"
-\a cdsLibManager->viewLineEdit->value = "schematic_adexl"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->FileNewCVButton->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "INV"
-\a cdsLibManager->cellLineEdit->value = "INV"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellListBox->value = "INV"
-\a cdsLibManager->cellLineEdit->value = "INV"
-\a lmgrLogShowPopup("mainListPopup1" 87 8 2 "INV")
-\a cdsLibManager->copySimpleButton->value = t
-\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
-\a basicCopyForm->ViewsViewsToCopy->value = ""
-\a basicCopyForm->ViewsSkipLibrariesEdit->value = "*"
-\a basicCopyForm->CopyFromCell->value = ""
-\a basicCopyForm->CopyFromView->value = ""
-\a basicCopyForm->CopyToCell->value = ""
-\a basicCopyForm->CopyToView->value = ""
-\a basicCopyForm->CopyFromLibrary->value = ""
-\a basicCopyForm->CopyToLibrary->value = ""
-\a basicCopyForm->CopyFromLibrary->value = "GSCLIB045"
-\a basicCopyForm->CopyToLibrary->value = "GSCLIB045"
-\a basicCopyForm->CopyFromLibrary->value = "TSPCFF_LIB"
-\a basicCopyForm->CopyFromCell->value = "INV"
-\a basicCopyForm->CopyToLibrary->value = "TSPCFF_LIB"
-\a basicCopyForm->CopyToCell->value = "INV"
-\a basicCopyForm->CellsViewsToCopy->value = "schematic symbol"
-\a basicCopyForm->CellsSkipLibrariesEdit->value = ""
-\a basicCopyForm->CellsSkipLibrariesEdit->value = "GSCLIB045 US_8ths analogLib avTech basic cdsDefTechLib giolib045 gpdk045 gsclib045 gsclib045_backbias gsclib045_hvt gsclib045_lvt gsclib045_tech"
-\a basicCopyForm->ViewsSkipLibrariesEdit->value = "GSCLIB045 US_8ths analogLib avTech basic cdsDefTechLib giolib045 gpdk045 gsclib045 gsclib045_backbias gsclib045_hvt gsclib045_lvt gsclib045_tech"
-\a nrSetWindowVisibility(basicCopyForm "show")
-\a nrSetCurrentWindow(basicCopyForm)
-\a nrResizeWindow(basicCopyForm list(1076 220 444 698))
-\a basicCopyForm->CopyToCell->value = "INV-propre"
-\a nrDialogAccept(basicCopyForm)
-\a basicCopyForm->OK->value = t
-\a basicCopyForm->CopyToCell->value = "INV-propre"
-\o Beginning simple copy to library "TSPCFF_LIB".
-\o Processing files to be copied...
-\a nrSetWindowVisibility(workingDialogForm "show")
-\a nrSetCurrentWindow(workingDialogForm)
-\a nrSetWindowVisibility(workingDialogForm "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(workingDialogForm)
-\a nrResizeWindow(workingDialogForm list(1157 473 273 133))
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "TSPCFF_LIB"
-\a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
-\a cdsLibManager->cellListBox->value = "INV"
-\a cdsLibManager->cellLineEdit->value = "INV"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "TSPCFF_LIB"
-\a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
-\a cdsLibManager->cellListBox->value = "INV"
-\a cdsLibManager->cellLineEdit->value = "INV"
-\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
-\a basicCopyForm->CellsSkipLibrariesEdit->value = "GSCLIB045 US_8ths analogLib avTech basic cdsDefTechLib giolib045 gpdk045 gsclib045 gsclib045_backbias gsclib045_hvt gsclib045_lvt gsclib045_tech"
-\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->cellListBox->value = "INV-propre"
 \a cdsLibManager->cellLineEdit->value = "INV-propre"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "TSPCFF"
-\a cdsLibManager->cellLineEdit->value = "TSPCFF"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "TSPCFF"
-\a cdsLibManager->cellLineEdit->value = "TSPCFF"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a lmgrLogShowPopup("mainListPopup1" 56 59 2 "TSPCFF")
-\a cdsLibManager->copySimpleButton->value = t
-\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
-\a basicCopyForm->CellsViewsToCopy->value = ""
-\a basicCopyForm->ViewsSkipLibrariesEdit->value = "*"
-\a basicCopyForm->CopyFromCell->value = ""
-\a basicCopyForm->CopyToCell->value = ""
-\a basicCopyForm->CopyFromLibrary->value = ""
-\a basicCopyForm->CopyToLibrary->value = ""
-\a basicCopyForm->CopyFromLibrary->value = "GSCLIB045"
-\a basicCopyForm->CopyToLibrary->value = "GSCLIB045"
-\a basicCopyForm->CopyFromLibrary->value = "TSPCFF_LIB"
-\a basicCopyForm->CopyFromCell->value = "TSPCFF"
-\a basicCopyForm->CopyToLibrary->value = "TSPCFF_LIB"
-\a basicCopyForm->CopyToCell->value = "TSPCFF"
-\a basicCopyForm->CellsViewsToCopy->value = "layout layout_ok layout_save layout_save2 schematic schematic_adexl schematic_old symbol"
-\a basicCopyForm->CellsSkipLibrariesEdit->value = ""
-\a basicCopyForm->CellsSkipLibrariesEdit->value = "GSCLIB045 US_8ths analogLib avTech basic cdsDefTechLib giolib045 gpdk045 gsclib045 gsclib045_backbias gsclib045_hvt gsclib045_lvt gsclib045_tech"
-\a basicCopyForm->ViewsSkipLibrariesEdit->value = "GSCLIB045 US_8ths analogLib avTech basic cdsDefTechLib giolib045 gpdk045 gsclib045 gsclib045_backbias gsclib045_hvt gsclib045_lvt gsclib045_tech"
-\a nrSetWindowVisibility(basicCopyForm "show")
-\a nrSetCurrentWindow(basicCopyForm)
-\a basicCopyForm->CopyToCell->value = "TSPCFF_v2"
-\a nrDialogAccept(basicCopyForm)
-\a basicCopyForm->OK->value = t
-\a basicCopyForm->CopyToCell->value = "TSPCFF_v2"
-\o Beginning simple copy to library "TSPCFF_LIB".
-\o Processing files to be copied...
-\a nrSetWindowVisibility(workingDialogForm "show")
-\a nrSetCurrentWindow(workingDialogForm)
-\a nrSetWindowVisibility(workingDialogForm "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(workingDialogForm)
-\a nrResizeWindow(workingDialogForm list(1162 502 273 133))
-\o Batching session updates...
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "TSPCFF_LIB"
-\a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
-\a cdsLibManager->cellListBox->value = "TSPCFF"
-\a cdsLibManager->cellLineEdit->value = "TSPCFF"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
-\a basicCopyForm->CellsSkipLibrariesEdit->value = "GSCLIB045 US_8ths analogLib avTech basic cdsDefTechLib giolib045 gpdk045 gsclib045 gsclib045_backbias gsclib045_hvt gsclib045_lvt gsclib045_tech"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "schematic_adexl"
-\a cdsLibManager->viewLineEdit->value = "schematic_adexl"
-\a lmgrLogShowPopup("mainListPopup2" 50 42 2 "schematic_adexl")
-\a cdsLibManager->cellListBox->value = "TSPCFF_v2"
-\a cdsLibManager->cellLineEdit->value = "TSPCFF_v2"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic_adexl"
-\a cdsLibManager->viewLineEdit->value = "schematic_adexl"
-\a cdsLibManager->cellListBox->value = "TSPCFF"
-\a cdsLibManager->cellLineEdit->value = "TSPCFF"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic_adexl"
-\a cdsLibManager->viewLineEdit->value = "schematic_adexl"
-\a lmgrLogShowPopup("mainListPopup2" 48 43 2 "schematic_adexl")
-\a cdsLibManager->editDeleteButton->value = t
-\a deleteForm->deleteBothRadioButton->value = t
-\a deleteForm->deleteFilterEdit->value = "*"
-\a deleteForm->notDeleteFilterEdit->value = "*"
-\a nrSetWindowVisibility(deleteForm "show")
-\a nrSetCurrentWindow(deleteForm)
-\a nrResizeWindow(deleteForm list(985 356 627 425))
-\a deleteForm->OK->value = t
-\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
-\a nrSetWindowVisibility(mcMBXDLG "show")
-\a nrSetCurrentWindow(mcMBXDLG)
-\a nrResizeWindow(mcMBXDLG list(1131 454 334 334))
-\a mcMBXDLG->pushButton1->value = t
-\o Deleting view "schematic_adexl" from cell "TSPCFF" in library "TSPCFF_LIB".
-\a nrSetWindowVisibility(workingDialogForm "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(workingDialogForm)
-\o Deleted cellview 'TSPCFF_LIB/TSPCFF/schematic_adexl'.
-\o Deletion of 1 view done.
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a nrResizeWindow(workingDialogForm list(1164 502 268 133))
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "TSPCFF_LIB"
-\a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
-\a cdsLibManager->cellListBox->value = "TSPCFF"
-\a cdsLibManager->cellLineEdit->value = "TSPCFF"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a lmgrLogShowPopup("mainListPopup2" 56 3 2 "symbol")
-\a cdsLibManager->editDeleteButton->value = t
-\a nrSetWindowVisibility(deleteForm "show")
-\a nrSetCurrentWindow(deleteForm)
-\a nrResizeWindow(deleteForm list(985 356 627 425))
-\a deleteForm->OK->value = t
-\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
-\a nrSetWindowVisibility(mcMBXDLG "show")
-\a nrSetCurrentWindow(mcMBXDLG)
-\a nrResizeWindow(mcMBXDLG list(1131 454 334 260))
-\a mcMBXDLG->pushButton1->value = t
-\o Deleting view "symbol" from cell "TSPCFF" in library "TSPCFF_LIB".
-\a nrSetWindowVisibility(workingDialogForm "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\o Deleted cellview 'TSPCFF_LIB/TSPCFF/symbol'.
-\o Deletion of 1 view done.
-\a nrSetCurrentWindow(workingDialogForm)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewLineEdit->value = "schematic_old"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a nrResizeWindow(workingDialogForm list(1164 502 268 133))
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "TSPCFF_LIB"
-\a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
-\a cdsLibManager->cellListBox->value = "TSPCFF"
-\a cdsLibManager->cellLineEdit->value = "TSPCFF"
-\a cdsLibManager->cellListBox->value = "TSPCFF_v2"
-\a cdsLibManager->cellLineEdit->value = "TSPCFF_v2"
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a lmgrLogShowPopup("mainListPopup2" 75 8 2 "symbol")
-\a cdsLibManager->viewListBox->value = "schematic_old"
-\a cdsLibManager->viewLineEdit->value = "schematic_old"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a lmgrLogShowPopup("mainListPopup2" 57 61 2 "schematic")
-\a cdsLibManager->editDeleteButton->value = t
-\a nrSetWindowVisibility(deleteForm "show")
-\a nrSetCurrentWindow(deleteForm)
-\a deleteForm->OK->value = t
-\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
-\a nrSetWindowVisibility(mcMBXDLG "show")
-\a nrSetCurrentWindow(mcMBXDLG)
-\a nrResizeWindow(mcMBXDLG list(1131 454 334 305))
-\a mcMBXDLG->pushButton1->value = t
-\o Deleting view "schematic" from cell "TSPCFF_v2" in library "TSPCFF_LIB".
-\a nrSetWindowVisibility(workingDialogForm "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(workingDialogForm)
-\o Deleted cellview 'TSPCFF_LIB/TSPCFF_v2/schematic'.
-\o Deletion of 1 view done.
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "layout_save2"
-\a cdsLibManager->viewLineEdit->value = "layout_save2"
-\a nrResizeWindow(workingDialogForm list(1164 502 268 133))
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "TSPCFF_LIB"
-\a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
-\a cdsLibManager->cellListBox->value = "TSPCFF_v2"
-\a cdsLibManager->cellLineEdit->value = "TSPCFF_v2"
-\a cdsLibManager->viewListBox->value = "layout_save2"
-\a cdsLibManager->viewLineEdit->value = "layout_save2"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout_save2"
-\a cdsLibManager->viewLineEdit->value = "layout_save2"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic_adexl"
-\a cdsLibManager->viewLineEdit->value = "schematic_adexl"
-\a lmgrLogShowPopup("mainListPopup2" 89 45 2 "schematic_adexl")
-\a cdsLibManager->editRenameButton->value = t
-\a basicRenameForm->basicRenameFromEdit->value = "schematic_adexl"
-\a nrSetWindowVisibility(basicRenameForm "show")
-\a basicRenameForm->basicRenameToEdit->value = "schematic_adexl"
-\a nrSetCurrentWindow(basicRenameForm)
-\a nrResizeWindow(basicRenameForm list(1126 477 343 182))
-\a basicRenameForm->basicRenameToEdit->value = "schematic"
-\a nrDialogAccept(basicRenameForm)
-\a basicRenameForm->OK->value = t
-\o Renaming View "schematic_adexl" to "schematic" in library "TSPCFF_LIB".
-\a nrSetWindowVisibility(workingDialogForm "show")
-\a nrSetCurrentWindow(workingDialogForm)
-\a basicRenameForm->basicRenameToEdit->value = "schematic"
-\a nrResizeWindow(workingDialogForm list(1164 502 268 133))
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "TSPCFF_LIB"
-\a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
-\a cdsLibManager->cellListBox->value = "TSPCFF_v2"
-\a cdsLibManager->cellLineEdit->value = "TSPCFF_v2"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
-\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->cellListBox->value = "TB_TSPCFF"
 \a cdsLibManager->cellLineEdit->value = "TB_TSPCFF"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
 \o MPS request: edit design
 \a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
@@ -439,44 +43,18 @@
 \a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
 \a cdsLibManager->cellListBox->value = "TB_TSPCFF"
 \a cdsLibManager->cellLineEdit->value = "TB_TSPCFF"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "TSPCFF_LIB"
-\a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
-\a cdsLibManager->cellListBox->value = "TB_TSPCFF"
-\a cdsLibManager->cellLineEdit->value = "TB_TSPCFF"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "TSPCFF_LIB"
-\a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
-\a cdsLibManager->cellListBox->value = "TB_TSPCFF"
-\a cdsLibManager->cellLineEdit->value = "TB_TSPCFF"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
