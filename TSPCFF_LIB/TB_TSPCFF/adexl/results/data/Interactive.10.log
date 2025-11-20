@@ -1,0 +1,144 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Thu Nov 20 18:40:37 2025 
+Best design point: 1
+Design specs: 
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_0 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_1 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_2 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_3 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_4 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_5 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_6 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_7 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_8 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_9 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_10 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_11 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_12 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_13 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_14 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_15 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_16 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_17 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_18 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_19 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_20 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_21 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_22 - 
+	Dout50n		220.5n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_23 - 
+	Dout50n		220.5n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_24 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_25 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_26 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_27 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_28 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_29 - 
+	Dout50n		220.5n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_30 - 
+	Dout50n		220.6n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_31 - 
+	Dout50n		220.8n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_32 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_33 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_34 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_35 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_36 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_37 - 
+	Dout50n		220.6n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_38 - 
+	Dout50n		220.9n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_39 - 
+	Dout50n		221.3n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_40 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_41 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_42 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_43 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_44 - 
+	Dout50n		220.5n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_45 - 
+	Dout50n		220.8n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_46 - 
+	Dout50n		221.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_47 - 
+	Dout50n		222.5n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_48 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_49 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_50 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_51 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_52 - 
+	Dout50n		220.5n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_53 - 
+	Dout50n		221.2n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_54 - 
+	Dout50n		222.7n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_55 - 
+	Dout50n		225.5n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_56 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_57 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_58 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_59 - 
+	Dout50n		220.4n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_60 - 
+	Dout50n		220.7n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_61 - 
+	Dout50n		222.1n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_62 - 
+	Dout50n		225.9n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	C1_63 - 
+	Dout50n		234.1n
+	TSPCFF_LIB:TB_TSPCFF:1	corner	Nominal - 
+	Dout50n		220.4n
+Design parameters: 
+	wmn2 (local override)		
+	wmp5 (local override)		
+
+Interactive.10
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.10 completed. 
+Current time: Thu Nov 20 18:41:06 2025 

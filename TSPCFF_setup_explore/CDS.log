@@ -90,3 +90,14 @@
 \# Memory report: Maximum memory size now 14,981 MB at UTC 2025.11.20 15:10:36.965
 \# Memory report: Maximum memory size now 15,798 MB at UTC 2025.11.20 15:38:36.965
 \# Memory report: Maximum memory size now 15,350 MB at UTC 2025.11.20 16:08:16.965
+\a hiCloseWindow(swindow(1))
+\r t
+\a hiQuit()
+\# Displaying modal dbox "hiQuitDBox", title "Quit"
+\p > 
+\a hiDBoxOK(hiQuitDBox)
+\r t
+\o Segmentation fault
+\o 
+\# Memory report: on exit            218 MB, process size 2,147 MB at UTC 2025.11.20 16:11:01.259
+\# Memory report: peak usage         346 MB, process size 2,280 MB
