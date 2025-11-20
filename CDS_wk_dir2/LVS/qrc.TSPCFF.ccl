@@ -2,11 +2,14 @@
 # OPTION COMMAND FILE created by Cadence Extraction Quantus QRC UI Version 15.27-s638
 #--------------------------------------------------------------------------------------
 
+capacitance \
+	 -decoupling_factor 1.0 \
+	 -ground_net "VSS!"
 device_reduction \
 	 -m_factor "infinite"
 extract \
 	 -selection "all" \
-	 -type "r_only"
+	 -type "rc_coupled"
 extraction_setup \
 	 -array_vias_spacing auto \
 	 -max_fracture_length infinite \
@@ -15,6 +18,11 @@ extraction_setup \
 	 -max_via_array_size "auto" \
 	 -net_name_space "LAYOUT" \
 	 -enable_dpt_color_import false
+filter_cap \
+	 -exclude_self_cap true
+filter_coupling_cap \
+	 -coupling_cap_threshold_absolute 0.01 \
+	 -coupling_cap_threshold_relative 0.001
 filter_res \
 	 -merge_parallel_res false \
 	 -min_res 0.001
@@ -24,13 +32,15 @@ input_db -type assura \
 	 -directory_name "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS" \
 	 -format "DFII" \
 	 -hierarchy_delimiter "/"
+mos_diffusion_parameter_extraction \
+	 -res "fast"
 output_db -type spice \
 	 -device_finger_delimiter "@" \
 	 -hierarchy_delimiter "/" \
 	 -include_cap_model "false" \
-	 -include_parasitic_cap_model "true" \
+	 -include_parasitic_cap_model "false" \
 	 -include_res_model "false" \
-	 -include_parasitic_res_model "comment" \
+	 -include_parasitic_res_model "false" \
 	 -sub_node_char "#"
 output_setup \
 	 -file_name "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/TSPCFF.sp" \

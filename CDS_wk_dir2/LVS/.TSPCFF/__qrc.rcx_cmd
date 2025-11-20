@@ -4,14 +4,14 @@ avParameters(
 	?inputLayout ( "DFII" "TSPCFF_LIB" )
 	?runName "TSPCFF"
 	?workingDirectory "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS"
-	?techRuleSet ( "default" )
+	?techRuleSet ( "rcx_typical" )
 	?techLib "/comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura_tech.lib"
 	?technology "gpdk045_av"
 
 )
 rcxParameters(
 	?capCouplingFactor 1.0
-	?capGround "VSS!"
+	?capGround "VSS"
 	?mFactorR "infinite"
 	?arrayViasSpacing "auto"
 	?macroCellsType "default"
@@ -40,7 +40,7 @@ rcxParameters(
 	?outputNetNameSpace "schematic"
 	?runName "TSPCFF"
 	?tempdir "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/TSPCFF/rcx_temp"
-	?rcxSetupDir ( "/comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/./assura/../qrc" )
+	?rcxSetupDir ( "/comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/./assura/../qrc/typical" )
 	?temperature ( 25.0 )
 	?type "full"
 	?extract "both"

@@ -25,39 +25,12 @@ for islope in range(0, 7):
     # Extract the output values
     ytab = ltab[1::2]
     plt.plot(xtab,ytab, label=label)
-    # print label
-    # print xtab
-    # print ytab
 
-## Le titre
 plt.title(Title)
 plt.xlabel('Load capacitor (ff)')
-plt.ylabel(r'Output rising propagation time (ns)')
-# Now add the legend with some customizations.
+plt.ylabel('Output rising propagation time (ns)')
 legend = plt.legend(loc='upper left', shadow=True)
-# Now add a line at the maximum allowed slope
-# plt.axhline(y=0.20, hold=None)
-# plt.axhline(y=0.20)
-# and annotate the line
-# plt.annotate("max allowed transition",xy=(12, 0.20))
 
 
 plt.show()
 
-#xl = np.genfromtxt('results/cumulated_results',  usecols=2)
-#yl = np.genfromtxt('results/cumulated_results',  usecols=0)
-#
-#fig = plt.figure()
-#ax = fig.gca()
-#ax.set_xticks(np.arange(-1000,1000,250))
-#ax.set_yticks(np.arange(-15,15.,2.5))
-#
-## Make a scatter plot
-#plt.scatter(xl,yl,alpha=0.6) 
-##plt.xlim(-1000,1000) 
-##plt.ylim(-15,15) 
-#plt.grid()
-#
-
-
-plt.show()

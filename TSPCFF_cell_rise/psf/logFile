@@ -1,11 +1,11 @@
 HEADER
 "PSFversion" "1.00"
 "Log Generator" "drlLog rev. 1.0"
-"Log Time Stamp" "Thu Oct 30 16:08:47 2025"
+"Log Time Stamp" "Thu Nov 20 14:05:10 2025"
 "psfversion" ""
 "simulator" "spectre"
 "version" "21.1.0.246.isr4"
-"date" "4:08:47 PM, Thur Oct 30, 2025"
+"date" "2:05:10 PM, Thur Nov 20, 2025"
 "design" "//"
 "signalNameType" "spectre"
 "simMode" "Spectre"
@@ -31,7 +31,7 @@ VALUE
 "Transient Analysis `tran': time = (0 s -> 1 ms)"
 ) PROP(
 "data_type" "swept_scalar"
-"UUID" "tp-3a107-06|x86_64|73901|1761836921|0"
+"UUID" "tp-3a107-06|x86_64|170828|1763643903|0"
 "dataset_logical_name" "tran-tran"
 "dataset_partition_priority" 1
 "dataset_partition_type" "digital"
@@ -46,7 +46,7 @@ VALUE
 "Transient Analysis `tran': time = (0 s -> 1 ms)"
 ) PROP(
 "data_type" "swept_scalar"
-"UUID" "tp-3a107-06|x86_64|73901|1761836921|0"
+"UUID" "tp-3a107-06|x86_64|170828|1763643903|0"
 "dataset_logical_name" "tran-tran"
 "dataset_partition_priority" 0
 "dataset_partition_type" "analog"

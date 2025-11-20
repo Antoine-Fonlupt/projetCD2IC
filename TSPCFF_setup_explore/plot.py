@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+import matplotlib as mpl
 import matplotlib
 #from numpy.random import randn
 import matplotlib.pyplot as plt
@@ -16,28 +17,54 @@ else:
     path = './TSPCFF_setup_explore/measurements.dat'
 
 
-Xs = []
-Ys = []
+data = {}
 with open(path, 'r') as f:
     header = True
     for l in f.readlines():
         u = [i for i in l.replace('\n','').split(' ') if i != '']
         if not header and u != []:
-            Xs.append(float(u[0]))
-            Ys.append(float(u[-1]))
+            cap = float(u[0])
+            delay = float(u[1])*1e-12 # into s
+            propagationTime = float(u[2])*1e-9 # into s
+            if cap not in data:
+                data[cap] = {'delay':[], 'propagationTime':[]}
+            data[cap]['delay'].append(delay)
+            data[cap]['propagationTime'].append(propagationTime)
         header = False
 
-Xs = np.array(Xs)
-Ys = np.array(Ys)
 
-plt.plot(Xs, Ys, '.-', label='Propagation Time')
-plt.plot(Xs, Ys+Xs*0.001, '.-', label='Setup+Propagation Time')
-x0 = Xs[np.argmin(np.abs(Ys+Xs*0.001))]
-plt.plot([x0, x0], [np.min(Ys), np.max(Ys)], 'k--')
+fig, axs = plt.subplots(figsize=(6, 4), ncols=2)
+legended = False
+cmap = mpl.colormaps['plasma']
+colors = cmap(np.linspace(0, 1, len(data)))
+caps = sorted(data.keys())
+for i, cap in enumerate(caps):
+    data[cap]['delay'] = np.array(data[cap]['delay'])
+    data[cap]['propagationTime'] = np.array(data[cap]['propagationTime'])
 
-plt.title('TSPCFF_setup_explore')
-plt.xlabel('Setup Time [ps]')
-plt.ylabel('Time [ns]')
-plt.yscale('log')
-plt.legend()
+    if not legended:
+        axs[0].plot(data[cap]['delay']*1e12, data[cap]['propagationTime']*1e9, '.-', label='Propagation Time', color=colors[i])
+        axs[1].plot(data[cap]['delay']*1e12, (data[cap]['propagationTime']+data[cap]['delay'])*1e9, '.-', label='Setup+Propagation Time', color=colors[i])
+        legended = True
+    else:
+        axs[0].plot(data[cap]['delay']*1e12, data[cap]['propagationTime']*1e9, '.-', color=colors[i])
+        axs[1].plot(data[cap]['delay']*1e12, (data[cap]['propagationTime']+data[cap]['delay'])*1e9, '.-', color=colors[i])
+
+sm = matplotlib.cm.ScalarMappable(norm=matplotlib.colors.Normalize(min(caps), max(caps)), cmap=cmap)
+sm.set_array([])
+cbar = fig.colorbar(sm)
+cbar.set_label("Load Capacitor")
+    
+axs[0].set_yscale('log')
+axs[0].set_xlabel('Setup Time [ps]')
+axs[0].set_ylabel('Time [ns]')
+axs[0].legend()
+
+axs[1].set_yscale('log')
+axs[1].set_xlabel('Setup Time [ps]')
+axs[1].set_ylabel('Time [ns]')
+axs[1].legend()
+
+fig.suptitle('Setup time extraction of the TSPCFF cell')
+
 plt.show()

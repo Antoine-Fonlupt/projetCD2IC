@@ -5,22 +5,22 @@ Copyright (C) 1989-2021 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: afonlupt-25   Host: tp-3a107-06   HostID: C289678E   PID: 74377
-Memory  available: 11.7963 GB  physical: 16.4402 GB
+User: afonlupt-25   Host: tp-3a107-06   HostID: C289678E   PID: 171174
+Memory  available: 9.9244 GB  physical: 16.4402 GB
 Linux   : Debian GNU/Linux 12 (bookworm)
 CPU Type: 12th Gen Intel(R) Core(TM) i7-12700
         Socket: Processors [Frequency] (Hyperthreaded Processor)
-        0:       0 [872.7] (  1 ),  1 [800.0] (),  2 [800.0] (  3 )
-                 3 [986.6] (),  4 [800.0] (  5 ),  5 [800.0] (),  6 [997.1] (  7 )
-                 7 [800.0] (),  8 [865.8] (  9 ),  9 [800.0] (), 10 [977.1] ( 11 )
-                11 [800.0] (), 12 [965.7] ( 13 ), 13 [1000.0] (), 14 [961.0] ( 15 )
-                15 [800.0] (), 16 [800.0] (), 17 [800.0] (), 18 [800.0] (), 19 [800.0] ()
+        0:       0 [869.4] (  1 ),  1 [967.6] (),  2 [977.6] (  3 )
+                 3 [800.0] (),  4 [985.3] (  5 ),  5 [800.0] (),  6 [965.5] (  7 )
+                 7 [800.0] (),  8 [961.3] (  9 ),  9 [800.0] (), 10 [948.0] ( 11 )
+                11 [800.0] (), 12 [800.0] ( 13 ), 13 [943.9] (), 14 [991.2] ( 15 )
+                15 [800.0] (), 16 [800.1] (), 17 [799.3] (), 18 [800.0] (), 19 [800.0] ()
         
-System load averages (1min, 5min, 15min) : 3.6 %, 1.8 %, 1.4 %
+System load averages (1min, 5min, 15min) : 1.7 %, 1.7 %, 3.3 %
 Hyperthreading is enabled
 
 
-Simulating `./xcelium.d/AMSD/ams_spice_in/.amsspice_normal.ckt' on tp-3a107-06 at 4:08:28 PM, Thur Oct 30, 2025 (process id: 74377).
+Simulating `./xcelium.d/AMSD/ams_spice_in/.amsspice_normal.ckt' on tp-3a107-06 at 2:04:58 PM, Thur Nov 20, 2025 (process id: 171174).
 Current working directory: /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_cell_rise
 Environment variable:
     SPECTRE_DEFAULTS=
@@ -32,10 +32,10 @@ Command line:
         xcelium.d/AMSD/ams_spice_in/ahdlSimDB =log  \
         ./xcelium.d/AMSD/ams_spice_in/.amsspice_normal.ckt.log +mts  \
         -token  \
-        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080FE71B870359768D3A13CC50411B6749FEA2FE10B0F887DC39431F37A3ED44FD9B63EAA3E399863C0B43FE90F319762DDE32DA06B33CF30D4AD2FE90460FB7490A83DEEB8537F10B0AB26FC2E208F7CC5E43FA97B60CC7181A40DEE3C7ECB2A80A83DED3C50FB10B0A83DED3C50FB10B0C13E92552F9279B30000426B
+        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080FE71B870359768D3A13CC50411B6749FEA2FE10B0F887DC39431F37A3ED44FD9B63EAA3E399863C0B43FE90F319762DDE328F06763C330D1FC7CEF5A60FB2190A83DEEB8537F10B0AB26FC2E208F7CC5E43FA97B60CC7181A40DEE3C7ECB2A80A83DED3C50FB10B0A83DED3C50FB10B0C122FCC4410379AF00004271
 
 Licensing Information:
-[16:08:28.445385] Configured Lic search path (20.02-p002): 30000@cadence.cnfm.fr
+[14:04:58.445361] Configured Lic search path (20.02-p002): 30000@cadence.cnfm.fr
 
 Loading /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
 Loading /comelec/softs/opt/Cadence/releases/SPECTRE211/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
@@ -54,12 +54,12 @@ Reading file:  /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spec
 Reading file:  /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045_moscap.scs
 Reading file:  /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045_resistor.scs
 Reading file:  /comelec/softs/opt/opus_kits/CADENCE_PDKS/tpt_gpdk045/models/spectre/gpdk045_inductor.scs
-Time for NDB Parsing: CPU = 290.111 ms, elapsed = 531.225 ms.
-Time accumulated: CPU = 319.124 ms, elapsed = 531.236 ms.
-Peak resident memory used = 126 Mbytes.
+Time for NDB Parsing: CPU = 296.856 ms, elapsed = 458.799 ms.
+Time accumulated: CPU = 328.45 ms, elapsed = 458.811 ms.
+Peak resident memory used = 127 Mbytes.
 
 Licensing Information:
 Lic Summary:
-[16:08:29.482049] Cdslmd servers:30000@cadence.cnfm.fr
-[16:08:29.482059] Feature usage summary:
+[14:04:59.042899] Cdslmd servers:30000@cadence.cnfm.fr
+[14:04:59.042913] Feature usage summary:
 

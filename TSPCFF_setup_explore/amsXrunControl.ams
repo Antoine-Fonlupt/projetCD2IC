@@ -156,10 +156,10 @@ simulator lang=spectre version=2.0 binding=vlog insensitive=no
 subckt worklib__testbench__sv__0x10000001 
 local dout
 
-#15 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/testbench.sv;AMS:8"
+#14 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/testbench.sv;AMS:8"
 parameters digital_tick=10
 
-#40 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/testbench.sv;AMS:8"
+#30 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/testbench.sv;AMS:8"
 bdut (clk_logic=bdut___dUmmY_pORt_0_ clk_tt_val=bdut___dUmmY_pORt_1_ din_logic=bdut___dUmmY_pORt_2_ dout_electrical=dout din_tt_val=bdut___dUmmY_pORt_3_ din_delay_val=bdut___dUmmY_pORt_4_ clk_delay_val=bdut___dUmmY_pORt_5_) worklib__board__vams__0x10000001 
 ends
 

@@ -3,7 +3,7 @@
 #
 capacitance \
 	 -decoupling_factor 1.0 \
-	 -ground_net "VSS!"
+	 -ground_net "VSS"
 device_reduction \
 	 -m_factor infinite
 extract \
@@ -51,7 +51,7 @@ output_setup \
 	 -temporary_directory_name "TSPCFF"
 process_technology \
 	 -technology_corner \
-		"default" \
+		"rcx_typical" \
 	 -technology_library_file "/comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura_tech.lib" \
 	 -technology_name "gpdk045_av" \
 	 -temperature \

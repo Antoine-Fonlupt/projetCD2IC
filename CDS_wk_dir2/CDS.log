@@ -1,11 +1,11 @@
-\# Program start time:     UTC 2025.11.13 16:03:40.033
-\# Local time: CET (UTC+01:00) 2025.11.13 17:03:40.033
+\# Program start time:     UTC 2025.11.20 12:17:14.318
+\# Local time: CET (UTC+01:00) 2025.11.20 13:17:14.318
 \o Program:		@(#)$CDS: virtuoso version 6.1.7-64b 09/01/2017 12:09 (sjfhw313) $
 \o Hierarchy:		/comelec/softs/opt/Cadence/releases/IC617/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.7-64b.500.14  (64-bit addresses)
 \# Command line:	/comelec/softs/opt/Cadence/releases/IC617/tools.lnx86/dfII/bin/64bit/virtuoso
 \# Host name (type):	tp-3a107-06 (x86_64)
-\# Operating system:	Linux 6.1.0-40-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.153-1 (2025-09-20)
+\# Operating system:	Linux 6.1.0-41-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.158-1 (2025-11-09)
 \# Linux /etc/issue:	Debian GNU/Linux 12 \n \l
 \# X display name (WxH):	:0.0 (1920x1080)
 \# Available geometry:			TL(0:27) BR(1919:1079)
@@ -17,11 +17,11 @@
 \# 			current id 0x0, current max 0x1ffffa (2097146)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	      1,332 MB
-\# Available memory:	     12,231 MB
+\# Initial sbrk value:	        974 MB
+\# Available memory:	     17,678 MB
 \# System memory:	     19,583 MB
-\# Maximum memory size:	     18,347 MB
-\# Max mem available:	     12,327 MB
+\# Maximum memory size:	     18,705 MB
+\# Max mem available:	     17,774 MB
 \# Initial memory used:	         96 MB
 \#        process size:	        951 MB
 \# Thread usage limits (effective/default):	maxthreads 62496/62496 maxload 20.00/20.00
@@ -29,7 +29,7 @@
 \# Window Manager:	other
 \# User Name:		afonlupt-25
 \o Working Directory:	tp-3a107-06:/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2
-\# Process Id:		3208054
+\# Process Id:		144773
 \o 
 \o COPYRIGHT (C) 1992-2017  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           (C) 1992-2017  UNIX SYSTEMS Laboratories INC.,
@@ -53,15 +53,15 @@
 \o Loading vhdl.cxt 
 \o Loading seismic.cxt 
 \o Loading ci.cxt 
+\# Available memory:         17,675 MB at UTC 2025.11.20 12:17:27.120
+\# Memory report: Maximum memory size now 17,835 MB at UTC 2025.11.20 12:17:27.120
+\# Thread usage report: 21 active threads, active load 1.00 at UTC 2025.11.20 12:17:27.120
 \o Loading ams.cxt 
-\o Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.12s.
+\o Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.18s.
 \p > 
 \o Loading pe.cxt 
 \a _treeSetOpcGUI(t)
 \r t
-\# Available memory:         12,231 MB at UTC 2025.11.13 16:03:51.608
-\# Memory report: Maximum memory size now 12,409 MB at UTC 2025.11.13 16:03:51.608
-\# Thread usage report: 21 active threads, active load 1.00 at UTC 2025.11.13 16:03:51.609
 \a ddsOpenLibManager()
 \r t
 \i ddsServOpen("TSPCFF_LIB" "TSPCFF" "schematic" "edit" nil)
@@ -77,10 +77,10 @@
 \o Loading oasis.cxt 
 \o Loading analog.cxt 
 \o Loading asimenv.cxt 
+\# Memory report: using         196 MB, process size 1,080 MB at UTC 2025.11.20 12:17:58.110
 \o Loading spectrei.cxt 
 \o Loading devCheck.cxt 
 \o Loading relXpert.cxt 
-\# Memory report: using         256 MB, process size 1,139 MB at UTC 2025.11.13 16:04:22.064
 \o Loading hspiceD.cxt 
 \o Loading spectreinl.cxt 
 \o Loading UltraSim.cxt 
@@ -113,6 +113,7 @@
 \o Loading mtv.cxt 
 \o Loading le.cxt 
 \o Loading leToolbox.cxt 
+\# Memory report: using         303 MB, process size 1,188 MB at UTC 2025.11.20 12:18:09.109
 \a _treeNavActivateOpc(dwindow('treeAssistant1) "")
 \r t
 \o Loading hsm.cxt 
@@ -125,6 +126,8 @@
 \r t
 \a when(dwindow('treeAssistant1) hiMapWindow(dwindow('treeAssistant1)))
 \r t
+\a hiResizeWindow(swindow(1) list(-5:-5 1915:1024))
+\r t
 \a _deUpdateMenu('schematicTools 2)
 \r t
 \a lxLaunchLayoutXL()
@@ -134,6 +137,7 @@
 \a hiFormDone(lxCVPairActionForm)
 \r t
 \p > 
+\# Memory report: Maximum memory size now 17,477 MB at UTC 2025.11.20 12:19:37.677
 \a hiFormDone(deOpenForm)
 \o *INFO* (icLic-302) License Virtuoso_Layout_Suite_GXL ("95321") was used to run Layout XL.
 \o Loading cph.cxt 
@@ -147,7 +151,6 @@
 \o Loading lo.cxt 
 \o Loading vfp.cxt 
 \o Loading apInfra.cxt 
-\# Memory report: using         366 MB, process size 1,261 MB at UTC 2025.11.13 16:04:35.111
 \o Loading smd.cxt 
 \o Loading ncl.cxt 
 \o Loading layers.cxt 
@@ -168,7 +171,10 @@
 \o function gsclib045_stretch redefined
 \o function gsclib045_round redefined
 \o function gsclib045_cellTmplCB redefined
+\# Memory report: using         407 MB, process size 1,302 MB at UTC 2025.11.20 12:20:00.328
 \o *INFO* (icLic-302) License Virtuoso_Schematic_Editor_XL ("95115") was used to run Schematics L.
+\a hiResizeWindow(swindow(1) list(-5:-5 1915:1024))
+\r t
 \o INFO (BND-1003): Binder initialized for layout cellview 'TSPCFF_LIB/TSPCFF/layout' and source cellview 'TSPCFF_LIB/TSPCFF/schematic':
 \o 
 \o                  bound       unbound     ungenerated
@@ -192,138 +198,57 @@
 \r t
 \a when(dwindow('ptePaletteAssistant1) hiMapWindow(dwindow('ptePaletteAssistant1)))
 \r t
+\a hiResizeWindow(swindow(2) list(-5:-5 1915:1024))
+\r t
+\a hiZoomInAtMouse()
+\i -0.035:1.855
+\r t
+\a hiZoomInAtMouse()
+\i -0.035:1.855
+\r t
 \a mouseSingleSelectPt()
-\i 4.435:0.69
+\i 0.785:2.03
 \r nil
+\a deToggleAssistantVisibility("World View")
+\r t
+\a hiZoomOutAtMouse()
+\i 1.47:1.96
+\r t
+\a hiZoomOutAtMouse()
+\i 1.475:1.955
+\r t
+\a hiUnmapWindow(dwindow('hiWorldView2))
+\r t
 \a hiGetCurrentWindow()->stopLevel = dbGetMaxHierDepth()-1
 \r 31
-\a hiResizeWindow(swindow(2) list(-5:-5 1915:1024))
+\a hiZoomInAtMouse()
+\i 1.375:1.105
+\r t
+\a hiZoomInAtMouse()
+\i 1.375:1.105
+\r t
+\a hiZoomOutAtMouse()
+\i 1.73:0.985
 \r t
 \a hiZoomAbsoluteScale(hiGetCurrentWindow() 0.9)
 \r t
-\a vuiDRCRun()
-\o 
-\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
-\o 
-\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
-\o 
-\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
-\o 
-\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
-\o 
-\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
-\o Assura DRC: State loaded "Last"
-\p > 
-\a hiiSetCurrentForm('vuiDRCForm)
+\a hiZoomInAtMouse()
+\i -0.325:0.635
 \r t
-\# Memory report: Maximum memory size now 12,653 MB at UTC 2025.11.13 16:04:51.209
-\a hiFormDone(vuiDRCForm)
-\o Assura DRC: State saved "Last"
-\p > 
-\a hiDBoxOK(filexistDBox)
+\a hiZoomOutAtMouse()
+\i 0.175:0.84
 \r t
-\o 
-\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
-\o 
-\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
-\o 
-\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
-\o 
-\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
-\o 
-\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
-\o Compiling rules...
-\o 
-\# Memory report: using         494 MB, process size 1,389 MB at UTC 2025.11.13 16:04:53.317
-\o 
-\o 
-\o Host is 
-\o cmd  is /comelec/softs/opt/Cadence/releases/ASSURA41_617/tools.lnx86/assura/bin/assura /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/DRC/bob.rsf -cdslib /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/cds.lib -restart -gui
-\o Starting the Assura DRC Run: IPC Id ipc:7: pid 3209022.
-\r t
-\r t
-\p > 
-\a hiDBoxOK(vuiDBox)
-\r t
-\o Checking out license for "Assura_UI"
-\o Checking out license for "Phys_Ver_Sys_Results_Mgr"
-\# Memory report: using         683 MB, process size 1,578 MB at UTC 2025.11.13 16:05:00.088
-\w *WARNING* No DRC errors found. 
-\p > 
-\a hiDBoxOK(vuiDBox)
-\r t
-\# Memory report: Maximum memory size now 12,911 MB at UTC 2025.11.13 16:05:01.210
-\a vuiLVSRun()
-\o 
-\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
-\o 
-\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
-\o 
-\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
-\o 
-\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
-\o 
-\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
-\o 
-\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
-\o 
-\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
-\o 
-\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
-\o 
-\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
-\o display full path...
-\o 
-\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
-\o Assura LVS: State loaded "Last"
-\p > 
-\a hiiSetCurrentForm('vuiLVSForm)
-\r t
-\a hiFormDone(vuiLVSForm)
-\o *INFO*: Checking whether schematic is up to date.
-\o *INFO*: Schematic integrity check is completed.
-\o Assura LVS: State saved "Last"
-\p > 
-\a hiDBoxOK(filexistDBox)
-\r t
-\o Host is 
-\o cmd  is /comelec/softs/opt/Cadence/releases/ASSURA41_617/tools.lnx86/assura/bin/assura /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/TSPCFF.rsf -cdslib /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/cds.lib -gui
-\o Starting the Assura LVS Run: IPC Id ipc:8: pid 3209535.
-\r t
-\r t
-\o STATUS: Schematic and Layout Mismatch
-\o 
-\o The LVS run "TSPCFF" has completed successfully.
-\o 
-\p > 
-\a hiiSetCurrentForm('UIlvs8)
-\r t
-\a hiFormDone(UIlvs8)
-\r t
-\o Checking in license for "Phys_Ver_Sys_Results_Mgr"
-\o Checking out license for "Assura_UI"
-\o Checking out license for "Phys_Ver_Sys_Results_Mgr"
-\o Schematic cell -  TSPCFF schematic TSPCFF_LIB
-\o Schematic cell -  TSPCFF schematic TSPCFF_LIB
-\o *INFO* (icLic-302) License Virtuoso_Schematic_Editor_XL ("95115") was used to run Schematics L.
-\o *INFO* (icLic-302) License Virtuoso_Schematic_Editor_XL ("95115") was used to run Schematics L.
-\o INFO (BND-1003): Binder initialized for layout cellview 'TSPCFF_LIB/TSPCFF/layout' and source cellview 'TSPCFF_LIB/TSPCFF/schematic':
-\o 
-\o                  bound       unbound     ungenerated
-\o   terminals          5             0               0
-\o   nets              12             0               0
-\o   instances         13             1               0
-\o 
-\w *WARNING* (BND-2005): Layout instances and terminals do not match the source.
-\w Use 'XL Status' in the Navigator or run 'Connectivity - Check - Against Source' for more details.
-\w If the bindings are correct, run the 'Update from Source' commands,
-\w otherwise run 'Connectivity - Update - Binding'.
-\a hiCloseWindow(swindow(1))
-\r t
-\a hiCloseWindow(window(4))
+\a _deUpdateMenu('maskLayoutTools 3)
 \r t
 \a vuiRcxInit()
 \o QRC Run: Loading Technology Data. Standby...
+\p > 
+\a hiiSetCurrentForm('vuiRcxOpenForm)
+\r t
+\a hiFormDone(vuiRcxOpenForm)
+\# Memory report: using         608 MB, process size 1,503 MB at UTC 2025.11.20 12:20:43.097
+\o Schematic cell -  TSPCFF schematic TSPCFF_LIB
+\r t
 \o 
 \o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
 \o *Info* Default Substrate Tech Dir is not defined, replaced with the empty name
@@ -341,77 +266,37 @@
 \o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
 \o 
 \o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
-\w *WARNING* Template file "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/./.rcx_setup.tpl" cannot be found
-\o *Info* Ignoring peecMode from the State File
-\o Load complete.
-\p > 
-\a hiiSetCurrentForm('vuiRcxRunForm)
-\r t
-\a hiFormDone(vuiRcxRunForm)
-\w *WARNING* The Quantus QRC data already exists for "TSPCFF"
-\w Overwrite the existing file(s) ?
-\p > 
-\a hiDBoxOK(vuiDBox)
-\r t
-\o CCLFile is /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/qrc.TSPCFF.ccl
-\o LogFile is /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/qrc.TSPCFF.log
-\o Starting the ipc:11 Run: IPC Id 3211437: pid Quantus QRC.
-\r t
-\r nil
-\e *Error* The Quantus QRC run "TSPCFF" failed!
-\e 	The log File is at: /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/qrc.TSPCFF.log
-\a hiDBoxOK(vuiRcxRunDialog)
-\r t
-\a hiResizeWindow(window(5) list(483:158 1383:858))
-\r t
-\a hiCloseWindow(window(5))
-\r t
-\a _hiSetCurrentWinNum(3)
-\r t
-\a vuiRcxInit()
-\o *Info* Ignoring peecMode from the State File
-\p > 
-\a vuiRcxRunForm->vuiRCXTabField->value=2
-\r 2
-\a vuiRcxRunForm->vuiRCXTabField->value=3
-\r 3
-\a vuiRcxRunForm->vuiRCXTabField->value=2
-\r 2
-\a hiFormDone(vuiRcxRunForm)
-\w *WARNING* The Quantus QRC data already exists for "TSPCFF"
-\w Overwrite the existing file(s) ?
-\p > 
-\a hiDBoxOK(vuiDBox)
-\r t
-\o CCLFile is /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/qrc.TSPCFF.ccl
-\o LogFile is /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/qrc.TSPCFF.log
-\o Starting the ipc:12 Run: IPC Id 3214709: pid Quantus QRC.
-\r t
-\r nil
-\a hiiSetCurrentForm('tmp10)
-\r t
-\e *Error* The Quantus QRC run "TSPCFF" failed!
-\e 	The log File is at: /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/qrc.TSPCFF.log
-\a hiDBoxOK(vuiRcxRunDialog)
-\r t
-\a _hiCopy(hiGetCurrentWindow())
-\r t
-\a hiSetCurrentWindow(window(3))
-\r t
-\a vuiRcxInit()
-\o *Info* Ignoring peecMode from the State File
-\p > 
-\a hiiSetCurrentForm('vuiRcxRunForm)
-\r t
-\a vuiRcxRunForm->vuiRCXTabField->value=1
-\r 1
-\a vuiRcxRunForm->vuiRCXTabField->page1->vuiRCXFlowTab->ruleSetField->value="rcx_typical"
+\w *WARNING* Template file "/comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/qrc/typical/./.rcx_setup.tpl" cannot be found
+\o 
+\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
 \o 
 \o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
 \o 
 \o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
 \o Template file "/comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/.rcx_setup.tpl" was successfully loaded
-\r "rcx_typical"
+\o 
+\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+\o *Info* Ignoring peecMode from the State File
+\o Load complete.
+\p > 
+\a hiiSetCurrentForm('vuiRcxRunForm)
+\r t
+\a vuiRcxRunForm->vuiRCXTabField->page1->vuiRCXFlowTab->extractMosRes->value= t
+\r t
+\a vuiRcxRunForm->vuiRCXTabField->value=2
+\r 2
+\a vuiRcxRunForm->vuiRCXTabField->page2->vuiRCXExtractionTab->rcxExtractionMode->value="RC"
+\r "RC"
+\a vuiRcxRunForm->vuiRCXTabField->page2->vuiRCXExtractionTab->capExtractMode->value="Coupled"
+\r "Coupled"
+\a vuiRcxRunForm->vuiRCXTabField->page2->vuiRCXExtractionTab->refNode->value="VSS"
+\r "VSS"
+\a vuiRcxRunForm->vuiRCXTabField->value=4
+\r 4
+\a vuiRcxRunForm->vuiRCXTabField->page4->vuiRCXNetlistingTab->vuiRCXParasiticResModels->value="Do Not Include"
+\r "Do Not Include"
+\a vuiRcxRunForm->vuiRCXTabField->page4->vuiRCXNetlistingTab->vuiRCXParasiticCapModels->value="Do Not Include"
+\r "Do Not Include"
 \a hiFormDone(vuiRcxRunForm)
 \w *WARNING* The Quantus QRC data already exists for "TSPCFF"
 \w Overwrite the existing file(s) ?
@@ -420,678 +305,279 @@
 \r t
 \o CCLFile is /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/qrc.TSPCFF.ccl
 \o LogFile is /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/qrc.TSPCFF.log
-\o Starting the ipc:15 Run: IPC Id 3216899: pid Quantus QRC.
+\o Starting the ipc:15 Run: IPC Id 148108: pid Quantus QRC.
 \r t
 \r nil
+\a hiiSetCurrentForm('tmp6)
+\r t
+\a _quiTailFile( "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/qrc.TSPCFF.log" )
+\o Tailing "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/qrc.TSPCFF.log"
+\r window:4
+\e *Error* The Quantus QRC run "TSPCFF" failed!
+\e 	The log File is at: /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/qrc.TSPCFF.log
+\a hiDBoxOK(vuiRcxRunDialog)
+\r t
+\a hiCloseWindow(window(5))
+\r t
+\a _hiSetCurrentWinNum(4)
+\r t
+\a hiResizeWindow(window(4) list(646:151 1546:851))
+\r t
+\a hiCloseWindow(window(4))
+\r t
+\a _hiSetCurrentWinNum(3)
+\r t
+\a vuiRcxInit()
+\o QRC Run: Loading Technology Data. Standby...
+\p > 
+\a hiiSetCurrentForm('vuiRcxOpenForm)
+\r t
+\a hiFormDone(vuiRcxOpenForm)
+\o Schematic cell -  TSPCFF schematic TSPCFF_LIB
+\r t
+\o 
+\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+\o *Info* Default Substrate Tech Dir is not defined, replaced with the empty name
+\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+\w *WARNING* Template file "/comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/qrc/./.rcx_setup.tpl" cannot be found
+\o 
+\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+\w *WARNING* Template file "/comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/qrc/typical/./.rcx_setup.tpl" cannot be found
+\o 
+\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/assura/techRuleSets
+\o *Info* Ignoring peecMode from the State File
+\o Load complete.
+\p > 
+\a hiiSetCurrentForm('vuiRcxRunForm)
+\r t
+\a vuiRcxRunForm->vuiRCXTabField->value=2
+\r 2
+\a vuiRcxRunForm->vuiRCXTabField->value=1
+\r 1
+\a vuiRcxRunForm->vuiRCXTabField->value=2
+\r 2
+\a vuiRcxRunForm->vuiRCXTabField->page2->vuiRCXExtractionTab->refNode->value="VSS!"
+\r "VSS!"
+\a hiFormDone(vuiRcxRunForm)
+\w *WARNING* The Quantus QRC data already exists for "TSPCFF"
+\w Overwrite the existing file(s) ?
+\p > 
+\a hiDBoxOK(vuiDBox)
+\r t
+\o CCLFile is /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/qrc.TSPCFF.ccl
+\o LogFile is /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/qrc.TSPCFF.log
+\o Starting the ipc:24 Run: IPC Id 150178: pid Quantus QRC.
+\r t
+\r nil
+\# Memory report: Maximum memory size now 17,126 MB at UTC 2025.11.20 12:28:08.346
 \o The Quantus QRC run "TSPCFF" completed successfully
 \o The output is in : /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/TSPCFF.sp
 \a hiDBoxOK(vuiRcxRunDialog)
 \r t
+\# Memory report: Maximum memory size now 16,725 MB at UTC 2025.11.20 12:50:48.390
+\a hiZoomInAtMouse()
+\i 0.505:1.015
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.99:0.904
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 0.99:0.9055
+\a hiZoomIn(window(3) list(-0.174:-0.17 2.9695:1.285))
+\r t
+\r t
+\r t
+\a hiZoomInAtMouse()
+\i 0.755:-0.085
+\r t
+\a hiZoomInAtMouse()
+\i 0.755:-0.085
+\r t
 \a hiZoomOutAtMouse()
-\i 3.005:0.345
+\i 0.755:-0.085
+\r t
+\a hiZoomOutAtMouse()
+\i 0.755:-0.085
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.653:0.8855
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 0.653:0.8855
+\a hiZoomIn(window(3) list(-0.2445:0.424 2.9015:1.88))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i 1.284:0.8275
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 1.2845:0.8275
+\a hiZoomIn(window(3) list(-0.1955:-0.22 2.9505:1.236))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i 1.002:0.7315
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 1.0015:0.7315
+\a hiZoomIn(window(3) list(-0.413:0.1925 2.733:1.6485))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i 1:0.511
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 1:0.511
+\a hiZoomIn(window(3) list(-0.4725:-0.039 2.6735:1.417))
+\r t
+\r t
+\r t
+\a hiZoomInAtMouse()
+\i 1.215:0.785
+\r t
+\a hiZoomInAtMouse()
+\i 1.215:0.785
+\r t
+\a hiZoomInAtMouse()
+\i 1.15:0.78
+\r t
+\a hiZoomOutAtMouse()
+\i 1.16:0.78
+\r t
+\a hiZoomInAtMouse()
+\i 1.14:0.765
+\r t
+\a hiZoomInAtMouse()
+\i 1.14:0.765
+\r t
+\a hiZoomOutAtMouse()
+\i 1.145:0.765
+\r t
+\a hiZoomOutAtMouse()
+\i 1.145:0.77
+\r t
+\a hiZoomOutAtMouse()
+\i 1.14:0.77
+\r t
+\a hiZoomOutAtMouse()
+\i 1.14:0.775
+\r t
+\a hiZoomInAtMouse()
+\i 0.34:0.855
+\r t
+\a hiZoomInAtMouse()
+\i 0.345:0.865
+\r t
+\a hiZoomOutAtMouse()
+\i 0.4:0.905
+\r t
+\a hiZoomOutAtMouse()
+\i 0.41:0.9
 \r t
 \a hiZoomAbsoluteScale(hiGetCurrentWindow() 0.9)
 \r t
 \a hiZoomInAtMouse()
-\i 0.745:1.455
+\i 0.47:0.79
 \r t
 \a hiZoomInAtMouse()
-\i 0.765:1.49
+\i 0.47:0.795
+\r t
+\a hiZoomOutAtMouse()
+\i 1.015:0.8
+\r t
+\a hiZoomOutAtMouse()
+\i 0.955:0.805
 \r t
 \a hiZoomInAtMouse()
-\i 0.765:1.49
+\i 0.955:0.805
+\r t
+\a hiZoomInAtMouse()
+\i 1.295:1.375
+\r t
+\a hiZoomInAtMouse()
+\i 1.29:1.375
 \r t
 \a hiZoomOutAtMouse()
-\i 1.05:1.47
+\i 1.235:1.315
 \r t
 \a hiZoomOutAtMouse()
-\i 1.05:1.47
+\i 1.24:1.31
 \r t
-\a hiCloseWindow(window(6))
+\a hiZoomOutAtMouse()
+\i 1.245:1.315
 \r t
-\a pipoDisplay(transStreamOutNewForm)
+\a hiZoomInAtMouse()
+\i 0.255:1.19
 \r t
-\a _xst_out_mainFormOk(  )
+\a hiZoomInAtMouse()
+\i 0.9:0.39
 \r t
-\a _xst_out_mainFormDoTranslate(  )
+\a hiZoomInAtMouse()
+\i 0.9:0.455
 \r t
-\o INFO (XSTRM-222): strmout -library 'TSPCFF_LIB' -strmFile 'TSPCFF.gds' -topCell 'TSPCFF' -view 'layout' -logFile 'strmOut.log'
-\o Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.14s.
-\o ********************************************************************************
-\o Product   : Virtuoso(R) XStream Out
-\o Program   : @(#)$CDS: strmout version 6.1.7-64b 09/01/2017 11:59 (sjfhw319) $
-\o           : sub-version  IC6.1.7-64b.500.14 
-\o Started at: 13-Nov-2025  17:24:29
-\o User Name : afonlupt-25
-\o Host Name : tp-3a107-06
-\o Directory : /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2
-\o CADENCE Design Systems, Inc.
-\o ********************************************************************************
-\o Info: Cellview Rev Num:99,  Tech Rev Num:59
-\o 
-\o Loading gpdk045/libInit.il ...
-\o 	Loading gpdk045/loadCxt.ile ... done!
-\o 	Loading context 'gpdk045' from library 'gpdk045' ... done!
-\o 	Loading context 'pdkUtils' from library 'gpdk045' ... done!
-\o 	Loading gpdk045/gpdk045_customFilter.il ... done!
-\o 	Loading gpdk045/libInitCustomExit.il ... 
-\o 	Loading Environment Settings ...
-\o 	Loading gpdk045/gpdk045_PDKRegistrations.il ... done!
-\o 
-\o   *************************************************************           
-\o   *              Cadence Design Systems, Inc.                 *           
-\o   *                                                           *           
-\o   *                    Generic 45nm PDK                       *           
-\o   *                        (gpdk045)                          *           
-\o   *                                                           *           
-\o   *************************************************************           
-\o 	
-\o 
-\o 	VERSION: 4.0 (17-June-2014)
-\o 
-\o done!
-\o Loaded gpdk045/libInit.il successfully!
-\o INFO (XSTRM-217): Reading the layer map file, /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/gpdk045/gpdk045.layermap
-\o INFO (XSTRM-162): You have not used the viaMap option. If the OpenAccess design has native oaVia instances, use the -viaMap option for preserving oaVia instances in a Stream Out - Stream In round trip. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design.  For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
-\o 
-\o Summary of Options :
-\o library                                 TSPCFF_LIB
-\o strmFile                                TSPCFF.gds
-\o topCell                                 TSPCFF
-\o view                                    layout
-\o logFile                                 strmOut.log
-\o layerMap                                /comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/gpdk045/gpdk045.layermap
-\o case                                    Preserve
-\o convertDot                              node
-\o 
-\o INFO (XSTRM-223): 1. Translating cellView gpdk045/M1_PO/layout as STRUCTURE M1_PO_CDNS_763051069740.
-\o INFO (XSTRM-223): 2. Translating cellView gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_763051069740.
-\o INFO (XSTRM-223): 3. Translating cellView gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_763051069741.
-\o INFO (XSTRM-223): 4. Translating cellView gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_763051069742.
-\o INFO (XSTRM-223): 5. Translating cellView gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_763051069743.
-\o INFO (XSTRM-223): 6. Translating cellView gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_763051069744.
-\o INFO (XSTRM-223): 7. Translating cellView gsclib045_tech/cellTmpl/layout as STRUCTURE cellTmpl_CDNS_763051069745.
-\o INFO (XSTRM-223): 8. Translating cellView gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_763051069746.
-\o INFO (XSTRM-223): 9. Translating cellView gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_763051069747.
-\o INFO (XSTRM-223): 10. Translating cellView gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_763051069748.
-\o INFO (XSTRM-223): 11. Translating cellView gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_763051069749.
-\o INFO (XSTRM-223): 12. Translating cellView gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_7630510697410.
-\o INFO (XSTRM-223): 13. Translating cellView gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_7630510697411.
-\o INFO (XSTRM-223): 14. Translating cellView gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_7630510697412.
-\o INFO (XSTRM-223): 15. Translating cellView TSPCFF_LIB/TSPCFF/layout as STRUCTURE TSPCFF.
-\o INFO (XSTRM-180): You have not used the objectMap option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the objectMap option to translate/preserve these objects using XStream. For details on the objectMap option, refer to the "Design Data Translator's Reference" guide for XStream.
-\o 
-\o Summary of Objects Translated:
-\o 	Scalar Instances:                       14
-\o 	Array Instances:                        0
-\o 	Polygons:                               0
-\o 	Paths:                                  2
-\o 	Rectangles:                             219
-\o 	Lines:                                  0
-\o 	Arcs:                                   0
-\o 	Donuts:                                 0
-\o 	Dots:                                   0
-\o 	Ellipses:                               0
-\o 	Boundaries:                             0
-\o 	Area Blockages:                         0
-\o 	Layer Blockages:                        0
-\o 	Area Halos:                             0
-\o 	Markers:                                0
-\o 	Rows:                                   0
-\o 	Standard Vias                           9
-\o 	Custom Vias:                            0
-\o 	CdsGen Vias:                            0
-\o 	Pathsegs:                               54
-\o 	Text:                                   5
-\o 	TextDisplay:                            0
-\o 	Cells:                                  15
-\o 
-\o Elapsed Time: 1.0s   User Time: 0.2s   CPU Time: 0.1s   Peak VM: 5840KB
-\o INFO (XSTRM-234): Translation completed. '0' error(s) and '0' warning(s) found.
-\o strmout completed.
-\a pipoDisplay(transStreamOutNewForm)
+\a hiZoomOutAtMouse()
+\i 0.895:0.535
 \r t
-\a _xst_out_mainFormClose(  )
+\a hiZoomOutAtMouse()
+\i 0.835:0.515
 \r t
-\a hiResizeWindow(window(1) list(0:65 956:864))
+\a hiZoomInAtMouse()
+\i 0.8:0.18
 \r t
-\o Info (ccp): Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.12s.
-\o 
-\o Info (ccp): ccpDFIIChecker: Starting ...
-\o Info (ccp): ccpDFIIChecker: End running.
-\o Loading socket.cxt 
-\o Loading dal.cxt 
-\o Loading awv.cxt 
-\o Loading par.cxt 
-\o Loading alvs.cxt 
-\o Loading caa.cxt 
-\o Loading adexlCore.cxt 
-\o Loading adexl.cxt 
-\i ddsServOpen("TSPCFF_LIB" "TSPCFF" "layout" "edit" nil)
-\a when(dwindow('ptePaletteAssistant2) hiMapWindow(dwindow('ptePaletteAssistant2)))
+\a hiZoomOutAtMouse()
+\i 0.905:0.465
 \r t
+\a hiZoomInAtMouse()
+\i 0.87:0.3
+\r t
+\a hiZoomOutAtMouse()
+\i 0.795:0.425
+\r t
+\a hiZoomOutAtMouse()
+\i 0.75:0.325
+\r t
+\a hiZoomOutAtMouse()
+\i 0.745:0.32
+\r t
+\a hiZoomInAtMouse()
+\i 0.67:1.46
+\r t
+\a hiZoomInAtMouse()
+\i 0.67:1.46
+\r t
+\# Available memory:         16,017 MB at UTC 2025.11.20 13:04:48.130
 \a mouseSingleSelectPt()
-\i 3.28:0.33
+\i -0.165:1.17
 \r nil
-\a hiGetCurrentWindow()->stopLevel = dbGetMaxHierDepth()-1
-\r 31
-\a hiResizeWindow(swindow(3) list(-5:-5 1915:1024))
-\r t
-\a hiZoomInAtMouse()
-\i -0.05:0.55
-\r t
-\a hiZoomInAtMouse()
-\i -0.05:0.55
-\r t
-\a hiZoomInAtMouse()
-\i -0.05:0.55
-\r t
-\a hiZoomOutAtMouse()
-\i 0.265:0.39
-\r t
-\a mouseSingleSelectPt()
-\i -0.14:0.65
-\r nil
-\a leHiMerge()
-\p > 
-\a hiZoomInAtMouse()
-\i 0.43:0.925
-\r t
-\a hiZoomInAtMouse()
-\i 0.43:0.925
-\r t
-\a hiZoomInAtMouse()
-\i 0.43:0.925
-\r t
-\a hiZoomOutAtMouse()
-\i 0.455:0.895
-\r t
-\a hiZoomOutAtMouse()
-\i 0.455:0.89
-\r t
-\a hiZoomOutAtMouse()
-\i 0.45:0.89
-\r t
-\a hiZoomInAtMouse()
-\i 1.62:1.005
-\r t
-\a hiZoomInAtMouse()
-\i 1.82:0.905
-\r t
-\a hiZoomInAtMouse()
-\i 1.82:0.905
-\r t
-\a hiZoomOutAtMouse()
-\i 1.835:0.905
-\r t
-\a leHiMerge()
+\a leHiCreateMeasurement()
 \p > 
 \a mouseAddPt(t)
-\i 1.7935:0.9165
-\r t
-\a mouseAddPt(t)
-\i 1.8045:0.8695
-\r t
-\a hiZoomOutAtMouse()
-\i 1.835:0.885
-\r t
-\a hiZoomOutAtMouse()
-\i 1.835:0.88
-\r t
-\a mouseAddPt(t)
-\i 2.299:0.9375
+\i -0.0585:0.9965
 \r t
 \a cancelEnterFun()
 \r t
 \r nil
-\r nil
-\a mouseSingleSelectPt()
-\i 2.305:0.92
-\r nil
-\a geSelectAllFig()
-\r t
-\a leHiMerge()
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103826): The merge command does not support p&r boundary object. All the other supported objects in
-\w the selected set will be processed.
-\r t
-\a mouseSingleSelectPt()
-\i 2.3:0.915
-\r nil
-\a hiZoomInAtMouse()
-\i 0.365:0.93
-\r t
 \a hiZoomOutAtMouse()
-\i 0.365:0.93
+\i 1.675:1.405
 \r t
 \a hiZoomInAtMouse()
-\i 1.95:1.39
+\i 1.92:1.195
 \r t
-\a hiZoomInAtMouse()
-\i 1.95:1.39
-\r t
-\a hiZoomOutAtMouse()
-\i 1.945:1.22
-\r t
-\a hiZoomOutAtMouse()
-\i 1.94:1.12
-\r t
-\a hiUndo()
-\r t
-\a hiUndo()
-\r t
-\a hiUndo()
-\r t
-\a hiUndo()
-\r nil
-\a hiUndo()
-\r nil
-\a hiUndo()
-\r nil
-\a hiUndo()
-\r nil
-\a hiUndo()
-\r nil
-\a hiUndo()
-\r nil
-\a hiUndo()
-\r nil
-\a hiUndo()
-\r nil
-\a hiUndo()
-\r nil
-\a hiUndo()
-\r nil
-\a hiZoomOutAtMouse()
-\i 0.725:1.75
-\r t
-\a hiZoomOutAtMouse()
-\i 0.72:1.75
-\r t
-\a hiZoomInAtMouse()
-\i 0.93:0.46
-\r t
-\a hiZoomInAtMouse()
-\i 0.96:0.595
-\r t
-\a hiZoomInAtMouse()
-\i 0.99:0.67
-\r t
-\a hiZoomOutAtMouse()
-\i 0.965:0.57
-\r t
-\a hiZoomOutAtMouse()
-\i 0.97:0.57
-\r t
-\a geSelectAllFig()
-\r t
-\a leHiMerge()
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103011): After merging the pathSegs, some shapes have been removed from their routes.
-\w This happened because either the resultant merged shape was not a pathSeg or
-\w one of the pathSegs being merged was not associated with any route.
-\w *WARNING* (LE-103826): The merge command does not support p&r boundary object. All the other supported objects in
-\w the selected set will be processed.
-\r t
-\a leHiMerge()
-\w *WARNING* (LE-103826): The merge command does not support p&r boundary object. All the other supported objects in
-\w the selected set will be processed.
-\p > 
-\a hiDBoxOK(dBox) 
-\r t
-\p > 
-\a mouseAddPt(t)
-\i 2.416:1.0435
-\r t
-\a cancelEnterFun()
-\r t
-\r nil
-\a mouseSingleSelectPt()
-\i 2.415:0.74
-\r nil
-\a hiZoomInAtMouse()
-\i 0.5:0.78
-\r t
-\a hiZoomInAtMouse()
-\i 0.5:0.78
-\r t
-\a hiZoomOutAtMouse()
-\i 0.51:0.81
-\r t
-\a leHiSave()
-\r t
-\a hiZoomInAtMouse()
-\i -0.135:1.045
-\r t
-\a hiZoomInAtMouse()
-\i -0.135:1.045
-\r t
-\a geSelectAllFig()
-\r t
-\a leHiMerge()
-\w *WARNING* (LE-103826): The merge command does not support p&r boundary object. All the other supported objects in
-\w the selected set will be processed.
-\p > 
-\a hiDBoxOK(dBox) 
-\r t
-\p > 
-\a hiZoomOutAtMouse()
-\i -0.16:1.07
-\r t
-\a mouseAddPt(t)
-\i -0.1435:0.989
-\r t
-\a mouseAddPt(t)
-\i -0.1405:0.9635
-\r t
-\a hiZoomOutAtMouse()
-\i -0.14:0.965
-\r t
-\a hiZoomOutAtMouse()
-\i -0.14:0.965
-\r t
-\a hiZoomInAtMouse()
-\i 1.66:0.935
-\r t
-\a cancelEnterFun()
-\r t
-\r nil
-\a mouseSingleSelectPt()
-\i 2.43:0.835
-\r nil
-\a hiZoomOutAtMouse()
-\i 2.695:0.735
-\r t
-\a hiZoomInAtMouse()
-\i 1.495:1.2
-\r t
-\a hiSetCurrentWindow(window(3))
-\r t
-\a pteSetActiveLpp("Oxide drawing")
-\r nil
-\a pteSetSelectable("Oxide drawing" nil "Layers")
-\r t
-\a pteSetActiveLpp("Oxide drawing")
-\r nil
-\a pteSetSelectable("Oxide drawing" t "Layers")
-\r t
-\a pteShowUsedLPP(t)
-\r t
-\a pteSetSelectable("Oxide drawing" nil "Layers")
-\r t
-\a pteSetActiveLpp("Oxide drawing")
-\r nil
-\a pteSetSelectable("Oxide drawing" t "Layers")
-\r t
-\a leHiQuickAlign()
-\p > 
-\a leHiEditProp()
-\r t
-\a geiPlInvokePlistAction("editorNum0" "cancel")
-\r t
-\a mouseAddPt(t)
-\i 0.208:1.2035
-\r t
-\a leHiEditProp()
-\r t
-\a geiPlChangePlistCategory("editorNum0" "parameter")
-\r t
-\a geiPlChangePlistCategory("editorNum0" "property")
-\r t
-\a geiPlChangePlistCategory("editorNum0" "ROD")
-\r t
-\a geiPlInvokePlistAction("editorNum0" "cancel")
-\r t
-\a cancelEnterFun()
-\r t
-\r nil
-\a mouseSingleSelectPt()
-\i -0.345:1.495
-\r nil
-\a pteSetActiveLpp("PWdummy drawing")
-\r nil
-\a pteSetNoneVisible(?panel "Layers")
-\r t
-\a hiZoomOutAtMouse()
-\i 0.355:1.515
-\r t
-\a pteSetAllVisible(?panel "Layers")
-\r t
-\a hiResizeWindow(window(1) list(824:68 1780:867))
-\r t
-\a hiResizeWindow(window(1) list(823:68 1779:867))
-\r t
-\a hiResizeWindow(window(1) list(664:68 1779:488))
-\r t
-\a techManagerOpenTechToolBox()
-\r t
-\a hiResizeWindow(window(8) list(136:394 456:772))
-\r t
-\a tcDisplayDumpTechForm()
-\r t
-\a hiiSetCurrentForm('tcDumpTechForm)
-\r t
-\a tcDumpTechForm->tcBinaryTFLibCyclic->value="gpdk045"
-\r "gpdk045"
-\a tcDumpTechForm->tcBinaryTFLibCyclic->value="gsclib045_tech"
-\r "gsclib045_tech"
-\a tcDumpTechForm->tcDeviceDisclosure->value= t
-\r t
-\a tcDumpTechForm->tcDeviceDisclosure->value= nil
-\r nil
-\a tcDumpTechForm->tcLoadClassToggle->layerDefinitions->value =  t
-\r t
-\a hiFormDone(tcDumpTechForm)
-\p > 
-\a hiDBoxOK(tcvDBox)
-\r t
-\r t
-\a tcDisplayDumpTechForm()
-\r t
-\a hiFormDone(tcDumpTechForm)
-\p > 
-\a hiDBoxOK(tcvDBox)
-\r t
-\r t
-\a tcDisplaySaveTechForm()
-\p > 
-\a hiiSetCurrentForm('tcSaveTechForm)
-\r t
-\a hiFormDone(tcSaveTechForm)
-\p > 
-\a hiDBoxOK(tcvDBox)
-\r t
-\r t
-\r t
-\a tcDisplayLoadTechForm()
-\p > 
-\a hiiSetCurrentForm('tcLoadTechForm)
-\r t
-\a hiFormCancel(tcLoadTechForm)
-\r t
-\r nil
-\a hiResizeWindow(window(1) list(562:-161 1677:259))
-\r t
-\a hiCloseWindow(window(8))
-\r t
-\a hiResizeWindow(window(1) list(602:0 1717:420))
-\r t
-\a pipoDisplay(transStreamOutNewForm)
-\r t
-\a hiResizeWindow(window(1) list(592:-236 1707:184))
-\r t
-\a _xst_out_setGuiFieldValue( "techLib" "gsclib045_tech" )
-\r t
-\a _xst_out_setGuiFieldValue( "techLib" "gpdk045" )
-\r t
-\a _xst_out_setGuiFieldValue( "techLib" "gsclib045_tech" )
-\r t
-\a _xst_out_layerMapFormOpen(  )
-\r t
-\a _xst_out_layerMapFormClose( "0" )
-\r t
-\a _xst_out_setGuiFieldValue( "techLib" "gpdk045" )
-\r t
-\a hiResizeWindow(swindow(3) list(930:152 1830:842))
-\r t
-\a hiResizeWindow(swindow(3) list(974:152 1874:842))
-\r t
-\a hiSetCurrentWindow(window(7))
-\r t
-\a pteSetOption("contextByLS" t)
-\r t
-\a pteSetOption("contextByLS" nil)
-\r t
-\a pteShowUsedLPP(t)
-\r t
-\a pteSetActiveLpp("Metal1 drawing")
-\r nil
-\a pteSetActiveLpp("Metal1 drawing")
-\r nil
-\a pteSetSelectable("Metal1 drawing" nil "Layers")
-\r t
-\a pteSetActiveLpp("Metal1 drawing")
-\r nil
-\a pteSetSelectable("Metal1 drawing" t "Layers")
-\r t
-\a leHiEditDisplayOptions()
-\r t
-\a hiFormCancel(leDisplayOptionsForm) 
-\r t
-\a hiResizeWindow(swindow(3) list(-5:-5 1915:1024))
-\r t
-\a _deUpdateWindowMenu('leSessionWindowMenu7 7)
-\r t
-\a hiResizeWindow(window(1) list(755:272 1870:692))
-\r t
-\a pipoDisplay(transStreamOutNewForm)
-\a _xst_out_setGuiFieldValue( "techLib" "" )
-\r t
-\a _xst_out_setGuiFieldValue( "techLib" "gpdk045" )
-\r t
-\r t
-\a _xst_out_moreOptionsFormOpen(  )
-\r t
-\a _xst_out_moreOptionsFormCategoryIndex( "1:0" )
-\r t
-\a _xst_out_moreOptionsFormCategoryIndex( "0:1" )
-\r t
-\a _xst_out_moreOptionsFormCategoryIndex( "4" )
-\r t
-\a _xst_out_moreOptionsFormCategoryIndex( "3" )
-\r t
-\a _xst_out_moreOptionsFormCategoryIndex( "2" )
-\r t
-\a _xst_out_moreOptionsFormCategoryIndex( "1:2" )
-\r t
-\a _xst_out_moreOptionsFormCategoryIndex( "1:1" )
-\r t
-\a _xst_out_moreOptionsFormCategoryIndex( "1:0" )
-\r t
-\a _xst_out_moreOptionsFormCategoryIndex( "1:0" )
-\r t
-\a _xst_out_moreOptionsFormCategoryIndex( "0:1" )
-\r t
-\a _xst_out_moreOptionsFormCategoryIndex( "0:0" )
-\r t
-\a _xst_out_moreOptionsFormCategoryIndex( "1:0" )
-\r t
-\a _xst_out_moreOptionsFormClose( "0" )
-\r t
-\a _xst_out_setGuiFieldValue( "virtualMemory" "true" )
-\r t
-\a _xst_out_setGuiFieldValue( "virtualMemory" "false" )
-\r t
-\a _xst_out_mainFormHelp(  )
-\r t
+\# Memory report: Maximum memory size now 17,193 MB at UTC 2025.11.20 13:38:28.190

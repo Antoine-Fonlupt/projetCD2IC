@@ -1,5 +1,5 @@
 #!/bin/ksh
-# This script was generated Thu Nov 13 17:18:24 2025 by:
+# This script was generated Thu Nov 20 13:24:39 2025 by:
 #
 # Program: /comelec/softs/opt/Cadence/releases/EXT15.27/tools.lnx86/extraction/bin/64bit//RCXspice
 # Version: 15.2.0
@@ -16,16 +16,18 @@
 #	/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/TSPCFF \
 #	-type full -temperature 25.0 -tempdir \
 #	/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/TSPCFF/rcx_temp \
-#	-sub_node_char # -res_models no -parasitic_res_models comment \
-#	-parasitic_cap_models yes -output_net_name_space schematic \
+#	-sub_node_char # -res_models no -parasitic_res_models no \
+#	-parasitic_cap_models no -output_net_name_space schematic \
 #	-output_hierarchy_delimiter / -output \
 #	/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/TSPCFF.sp \
-#	-net_name_space layout -minR 0.001 -max_merged_via_size auto \
-#	-max_fracture_length infinite -macro_cell -m_factorR infinite \
-#	-lvs_source assura -ignore_gate_diffusion_fringing_cap \
-#	-hierarchy_delimiter / -fracture_length_units MICRONS -extract res \
-#	-device_finger_delimiter @ -cap_models no -array_vias_spacing auto \
-#	-xref \
+#	-net_name_space layout -minR 0.001 -minC_by_percentage 0.1 -minC \
+#	1e-17 -max_merged_via_size auto -max_fracture_length infinite \
+#	-macro_cell -m_factorR infinite -lvs_source assura \
+#	-ignore_gate_diffusion_fringing_cap -hierarchy_delimiter / \
+#	-fracture_length_units MICRONS -extract_mos_diffusion_res -extract \
+#	both -exclude_self_caps -device_finger_delimiter @ -cap_models no \
+#	-cap_ground VSS! -cap_extract_mode coupled -cap_coupling_factor 1.0 \
+#	-array_vias_spacing auto -xref \
 #	/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/TSPCFF/TSPCFF.gnx,/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/TSPCFF/TSPCFF.gdx
 set -e
 set -v
@@ -43,8 +45,8 @@ set -v
 ##BLACK_BOX_CELLS=/dev/null
 ##BREAK_WIDTH=
 ##CAP_COUPLING_FACTOR=1.0
-##CAP_EXTRACT_MODE=decoupled
-##CAP_GROUND=gnd!
+##CAP_EXTRACT_MODE=coupled
+##CAP_GROUND=VSS!
 ##CAP_MODELS=no
 ##DANGLINGR=N
 ##DENSITY_CHECK_METHOD=P
@@ -58,12 +60,12 @@ set -v
 ##EXCLUDE_FLOAT_DECOPULING_FACTOR=
 ##EXCLUDE_FLOATING_NETS=N
 ##EXCLUDE_NETS_REDUCERC=/dev/null
-##EXCLUDE_SELF_CAPS=N
+##EXCLUDE_SELF_CAPS=Y
 ##IGNORE_GATE_DIFFUSION_FRINGING_CAP=Y
-##EXTRACT=res
+##EXTRACT=both
 ##EXTRACT_MOS_DIFFUSION_AP=N
 ##EXTRACT_MOS_DIFFUSION_HIGH=
-##EXTRACT_MOS_DIFFUSION_RES=N
+##EXTRACT_MOS_DIFFUSION_RES=Y
 ##FILTER_SIZE=2.0
 ##FIXED_NETS_FILE=/dev/null
 ##FMAX=
@@ -91,16 +93,16 @@ set -v
 ##MAX_FRACTURE_LENGTH=infinite
 ##MAX_SIGNALS=
 ##MERGE_PARALLEL_R=N
-##MINC=
-##MINC_BY_PERCENTAGE=
+##MINC=1e-17
+##MINC_BY_PERCENTAGE=0.1
 ##MINR=0.001
 ##NET_NAME_SPACE=layout
 ##NETS_FILE=/dev/null
 ##OUTPUT=/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/TSPCFF.sp
 ##OUTPUT_NET_NAME_SPACE=schematic
 ##PARASITIC_BLOCKING_DEVICE_CELLS_TYPEgray
-##PARASITIC_CAP_MODELS=yes
-##PARASITIC_RES_MODELS=comment
+##PARASITIC_CAP_MODELS=no
+##PARASITIC_RES_MODELS=no
 ##PARASITIC_RES_LENGTH=N
 ##PARASITIC_RES_WIDTH=N
 ##PARASITIC_RES_WIDTH_DRAWN=N
@@ -181,7 +183,7 @@ export GOALIE2DIR
 vdbToRcx /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS \
 	TSPCFF -unit meters -mFactorR -- -V1 -H satfile -r \
 	/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/TSPCFF.xcn \
-	-add0_net gnd! -xgl
+	-xgl
 GOALIE2DIR=/comelec/softs/opt/Cadence/releases/EXT15.27/tools.lnx86/extraction/bin/64bit/
 export GOALIE2DIR
 
@@ -246,9 +248,32 @@ flattenLayers -m metal1_conn poly_conn ndiff_conn pdiff_conn nwell_conn \
 	pwell_ptap_ovia pwell ntap_ndiff_conn_ovia ntap nwell_conn_ntap_ovia \
 	cont_pdiff cont_ndiff
 endFlattenInputs
+
+#==========================================================#
+# Initialize CAP_GROUND variable
+#==========================================================#
+
+CAP_GROUND=`findCapGround -g VSS! NET`
+echo "CAP_GROUND=" ${CAP_GROUND}
+export CAP_GROUND
 reconnect -float floatlvsnetsfile -tf _nmos1v_MOS_2,_pmos1v_MOS_10 -probe \
 	metal1_conn_pintext:metal1_conn:metal1_conn_pintext_fvia
 geom _nmos1v_MOS_2,_pmos1v_MOS_10 - qrcgate,1,i,1
+
+#==========================================================#
+# Extract MOSFET diffusion resistance parameters (NRD/NRS)
+#==========================================================#
+
+createLink cont_ndiff_metal1_conn_ndiff_conn ndiff_conn.sdres
+createLink cont_pdiff_metal1_conn_pdiff_conn pdiff_conn.sdres
+tident -V -noLW _nmos1v_MOS_2.trans -e 0x1 -r ndiff_conn.sdres _nmos1v_MOS_2 \
+	ndiff_conn poly_conn pwell - pwell - 1,g45n1svt 0,xg45n1svt - \
+	_nmos1v_MOS_2.transn
+tident -V -noLW _pmos1v_MOS_10.trans -e 0x1 -r pdiff_conn.sdres \
+	_pmos1v_MOS_10 pdiff_conn poly_conn nwell_conn - nwell_conn - \
+	1,g45p1svt 0,xg45p1svt - _pmos1v_MOS_10.transn
+changeTransFileNameAP _nmos1v_MOS_2.trans _nmos1v_MOS_2.transn
+changeTransFileNameAP _pmos1v_MOS_10.trans _pmos1v_MOS_10.transn
 
 #==========================================================#
 # Generate layer map file for resistance extraction
@@ -333,17 +358,17 @@ geom -V tmp1_ndiff_conn np_rndiff_conn - tmp1_ndiff_conn,11,i,2
 geom -V tmp_ndiff_conn,tmp1_ndiff_conn - np_rndiff_conn,1,i,1
 /bin/rm -f tmp_ndiff_conn tmp1_ndiff_conn
 epick -V -reo -e rcont_ndiff_metal1_conn_ndiff_conn -e \
-	rcont_pdiff_metal1_conn_pdiff_conn np_rnwell_conn.conn tmp_nwell_conn
-epick -V -reo -e tmp_nwell_conn -c np_rnwell_conn.conn tmp1_nwell_conn
-geom -V tmp1_nwell_conn np_rnwell_conn - tmp1_nwell_conn,11,i,2
-geom -V tmp_nwell_conn,tmp1_nwell_conn - np_rnwell_conn,1,i,1
-/bin/rm -f tmp_nwell_conn tmp1_nwell_conn
-epick -V -reo -e rcont_ndiff_metal1_conn_ndiff_conn -e \
 	rcont_pdiff_metal1_conn_pdiff_conn np_rpdiff_conn.conn tmp_pdiff_conn
 epick -V -reo -e tmp_pdiff_conn -c np_rpdiff_conn.conn tmp1_pdiff_conn
 geom -V tmp1_pdiff_conn np_rpdiff_conn - tmp1_pdiff_conn,11,i,2
 geom -V tmp_pdiff_conn,tmp1_pdiff_conn - np_rpdiff_conn,1,i,1
 /bin/rm -f tmp_pdiff_conn tmp1_pdiff_conn
+epick -V -reo -e rcont_ndiff_metal1_conn_ndiff_conn -e \
+	rcont_pdiff_metal1_conn_pdiff_conn np_rnwell_conn.conn tmp_nwell_conn
+epick -V -reo -e tmp_nwell_conn -c np_rnwell_conn.conn tmp1_nwell_conn
+geom -V tmp1_nwell_conn np_rnwell_conn - tmp1_nwell_conn,11,i,2
+geom -V tmp_nwell_conn,tmp1_nwell_conn - np_rnwell_conn,1,i,1
+/bin/rm -f tmp_nwell_conn tmp1_nwell_conn
 epick -V -reo -e rcont_ndiff_metal1_conn_ndiff_conn -e \
 	rcont_pdiff_metal1_conn_pdiff_conn np_rpwell.conn tmp_pwell
 epick -V -reo -e tmp_pwell -c np_rpwell.conn tmp1_pwell
@@ -391,12 +416,240 @@ geom np_rpwell,p_rpwell - pwell,1,i,1
 #==========================================================#
 
 reconnect -V -n NET -s mwires.res -mf -t \
-	_nmos1v_MOS_2.trans:_nmos1v_MOS_2.transr _nmos1v_MOS_2 \
+	_nmos1v_MOS_2.transn:_nmos1v_MOS_2.transnr _nmos1v_MOS_2 \
 	ndiff_conn,_nmos1v_MOS_2_mgvia,pwell -t \
-	_pmos1v_MOS_10.trans:_pmos1v_MOS_10.transr _pmos1v_MOS_10 \
+	_pmos1v_MOS_10.transn:_pmos1v_MOS_10.transnr _pmos1v_MOS_10 \
 	pdiff_conn,_pmos1v_MOS_10_mgvia,nwell_conn
-changeTransFileNameAP _nmos1v_MOS_2.trans _nmos1v_MOS_2.transr
-changeTransFileNameAP _pmos1v_MOS_10.trans _pmos1v_MOS_10.transr
+changeTransFileNameAP _nmos1v_MOS_2.transn _nmos1v_MOS_2.transnr
+changeTransFileNameAP _pmos1v_MOS_10.transn _pmos1v_MOS_10.transnr
+
+#==========================================================#
+# Form capacitance layers for resistive process layers
+#==========================================================#
+
+geom -V -i p_rpoly_conn,np_rpoly_conn - so_poly_conn,1,n
+geom -V p_rpoly_conn,np_rpoly_conn - poly_conn,1,i,1
+geom -V -i p_rmetal1_conn,np_rmetal1_conn - so_metal1_conn,1,n
+geom -V p_rmetal1_conn,np_rmetal1_conn - metal1_conn,1,i,1
+
+#==========================================================#
+# Form capacitance layers for non-resistive process layers
+#==========================================================#
+
+grow -V .001 ndiff_conn mask
+geom -V pdiff_conn mask - pdiff_conn,10,i,1
+geom -V ndiff_conn,pdiff_conn - Oxide,1,i,1
+createEmptyLayer metal11_conn
+createEmptyLayer metal10_conn
+createEmptyLayer metal9_conn
+createEmptyLayer metal8_conn
+createEmptyLayer metal7_conn
+createEmptyLayer metal6_conn
+createEmptyLayer metal5_conn
+createEmptyLayer metal4_conn
+createEmptyLayer metal3_conn
+createEmptyLayer metal2_conn
+
+#==========================================================#
+# Form substrate
+#==========================================================#
+
+geom -V p_rnwell_conn,np_rnwell_conn - nwell_conn,1,i,1
+xytoebbox -V -g 46.802 -e metal11_conn,metal10_conn,metal9_conn,metal8_conn,metal7_conn,metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,nwell_conn xg_nwell_conn
+grow -V 0.001 nwell_conn g_nwell_conn
+geom -V xg_nwell_conn g_nwell_conn - tmp_nwell_conn,10
+epick -V -reo -D ${CAP_GROUND} tmp_nwell_conn pick_nwell_conn
+grow -V -m 0.002 nwell_conn g_nwell_conn
+stamp -i g_nwell_conn pick_nwell_conn
+emerge -V pick_nwell_conn nwell_conn tmp1_nwell_conn
+geom -V tmp1_nwell_conn - nwell_conn,1,i,1
+/bin/rm -f g_nwell_conn xg_nwell_conn tmp_nwell_conn tmp1_nwell_conn
+geom -V nwell_conn - FOX,1,i,1
+geom -V FOX Oxide - FOX,10,i,1
+geom _nmos1v_MOS_2,_pmos1v_MOS_10 - qrcgate,1,i,1
+
+#==========================================================#
+# Create sip/sw3d/cn3d capacitance data files
+#==========================================================#
+
+cat <<ENDCAT> sip.cmd
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc poly_conn,metal1_conn -er \
+	metal2_conn.den -n 0.94 -i 0,0.941 -b metal1_conn,poly_conn,Oxide,FOX \
+	-t \
+	metal3_conn,metal4_conn,metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-j 0.06 -Maxw 1.41 -p metal2_conn,key 0,0.94 - metal2_conn.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc metal1_conn,metal2_conn -er \
+	metal3_conn.den -n 0.94 -i 0,0.941 -b \
+	metal2_conn,metal1_conn,poly_conn,Oxide,FOX -t \
+	metal4_conn,metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-j 0.06 -Maxw 1.41 -p metal3_conn,key 0,0.94 - metal3_conn.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc metal2_conn,metal3_conn -er \
+	metal4_conn.den -n 0.94 -i 0,0.941 -b \
+	metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX -t \
+	metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-j 0.06 -Maxw 1.41 -p metal4_conn,key 0,0.94 - metal4_conn.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc metal3_conn,metal4_conn -er \
+	metal5_conn.den -n 1.57 -i 0,1.571 -b \
+	metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t \
+	metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-j 0.06 -Maxw 1.41 -p metal5_conn,key 0,1.57 - metal5_conn.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc metal4_conn,metal5_conn -er \
+	metal6_conn.den -n 1.57 -i 0,1.571 -b \
+	metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn -j \
+	0.06 -Maxw 1.41 -p metal6_conn,key 0,1.57 - metal6_conn.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc metal5_conn,metal6_conn -er \
+	metal7_conn.den -n 1.57 -i 0,1.571 -b \
+	metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal8_conn,metal9_conn,metal10_conn,metal11_conn -j 0.06 -Maxw \
+	1.41 -p metal7_conn,key 0,1.57 - metal7_conn.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc metal6_conn,metal7_conn -er \
+	metal8_conn.den -n 1.57 -i 0,1.571 -b \
+	metal7_conn,metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal9_conn,metal10_conn,metal11_conn -j 0.06 -Maxw 1.41 -p \
+	metal8_conn,key 0,1.57 - metal8_conn.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc metal7_conn,metal8_conn -er \
+	metal9_conn.den -n 5.4 -i 0,5.401 -b \
+	metal8_conn,metal7_conn,metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal10_conn,metal11_conn -j 0.36 -Maxw 8.1 -p metal9_conn,key \
+	0,5.4 - metal9_conn.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc metal8_conn,metal9_conn -er \
+	metal10_conn.den -n 5.4 -i 0,5.401 -b \
+	metal9_conn,metal8_conn,metal7_conn,metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal11_conn -j 0.36 -Maxw 8.1 -p metal10_conn,key 0,5.4 - \
+	metal10_conn.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc metal9_conn,metal10_conn -n 23.4 \
+	-i 0,23.401 -b \
+	metal10_conn,metal9_conn,metal8_conn,metal7_conn,metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-j 2.7 -Maxw 60.75 -p metal11_conn,key 0,23.4 - metal11_conn.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -cp poly_conn,allGate,Oxide -n 1.35 \
+	-i 0,1.351 -b Oxide,FOX -t \
+	metal1_conn,metal2_conn,metal3_conn,metal4_conn,metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-j 0.04 -Maxw 2.025 -p poly_conn,key 0,1.35 - poly_conn.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc poly_conn -er metal1_conn.den -n \
+	0.94 -i 0,0.941 -b poly_conn,Oxide,FOX -t \
+	metal2_conn,metal3_conn,metal4_conn,metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-j 0.06 -Maxw 1.41 -p metal1_conn,key 0,0.94 - metal1_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -b \
+	metal9_conn,metal8_conn,metal7_conn,metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-Maxw 60.75 -p metal10_conn,key,metal11_conn,key 0,23.4,0 - \
+	metal10_conn_metal11_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R metal11_conn -b \
+	metal8_conn,metal7_conn,metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-Maxw 60.75 -p metal9_conn,key,metal11_conn,key 0,23.4,0 - \
+	metal9_conn_metal11_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b \
+	metal8_conn,metal7_conn,metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal11_conn -Maxw 8.1 -p metal9_conn,key,metal10_conn,key 0,5.4,0 \
+	- metal9_conn_metal10_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R metal10_conn -b \
+	metal7_conn,metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal11_conn -Maxw 8.1 -p metal8_conn,key,metal10_conn,key 0,5.4,0 \
+	- metal8_conn_metal10_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b \
+	metal7_conn,metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal10_conn,metal11_conn -Maxw 8.1 -p \
+	metal8_conn,key,metal9_conn,key 0,5.4,0 - metal8_conn_metal9_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R metal9_conn -b \
+	metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal10_conn,metal11_conn -Maxw 8.1 -p \
+	metal7_conn,key,metal9_conn,key 0,5.4,0 - metal7_conn_metal9_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b \
+	metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal9_conn,metal10_conn,metal11_conn -Maxw 1.41 -p \
+	metal7_conn,key,metal8_conn,key 0,1.57,0 - \
+	metal7_conn_metal8_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R metal8_conn -b \
+	metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal9_conn,metal10_conn,metal11_conn -Maxw 1.41 -p \
+	metal6_conn,key,metal8_conn,key 0,1.57,0 - \
+	metal6_conn_metal8_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b \
+	metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal8_conn,metal9_conn,metal10_conn,metal11_conn -Maxw 1.41 -p \
+	metal6_conn,key,metal7_conn,key 0,1.57,0 - \
+	metal6_conn_metal7_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R metal7_conn -b \
+	metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal8_conn,metal9_conn,metal10_conn,metal11_conn -Maxw 1.41 -p \
+	metal5_conn,key,metal7_conn,key 0,1.57,0 - \
+	metal5_conn_metal7_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b \
+	metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-Maxw 1.41 -p metal5_conn,key,metal6_conn,key 0,1.57,0 - \
+	metal5_conn_metal6_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R metal6_conn -b \
+	metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX -t \
+	metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn -Maxw \
+	1.41 -p metal4_conn,key,metal6_conn,key 0,1.57,0 - \
+	metal4_conn_metal6_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b \
+	metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX -t \
+	metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-Maxw 1.41 -p metal4_conn,key,metal5_conn,key 0,1.57,0 - \
+	metal4_conn_metal5_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R metal5_conn -b \
+	metal2_conn,metal1_conn,poly_conn,Oxide,FOX -t \
+	metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-Maxw 1.41 -p metal3_conn,key,metal5_conn,key 0,1.57,0 - \
+	metal3_conn_metal5_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b \
+	metal2_conn,metal1_conn,poly_conn,Oxide,FOX -t \
+	metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-Maxw 1.41 -p metal3_conn,key,metal4_conn,key 0,0.94,0 - \
+	metal3_conn_metal4_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R metal4_conn -b \
+	metal1_conn,poly_conn,Oxide,FOX -t \
+	metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-Maxw 1.41 -p metal2_conn,key,metal4_conn,key 0,0.94,0 - \
+	metal2_conn_metal4_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b metal1_conn,poly_conn,Oxide,FOX -t \
+	metal4_conn,metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-Maxw 1.41 -p metal2_conn,key,metal3_conn,key 0,0.94,0 - \
+	metal2_conn_metal3_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R metal3_conn -b \
+	poly_conn,Oxide,FOX -t \
+	metal4_conn,metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-Maxw 1.41 -p metal1_conn:metal1_conn_cut,key,metal3_conn,key \
+	0,0.94,0 - metal1_conn_metal3_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b poly_conn,Oxide,FOX -t \
+	metal3_conn,metal4_conn,metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-Maxw 1.41 -p metal1_conn:metal1_conn_cut,key,metal2_conn,key \
+	0,0.94,0 - metal1_conn_metal2_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R metal2_conn -b Oxide,FOX -t \
+	metal3_conn,metal4_conn,metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-k metal1_conn:0.15 -Maxw 2.025 -p \
+	poly_conn:poly_conn_cut,key,metal2_conn,key 0,1.35,0 - \
+	poly_conn_metal2_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -R metal1_conn,poly_conn -b Oxide,FOX \
+	-t \
+	metal2_conn,metal3_conn,metal4_conn,metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-Maxw 2.025 -p \
+	poly_conn:poly_conn_cut,key,metal1_conn:metal1_conn_cut,key 0,1.35,0 \
+	- poly_conn_metal1_conn.sip
+ENDCAT
+
+#==========================================================#
+# Prepare gate capacitance blocking layers
+#==========================================================#
+
+emerge -V _nmos1v_MOS_2 _pmos1v_MOS_10 allGate
+
+#==========================================================#
+# Run pax16 to generate capfile
+#==========================================================#
+
+pax16 -V -ignore_cf_table -scf sip.cmd -rP \
+	np_rpoly_conn.res,np_rmetal1_conn.res,mwires.res -M_perim_off -c \
+	/comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/qrc/typical/qrcTechFile \
+	-f FOX Oxide poly_conn:poly_conn_cut metal1_conn:metal1_conn_cut \
+	metal2_conn metal3_conn metal4_conn metal5_conn metal6_conn \
+	metal7_conn metal8_conn metal9_conn metal10_conn metal11_conn allGate \
+	- \
+	/comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/qrc/typical/qrcTechFile \
+	- - NET - capfile
 
 #==========================================================#
 # Generate netlister data files
@@ -415,20 +668,21 @@ ENDCAT
 
 xreduce -V -mergecap -n NET -tech \
 	/comelec/softs/opt/opus_kits/CADENCE_PDKS/gpdk045_v_4_0/qrc/typical \
-	-d1 -mfactorR infinite -decoupled -danglingR -minR 0.001 -rP \
-	np_rpoly_conn.res,np_rmetal1_conn.res,mwires.res L1T0 \
-	_nmos1v_MOS_2.transr _pmos1v_MOS_10.transr
+	-d1 -mfactorR infinite -rmselfC -g ${CAP_GROUND},1.0 -danglingR -minR \
+	0.001 -rP np_rpoly_conn.res,np_rmetal1_conn.res,mwires.res -minC \
+	1e-17 -minCper 0.1 -cap capfile L1T0 _nmos1v_MOS_2.transnr \
+	_pmos1v_MOS_10.transnr
 
 #==========================================================#
 # Generate HSPICE file
 #==========================================================#
 
-advgen -V -g0 -li -f -n -o HSPICE -TL L1T0 -add0_net gnd! -nxref \
+advgen -V -g0 -li -f -n -o HSPICE -TL L1T0 -nxref \
 	/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/TSPCFF/TSPCFF.gnx \
 	-dxref \
 	/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/LVS/TSPCFF/TSPCFF.gdx \
-	-sc caps2dversion -rPm res.mod np_rpoly_conn.res np_rmetal1_conn.res \
-	-rPm mwires.mod mwires.res -ta lvsmos.mod,_nmos1v_MOS_2.net \
-	_nmos1v_MOS_2.transr -ta lvsmos.mod,_pmos1v_MOS_10.net \
-	_pmos1v_MOS_10.transr - NET - \
+	-sc caps2dversion -m capfile -rP res.mod np_rpoly_conn.res \
+	np_rmetal1_conn.res -rP mwires.mod mwires.res -ta \
+	lvsmos.mod,_nmos1v_MOS_2.net _nmos1v_MOS_2.transnr -ta \
+	lvsmos.mod,_pmos1v_MOS_10.net _pmos1v_MOS_10.transnr - NET - \
 	/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/TSPCFF.sp

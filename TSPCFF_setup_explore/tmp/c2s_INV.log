@@ -1,8 +1,0 @@
-@(#)$CDS: conn2sch version 6.1.7-64b 09/01/2017 11:56 (sjfhw301) $  Thu Nov  6 15:47:02 2025
-
-WARNING (CONN2SCH-135): Signal 'VDD!' terminates with '!' but is not defined as global in the cellview
-'TSPCFF_LIB INV netlist_tmp'. This signal would be marked global by the schematic extractor.
-WARNING (CONN2SCH-135): Signal 'VSS!' terminates with '!' but is not defined as global in the cellview
-'TSPCFF_LIB INV netlist_tmp'. This signal would be marked global by the schematic extractor.
-INFO (CONN2SCH-372): Checked-in schematic INV.
-INFO (CONN2SCH-206): End of Logfile.
