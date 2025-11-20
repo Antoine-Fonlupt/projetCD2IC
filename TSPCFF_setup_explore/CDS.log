@@ -84,3 +84,9 @@
 \r t
 \a _ddtUpdateGraph(awvGetCurrentWindow()->vivaSession _vivaMapSubwinId(awvGetCurrentWindow()->vivaSession awvGetCurrentWindow() awvGetCurrentSubwindow(awvGetCurrentWindow())) nil nil)
 \r (("rectTrace[1.1.1]" "rectTrace[1.1.2]" "rectTrace[1.1.3]") nil nil nil)
+\o Fatal error: glibc detected an invalid stdio handle
+\o Aborted
+\# Memory report: Maximum memory size now 15,516 MB at UTC 2025.11.20 15:05:46.966
+\# Memory report: Maximum memory size now 14,981 MB at UTC 2025.11.20 15:10:36.965
+\# Memory report: Maximum memory size now 15,798 MB at UTC 2025.11.20 15:38:36.965
+\# Memory report: Maximum memory size now 15,350 MB at UTC 2025.11.20 16:08:16.965

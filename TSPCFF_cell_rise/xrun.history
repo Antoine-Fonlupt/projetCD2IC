@@ -1,1 +1,2 @@
 s1(20Nov2025:14:04:52):  xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams TSPCFF.vams 
+s2(20Nov2025:16:16:53):  xrun -disable_sem2009 -input probes.tcl -spectre_args +errpreset=conservative amsXrunControl.scs -top testbench testbench.sv board.vams cmos_transition.vams TSPCFF.vams 

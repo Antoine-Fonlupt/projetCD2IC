@@ -5,88 +5,6 @@ simulator lang=spectre version=2.0
 local __cds_internal_stub_node__
 ahdl_include "xcelium.d/AMSD/ahdlSimDB/worklib__cmos_transition__vams__0x10000001_behavioral.flex.va"
 ahdl_include "xcelium.d/AMSD/ahdlSimDB/worklib__board__vams__0x10000001_behavioral.flex.va"
-ahdl_include "xcelium.d/AMSD/ahdlSimDB/connectLib__E2L_2_dynsup__module__0x10000001_behavioral.flex.va"
-
-#38 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
-simulator lang=spectre version=2.0 binding=vlog insensitive=no
-subckt connectLib__E2L_2_dynsup__module__0x10000001 Ain(Ain)
-local Ain
-local evdd
-local evss
-
-#43 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
-parameters vsup_min=0.5
-
-#45 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
-parameters vthi=0.6666666666666666
-
-#46 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
-parameters vtlo=0.3333333333333333
-
-#47 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
-parameters vtol=((vthi)-(vtlo))/(4)
-
-#48 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
-parameters vtlox=(vtlo)+(vtol)
-
-#49 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
-parameters vthix=(vthi)-(vtol)
-
-#50 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
-parameters tr=2e-10
-
-#51 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
-parameters tf=tr
-
-#52 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
-parameters ttol_t=((tr)+(tf))/(20)
-
-#53 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
-parameters tdelay=0
-
-#54 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
-parameters txdel=(4)*(tr)
-
-#55 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
-parameters ttol_c=(tr)/(4)
-
-#56 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
-parameters debug=0
-
-#57 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
-parameters vsup_low_output_x=0
-
-#58 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
-parameters vinlimit=2.4
-
-#59 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
-parameters vddlimit=2.4
-
-#62 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
-parameters vsup_off=(vsup_min)-(vtol)
-
-#65 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
-parameters nox=0
-
-#66 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
-parameters enable_x=!(nox)
-
-#80 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
-parameters vddnet="testbench.bdut.vdd"
-
-#81 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
-parameters vssnet="testbench.bdut.vss"
-parameters termcurs=0
-
-#38 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
-_cds_internal_E2L_2_dynsup_ (Ain evdd evss) connectLib__E2L_2_dynsup__module__0x10000001_behavioral debug=debug enable_x=enable_x nox=nox tdelay=tdelay tf=tf tr=tr ttol_c=ttol_c ttol_t=ttol_t txdel=txdel vddlimit=vddlimit vddnet=vddnet vinlimit=vinlimit vssnet=vssnet vsup_low_output_x=vsup_low_output_x vsup_min=vsup_min vsup_off=vsup_off vthi=vthi vthix=vthix vtlo=vtlo vtlox=vtlox vtol=vtol
-
-# output connect stmts for $analog_node_alias()
-connect evdd testbench.bdut.vdd
-connect evss testbench.bdut.vss
-
-ends
-
 
 #46 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/cmos_transition.vams;AMS:8"
 simulator lang=spectre version=2.0 binding=vlog insensitive=no
@@ -111,85 +29,1234 @@ _cds_internal_cmos_transition_ (dout) worklib__cmos_transition__vams__0x10000001
 ends
 
 
-#7 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
-simulator lang=spectre version=2.0 binding=vlog insensitive=no
-subckt worklib__INV__vams__0x10000001 VDD(VDD) VSS(VSS) A(A) Y(Y)
-local A
-local VDD
-local VSS
-local Y
-
-#9 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
-parameters WN=1.45e-07
-
-#10 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
-parameters WP=2.14e-07
-
-#16 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
-mn0 (d=Y g=A s=VSS b=VSS) g45n1svt l=4.5e-08 w=WN
-
-#17 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
-mp0 (d=Y g=A s=VDD b=VDD) g45p1svt l=4.5e-08 w=WP
-ends
-
-
 #22 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
 simulator lang=spectre version=2.0 binding=vlog insensitive=no
-subckt worklib__TSPCFF__vams__0x10000001 CK(CK) D(D) QQ(QQ) VDD(VDD) VSS(VSS)
+subckt worklib__TSPCFF__vams__0x10000001 VDD(VDD) VSS(VSS) CK(CK) D(D) QQ(QQ)
 local CK
+local CK\#1
+local CK\#2
+local CK\#3
 local CKb
+local CKb\#2310
+local CKb\#2311
+local CKb\#2
+local CKb\#3
+local CKb\#4
+local CKb\#5
+local CKb\#6
+local CKb\#7
+local CKb\#8
+local CKb\#9
 local D
+local D\#1
+local D\#2
 local QQ
+local QQ\#1
+local QQ\#2
 local Qb
+local Qb\#2
+local Qb\#3
+local Qb\#4
+local Qb\#5
+local Qb\#6
+local Qb\#7
 local VDD
+local VDD\#1
+local VDD\#2
+local VDD\#3
+local VDD\#4
+local VDD\#5
+local VDD\#6
+local VDD\#7
+local VDD\#8
 local VSS
+local VSS\#1
+local VSS\#2
+local VSS\#3
+local VSS\#4
+local VSS\#5
+local VSS\#6
+local VSS\#7
+local VSS\#8
 local a
 local b
 local c
 local x
+local x\#2
+local x\#3
+local x\#4
+local x\#5
 local y
+local y\#2
+local y\#3
+local y\#4
+local y\#5
+local y\#6
+local y\#7
 
-#25 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
-parameters l0=4.5e-08
+#36 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+MXclkinv\/Mmn0 (CKb\#2311 CK\#2 VSS\#6 VSS\#3) g45n1svt ad=2.03e-14 as=2.03e-14 l=4.5e-08 nrd=0.3388 nrs=0.3388 pd=5.7e-07 ps=5.7e-07 sa=1.4e-07 sb=1.4e-07 sca=12.5109 scb=0.0131402 scc=0.000309076 w=1.45e-07
 
-#26 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
-parameters wn0=1.45e-07
-
-#27 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
-parameters wp0=2.14e-07
+#40 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Mmn3 (Qb\#6 y VSS\#8 VSS\#3) g45n1svt ad=2.32e-14 as=2.32e-14 l=4.5e-08 nrd=0.3388 nrs=0.3388 pd=5.9e-07 ps=5.9e-07 sa=1.4e-07 sb=3.45e-07 sca=6.59771 scb=0.00346364 scc=2.1811e-05 w=1.45e-07
 
 #43 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
-clkinv (VDD=VDD VSS=VSS A=CK Y=CKb) worklib__INV__vams__0x10000001 WN=1.45e-07 WP=2.15e-07
+Mmn2 (y\#7 CKb\#6 VSS\#8 VSS\#3) g45n1svt ad=2.03e-14 as=2.03e-14 l=4.5e-08 nrd=0.3388 nrs=0.3388 pd=5.9e-07 ps=5.9e-07 sa=3.45e-07 sb=1.4e-07 sca=6.15549 scb=0.00316007 scc=2.16281e-05 w=1.45e-07
 
-#46 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
-qinv (VDD=VDD VSS=VSS A=Qb Y=QQ) worklib__INV__vams__0x10000001 WN=2.6e-07 WP=3.9e-07
-
-#49 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
-mp1 (d=x g=D s=VDD b=VDD) g45p1svt l=l0 w=wp0
+#47 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Mmn1 (a D\#2 VSS\#7 VSS\#3) g45n1svt ad=8.7e-15 as=8.7e-15 l=4.5e-08 nrd=0.2 nrs=0.3388 pd=4.9e-07 ps=4.9e-07 sa=1.4e-07 sb=2.45e-07 sca=6.65575 scb=0.00351544 scc=2.18715e-05 w=1.45e-07
 
 #50 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
-mp2 (d=b g=CKb s=VDD b=VDD) g45p1svt l=l0 w=wp0
-
-#51 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
-mp3 (d=c g=y s=VDD b=VDD) g45p1svt l=l0 w=wp0
+Mmn4 (x\#3 CKb\#7 a VSS\#3) g45n1svt ad=2.03e-14 as=2.03e-14 l=4.5e-08 nrd=0.3388 nrs=0.2 pd=4.9e-07 ps=4.9e-07 sa=2.45e-07 sb=1.4e-07 sca=7.21705 scb=0.00413523 scc=2.33598e-05 w=1.45e-07
 
 #54 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
-mn4 (d=x g=CKb s=a b=VSS) g45n1svt l=l0 w=wn0
-
-#55 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
-mp4 (d=y g=x s=b b=VDD) g45p1svt l=l0 w=wp0
-
-#56 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
-mp5 (d=Qb g=CKb s=c b=VDD) g45p1svt l=l0 w=wp0
+MXqinv\/Mmn0 (QQ\#1 Qb VSS\#1 VSS\#3) g45n1svt ad=3.64e-14 as=3.64e-14 l=4.5e-08 nrd=0.2046 nrs=0.2046 pd=8e-07 ps=8e-07 sa=1.4e-07 sb=1.4e-07 sca=23.7936 scb=0.027494 scc=0.00219352 w=2.6e-07
 
 #59 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
-mn1 (d=a g=D s=VSS b=VSS) g45n1svt l=l0 w=wn0
+MXclkinv\/Mmp0 (CKb\#2310 CK\#1 VDD\#6 VDD\#3) g45p1svt ad=3.01e-14 as=3.01e-14 l=4.5e-08 nrd=0.2353 nrs=0.2353 pd=7.1e-07 ps=7.1e-07 sa=1.4e-07 sb=1.4e-07 sca=27.4166 scb=0.030473 scc=0.00236439 w=2.15e-07
 
-#60 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
-mn2 (d=y g=CKb s=VSS b=VSS) g45n1svt l=l0 w=wn0
+#63 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Mmp3 (c y\#3 VDD\#8 VDD\#3) g45p1svt ad=1.29e-14 as=1.29e-14 l=4.5e-08 nrd=0.1349 nrs=0.2353 pd=6.3e-07 ps=6.3e-07 sa=1.4e-07 sb=2.45e-07 sca=11.3805 scb=0.00880481 scc=0.000100355 w=2.15e-07
 
-#61 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
-mn3 (d=Qb g=y s=VSS b=VSS) g45n1svt l=l0 w=wn0
+#66 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Mmp5 (Qb\#7 CKb\#5 c VDD\#3) g45p1svt ad=3.01e-14 as=3.01e-14 l=4.5e-08 nrd=0.2353 nrs=0.1349 pd=6.3e-07 ps=6.3e-07 sa=2.45e-07 sb=1.4e-07 sca=10.8044 scb=0.008158739999999999 scc=9.87233e-05 w=2.15e-07
+
+#70 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Mmp4 (y\#6 x b VDD\#3) g45p1svt ad=1.29e-14 as=1.29e-14 l=4.5e-08 nrd=0.2353 nrs=0.1349 pd=6.3e-07 ps=6.3e-07 sa=1.4e-07 sb=4.5e-07 sca=10.2794 scb=0.00778243 scc=9.84553e-05 w=2.15e-07
+
+#73 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Mmp2 (b CKb VDD\#7 VDD\#3) g45p1svt ad=3.44e-14 as=3.44e-14 l=4.5e-08 nrd=0.1349 nrs=0.2353 pd=6.5e-07 ps=6.5e-07 sa=2.45e-07 sb=3.45e-07 sca=10.4291 scb=0.00786563 scc=9.847769999999999e-05 w=2.15e-07
+
+#76 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Mmp1 (x\#5 D\#1 VDD\#7 VDD\#3) g45p1svt ad=3.01e-14 as=3.01e-14 l=4.5e-08 nrd=0.2353 nrs=0.2353 pd=7.3e-07 ps=7.3e-07 sa=4.5e-07 sb=1.4e-07 sca=11.2136 scb=0.00859678 scc=9.96516e-05 w=2.15e-07
+
+#80 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+MXqinv\/Mmp0 (QQ\#2 Qb\#4 VDD\#1 VDD\#3) g45p1svt ad=5.46e-14 as=5.46e-14 l=4.5e-08 nrd=0.1364 nrs=0.1364 pd=1.06e-06 ps=1.06e-06 sa=1.4e-07 sb=1.4e-07 sca=24.7656 scb=0.0288355 scc=0.00172236 w=3.9e-07
+
+#85 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rl1 (CK\#1 CK\#2) resistor r=280.3349
+
+#87 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rl2 (CK\#2 CK\#3) resistor r=93.7687
+
+#89 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rl3 (y y\#2) resistor r=23.8263
+
+#90 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rl4 (y\#2 y\#3) resistor r=236.2442
+
+#92 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rl5 (y\#3 y\#4) resistor r=86.07640000000001
+
+#94 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rl6 (y\#2 y\#5) resistor r=50.783
+
+#96 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rl7 (x x\#2) resistor r=75.0021
+
+#98 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rl8 (CKb CKb\#2) resistor r=156.5021
+
+#100 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rl9 (CKb\#2 CKb\#3) resistor r=83.0817
+
+#102 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rl10 (CKb\#3 CKb\#4) resistor r=124.2107
+
+#103 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rl11 (CKb\#4 CKb\#5) resistor r=81.9251
+
+#104 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rl12 (CKb\#3 CKb\#6) resistor r=84.29689999999999
+
+#105 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rl13 (D\#1 D\#2) resistor r=264.9503
+
+#106 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rl14 (D\#2 D) resistor r=87.9995
+
+#108 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rl15 (CKb\#7 CKb\#8) resistor r=115.3867
+
+#110 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rl16 (Qb Qb\#2) resistor r=138.6781
+
+#112 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rl17 (Qb\#2 Qb\#3) resistor r=77.23999999999999
+
+#113 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rl18 (Qb\#2 Qb\#4) resistor r=67.0634
+
+#114 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk1 (CK CK\#3) resistor r=0.02766
+
+#116 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk2 (CKb\#4 CKb\#9) resistor r=45.2623
+
+#117 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk3 (CKb\#9 CKb\#2310) resistor r=62.3479
+
+#118 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk4 (CKb\#9 CKb\#2311) resistor r=75.3378
+
+#119 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk5 (y\#6 y\#4) resistor r=62.476
+
+#120 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk6 (y\#7 y\#5) resistor r=75.3198
+
+#121 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk8 (CKb\#2 CKb\#8) resistor r=45.2235
+
+#123 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk9 (Qb\#3 Qb\#5) resistor r=0.5187
+
+#124 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk10 (Qb\#5 Qb\#6) resistor r=75.6279
+
+#125 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk11 (Qb\#5 Qb\#7) resistor r=62.351
+
+#127 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk12 (x\#3 x\#4) resistor r=75.7518
+
+#128 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk13 (x\#4 x\#2) resistor r=0.3269
+
+#129 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk14 (x\#4 x\#5) resistor r=62.166
+
+#130 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk15 (QQ\#1 QQ) resistor r=38.1535
+
+#131 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk16 (QQ QQ\#2) resistor r=20.6667
+
+#133 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk17 (VSS\#1 VSS\#2) resistor r=38.0529
+
+#135 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk18 (VSS\#2 VSS\#4) resistor r=0.06518
+
+#137 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk19 (VSS\#4 VSS\#5) resistor r=0.09787
+
+#138 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk20 (VSS\#5 VSS) resistor r=0.2941
+
+#139 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk21 (VSS VSS\#6) resistor r=75.34
+
+#140 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk22 (VSS\#2 VSS\#7) resistor r=75.3056
+
+#141 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk23 (VSS\#5 VSS\#8) resistor r=75.2975
+
+#142 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk24 (VSS\#3 VSS\#4) resistor r=6.2
+
+#144 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk25 (VDD\#1 VDD\#2) resistor r=21.1477
+
+#146 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk26 (VDD\#2 VDD\#4) resistor r=0.1482
+
+#148 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk27 (VDD\#4 VDD\#5) resistor r=0.3046
+
+#149 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk28 (VDD\#5 VDD) resistor r=0.08026999999999999
+
+#150 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk29 (VDD VDD\#6) resistor r=62.3619
+
+#151 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk30 (VDD\#2 VDD\#7) resistor r=62.2792
+
+#152 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk31 (VDD\#5 VDD\#8) resistor r=62.3378
+
+#153 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+Rk32 (VDD\#3 VDD\#4) resistor r=7.5
+
+#158 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C1 (CK\#3 CKb\#9) capacitor c=1.55925e-18
+
+#159 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C2 (x\#4 D\#2) capacitor c=4.94932e-19
+
+#160 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C3 (CKb\#8 Qb\#3) capacitor c=3.08918e-17
+
+#161 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C4 (y\#2 VDD\#3) capacitor c=1.01191e-17
+
+#162 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C5 (CKb\#2311 CK\#2) capacitor c=4.60644e-18
+
+#163 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C6 (VDD CK\#1) capacitor c=1.83162e-18
+
+#164 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C7 (y\#5 CKb\#6) capacitor c=1.05033e-17
+
+#165 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C8 (y\#6 CKb\#5) capacitor c=9.546149999999999e-19
+
+#166 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C9 (VDD\#1 QQ\#2) capacitor c=3.91782e-17
+
+#167 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C10 (VDD CK\#2) capacitor c=2.7303e-19
+
+#168 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C11 (Qb VDD\#3) capacitor c=1.30843e-17
+
+#169 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C12 (VDD y\#4) capacitor c=5.92147e-19
+
+#170 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C13 (Qb\#7 y\#4) capacitor c=8.0994e-18
+
+#171 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C14 (VSS\#5 CKb\#4) capacitor c=4.86744e-19
+
+#172 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C15 (Qb\#7 CKb\#5) capacitor c=2.82404e-18
+
+#173 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C16 (VSS\#6 CK\#2) capacitor c=7.049019999999999e-18
+
+#174 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C17 (CKb\#2310 VDD) capacitor c=4.27492e-18
+
+#175 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C18 (y\#6 VDD\#2) capacitor c=4.38007e-18
+
+#176 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C19 (CKb\#3 VDD\#3) capacitor c=1.22705e-17
+
+#177 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C20 (CKb\#2 Qb\#3) capacitor c=8.695629999999999e-18
+
+#178 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C21 (CKb\#7 VDD\#3) capacitor c=4.073e-18
+
+#179 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C22 (CKb\#2 x\#3) capacitor c=2.10436e-18
+
+#180 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C23 (CK\#2 y\#2) capacitor c=6.51143e-18
+
+#181 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C24 (VDD\#8 CKb\#5) capacitor c=8.57032e-19
+
+#182 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C25 (x\#4 VDD\#2) capacitor c=3.05297e-18
+
+#183 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C26 (Qb\#7 y\#3) capacitor c=8.37451e-19
+
+#184 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C27 (CKb\#9 y\#2) capacitor c=1.0298e-18
+
+#185 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C28 (Qb\#2 VDD\#3) capacitor c=1.60288e-17
+
+#186 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C29 (CKb\#2310 Qb\#5) capacitor c=6.6654e-19
+
+#187 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C30 (Qb\#3 x\#2) capacitor c=3.95753e-18
+
+#188 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C31 (VDD\#6 CKb\#2310) capacitor c=2.14465e-17
+
+#189 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C32 (VSS\#3 Qb\#5) capacitor c=5.61849e-19
+
+#190 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C33 (VSS\#8 y\#7) capacitor c=1.34681e-17
+
+#191 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C34 (CK y\#4) capacitor c=2.71625e-19
+
+#192 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C35 (x\#5 VDD\#1) capacitor c=1.91692e-17
+
+#193 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C36 (D\#2 VDD\#3) capacitor c=7.243180000000001e-18
+
+#194 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C37 (VSS\#2 CK\#3) capacitor c=2.06439e-19
+
+#195 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C38 (VDD\#8 y\#4) capacitor c=1.01542e-17
+
+#196 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C39 (CK VDD\#3) capacitor c=4.90556e-18
+
+#197 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C40 (VSS\#3 CKb\#6) capacitor c=1.26341e-18
+
+#198 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C41 (QQ\#1 Qb\#2) capacitor c=2.95778e-18
+
+#199 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C42 (VDD\#8 y\#3) capacitor c=2.90081e-18
+
+#200 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C43 (CKb\#9 VDD\#3) capacitor c=1.05658e-17
+
+#201 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C44 (CK\#3 y) capacitor c=1.4164e-18
+
+#202 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C45 (VSS\#7 CKb\#2) capacitor c=1.64124e-17
+
+#203 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C46 (x\#4 Qb\#4) capacitor c=1.52586e-18
+
+#204 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C47 (y\#6 VDD\#3) capacitor c=2.20615e-17
+
+#205 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C48 (VSS\#5 CKb\#6) capacitor c=5.33441e-19
+
+#206 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C49 (CKb\#2310 y\#3) capacitor c=1.70318e-18
+
+#207 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C50 (CKb\#6 VDD\#3) capacitor c=5.05984e-18
+
+#208 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C51 (y\#4 VDD\#2) capacitor c=1.61933e-18
+
+#209 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C52 (Qb\#5 y\#2) capacitor c=1.69736e-18
+
+#210 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C53 (CKb\#9 CK\#2) capacitor c=4.71838e-18
+
+#211 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C54 (QQ\#2 Qb\#2) capacitor c=3.02587e-18
+
+#212 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C55 (D\#1 Qb\#2) capacitor c=1.12588e-18
+
+#213 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C56 (Qb\#6 y\#7) capacitor c=6.01366e-19
+
+#214 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C57 (y\#7 CKb\#2) capacitor c=6.16742e-19
+
+#215 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C58 (Qb\#5 VDD\#3) capacitor c=6.54648e-18
+
+#216 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C59 (CK VSS\#8) capacitor c=3.26084e-18
+
+#217 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C60 (VDD\#8 CK\#1) capacitor c=2.49171e-18
+
+#218 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C61 (Qb\#7 VDD\#3) capacitor c=8.22158e-19
+
+#219 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C62 (CK CKb\#2311) capacitor c=1.07887e-17
+
+#220 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C63 (VDD\#6 y\#4) capacitor c=8.27388e-19
+
+#221 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C64 (VSS\#5 CK\#3) capacitor c=7.92866e-19
+
+#222 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C65 (y VDD\#3) capacitor c=3.90197e-18
+
+#223 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C66 (VSS\#5 Qb\#6) capacitor c=5.90112e-18
+
+#224 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C67 (VSS\#1 Qb\#2) capacitor c=5.33159e-19
+
+#225 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C68 (VSS\#7 x\#2) capacitor c=4.48217e-19
+
+#226 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C69 (VDD\#7 x\#5) capacitor c=1.85918e-17
+
+#227 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C70 (CKb\#2 x\#2) capacitor c=4.1989e-18
+
+#228 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C71 (VDD\#2 Qb\#4) capacitor c=1.035e-18
+
+#229 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C72 (D\#1 Qb\#4) capacitor c=5.62394e-18
+
+#230 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C73 (CKb\#2310 CK\#1) capacitor c=4.38525e-18
+
+#231 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C74 (CK CKb\#9) capacitor c=2.0505e-18
+
+#232 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C75 (x\#4 D\#1) capacitor c=6.89248e-18
+
+#233 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C76 (x\#4 VDD\#3) capacitor c=7.299250000000001e-18
+
+#234 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C77 (VSS\#5 CK) capacitor c=1.06756e-17
+
+#235 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C78 (VSS\#5 y) capacitor c=1.50198e-18
+
+#236 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C79 (VDD\#6 CK\#1) capacitor c=4.20225e-18
+
+#237 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C80 (Qb\#5 CKb\#3) capacitor c=4.04658e-18
+
+#238 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C81 (VDD\#5 y\#4) capacitor c=3.37361e-17
+
+#239 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C82 (Qb\#6 VSS\#8) capacitor c=1.35071e-17
+
+#240 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C83 (VDD\#1 Qb\#2) capacitor c=1.16583e-18
+
+#241 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C84 (y\#7 x\#2) capacitor c=5.53817e-19
+
+#242 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C85 (CK\#2 VDD\#3) capacitor c=2.33394e-17
+
+#243 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C86 (CKb D\#1) capacitor c=1.86485e-17
+
+#244 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C87 (Qb\#6 CKb\#2) capacitor c=2.54681e-18
+
+#245 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C88 (VSS\#2 VDD\#3) capacitor c=3.38514e-18
+
+#246 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C89 (x\#3 Qb\#2) capacitor c=1.13163e-18
+
+#247 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C90 (CKb\#8 Qb\#2) capacitor c=4.83586e-18
+
+#248 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C91 (x CKb) capacitor c=3.00735e-17
+
+#249 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C92 (Qb\#3 VDD\#3) capacitor c=1.38672e-17
+
+#250 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C93 (VDD\#2 D\#1) capacitor c=1.66889e-18
+
+#251 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C94 (x\#4 CKb) capacitor c=6.18315e-19
+
+#252 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C95 (Qb\#3 x\#4) capacitor c=5.92887e-17
+
+#253 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C96 (x\#4 QQ\#2) capacitor c=1.55352e-17
+
+#254 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C97 (x\#4 QQ\#1) capacitor c=7.751849999999999e-18
+
+#255 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C98 (QQ\#1 Qb) capacitor c=5.48357e-18
+
+#256 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C99 (CKb\#4 x\#2) capacitor c=2.39762e-18
+
+#257 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C100 (CKb\#5 x) capacitor c=3.29149e-18
+
+#258 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C101 (CKb\#2310 VDD\#3) capacitor c=2.57249e-18
+
+#259 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C102 (VSS\#1 QQ\#1) capacitor c=2.80879e-17
+
+#260 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C103 (CKb\#8 VDD\#3) capacitor c=8.03985e-18
+
+#261 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C104 (VSS\#1 Qb) capacitor c=9.07724e-18
+
+#262 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C105 (VSS\#8 y\#5) capacitor c=1.50452e-17
+
+#263 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C106 (VDD\#1 Qb\#3) capacitor c=7.657e-19
+
+#264 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C107 (y\#6 VDD\#7) capacitor c=1.356e-17
+
+#265 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C108 (y\#5 CKb\#4) capacitor c=2.80067e-18
+
+#266 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C109 (VSS\#5 VDD\#3) capacitor c=3.7217e-18
+
+#267 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C110 (y\#3 CKb\#5) capacitor c=3.13811e-17
+
+#268 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C111 (x\#3 Qb) capacitor c=3.43823e-18
+
+#269 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C112 (VDD\#2 CKb) capacitor c=2.44125e-18
+
+#270 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C113 (CKb\#2311 Qb\#6) capacitor c=3.95557e-17
+
+#271 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C114 (CKb\#8 x\#4) capacitor c=1.33675e-18
+
+#272 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C115 (x\#4 VDD\#1) capacitor c=2.19581e-17
+
+#273 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C116 (Qb\#6 y\#5) capacitor c=7.95765e-18
+
+#274 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C117 (VSS\#3 CKb\#2) capacitor c=3.39733e-19
+
+#275 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C118 (x\#4 Qb\#2) capacitor c=4.83972e-18
+
+#276 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C119 (x\#3 QQ\#1) capacitor c=1.783e-17
+
+#277 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C120 (CKb\#9 Qb\#5) capacitor c=3.02793e-18
+
+#278 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C121 (VSS\#1 CKb\#7) capacitor c=9.97607e-19
+
+#279 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C122 (CK\#1 y\#3) capacitor c=6.92042e-18
+
+#280 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C123 (VSS\#2 CKb\#8) capacitor c=1.53042e-18
+
+#281 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C124 (QQ\#1 VDD\#3) capacitor c=1.53179e-17
+
+#282 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C125 (VSS\#7 Qb) capacitor c=4.59614e-19
+
+#283 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C126 (CKb\#2 VDD\#3) capacitor c=1.26104e-17
+
+#284 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C127 (x\#3 CKb\#7) capacitor c=2.50576e-18
+
+#285 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C128 (y\#7 CKb\#3) capacitor c=1.19581e-18
+
+#286 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C129 (Qb\#3 D\#1) capacitor c=1.35603e-17
+
+#287 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C130 (CKb\#4 y\#4) capacitor c=4.15497e-18
+
+#288 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C131 (VSS\#5 y\#2) capacitor c=1.77277e-18
+
+#289 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C132 (VSS\#1 x\#3) capacitor c=2.63879e-17
+
+#290 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C133 (Qb\#6 CKb\#4) capacitor c=4.94093e-18
+
+#291 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C134 (CKb\#8 D\#1) capacitor c=4.13386e-18
+
+#292 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C135 (VSS\#1 VDD\#3) capacitor c=6.31923e-18
+
+#293 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C136 (CKb\#3 x\#2) capacitor c=2.06135e-18
+
+#294 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C137 (x\#2 VDD\#3) capacitor c=1.0234e-17
+
+#295 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C138 (VSS\#3 y\#5) capacitor c=1.0261e-18
+
+#296 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C139 (VSS\#7 CKb\#7) capacitor c=7.95948e-19
+
+#297 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C140 (y\#6 CKb\#3) capacitor c=1.25937e-18
+
+#298 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C141 (CKb\#2 D\#1) capacitor c=1.07815e-17
+
+#299 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C142 (CKb\#9 y\#3) capacitor c=2.71122e-18
+
+#300 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C143 (x\#3 D\#2) capacitor c=1.1564e-18
+
+#301 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C144 (CK\#1 y\#2) capacitor c=8.953639999999999e-19
+
+#302 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C145 (Qb\#5 CKb\#2) capacitor c=1.5263e-17
+
+#303 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C146 (x\#3 VDD\#3) capacitor c=4.27679e-18
+
+#304 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C147 (CKb\#7 Qb) capacitor c=4.33434e-18
+
+#305 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C148 (Qb\#7 y\#6) capacitor c=1.89697e-17
+
+#306 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C149 (Qb\#5 y\#3) capacitor c=4.88844e-19
+
+#307 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C150 (y\#5 VDD\#3) capacitor c=1.88049e-18
+
+#308 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C151 (Qb\#6 y\#2) capacitor c=6.21099e-18
+
+#309 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C152 (VSS\#6 CKb\#2311) capacitor c=1.34681e-17
+
+#310 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C153 (VSS\#2 x\#3) capacitor c=3.35379e-18
+
+#311 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C154 (x\#4 VDD\#7) capacitor c=7.77477e-18
+
+#312 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C155 (y\#5 CKb\#3) capacitor c=1.39624e-17
+
+#313 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C156 (x\#2 CKb) capacitor c=1.90295e-17
+
+#314 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C157 (Qb\#5 x\#4) capacitor c=2.7002e-18
+
+#315 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C158 (VSS\#7 D\#2) capacitor c=2.43294e-18
+
+#316 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C159 (VSS\#8 CK\#3) capacitor c=5.42216e-19
+
+#317 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C160 (VSS\#7 Qb\#5) capacitor c=2.62848e-18
+
+#318 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C161 (CKb\#4 VDD\#3) capacitor c=1.03554e-17
+
+#319 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C162 (D\#2 CKb\#7) capacitor c=2.48676e-17
+
+#320 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C163 (CKb\#9 CK\#1) capacitor c=4.82247e-18
+
+#321 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C164 (Qb\#4 VDD\#3) capacitor c=9.180650000000001e-18
+
+#322 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C165 (VSS\#3 y\#7) capacitor c=5.53526e-18
+
+#323 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C166 (VSS\#2 CKb\#2) capacitor c=1.10657e-18
+
+#324 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C167 (y\#2 CKb\#4) capacitor c=2.30203e-17
+
+#325 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C168 (Qb\#5 x\#2) capacitor c=3.74613e-17
+
+#326 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C169 (QQ\#2 Qb\#4) capacitor c=5.8161e-18
+
+#327 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C170 (VDD\#5 CKb\#5) capacitor c=9.354950000000001e-19
+
+#328 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C171 (CKb\#2311 y\#2) capacitor c=6.87092e-19
+
+#329 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C172 (VSS\#7 VDD\#3) capacitor c=3.71921e-18
+
+#330 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C173 (VDD\#1 Qb\#4) capacitor c=1.13576e-17
+
+#331 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C174 (y\#4 VDD\#3) capacitor c=2.649e-17
+
+#332 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C175 (D\#1 VDD\#3) capacitor c=1.20046e-17
+
+#333 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C176 (VSS\#7 CKb\#6) capacitor c=1.24617e-18
+
+#334 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C177 (CKb\#6 D\#2) capacitor c=3.30592e-18
+
+#335 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C178 (x\#5 Qb\#4) capacitor c=9.44587e-19
+
+#336 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C179 (VDD\#8 y\#6) capacitor c=1.73972e-18
+
+#337 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C180 (CKb\#5 x\#2) capacitor c=1.84582e-18
+
+#338 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C181 (CKb\#2311 CK\#3) capacitor c=9.71094e-19
+
+#339 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C182 (y\#7 Qb\#5) capacitor c=6.80982e-18
+
+#340 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C183 (y\#7 VDD\#3) capacitor c=1.40549e-18
+
+#341 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C184 (VSS\#7 x\#3) capacitor c=8.128089999999999e-18
+
+#342 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C185 (y\#7 CKb\#6) capacitor c=1.52756e-18
+
+#343 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C186 (Qb\#5 y\#6) capacitor c=7.312949999999999e-18
+
+#344 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C187 (VDD\#1 D\#1) capacitor c=1.58313e-18
+
+#345 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C188 (CK\#3 VDD\#3) capacitor c=1.1389e-17
+
+#346 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C189 (x\#5 VDD\#2) capacitor c=6.15489e-18
+
+#347 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C190 (y\#5 Qb\#5) capacitor c=2.01825e-17
+
+#348 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C191 (CKb\#8 Qb) capacitor c=1.40869e-18
+
+#349 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C192 (CKb VDD\#3) capacitor c=5.81435e-18
+
+#350 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C193 (x\#5 D\#1) capacitor c=1.7358e-18
+
+#351 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C194 (VSS\#8 CKb\#6) capacitor c=2.15836e-18
+
+#352 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C195 (y CKb\#6) capacitor c=8.84275e-18
+
+#353 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C196 (VDD\#8 Qb\#7) capacitor c=1.11053e-17
+
+#354 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C197 (VSS\#6 CK\#3) capacitor c=1.11189e-17
+
+#355 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C198 (VDD\#7 D\#1) capacitor c=2.68507e-18
+
+#356 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C199 (y\#4 CKb\#5) capacitor c=1.04608e-17
+
+#357 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C200 (VSS\#8 VDD\#3) capacitor c=1.35433e-18
+
+#358 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C201 (x\#2 y\#6) capacitor c=8.6918e-18
+
+#359 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C202 (Qb\#6 CKb\#6) capacitor c=6.42297e-19
+
+#360 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C203 (x VDD\#3) capacitor c=5.22082e-18
+
+#361 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C204 (CKb\#4 y\#3) capacitor c=2.12455e-17
+
+#362 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C205 (y\#7 x\#3) capacitor c=3.37313e-18
+
+#363 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C206 (VSS\#1 Qb\#3) capacitor c=6.22751e-19
+
+#364 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C207 (x\#5 CKb) capacitor c=5.94285e-19
+
+#365 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C208 (CKb\#9 Qb\#6) capacitor c=2.49436e-17
+
+#366 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C209 (CKb\#8 D\#2) capacitor c=2.11197e-17
+
+#367 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C210 (CKb\#2310 Qb\#7) capacitor c=1.8597e-18
+
+#368 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C211 (Qb\#6 VDD\#3) capacitor c=3.65592e-18
+
+#369 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C212 (Qb\#7 x\#2) capacitor c=7.05978e-19
+
+#370 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C213 (VDD\#7 CKb) capacitor c=2.34988e-18
+
+#371 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C214 (CK\#2 y) capacitor c=2.3856e-18
+
+#372 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C215 (Qb\#5 CKb\#4) capacitor c=4.70974e-17
+
+#373 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C216 (VSS\#8 y) capacitor c=2.14711e-18
+
+#374 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C217 (CKb\#3 D\#2) capacitor c=5.92692e-19
+
+#375 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C218 (x\#3 Qb\#3) capacitor c=7.137199999999999e-18
+
+#376 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C219 (CKb\#5 VDD\#3) capacitor c=7.3019e-18
+
+#377 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C220 (CK\#1 y\#4) capacitor c=2.17562e-18
+
+#378 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C221 (x\#2 VDD\#2) capacitor c=1.84078e-18
+
+#379 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C222 (Qb\#6 y) capacitor c=1.77192e-18
+
+#380 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C223 (D\#2 Qb\#2) capacitor c=6.41862e-19
+
+#381 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C224 (y\#6 CKb) capacitor c=1.02325e-18
+
+#382 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C225 (CKb\#9 y\#4) capacitor c=2.16939e-18
+
+#383 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C226 (CKb\#2311 VDD\#3) capacitor c=4.27715e-18
+
+#384 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C227 (Qb\#7 x\#4) capacitor c=1.14664e-18
+
+#385 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C228 (VSS\#5 Qb\#5) capacitor c=1.17655e-18
+
+#386 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C229 (CKb\#2 D\#2) capacitor c=1.94921e-17
+
+#387 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C230 (VDD\#7 x) capacitor c=8.3698e-19
+
+#388 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C231 (QQ\#2 VDD\#3) capacitor c=8.853290000000001e-18
+
+#389 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C232 (y\#2 CKb\#6) capacitor c=2.58105e-18
+
+#390 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C233 (y\#3 VDD\#3) capacitor c=9.04623e-18
+
+#391 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C234 (VSS\#2 CKb\#7) capacitor c=1.12033e-18
+
+#392 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C235 (y\#2 CKb\#3) capacitor c=1.05415e-18
+
+#393 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C236 (VSS\#8 CK\#2) capacitor c=2.75128e-19
+
+#394 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C237 (x\#3 CKb\#8) capacitor c=1.70023e-17
+
+#395 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C238 (VSS\#5 y\#5) capacitor c=2.52133e-18
+
+#396 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C239 (VSS\#6 VDD\#3) capacitor c=5.86149e-18
+
+#397 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C240 (y\#6 x) capacitor c=3.50673e-18
+
+#398 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C241 (CKb\#9 VDD\#8) capacitor c=1.13148e-17
+
+#399 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C242 (VSS\#6 y) capacitor c=4.34963e-19
+
+#400 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C243 (y\#7 VSS\#7) capacitor c=3.11896e-17
+
+#401 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C244 (CK\#1 VDD\#3) capacitor c=2.25627e-17
+
+#402 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C245 (Qb\#7 x) capacitor c=1.00949e-18
+
+#403 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C246 (CKb\#2310 VDD\#8) capacitor c=2.55809e-17
+
+#404 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C247 (VSS\#2 D) capacitor c=3.1782e-17
+
+#405 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C248 (D Qb) capacitor c=2.82486e-18
+
+#406 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C249 (VSS\#8 D) capacitor c=3.59734e-19
+
+#407 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C250 (D VSS\#1) capacitor c=8.59983e-18
+
+#408 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C251 (D VDD\#3) capacitor c=1.24745e-17
+
+#409 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C252 (D CKb\#6) capacitor c=2.0252e-18
+
+#410 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C253 (VSS\#7 D) capacitor c=1.32108e-17
+
+#411 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C254 (D CKb\#7) capacitor c=9.62496e-18
+
+#412 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C255 (D CKb\#2) capacitor c=2.55145e-18
+
+#413 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C256 (VSS\#5 D) capacitor c=4.57608e-19
+
+#414 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C257 (D CKb\#8) capacitor c=2.47052e-18
+
+#415 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C258 (VSS\#2 D\#1) capacitor c=1.33477e-19
+
+#416 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C259 (VDD\#8 x) capacitor c=3.85645e-19
+
+#417 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C260 (VDD\#2 Qb\#3) capacitor c=4.41406e-19
+
+#418 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C261 (VDD\#7 CKb\#5) capacitor c=2.84789e-19
+
+#419 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C262 (CKb\#9 VDD\#5) capacitor c=4.85143e-19
+
+#420 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C263 (CKb\#2310 x\#2) capacitor c=1.63839e-19
+
+#421 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C264 (x\#3 CKb\#3) capacitor c=1.6968e-19
+
+#422 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C265 (x\#4 CKb\#4) capacitor c=2.76567e-19
+
+#423 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C266 (x\#3 CKb\#6) capacitor c=4.08321e-19
+
+#424 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C267 (y\#7 Qb) capacitor c=4.06852e-19
+
+#425 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C268 (y\#4 Qb\#4) capacitor c=4.30401e-19
+
+#426 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C269 (VSS\#3 CKb\#3) capacitor c=1.7456e-19
+
+#427 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C270 (VSS\#6 CKb\#6) capacitor c=1.98576e-19
+
+#428 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C271 (VSS\#8 CKb\#3) capacitor c=2.13784e-19
+
+#429 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C272 (Qb\#5 CKb) capacitor c=2.21643e-19
+
+#430 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C273 (CKb\#2 Qb) capacitor c=2.48552e-19
+
+#431 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C274 (Qb\#5 CKb\#5) capacitor c=3.1228e-19
+
+#432 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C275 (y\#5 CK\#2) capacitor c=9.225699999999999e-20
+
+#433 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C276 (Qb\#7 D\#1) capacitor c=1.37498e-19
+
+#434 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C277 (Qb\#3 D) capacitor c=1.44789e-19
+
+#435 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C278 (Qb\#5 D\#2) capacitor c=2.24774e-19
+
+#436 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C279 (CKb\#2 y\#5) capacitor c=2.24624e-19
+
+#437 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C280 (CKb\#2311 y) capacitor c=2.33011e-19
+
+#438 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C281 (y\#7 CKb\#8) capacitor c=2.60551e-19
+
+#439 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C282 (CK VSS) capacitor c=1.47273e-17
+
+#440 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C283 (D VSS) capacitor c=1.32425e-18
+
+#441 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C284 (a VSS) capacitor c=1.61818e-19
+
+#442 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C285 (b VSS) capacitor c=4.47876e-19
+
+#443 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C286 (c VSS) capacitor c=4.3593e-19
+
+#444 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C287 (Qb\#4 VSS) capacitor c=5.4082e-19
+
+#445 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C288 (D\#1 VSS) capacitor c=1.04608e-18
+
+#446 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C289 (CKb VSS) capacitor c=6.20423e-19
+
+#447 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C290 (x VSS) capacitor c=3.57299e-19
+
+#448 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C291 (CKb\#5 VSS) capacitor c=3.34645e-19
+
+#449 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C292 (y\#3 VSS) capacitor c=3.69084e-19
+
+#450 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C293 (CK\#1 VSS) capacitor c=1.34988e-18
+
+#451 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C294 (Qb VSS) capacitor c=1.71327e-19
+
+#452 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C295 (CKb\#7 VSS) capacitor c=5.83996e-19
+
+#453 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C296 (D\#2 VSS) capacitor c=1.8764e-18
+
+#454 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C297 (CKb\#6 VSS) capacitor c=6.997719999999999e-20
+
+#455 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C298 (y VSS) capacitor c=2.62975e-19
+
+#456 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C299 (CK\#2 VSS) capacitor c=1.37347e-18
+
+#457 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C300 (Qb\#3 VSS) capacitor c=7.14856e-20
+
+#458 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C301 (CKb\#8 VSS) capacitor c=5.96994e-19
+
+#459 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C302 (CKb\#2 VSS) capacitor c=2.83053e-19
+
+#460 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C303 (x\#2 VSS) capacitor c=3.3787e-19
+
+#461 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C304 (y\#4 VSS) capacitor c=6.04247e-19
+
+#462 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C305 (CK\#3 VSS) capacitor c=2.47691e-17
+
+#463 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C306 (VDD\#3 VSS) capacitor c=7.108829999999999e-18
+
+#464 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C307 (QQ\#2 VSS) capacitor c=1.72634e-19
+
+#465 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C308 (VDD\#1 VSS) capacitor c=4.56092e-19
+
+#466 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C309 (x\#5 VSS) capacitor c=7.45468e-20
+
+#467 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C310 (VDD\#7 VSS) capacitor c=4.74766e-19
+
+#468 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C311 (y\#6 VSS) capacitor c=9.81109e-19
+
+#469 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C312 (Qb\#7 VSS) capacitor c=7.85198e-19
+
+#470 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C313 (VDD\#8 VSS) capacitor c=1.66868e-19
+
+#471 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C314 (CKb\#2310 VSS) capacitor c=2.10828e-19
+
+#472 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C315 (VDD\#6 VSS) capacitor c=1.45146e-19
+
+#473 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C316 (QQ\#1 VSS) capacitor c=8.829830000000001e-19
+
+#474 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C317 (y\#7 VSS) capacitor c=1.72574e-18
+
+#475 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C318 (Qb\#6 VSS) capacitor c=1.51769e-18
+
+#476 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C319 (y\#2 VSS) capacitor c=1.58591e-19
+
+#477 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C320 (CKb\#3 VSS) capacitor c=2.61707e-19
+
+#478 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C321 (Qb\#2 VSS) capacitor c=6.55779e-20
+
+#479 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C322 (CKb\#9 VSS) capacitor c=1.55602e-18
+
+#480 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C323 (Qb\#5 VSS) capacitor c=1.00669e-18
+
+#481 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C324 (x\#4 VSS) capacitor c=2.23203e-19
+
+#482 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C325 (VDD\#2 VSS) capacitor c=2.34777e-19
+
+#483 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/TSPCFF.vams;AMS:8"
+C326 (VDD\#5 VSS) capacitor c=2.19091e-19
 ends
 
 
@@ -236,13 +1303,13 @@ ends
 #8 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/testbench.sv;AMS:8"
 simulator lang=spectre version=2.0 binding=vlog insensitive=no
 subckt worklib__testbench__sv__0x10000001 
+local dout
 
 #14 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/testbench.sv;AMS:8"
 parameters digital_tick=10
-dout__E2L_2_dynsup__electrical (dout__E2L_2_dynsup__electrical__Ain) connectLib__E2L_2_dynsup__module__0x10000001 debug=0 enable_x=1 nox=0 tdelay=0 tf=2e-11 tr=2e-11 ttol_c=5e-12 ttol_t=2e-12 txdel=8e-11 vddlimit=2.4 vddnet="testbench.bdut.vdd" vinlimit=2.4 vssnet="testbench.bdut.vss" vsup_low_output_x=0 vsup_min=0.5 vsup_off=0.416667 vthi=0.666667 vthix=0.583333 vtlo=0.333333 vtlox=0.416667 vtol=0.0833333
 
 #30 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/testbench.sv;AMS:8"
-bdut (clk_logic=bdut___dUmmY_pORt_0_ clk_tt_val=bdut___dUmmY_pORt_1_ din_logic=bdut___dUmmY_pORt_2_ dout_electrical=dout__E2L_2_dynsup__electrical__Ain din_tt_val=bdut___dUmmY_pORt_3_ din_delay_val=bdut___dUmmY_pORt_4_ clk_delay_val=bdut___dUmmY_pORt_5_) worklib__board__vams__0x10000001 
+bdut (clk_logic=bdut___dUmmY_pORt_0_ clk_tt_val=bdut___dUmmY_pORt_1_ din_logic=bdut___dUmmY_pORt_2_ dout_electrical=dout din_tt_val=bdut___dUmmY_pORt_3_ din_delay_val=bdut___dUmmY_pORt_4_ clk_delay_val=bdut___dUmmY_pORt_5_) worklib__board__vams__0x10000001 
 ends
 
 simulator lang=spectre version=2.0 insensitive=no
