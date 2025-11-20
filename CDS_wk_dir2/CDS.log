@@ -581,3 +581,22 @@
 \i 1.92:1.195
 \r t
 \# Memory report: Maximum memory size now 17,193 MB at UTC 2025.11.20 13:38:28.190
+\# Memory report: Maximum memory size now 16,818 MB at UTC 2025.11.20 14:20:38.267
+\a hiCloseWindow(swindow(2))
+\e *Error* (icLic-101) Failed to check in license Virtuoso_Schematic_Editor_XL because:
+\e ERROR (LMF-04007): License call failed for feature Virtuoso_Schematic_Editor_XL. The license server search path is defined as <none>. The FLEXnet error message is as follows,
+\e     FLEXnet ERROR(-7, 10015, 0): No socket connection to license server manager.
+\e 
+\e Run 'lic_error LMF-04007' for more information.
+\r t
+\a _hiSetCurrentWinNum(2)
+\r t
+\a hiCloseWindow(swindow(1))
+\r t
+\a hiQuit()
+\p > 
+\a hiDBoxOK(hiQuitDBox)
+\r t
+\o 
+\# Memory report: on exit            615 MB, process size 1,514 MB at UTC 2025.11.20 14:24:47.149
+\# Memory report: peak usage         623 MB, process size 1,522 MB

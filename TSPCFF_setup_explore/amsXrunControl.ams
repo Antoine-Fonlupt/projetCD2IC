@@ -5,6 +5,88 @@ simulator lang=spectre version=2.0
 local __cds_internal_stub_node__
 ahdl_include "xcelium.d/AMSD/ahdlSimDB/worklib__cmos_transition__vams__0x10000001_behavioral.flex.va"
 ahdl_include "xcelium.d/AMSD/ahdlSimDB/worklib__board__vams__0x10000001_behavioral.flex.va"
+ahdl_include "xcelium.d/AMSD/ahdlSimDB/connectLib__E2L_2_dynsup__module__0x10000001_behavioral.flex.va"
+
+#38 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+simulator lang=spectre version=2.0 binding=vlog insensitive=no
+subckt connectLib__E2L_2_dynsup__module__0x10000001 Ain(Ain)
+local Ain
+local evdd
+local evss
+
+#43 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters vsup_min=0.5
+
+#45 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters vthi=0.6666666666666666
+
+#46 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters vtlo=0.3333333333333333
+
+#47 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters vtol=((vthi)-(vtlo))/(4)
+
+#48 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters vtlox=(vtlo)+(vtol)
+
+#49 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters vthix=(vthi)-(vtol)
+
+#50 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters tr=2e-10
+
+#51 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters tf=tr
+
+#52 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters ttol_t=((tr)+(tf))/(20)
+
+#53 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters tdelay=0
+
+#54 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters txdel=(4)*(tr)
+
+#55 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters ttol_c=(tr)/(4)
+
+#56 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters debug=0
+
+#57 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters vsup_low_output_x=0
+
+#58 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters vinlimit=2.4
+
+#59 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters vddlimit=2.4
+
+#62 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters vsup_off=(vsup_min)-(vtol)
+
+#65 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters nox=0
+
+#66 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters enable_x=!(nox)
+
+#80 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters vddnet="testbench.bdut.vdd"
+
+#81 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+parameters vssnet="testbench.bdut.vss"
+parameters termcurs=0
+
+#38 "/comelec/softs/opt/Cadence/releases/XCELIUM2109/tools/affirma_ams/etc/connect_lib/E2L_2_dynsup.vams;AMS:8"
+_cds_internal_E2L_2_dynsup_ (Ain evdd evss) connectLib__E2L_2_dynsup__module__0x10000001_behavioral debug=debug enable_x=enable_x nox=nox tdelay=tdelay tf=tf tr=tr ttol_c=ttol_c ttol_t=ttol_t txdel=txdel vddlimit=vddlimit vddnet=vddnet vinlimit=vinlimit vssnet=vssnet vsup_low_output_x=vsup_low_output_x vsup_min=vsup_min vsup_off=vsup_off vthi=vthi vthix=vthix vtlo=vtlo vtlox=vtlox vtol=vtol
+
+# output connect stmts for $analog_node_alias()
+connect evdd testbench.bdut.vdd
+connect evss testbench.bdut.vss
+
+ends
+
 
 #46 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/cmos_transition.vams;AMS:8"
 simulator lang=spectre version=2.0 binding=vlog insensitive=no
@@ -154,13 +236,13 @@ ends
 #8 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/testbench.sv;AMS:8"
 simulator lang=spectre version=2.0 binding=vlog insensitive=no
 subckt worklib__testbench__sv__0x10000001 
-local dout
 
 #14 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/testbench.sv;AMS:8"
 parameters digital_tick=10
+dout__E2L_2_dynsup__electrical (dout__E2L_2_dynsup__electrical__Ain) connectLib__E2L_2_dynsup__module__0x10000001 debug=0 enable_x=1 nox=0 tdelay=0 tf=2e-11 tr=2e-11 ttol_c=5e-12 ttol_t=2e-12 txdel=8e-11 vddlimit=2.4 vddnet="testbench.bdut.vdd" vinlimit=2.4 vssnet="testbench.bdut.vss" vsup_low_output_x=0 vsup_min=0.5 vsup_off=0.416667 vthi=0.666667 vthix=0.583333 vtlo=0.333333 vtlox=0.416667 vtol=0.0833333
 
 #30 "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_setup_explore/testbench.sv;AMS:8"
-bdut (clk_logic=bdut___dUmmY_pORt_0_ clk_tt_val=bdut___dUmmY_pORt_1_ din_logic=bdut___dUmmY_pORt_2_ dout_electrical=dout din_tt_val=bdut___dUmmY_pORt_3_ din_delay_val=bdut___dUmmY_pORt_4_ clk_delay_val=bdut___dUmmY_pORt_5_) worklib__board__vams__0x10000001 
+bdut (clk_logic=bdut___dUmmY_pORt_0_ clk_tt_val=bdut___dUmmY_pORt_1_ din_logic=bdut___dUmmY_pORt_2_ dout_electrical=dout__E2L_2_dynsup__electrical__Ain din_tt_val=bdut___dUmmY_pORt_3_ din_delay_val=bdut___dUmmY_pORt_4_ clk_delay_val=bdut___dUmmY_pORt_5_) worklib__board__vams__0x10000001 
 ends
 
 simulator lang=spectre version=2.0 insensitive=no

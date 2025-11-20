@@ -43,9 +43,9 @@ board bdut(
 // files of the gcslib045 library.
 // The input slope should no excess the max_input_transition of the library : 200ps
 localparam NBSLOPES = 1 ;
-localparam NBCAPA = 7 ;
+localparam NBCAPA = 1 ;
 localparam real slope_values[0:NBSLOPES-1] = '{0.10} ; // ns
-localparam real capa_values[0:NBCAPA-1] = '{0.02,1.25,2.5,5,11,21,42}; // fF
+localparam real capa_values[0:NBCAPA-1] = '{11}; //'{0.02,1.25,2.5,5,11,21,42}; // fF
 
 // Defines a file name for storing output results
 string outfilename ;
@@ -71,31 +71,23 @@ begin:simu
 
    // Write parameter infos on the first line of the resulting file
    // $fwrite(outfile,"islope(ns) ");
-   $fwrite(outfile,"load_cap(fF)  clk_delay_val(ps)  o_fall(ns)\n");
+   $fwrite(outfile,"load_cap(fF)  clk_delay_val(ps)  dout(V)\n");
    for(capa_index=0;capa_index<NBCAPA;capa_index++) 
 
 
-   /*
-    setup clk and d to 0
-    wait for stable signals (#(digital_tick)
-    setup clk to 1, in order tQ, o store a 0 in the d fliflop
-    wait for stable signals…
-    setup clk to 0,
-    wait for stable signals
-    setup d to 1
-    wait for stable signals
-    setup clk to 1
-    wait for stable signals get the measured propagation time and store it to the result file.
-   */
    // At time 0 input is initialized to 0
    clk = 1'b0 ;
    din = 1'b0 ;
+   #(digital_tick) ;
+   clk = 1'b1 ;
+   #(digital_tick) ;
+   clk = 1'b0 ;
+   #(digital_tick) ; 
 
    // Main loop on the din slopes
    for(slope_index=0;slope_index<NBSLOPES;slope_index++) 
    begin
      // We wait on tick in order to be sure that the DUT is "quiet"
-     #(digital_tick) ; 
 
      // Then we update the value of the input slope
      clk_tt_val = slope_values[slope_index]*1.0e-9  ;
@@ -107,12 +99,12 @@ begin:simu
      begin
 
       // Add 4th loop here
-      clk_delay_val = 100.0*1e-12;
+      real clk_delay_val_range = -146*1e-12;
 
-      for (clk_delay_val_index = 20; clk_delay_val_index>=0; clk_delay_val_index--)
+      for (clk_delay_val_index = 40; clk_delay_val_index>=0; clk_delay_val_index--)
       begin
          //clk_delay_val = clk_delay_val_index*5.0e-12;
-         clk_delay_val = clk_delay_val/1.2;
+         clk_delay_val = clk_delay_val_index*clk_delay_val_range/40;
        // We wait on tick in order to be sure that the DUT is "quiet"
         // #(digital_tick) ; 
 
@@ -123,26 +115,26 @@ begin:simu
          // And we write the clk delay value in the file
          $fwrite(outfile,"%010.4f ", clk_delay_val*1e12 ) ;
 
-       // Then we wait on tick in order to be sure that the DUT is "quiet"
-       #(digital_tick) ;
+        // Then we wait on tick in order to be sure that the DUT is "quiet"
+        din = 1'b1 ;
+        #(digital_tick) ;
+        clk = 1'b1 ;
+        din = 1'b0 ;
+        #(digital_tick) ;
 
-       // Then we generate a rising event on din
+        // dout must be equal to 1
+        $fwrite(outfile,"%010.4f \n", dout) ;
+
+        clk = 1'b0 ;
+        #(digital_tick) ;
         clk = 1'b1 ;
         #(digital_tick) ;
         clk = 1'b0 ;
         #(digital_tick) ;
         din = 1'b1 ;
-        clk = 1'b1 ;
         #(digital_tick) ;
 
-       // Then we get the measured propagation time for a falling output as well as the transition time
-       // and write it to the file
-       $fwrite(outfile,"%010.6f \n",propagation_time*1.0e9 ) ;
 
-       // Then we wait on tick in order to be sure that the DUT is "quiet"
-       #(digital_tick) ;
-      clk = 1'b0 ;
-      din = 1'b0 ;
       end
      end
      $fwrite(outfile,"\n") ;
