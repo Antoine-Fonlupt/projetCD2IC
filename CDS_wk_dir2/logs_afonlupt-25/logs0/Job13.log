@@ -1,27 +1,27 @@
-\# Program start time:     UTC 2025.11.20 19:37:02.688
-\# Local time: CET (UTC+01:00) 2025.11.20 20:37:02.688
+\# Program start time:     UTC 2025.11.27 16:38:38.052
+\# Local time: CET (UTC+01:00) 2025.11.27 17:38:38.052
 \o Program:		@(#)$CDS: virtuoso version 6.1.7-64b 09/01/2017 12:09 (sjfhw313) $
 \o Hierarchy:		/comelec/softs/opt/Cadence/releases/IC617/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.7-64b.500.14  (64-bit addresses)
-\# Command line:	/comelec/softs/opt/Cadence/releases/IC617/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso811080 -mpshost tp-3a107-06 -davinciService DaVinciService_811080_1763667369 -log /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/logs_afonlupt-25/logs0/Job13.log -licenseLockFileName /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/.tmp_afonlupt-25/.tp-3a107-06_811080 -nograph -nostdin -axlChildIdFlag 13
+\# Command line:	/comelec/softs/opt/Cadence/releases/IC617/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso3072873 -mpshost tp-3a107-06 -davinciService DaVinciService_3072873_1764261386 -log /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/logs_afonlupt-25/logs0/Job13.log -licenseLockFileName /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2/.tmp_afonlupt-25/.tp-3a107-06_3072873 -nograph -nostdin -axlChildIdFlag 13
 \# Host name (type):	tp-3a107-06 (x86_64)
 \# Operating system:	Linux 6.1.0-41-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.158-1 (2025-11-09)
 \# Linux /etc/issue:	Debian GNU/Linux 12 \n \l
 \# X display name (WxH):	tp-3a107-06:80 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
-\# X server:			RealVNC Ltd (VNC nograph server, PID 812046)
+\# X server:			RealVNC Ltd (VNC nograph server, PID 3076509)
 \# Depth of Visual (Root):	16 (16)
 \# Number of Planes Used:	16
 \# X version:		11.0 (vendor release 3370)
-\# X resource pool:	base 0x2000000, mask 0x3fffff (4194303), shift 0
+\# X resource pool:	base 0x1c00000, mask 0x3fffff (4194303), shift 0
 \# 			current id 0x0, current max 0x3ffffa (4194298)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	      1,211 MB
-\# Available memory:	     14,438 MB
+\# Initial sbrk value:	      1,393 MB
+\# Available memory:	     12,923 MB
 \# System memory:	     19,583 MB
-\# Maximum memory size:	     18,468 MB
-\# Max mem available:	     14,535 MB
+\# Maximum memory size:	     18,286 MB
+\# Max mem available:	     13,019 MB
 \# Initial memory used:	         96 MB
 \#        process size:	        951 MB
 \# Thread usage limits (effective/default):	maxthreads 62496/62496 maxload 20.00/20.00
@@ -29,7 +29,7 @@
 \# Window Manager:	other
 \# User Name:		afonlupt-25
 \o Working Directory:	tp-3a107-06:/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2
-\# Process Id:		813875
+\# Process Id:		3078522
 \o 
 \o COPYRIGHT (C) 1992-2017  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           (C) 1992-2017  UNIX SYSTEMS Laboratories INC.,
@@ -67,8 +67,7 @@
 \o Loading adexl.cxt 
 \o *Info*    Exporting services from client ... 
 \o 
-\o *INFO* (icLic-303) virtuoso: PID=813875, Child Mode is true, ICPR Mode is true, Registration Timeout is 180 seconds, Communication Timeout is 180 seconds.
-\# Memory report: using         217 MB, process size 1,190 MB at UTC 2025.11.20 19:37:08.185
+\o *INFO* (icLic-303) virtuoso: PID=3078522, Child Mode is true, ICPR Mode is true, Registration Timeout is 180 seconds, Communication Timeout is 180 seconds.
 \o *Info*    Client has finished starting ... 
 \o 
 \p > 
@@ -85,24 +84,25 @@
 \o 	View         = schematic
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = TSPCFF_LIB:TB_TSPCFF:1_tmpstate.315258528_Interactive.18
-\o 	Results DB   = /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18.rdb
-\o 	Results Dir  = /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/6/TSPCFF_LIB:TB_TSPCFF:1
-\o 	Results Loc  = /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data
+\o 	State Name   = TSPCFF_LIB:TB_TSPCFF:1_tmpstate.143302914_Interactive.2
+\o 	Results DB   = /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2.rdb
+\o 	Results Dir  = /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/3/TSPCFF_LIB:TB_TSPCFF:1
+\o 	Results Loc  = /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data
 \o 	Project Dir  = /cal/exterieurs/afonlupt-25/simulation
-\o 	Setup DB loc = /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_LIB/TB_TSPCFF/adexl
+\o 	Setup DB loc = /cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_LIB/TB_TSPCFF_bis/adexl
 \o 	File Encoding = 0
 \o 
 \o 
 \o Loading simui.cxt 
-\o *INFO* (icLic-304) Start to connect to parent process (session=virtuoso811080, host=tp-3a107-06). Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\# Memory report: using         223 MB, process size 1,196 MB at UTC 2025.11.27 16:38:44.018
+\o *INFO* (icLic-304) Start to connect to parent process (session=virtuoso3072873, host=tp-3a107-06). Total timeout is 180 seconds. Connection timeout is 90 seconds.
 \o *INFO* (icLic-305) Step 1: Connecting to parent. Spent time is 0 seconds.
-\o *INFO* (icLic-309) The registration of the child 813875 within 90 seconds is being processed ...
+\o *INFO* (icLic-309) The registration of the child 3078522 within 90 seconds is being processed ...
 \o *INFO* (icLic-310) The result of registration is true. Spend time is 0 seconds.
 \o *INFO* (icLic-308) The end of connection. Result is true. Total spent time is 0 seconds.
 \o Loading viva.cxt 
-\o ("In _axlResolveAXLPath" nil "/cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/6/TSPCFF_LIB:TB_TSPCFF:1" "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_LIB/TB_TSPCFF/adexl" "/cal/exterieurs/afonlupt-25/simulation")
-\o ("resolvedPath is" "/cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/6/TSPCFF_LIB:TB_TSPCFF:1")
+\o ("In _axlResolveAXLPath" nil "/cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/3/TSPCFF_LIB:TB_TSPCFF:1" "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_LIB/TB_TSPCFF_bis/adexl" "/cal/exterieurs/afonlupt-25/simulation")
+\o ("resolvedPath is" "/cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/3/TSPCFF_LIB:TB_TSPCFF:1")
 \o Loading gpdk045/libInit.il ...
 \o 	Loading gpdk045/loadCxt.ile ... done!
 \o 	Loading context 'gpdk045' from library 'gpdk045' ... done!
@@ -135,10 +135,10 @@
 \o 	VERSION: 4.0 (17-June-2014)
 \o 
 \o done!
-\o Failed to load gpdk045/libInit.il successfully!("In _axlICRPResolveAXLPath" sevSession1 "$AXL_SETUPDB_DIR/test_states/TSPCFF_LIB:TB_TSPCFF:1_tmpstate.315258528_Interactive.18.state" "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_LIB/TB_TSPCFF/adexl" "/cal/exterieurs/afonlupt-25/simulation")
-\o ("resolvedPath is" "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_LIB/TB_TSPCFF/adexl/test_states/TSPCFF_LIB:TB_TSPCFF:1_tmpstate.315258528_Interactive.18.state")
-\o ("In _axlResolveAXLPath" nil "$AXL_SETUPDB_DIR/test_states" "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_LIB/TB_TSPCFF/adexl" "/cal/exterieurs/afonlupt-25/simulation")
-\o ("resolvedPath is" "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_LIB/TB_TSPCFF/adexl/test_states")
+\o Failed to load gpdk045/libInit.il successfully!("In _axlICRPResolveAXLPath" sevSession1 "$AXL_SETUPDB_DIR/test_states/TSPCFF_LIB:TB_TSPCFF:1_tmpstate.143302914_Interactive.2.state" "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_LIB/TB_TSPCFF_bis/adexl" "/cal/exterieurs/afonlupt-25/simulation")
+\o ("resolvedPath is" "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_LIB/TB_TSPCFF_bis/adexl/test_states/TSPCFF_LIB:TB_TSPCFF:1_tmpstate.143302914_Interactive.2.state")
+\o ("In _axlResolveAXLPath" nil "$AXL_SETUPDB_DIR/test_states" "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_LIB/TB_TSPCFF_bis/adexl" "/cal/exterieurs/afonlupt-25/simulation")
+\o ("resolvedPath is" "/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/TSPCFF_LIB/TB_TSPCFF_bis/adexl/test_states")
 \o 
 \o *Info*    The auto suspension is disabled.
 \o 
@@ -148,7 +148,7 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (0 10) on testbench [
+\o *Info*    Run start for Point ID (0 8) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o Resetting statistical vars
@@ -157,25 +157,25 @@
 \o 
 \o Setting temp(T) = 27
 \o Setting var tsetup = "150p"
-\o Setting var wmn2 = "181.5789474n"
-\o Setting var wmn4 = "181.5789474n"
-\o Setting var wmp5 = "120n"
-\o Setting var wmp2 = "120n"
+\o Setting var wmn2 = "224.2105263n"
+\o Setting var wmn4 = "224.2105263n"
+\o Setting var wmp5 = "250n"
+\o Setting var wmp2 = "250n"
 \o 
 \o *Info*    Netlist Directory =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/10/TSPCFF_LIB:TB_TSPCFF:1/netlist
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/8/TSPCFF_LIB:TB_TSPCFF:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/10/TSPCFF_LIB:TB_TSPCFF:1
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/8/TSPCFF_LIB:TB_TSPCFF:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (0 10)
+\o *Info*    Creating Netlist for Point ID (0 8)
 \o 
 \o generate netlist...
 \o Loading seCore.cxt 
-\o Begin Incremental Netlisting Nov 20 20:37:10 2025
-\o End netlisting Nov 20 20:37:10 2025
+\o Begin Incremental Netlisting Nov 27 17:38:47 2025
+\o End netlisting Nov 27 17:38:47 2025
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -184,10 +184,14 @@
 \o       ...successful.
 \o 
 \o *Info*    Running simulation on testbench [ TSPCFF_LIB:TB_TSPCFF:1 ]
-\o           for Point ID (0 10).
+\o           for Point ID (0 8).
 \o 
-\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/10/TSPCFF_LIB:TB_TSPCFF:1/psf.
+\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/8/TSPCFF_LIB:TB_TSPCFF:1/psf.
 \o compose simulator input file...
+\# Available memory:         12,876 MB at UTC 2025.11.27 16:38:48.033
+\# Memory report: Maximum memory size now 13,199 MB at UTC 2025.11.27 16:38:48.033
+\# Thread usage report: 21 active threads, active load 1.00 at UTC 2025.11.27 16:38:48.034
+\# Memory report: using         324 MB, process size 1,310 MB at UTC 2025.11.27 16:38:48.034
 \o       ...successful.
 \o start simulator if needed...
 \o       ...successful.
@@ -195,18 +199,14 @@
 \o To view the simulator output, right-click on the test name, result 
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
-\# Memory report: using         324 MB, process size 1,311 MB at UTC 2025.11.20 19:37:11.091
 \o Loading paraplot.cxt 
-\# Available memory:         14,401 MB at UTC 2025.11.20 19:37:12.930
-\# Memory report: Maximum memory size now 14,725 MB at UTC 2025.11.20 19:37:12.930
-\# Thread usage report: 21 active threads, active load 1.00 at UTC 2025.11.20 19:37:12.930
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (0 10) on testbench [
+\o *Info*    Run complete for Point ID (0 8) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o 
@@ -218,31 +218,31 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (0 27) on testbench [
+\o *Info*    Run start for Point ID (0 35) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var wmn2 = "161.0526316n"
-\o Setting var wmn4 = "161.0526316n"
-\o Setting var wmp5 = "132.1052632n"
-\o Setting var wmp2 = "132.1052632n"
+\o Setting var wmn2 = "268.4210526n"
+\o Setting var wmn4 = "268.4210526n"
+\o Setting var wmp5 = "255.2631579n"
+\o Setting var wmp2 = "255.2631579n"
 \o 
 \o *Info*    Netlist Directory =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/27/TSPCFF_LIB:TB_TSPCFF:1/netlist
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/35/TSPCFF_LIB:TB_TSPCFF:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/27/TSPCFF_LIB:TB_TSPCFF:1
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/35/TSPCFF_LIB:TB_TSPCFF:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (0 27)
+\o *Info*    Creating Netlist for Point ID (0 35)
 \o 
 \o generate netlist...
-\o Begin Incremental Netlisting Nov 20 20:37:18 2025
-\o End netlisting Nov 20 20:37:18 2025
+\o Begin Incremental Netlisting Nov 27 17:39:00 2025
+\o End netlisting Nov 27 17:39:00 2025
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -251,9 +251,9 @@
 \o       ...successful.
 \o 
 \o *Info*    Running simulation on testbench [ TSPCFF_LIB:TB_TSPCFF:1 ]
-\o           for Point ID (0 27).
+\o           for Point ID (0 35).
 \o 
-\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/27/TSPCFF_LIB:TB_TSPCFF:1/psf.
+\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/35/TSPCFF_LIB:TB_TSPCFF:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -268,7 +268,7 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (0 27) on testbench [
+\o *Info*    Run complete for Point ID (0 35) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o 
@@ -280,31 +280,31 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (0 44) on testbench [
+\o *Info*    Run start for Point ID (0 56) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var wmn2 = "140.5263158n"
-\o Setting var wmn4 = "140.5263158n"
-\o Setting var wmp5 = "144.2105263n"
-\o Setting var wmp2 = "144.2105263n"
+\o Setting var wmn2 = "274.7368421n"
+\o Setting var wmn4 = "274.7368421n"
+\o Setting var wmp5 = "260.5263158n"
+\o Setting var wmp2 = "260.5263158n"
 \o 
 \o *Info*    Netlist Directory =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/44/TSPCFF_LIB:TB_TSPCFF:1/netlist
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/56/TSPCFF_LIB:TB_TSPCFF:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/44/TSPCFF_LIB:TB_TSPCFF:1
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/56/TSPCFF_LIB:TB_TSPCFF:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (0 44)
+\o *Info*    Creating Netlist for Point ID (0 56)
 \o 
 \o generate netlist...
-\o Begin Incremental Netlisting Nov 20 20:37:25 2025
-\o End netlisting Nov 20 20:37:25 2025
+\o Begin Incremental Netlisting Nov 27 17:39:12 2025
+\o End netlisting Nov 27 17:39:12 2025
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -313,9 +313,9 @@
 \o       ...successful.
 \o 
 \o *Info*    Running simulation on testbench [ TSPCFF_LIB:TB_TSPCFF:1 ]
-\o           for Point ID (0 44).
+\o           for Point ID (0 56).
 \o 
-\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/44/TSPCFF_LIB:TB_TSPCFF:1/psf.
+\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/56/TSPCFF_LIB:TB_TSPCFF:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -330,69 +330,7 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (0 44) on testbench [
-\o           TSPCFF_LIB:TB_TSPCFF:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (0 63) on testbench [
-\o           TSPCFF_LIB:TB_TSPCFF:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var wmn2 = "133.6842105n"
-\o Setting var wmn4 = "133.6842105n"
-\o Setting var wmp5 = "156.3157895n"
-\o Setting var wmp2 = "156.3157895n"
-\o 
-\o *Info*    Netlist Directory =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/63/TSPCFF_LIB:TB_TSPCFF:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/63/TSPCFF_LIB:TB_TSPCFF:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (0 63)
-\o 
-\o generate netlist...
-\o Begin Incremental Netlisting Nov 20 20:37:32 2025
-\o End netlisting Nov 20 20:37:32 2025
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ TSPCFF_LIB:TB_TSPCFF:1 ]
-\o           for Point ID (0 63).
-\o 
-\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/63/TSPCFF_LIB:TB_TSPCFF:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 63) on testbench [
+\o *Info*    Run complete for Point ID (0 56) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o 
@@ -411,22 +349,24 @@
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var wmn2 = "215.7894737n"
-\o Setting var wmn4 = "215.7894737n"
+\o Setting var wmn2 = "268.4210526n"
+\o Setting var wmn4 = "268.4210526n"
+\o Setting var wmp5 = "265.7894737n"
+\o Setting var wmp2 = "265.7894737n"
 \o 
 \o *Info*    Netlist Directory =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/75/TSPCFF_LIB:TB_TSPCFF:1/netlist
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/75/TSPCFF_LIB:TB_TSPCFF:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/75/TSPCFF_LIB:TB_TSPCFF:1
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/75/TSPCFF_LIB:TB_TSPCFF:1
 \o 
 \o 
 \o *Info*    Creating Netlist for Point ID (0 75)
 \o 
 \o generate netlist...
-\o Begin Incremental Netlisting Nov 20 20:37:37 2025
-\o End netlisting Nov 20 20:37:37 2025
+\o Begin Incremental Netlisting Nov 27 17:39:24 2025
+\o End netlisting Nov 27 17:39:24 2025
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -437,7 +377,7 @@
 \o *Info*    Running simulation on testbench [ TSPCFF_LIB:TB_TSPCFF:1 ]
 \o           for Point ID (0 75).
 \o 
-\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/75/TSPCFF_LIB:TB_TSPCFF:1/psf.
+\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/75/TSPCFF_LIB:TB_TSPCFF:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -464,31 +404,31 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (0 89) on testbench [
+\o *Info*    Run start for Point ID (0 98) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var wmn2 = "174.7368421n"
-\o Setting var wmn4 = "174.7368421n"
-\o Setting var wmp5 = "168.4210526n"
-\o Setting var wmp2 = "168.4210526n"
+\o Setting var wmn2 = "287.3684211n"
+\o Setting var wmn4 = "287.3684211n"
+\o Setting var wmp5 = "271.0526316n"
+\o Setting var wmp2 = "271.0526316n"
 \o 
 \o *Info*    Netlist Directory =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/89/TSPCFF_LIB:TB_TSPCFF:1/netlist
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/98/TSPCFF_LIB:TB_TSPCFF:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/89/TSPCFF_LIB:TB_TSPCFF:1
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/98/TSPCFF_LIB:TB_TSPCFF:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (0 89)
+\o *Info*    Creating Netlist for Point ID (0 98)
 \o 
 \o generate netlist...
-\o Begin Incremental Netlisting Nov 20 20:37:43 2025
-\o End netlisting Nov 20 20:37:43 2025
+\o Begin Incremental Netlisting Nov 27 17:39:34 2025
+\o End netlisting Nov 27 17:39:34 2025
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -497,9 +437,9 @@
 \o       ...successful.
 \o 
 \o *Info*    Running simulation on testbench [ TSPCFF_LIB:TB_TSPCFF:1 ]
-\o           for Point ID (0 89).
+\o           for Point ID (0 98).
 \o 
-\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/89/TSPCFF_LIB:TB_TSPCFF:1/psf.
+\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/98/TSPCFF_LIB:TB_TSPCFF:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -514,7 +454,7 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (0 89) on testbench [
+\o *Info*    Run complete for Point ID (0 98) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o 
@@ -526,31 +466,31 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (0 101) on testbench [
+\o *Info*    Run start for Point ID (0 111) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var wmn2 = "120n"
-\o Setting var wmn4 = "120n"
-\o Setting var wmp5 = "180.5263158n"
-\o Setting var wmp2 = "180.5263158n"
+\o Setting var wmn2 = "243.1578947n"
+\o Setting var wmn4 = "243.1578947n"
+\o Setting var wmp5 = "276.3157895n"
+\o Setting var wmp2 = "276.3157895n"
 \o 
 \o *Info*    Netlist Directory =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/101/TSPCFF_LIB:TB_TSPCFF:1/netlist
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/111/TSPCFF_LIB:TB_TSPCFF:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/101/TSPCFF_LIB:TB_TSPCFF:1
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/111/TSPCFF_LIB:TB_TSPCFF:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (0 101)
+\o *Info*    Creating Netlist for Point ID (0 111)
 \o 
 \o generate netlist...
-\o Begin Incremental Netlisting Nov 20 20:37:51 2025
-\o End netlisting Nov 20 20:37:51 2025
+\o Begin Incremental Netlisting Nov 27 17:39:43 2025
+\o End netlisting Nov 27 17:39:43 2025
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -559,9 +499,9 @@
 \o       ...successful.
 \o 
 \o *Info*    Running simulation on testbench [ TSPCFF_LIB:TB_TSPCFF:1 ]
-\o           for Point ID (0 101).
+\o           for Point ID (0 111).
 \o 
-\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/101/TSPCFF_LIB:TB_TSPCFF:1/psf.
+\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/111/TSPCFF_LIB:TB_TSPCFF:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -576,7 +516,7 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (0 101) on testbench [
+\o *Info*    Run complete for Point ID (0 111) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o 
@@ -588,31 +528,31 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (0 123) on testbench [
+\o *Info*    Run start for Point ID (0 135) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var wmn2 = "133.6842105n"
-\o Setting var wmn4 = "133.6842105n"
-\o Setting var wmp5 = "192.6315789n"
-\o Setting var wmp2 = "192.6315789n"
+\o Setting var wmn2 = "268.4210526n"
+\o Setting var wmn4 = "268.4210526n"
+\o Setting var wmp5 = "281.5789474n"
+\o Setting var wmp2 = "281.5789474n"
 \o 
 \o *Info*    Netlist Directory =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/123/TSPCFF_LIB:TB_TSPCFF:1/netlist
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/135/TSPCFF_LIB:TB_TSPCFF:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/123/TSPCFF_LIB:TB_TSPCFF:1
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/135/TSPCFF_LIB:TB_TSPCFF:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (0 123)
+\o *Info*    Creating Netlist for Point ID (0 135)
 \o 
 \o generate netlist...
-\o Begin Incremental Netlisting Nov 20 20:37:59 2025
-\o End netlisting Nov 20 20:37:59 2025
+\o Begin Incremental Netlisting Nov 27 17:39:52 2025
+\o End netlisting Nov 27 17:39:52 2025
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -621,9 +561,9 @@
 \o       ...successful.
 \o 
 \o *Info*    Running simulation on testbench [ TSPCFF_LIB:TB_TSPCFF:1 ]
-\o           for Point ID (0 123).
+\o           for Point ID (0 135).
 \o 
-\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/123/TSPCFF_LIB:TB_TSPCFF:1/psf.
+\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/135/TSPCFF_LIB:TB_TSPCFF:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -638,67 +578,7 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (0 123) on testbench [
-\o           TSPCFF_LIB:TB_TSPCFF:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (0 138) on testbench [
-\o           TSPCFF_LIB:TB_TSPCFF:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var wmn2 = "236.3157895n"
-\o Setting var wmn4 = "236.3157895n"
-\o 
-\o *Info*    Netlist Directory =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/138/TSPCFF_LIB:TB_TSPCFF:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/138/TSPCFF_LIB:TB_TSPCFF:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (0 138)
-\o 
-\o generate netlist...
-\o Begin Incremental Netlisting Nov 20 20:38:12 2025
-\o End netlisting Nov 20 20:38:13 2025
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   1.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ TSPCFF_LIB:TB_TSPCFF:1 ]
-\o           for Point ID (0 138).
-\o 
-\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/138/TSPCFF_LIB:TB_TSPCFF:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 138) on testbench [
+\o *Info*    Run complete for Point ID (0 135) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o 
@@ -717,24 +597,24 @@
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var wmn2 = "208.9473684n"
-\o Setting var wmn4 = "208.9473684n"
-\o Setting var wmp5 = "204.7368421n"
-\o Setting var wmp2 = "204.7368421n"
+\o Setting var wmn2 = "262.1052632n"
+\o Setting var wmn4 = "262.1052632n"
+\o Setting var wmp5 = "286.8421053n"
+\o Setting var wmp2 = "286.8421053n"
 \o 
 \o *Info*    Netlist Directory =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/154/TSPCFF_LIB:TB_TSPCFF:1/netlist
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/154/TSPCFF_LIB:TB_TSPCFF:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/154/TSPCFF_LIB:TB_TSPCFF:1
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/154/TSPCFF_LIB:TB_TSPCFF:1
 \o 
 \o 
 \o *Info*    Creating Netlist for Point ID (0 154)
 \o 
 \o generate netlist...
-\o Begin Incremental Netlisting Nov 20 20:38:38 2025
-\o End netlisting Nov 20 20:38:38 2025
+\o Begin Incremental Netlisting Nov 27 17:39:59 2025
+\o End netlisting Nov 27 17:39:59 2025
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -745,7 +625,7 @@
 \o *Info*    Running simulation on testbench [ TSPCFF_LIB:TB_TSPCFF:1 ]
 \o           for Point ID (0 154).
 \o 
-\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/154/TSPCFF_LIB:TB_TSPCFF:1/psf.
+\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/154/TSPCFF_LIB:TB_TSPCFF:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -772,91 +652,29 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (0 165) on testbench [
+\o *Info*    Run start for Point ID (0 174) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var wmn2 = "147.3684211n"
-\o Setting var wmn4 = "147.3684211n"
-\o Setting var wmp5 = "216.8421053n"
-\o Setting var wmp2 = "216.8421053n"
+\o Setting var wmp5 = "292.1052632n"
+\o Setting var wmp2 = "292.1052632n"
 \o 
 \o *Info*    Netlist Directory =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/165/TSPCFF_LIB:TB_TSPCFF:1/netlist
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/174/TSPCFF_LIB:TB_TSPCFF:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/165/TSPCFF_LIB:TB_TSPCFF:1
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/174/TSPCFF_LIB:TB_TSPCFF:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (0 165)
-\o 
-\o generate netlist...
-\o Begin Incremental Netlisting Nov 20 20:38:46 2025
-\o End netlisting Nov 20 20:38:47 2025
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   1.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ TSPCFF_LIB:TB_TSPCFF:1 ]
-\o           for Point ID (0 165).
-\o 
-\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/165/TSPCFF_LIB:TB_TSPCFF:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 165) on testbench [
-\o           TSPCFF_LIB:TB_TSPCFF:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (0 179) on testbench [
-\o           TSPCFF_LIB:TB_TSPCFF:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var wmn2 = "243.1578947n"
-\o Setting var wmn4 = "243.1578947n"
-\o 
-\o *Info*    Netlist Directory =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/179/TSPCFF_LIB:TB_TSPCFF:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/179/TSPCFF_LIB:TB_TSPCFF:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (0 179)
+\o *Info*    Creating Netlist for Point ID (0 174)
 \o 
 \o generate netlist...
-\o Begin Incremental Netlisting Nov 20 20:38:53 2025
-\o End netlisting Nov 20 20:38:53 2025
+\o Begin Incremental Netlisting Nov 27 17:40:06 2025
+\o End netlisting Nov 27 17:40:06 2025
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -865,9 +683,9 @@
 \o       ...successful.
 \o 
 \o *Info*    Running simulation on testbench [ TSPCFF_LIB:TB_TSPCFF:1 ]
-\o           for Point ID (0 179).
+\o           for Point ID (0 174).
 \o 
-\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/179/TSPCFF_LIB:TB_TSPCFF:1/psf.
+\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/174/TSPCFF_LIB:TB_TSPCFF:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -882,7 +700,7 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (0 179) on testbench [
+\o *Info*    Run complete for Point ID (0 174) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o 
@@ -901,27 +719,27 @@
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var wmn2 = "202.1052632n"
-\o Setting var wmn4 = "202.1052632n"
-\o Setting var wmp5 = "228.9473684n"
-\o Setting var wmp2 = "228.9473684n"
+\o Setting var wmn2 = "255.7894737n"
+\o Setting var wmn4 = "255.7894737n"
+\o Setting var wmp5 = "297.3684211n"
+\o Setting var wmp2 = "297.3684211n"
 \o 
 \o *Info*    Netlist Directory =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/193/TSPCFF_LIB:TB_TSPCFF:1/netlist
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/193/TSPCFF_LIB:TB_TSPCFF:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/193/TSPCFF_LIB:TB_TSPCFF:1
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/193/TSPCFF_LIB:TB_TSPCFF:1
 \o 
 \o 
 \o *Info*    Creating Netlist for Point ID (0 193)
 \o 
 \o generate netlist...
-\o Begin Incremental Netlisting Nov 20 20:39:00 2025
-\o End netlisting Nov 20 20:39:00 2025
+\o Begin Incremental Netlisting Nov 27 17:40:14 2025
+\o End netlisting Nov 27 17:40:15 2025
 \o 
 \o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o 	Time taken to compare the design with netlist:   1.0s
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
@@ -929,7 +747,7 @@
 \o *Info*    Running simulation on testbench [ TSPCFF_LIB:TB_TSPCFF:1 ]
 \o           for Point ID (0 193).
 \o 
-\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/193/TSPCFF_LIB:TB_TSPCFF:1/psf.
+\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/193/TSPCFF_LIB:TB_TSPCFF:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -956,42 +774,42 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (0 209) on testbench [
+\o *Info*    Run start for Point ID (0 210) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var wmn2 = "174.7368421n"
-\o Setting var wmn4 = "174.7368421n"
-\o Setting var wmp5 = "241.0526316n"
-\o Setting var wmp2 = "241.0526316n"
+\o Setting var wmn2 = "236.8421053n"
+\o Setting var wmn4 = "236.8421053n"
+\o Setting var wmp5 = "302.6315789n"
+\o Setting var wmp2 = "302.6315789n"
 \o 
 \o *Info*    Netlist Directory =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/209/TSPCFF_LIB:TB_TSPCFF:1/netlist
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/210/TSPCFF_LIB:TB_TSPCFF:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/209/TSPCFF_LIB:TB_TSPCFF:1
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/210/TSPCFF_LIB:TB_TSPCFF:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (0 209)
+\o *Info*    Creating Netlist for Point ID (0 210)
 \o 
 \o generate netlist...
-\o Begin Incremental Netlisting Nov 20 20:39:06 2025
-\o End netlisting Nov 20 20:39:06 2025
+\o Begin Incremental Netlisting Nov 27 17:40:23 2025
+\o End netlisting Nov 27 17:40:24 2025
 \o 
 \o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o 	Time taken to compare the design with netlist:   1.0s
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
 \o *Info*    Running simulation on testbench [ TSPCFF_LIB:TB_TSPCFF:1 ]
-\o           for Point ID (0 209).
+\o           for Point ID (0 210).
 \o 
-\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/209/TSPCFF_LIB:TB_TSPCFF:1/psf.
+\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/210/TSPCFF_LIB:TB_TSPCFF:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -1006,7 +824,7 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (0 209) on testbench [
+\o *Info*    Run complete for Point ID (0 210) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o 
@@ -1018,42 +836,42 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (0 222) on testbench [
+\o *Info*    Run start for Point ID (0 238) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var wmn2 = "126.8421053n"
-\o Setting var wmn4 = "126.8421053n"
-\o Setting var wmp5 = "253.1578947n"
-\o Setting var wmp2 = "253.1578947n"
+\o Setting var wmn2 = "287.3684211n"
+\o Setting var wmn4 = "287.3684211n"
+\o Setting var wmp5 = "307.8947368n"
+\o Setting var wmp2 = "307.8947368n"
 \o 
 \o *Info*    Netlist Directory =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/222/TSPCFF_LIB:TB_TSPCFF:1/netlist
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/238/TSPCFF_LIB:TB_TSPCFF:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/222/TSPCFF_LIB:TB_TSPCFF:1
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/238/TSPCFF_LIB:TB_TSPCFF:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (0 222)
+\o *Info*    Creating Netlist for Point ID (0 238)
 \o 
 \o generate netlist...
-\o Begin Incremental Netlisting Nov 20 20:39:12 2025
-\o End netlisting Nov 20 20:39:12 2025
+\o Begin Incremental Netlisting Nov 27 17:40:34 2025
+\o End netlisting Nov 27 17:40:34 2025
 \o 
 \o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o 	Time taken to compare the design with netlist:   1.0s
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
 \o *Info*    Running simulation on testbench [ TSPCFF_LIB:TB_TSPCFF:1 ]
-\o           for Point ID (0 222).
+\o           for Point ID (0 238).
 \o 
-\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/222/TSPCFF_LIB:TB_TSPCFF:1/psf.
+\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/238/TSPCFF_LIB:TB_TSPCFF:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -1068,7 +886,7 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (0 222) on testbench [
+\o *Info*    Run complete for Point ID (0 238) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o 
@@ -1080,29 +898,31 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (0 237) on testbench [
+\o *Info*    Run start for Point ID (0 255) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var wmn2 = "229.4736842n"
-\o Setting var wmn4 = "229.4736842n"
+\o Setting var wmn2 = "268.4210526n"
+\o Setting var wmn4 = "268.4210526n"
+\o Setting var wmp5 = "313.1578947n"
+\o Setting var wmp2 = "313.1578947n"
 \o 
 \o *Info*    Netlist Directory =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/237/TSPCFF_LIB:TB_TSPCFF:1/netlist
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/255/TSPCFF_LIB:TB_TSPCFF:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/237/TSPCFF_LIB:TB_TSPCFF:1
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/255/TSPCFF_LIB:TB_TSPCFF:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (0 237)
+\o *Info*    Creating Netlist for Point ID (0 255)
 \o 
 \o generate netlist...
-\o Begin Incremental Netlisting Nov 20 20:39:19 2025
-\o End netlisting Nov 20 20:39:19 2025
+\o Begin Incremental Netlisting Nov 27 17:40:41 2025
+\o End netlisting Nov 27 17:40:41 2025
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -1111,9 +931,9 @@
 \o       ...successful.
 \o 
 \o *Info*    Running simulation on testbench [ TSPCFF_LIB:TB_TSPCFF:1 ]
-\o           for Point ID (0 237).
+\o           for Point ID (0 255).
 \o 
-\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/237/TSPCFF_LIB:TB_TSPCFF:1/psf.
+\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/255/TSPCFF_LIB:TB_TSPCFF:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -1128,69 +948,7 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (0 237) on testbench [
-\o           TSPCFF_LIB:TB_TSPCFF:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (0 253) on testbench [
-\o           TSPCFF_LIB:TB_TSPCFF:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var wmn2 = "202.1052632n"
-\o Setting var wmn4 = "202.1052632n"
-\o Setting var wmp5 = "265.2631579n"
-\o Setting var wmp2 = "265.2631579n"
-\o 
-\o *Info*    Netlist Directory =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/253/TSPCFF_LIB:TB_TSPCFF:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/253/TSPCFF_LIB:TB_TSPCFF:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (0 253)
-\o 
-\o generate netlist...
-\o Begin Incremental Netlisting Nov 20 20:39:26 2025
-\o End netlisting Nov 20 20:39:26 2025
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ TSPCFF_LIB:TB_TSPCFF:1 ]
-\o           for Point ID (0 253).
-\o 
-\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/253/TSPCFF_LIB:TB_TSPCFF:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 253) on testbench [
+\o *Info*    Run complete for Point ID (0 255) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o 
@@ -1209,22 +967,24 @@
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var wmp5 = "277.3684211n"
-\o Setting var wmp2 = "277.3684211n"
+\o Setting var wmn2 = "255.7894737n"
+\o Setting var wmn4 = "255.7894737n"
+\o Setting var wmp5 = "318.4210526n"
+\o Setting var wmp2 = "318.4210526n"
 \o 
 \o *Info*    Netlist Directory =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/273/TSPCFF_LIB:TB_TSPCFF:1/netlist
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/273/TSPCFF_LIB:TB_TSPCFF:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/273/TSPCFF_LIB:TB_TSPCFF:1
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/273/TSPCFF_LIB:TB_TSPCFF:1
 \o 
 \o 
 \o *Info*    Creating Netlist for Point ID (0 273)
 \o 
 \o generate netlist...
-\o Begin Incremental Netlisting Nov 20 20:39:34 2025
-\o End netlisting Nov 20 20:39:34 2025
+\o Begin Incremental Netlisting Nov 27 17:40:50 2025
+\o End netlisting Nov 27 17:40:50 2025
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -1235,7 +995,7 @@
 \o *Info*    Running simulation on testbench [ TSPCFF_LIB:TB_TSPCFF:1 ]
 \o           for Point ID (0 273).
 \o 
-\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/273/TSPCFF_LIB:TB_TSPCFF:1/psf.
+\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/273/TSPCFF_LIB:TB_TSPCFF:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -1262,42 +1022,42 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (0 285) on testbench [
+\o *Info*    Run start for Point ID (0 295) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var wmn2 = "147.3684211n"
-\o Setting var wmn4 = "147.3684211n"
-\o Setting var wmp5 = "289.4736842n"
-\o Setting var wmp2 = "289.4736842n"
+\o Setting var wmn2 = "268.4210526n"
+\o Setting var wmn4 = "268.4210526n"
+\o Setting var wmp5 = "323.6842105n"
+\o Setting var wmp2 = "323.6842105n"
 \o 
 \o *Info*    Netlist Directory =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/285/TSPCFF_LIB:TB_TSPCFF:1/netlist
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/295/TSPCFF_LIB:TB_TSPCFF:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/285/TSPCFF_LIB:TB_TSPCFF:1
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/295/TSPCFF_LIB:TB_TSPCFF:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (0 285)
+\o *Info*    Creating Netlist for Point ID (0 295)
 \o 
 \o generate netlist...
-\o Begin Incremental Netlisting Nov 20 20:39:40 2025
-\o End netlisting Nov 20 20:39:40 2025
+\o Begin Incremental Netlisting Nov 27 17:41:01 2025
+\o End netlisting Nov 27 17:41:01 2025
 \o 
 \o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o 	Time taken to compare the design with netlist:   1.0s
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
 \o *Info*    Running simulation on testbench [ TSPCFF_LIB:TB_TSPCFF:1 ]
-\o           for Point ID (0 285).
+\o           for Point ID (0 295).
 \o 
-\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/285/TSPCFF_LIB:TB_TSPCFF:1/psf.
+\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/295/TSPCFF_LIB:TB_TSPCFF:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -1312,7 +1072,7 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (0 285) on testbench [
+\o *Info*    Run complete for Point ID (0 295) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o 
@@ -1324,31 +1084,31 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (0 301) on testbench [
+\o *Info*    Run start for Point ID (0 307) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var wmn2 = "120n"
-\o Setting var wmn4 = "120n"
-\o Setting var wmp5 = "301.5789474n"
-\o Setting var wmp2 = "301.5789474n"
+\o Setting var wmn2 = "217.8947368n"
+\o Setting var wmn4 = "217.8947368n"
+\o Setting var wmp5 = "328.9473684n"
+\o Setting var wmp2 = "328.9473684n"
 \o 
 \o *Info*    Netlist Directory =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/301/TSPCFF_LIB:TB_TSPCFF:1/netlist
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/307/TSPCFF_LIB:TB_TSPCFF:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/301/TSPCFF_LIB:TB_TSPCFF:1
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/307/TSPCFF_LIB:TB_TSPCFF:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (0 301)
+\o *Info*    Creating Netlist for Point ID (0 307)
 \o 
 \o generate netlist...
-\o Begin Incremental Netlisting Nov 20 20:39:47 2025
-\o End netlisting Nov 20 20:39:47 2025
+\o Begin Incremental Netlisting Nov 27 17:41:09 2025
+\o End netlisting Nov 27 17:41:09 2025
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -1357,9 +1117,9 @@
 \o       ...successful.
 \o 
 \o *Info*    Running simulation on testbench [ TSPCFF_LIB:TB_TSPCFF:1 ]
-\o           for Point ID (0 301).
+\o           for Point ID (0 307).
 \o 
-\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/301/TSPCFF_LIB:TB_TSPCFF:1/psf.
+\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/307/TSPCFF_LIB:TB_TSPCFF:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -1374,67 +1134,7 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (0 301) on testbench [
-\o           TSPCFF_LIB:TB_TSPCFF:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (0 315) on testbench [
-\o           TSPCFF_LIB:TB_TSPCFF:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var wmn2 = "215.7894737n"
-\o Setting var wmn4 = "215.7894737n"
-\o 
-\o *Info*    Netlist Directory =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/315/TSPCFF_LIB:TB_TSPCFF:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/315/TSPCFF_LIB:TB_TSPCFF:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (0 315)
-\o 
-\o generate netlist...
-\o Begin Incremental Netlisting Nov 20 20:39:53 2025
-\o End netlisting Nov 20 20:39:53 2025
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ TSPCFF_LIB:TB_TSPCFF:1 ]
-\o           for Point ID (0 315).
-\o 
-\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/315/TSPCFF_LIB:TB_TSPCFF:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 315) on testbench [
+\o *Info*    Run complete for Point ID (0 307) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o 
@@ -1453,24 +1153,24 @@
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var wmn2 = "195.2631579n"
-\o Setting var wmn4 = "195.2631579n"
-\o Setting var wmp5 = "313.6842105n"
-\o Setting var wmp2 = "313.6842105n"
+\o Setting var wmn2 = "249.4736842n"
+\o Setting var wmn4 = "249.4736842n"
+\o Setting var wmp5 = "334.2105263n"
+\o Setting var wmp2 = "334.2105263n"
 \o 
 \o *Info*    Netlist Directory =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/332/TSPCFF_LIB:TB_TSPCFF:1/netlist
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/332/TSPCFF_LIB:TB_TSPCFF:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/332/TSPCFF_LIB:TB_TSPCFF:1
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/332/TSPCFF_LIB:TB_TSPCFF:1
 \o 
 \o 
 \o *Info*    Creating Netlist for Point ID (0 332)
 \o 
 \o generate netlist...
-\o Begin Incremental Netlisting Nov 20 20:40:00 2025
-\o End netlisting Nov 20 20:40:00 2025
+\o Begin Incremental Netlisting Nov 27 17:41:17 2025
+\o End netlisting Nov 27 17:41:17 2025
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -1481,7 +1181,7 @@
 \o *Info*    Running simulation on testbench [ TSPCFF_LIB:TB_TSPCFF:1 ]
 \o           for Point ID (0 332).
 \o 
-\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/332/TSPCFF_LIB:TB_TSPCFF:1/psf.
+\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/332/TSPCFF_LIB:TB_TSPCFF:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -1508,31 +1208,31 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (0 348) on testbench [
+\o *Info*    Run start for Point ID (0 361) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var wmn2 = "167.8947368n"
-\o Setting var wmn4 = "167.8947368n"
-\o Setting var wmp5 = "325.7894737n"
-\o Setting var wmp2 = "325.7894737n"
+\o Setting var wmn2 = "180n"
+\o Setting var wmn4 = "180n"
+\o Setting var wmp5 = "344.7368421n"
+\o Setting var wmp2 = "344.7368421n"
 \o 
 \o *Info*    Netlist Directory =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/348/TSPCFF_LIB:TB_TSPCFF:1/netlist
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/361/TSPCFF_LIB:TB_TSPCFF:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/348/TSPCFF_LIB:TB_TSPCFF:1
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/361/TSPCFF_LIB:TB_TSPCFF:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (0 348)
+\o *Info*    Creating Netlist for Point ID (0 361)
 \o 
 \o generate netlist...
-\o Begin Incremental Netlisting Nov 20 20:40:06 2025
-\o End netlisting Nov 20 20:40:06 2025
+\o Begin Incremental Netlisting Nov 27 17:41:28 2025
+\o End netlisting Nov 27 17:41:28 2025
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -1541,9 +1241,9 @@
 \o       ...successful.
 \o 
 \o *Info*    Running simulation on testbench [ TSPCFF_LIB:TB_TSPCFF:1 ]
-\o           for Point ID (0 348).
+\o           for Point ID (0 361).
 \o 
-\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/348/TSPCFF_LIB:TB_TSPCFF:1/psf.
+\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/361/TSPCFF_LIB:TB_TSPCFF:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -1558,7 +1258,7 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (0 348) on testbench [
+\o *Info*    Run complete for Point ID (0 361) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o 
@@ -1570,153 +1270,29 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (0 364) on testbench [
-\o           TSPCFF_LIB:TB_TSPCFF:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var wmn2 = "140.5263158n"
-\o Setting var wmn4 = "140.5263158n"
-\o Setting var wmp5 = "337.8947368n"
-\o Setting var wmp2 = "337.8947368n"
-\o 
-\o *Info*    Netlist Directory =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/364/TSPCFF_LIB:TB_TSPCFF:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/364/TSPCFF_LIB:TB_TSPCFF:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (0 364)
-\o 
-\o generate netlist...
-\o Begin Incremental Netlisting Nov 20 20:40:13 2025
-\o End netlisting Nov 20 20:40:13 2025
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ TSPCFF_LIB:TB_TSPCFF:1 ]
-\o           for Point ID (0 364).
-\o 
-\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/364/TSPCFF_LIB:TB_TSPCFF:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 364) on testbench [
-\o           TSPCFF_LIB:TB_TSPCFF:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (0 377) on testbench [
+\o *Info*    Run start for Point ID (0 381) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var wmn2 = "229.4736842n"
-\o Setting var wmn4 = "229.4736842n"
-\o 
-\o *Info*    Netlist Directory =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/377/TSPCFF_LIB:TB_TSPCFF:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/377/TSPCFF_LIB:TB_TSPCFF:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (0 377)
-\o 
-\o generate netlist...
-\o Begin Incremental Netlisting Nov 20 20:40:20 2025
-\o End netlisting Nov 20 20:40:20 2025
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ TSPCFF_LIB:TB_TSPCFF:1 ]
-\o           for Point ID (0 377).
-\o 
-\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/377/TSPCFF_LIB:TB_TSPCFF:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 377) on testbench [
-\o           TSPCFF_LIB:TB_TSPCFF:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (0 392) on testbench [
-\o           TSPCFF_LIB:TB_TSPCFF:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var wmn2 = "195.2631579n"
-\o Setting var wmn4 = "195.2631579n"
 \o Setting var wmp5 = "350n"
 \o Setting var wmp2 = "350n"
 \o 
 \o *Info*    Netlist Directory =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/392/TSPCFF_LIB:TB_TSPCFF:1/netlist
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/381/TSPCFF_LIB:TB_TSPCFF:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/392/TSPCFF_LIB:TB_TSPCFF:1
+\o           /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/381/TSPCFF_LIB:TB_TSPCFF:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (0 392)
+\o *Info*    Creating Netlist for Point ID (0 381)
 \o 
 \o generate netlist...
-\o Begin Incremental Netlisting Nov 20 20:40:26 2025
-\o End netlisting Nov 20 20:40:26 2025
+\o Begin Incremental Netlisting Nov 27 17:41:36 2025
+\o End netlisting Nov 27 17:41:36 2025
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -1725,9 +1301,9 @@
 \o       ...successful.
 \o 
 \o *Info*    Running simulation on testbench [ TSPCFF_LIB:TB_TSPCFF:1 ]
-\o           for Point ID (0 392).
+\o           for Point ID (0 381).
 \o 
-\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF/adexl/results/data/Interactive.18/392/TSPCFF_LIB:TB_TSPCFF:1/psf.
+\o Delete psf data in /cal/exterieurs/afonlupt-25/simulation/TSPCFF_LIB/TB_TSPCFF_bis/adexl/results/data/Interactive.2/381/TSPCFF_LIB:TB_TSPCFF:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -1742,11 +1318,18 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (0 392) on testbench [
+\o *Info*    Run complete for Point ID (0 381) on testbench [
 \o           TSPCFF_LIB:TB_TSPCFF:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\# Memory report: Maximum memory size now 14,290 MB at UTC 2025.11.20 19:42:59.189
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o ("In _axlGetSessionWindow, window: " window:1)
+\o ("In axlGetWindowSession" window:1 nil)
+\o ("In _axlGetSessionWindow, window: " window:1)
+\# Memory report: on exit            337 MB, process size 1,323 MB at UTC 2025.11.27 16:46:53.231
+\# Memory report: peak usage         337 MB, process size 1,323 MB

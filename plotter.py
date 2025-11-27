@@ -28,10 +28,10 @@ def loadRes(path):
 data = loadRes('sweepBivar3.csv')
 
 
-
 def processData(data):
     res = {}
     resTime = {}
+    resTrace = {}
     for k in data:
         if k[-1] == 'Y':
             split = k.split(',')
@@ -40,21 +40,23 @@ def processData(data):
             if wmn2 not in res.keys():
                 res[wmn2] = {}
                 resTime[wmn2] = {}
+                resTrace[wmn2] = {}
             timeTraceName = k[:-1] + 'X'
 
             time = np.array(data[timeTraceName])
             value = np.array(data[k])
 
             #res[wmn2][wmp5] = time[np.argmin(value < 0.7)]
-            res[wmn2][wmp5] = np.interp(140e-9, time, value) #value
+            res[wmn2][wmp5] = np.interp(150e-9, time, value) #value
+            resTrace[wmn2][wmp5] = value
             resTime[wmn2][wmp5] = time
 
-    return res, resTime
+    return res, resTime, re0sTrace
 
 
-res, resTime = processData(data)
-wmn2s = sorted(res.keys())
-wmp5s = sorted(res[wmn2s[0]].keys())
+res, resTime, resTrace = processData(data)
+wmn2s = np.array(sorted(res.keys()))
+wmp5s = np.array(sorted(res[wmn2s[0]].keys()))
 arr = np.zeros((len(wmn2s), len(wmp5s)))
 
 for i in range(len(wmn2s)):
@@ -64,15 +66,26 @@ for i in range(len(wmn2s)):
         except:
             print(".")
         
-#ax = plt.axes(projection="3d")
+ax = plt.axes(projection="3d")
 #print(type(arr[0,0]))
-#(x, y) = np.meshgrid(len(arr), len(arr[0]))
-#ax.plot_surface(x, y, arr)
+print(arr.shape)
+#(x, y) = np.meshgrid([i for i in range(arr.shape[0])], [i for i in range(arr.shape[-1])])
+(x, y) = np.meshgrid(wmn2s*1e6, wmp5s*1e6)
+ax.set_xlabel("$W_n [\mu m]$")
+ax.set_ylabel("$W_p [\mu m]$")
+print(x)
+
+ax.plot_surface(x, y, arr, cmap="cividis")
+plt.show()
+
+1/0
 
 #plt.imshow(arr)
 plt.contourf(arr)
 plt.colorbar(label='Propagation time')
-"""a = wmn2s[3]
-b = wmp5s[2]
-plt.plot(resTime[a][b], res[a][b])"""
+plt.show()
+
+a = wmn2s[-2]
+b = wmp5s[-2]
+plt.plot(resTime[a][b], resTrace[a][b])
 plt.show()

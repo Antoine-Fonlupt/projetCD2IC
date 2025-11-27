@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 6.1.7 - CAT35 08/11/2017 18:55 (sjfhw311) $
 \o Sub version:		sub-version  s054 
-\o Arguments:		-unmapped -mpssession virtuoso811080 -mpshost tp-3a107-06 
+\o Arguments:		-unmapped -mpssession virtuoso3072873 -mpshost tp-3a107-06 
 \o Working Directory:	tp-3a107-06:/cal/exterieurs/afonlupt-25/afonlupt/projetCD2IC/CDS_wk_dir2
 \o 64-bit offsets
 \o Qt version: 		4.8.5
@@ -13,26 +13,53 @@
 \a nrSetCurrentWindow(cdsLibManager)
 \o Library Manager customization server connected.
 \a nrResizeWindow(cdsLibManager list(844 323 908 491))
-\a cdsLibManager->libListBox->value = "GSCLIB045"
-\a cdsLibManager->libLineEdit->value = "GSCLIB045"
 \a cdsLibManager->libListBox->value = "TSPCFF_LIB"
 \a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
+\a cdsLibManager->cellListBox->value = "TB_TSPCFF_bis"
+\a cdsLibManager->cellLineEdit->value = "TB_TSPCFF_bis"
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
 \a cdsLibManager->cellListBox->value = "TSPCFF_v2"
 \a cdsLibManager->cellLineEdit->value = "TSPCFF_v2"
-\a cdsLibManager->cellListBox->value = "TSPCFF"
-\a cdsLibManager->cellLineEdit->value = "TSPCFF"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "TSPCFF_vLIB"
+\a cdsLibManager->cellLineEdit->value = "TSPCFF_vLIB"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->cellListBox->value = "TSPCFF_v2"
 \a cdsLibManager->cellLineEdit->value = "TSPCFF_v2"
-\a cdsLibManager->cellListBox->value = "TSPCFF"
-\a cdsLibManager->cellLineEdit->value = "TSPCFF"
-\a cdsLibManager->cellListBox->value = "INV-propre"
-\a cdsLibManager->cellLineEdit->value = "INV-propre"
+\a cdsLibManager->cellListBox->value = "TSPCFF_vLIB"
+\a cdsLibManager->cellLineEdit->value = "TSPCFF_vLIB"
+\a cdsLibManager->cellListBox->value = "TSPCFF_v2"
+\a cdsLibManager->cellLineEdit->value = "TSPCFF_v2"
+\a cdsLibManager->cellListBox->value = "TSPCFF_vLIB"
+\a cdsLibManager->cellLineEdit->value = "TSPCFF_vLIB"
+\a nrResizeWindow(cdsLibManager list(377 259 908 491))
+\a cdsLibManager->cellListBox->value = "TSPCFF_v2"
+\a cdsLibManager->cellLineEdit->value = "TSPCFF_v2"
+\a cdsLibManager->cellListBox->value = "TSPCFF_vLIB"
+\a cdsLibManager->cellLineEdit->value = "TSPCFF_vLIB"
 \a cdsLibManager->cellListBox->value = "TB_TSPCFF"
 \a cdsLibManager->cellLineEdit->value = "TB_TSPCFF"
 \a cdsLibManager->viewListBox->value = "adexl"
 \a cdsLibManager->viewLineEdit->value = "adexl"
+\a cdsLibManager->cellListBox->value = "TB_TSPCFF_bis"
+\a cdsLibManager->cellLineEdit->value = "TB_TSPCFF_bis"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
+\a cdsLibManager->cellListBox->value = "TB_TSPCFF"
+\a cdsLibManager->cellLineEdit->value = "TB_TSPCFF"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
@@ -43,18 +70,101 @@
 \a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
 \a cdsLibManager->cellListBox->value = "TB_TSPCFF"
 \a cdsLibManager->cellLineEdit->value = "TB_TSPCFF"
-\a cdsLibManager->viewListBox->value = "adexl"
-\a cdsLibManager->viewLineEdit->value = "adexl"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "TSPCFF_LIB"
+\a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
+\a cdsLibManager->cellListBox->value = "TB_TSPCFF"
+\a cdsLibManager->cellLineEdit->value = "TB_TSPCFF"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "TSPCFF_LIB"
+\a cdsLibManager->libLineEdit->value = "TSPCFF_LIB"
+\a cdsLibManager->cellListBox->value = "TB_TSPCFF"
+\a cdsLibManager->cellLineEdit->value = "TB_TSPCFF"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "spectre_state1"
+\a cdsLibManager->viewLineEdit->value = "spectre_state1"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "TB_TSPCFF_bis"
+\a cdsLibManager->cellLineEdit->value = "TB_TSPCFF_bis"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "adexl"
 \a cdsLibManager->viewLineEdit->value = "adexl"
+\a cdsLibManager->cellListBox->value = "TB_TSPCFF"
+\a cdsLibManager->cellLineEdit->value = "TB_TSPCFF"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
+\a cdsLibManager->viewListBox->value = "spectre_state1"
+\a cdsLibManager->viewLineEdit->value = "spectre_state1"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "spectre_state2"
+\a cdsLibManager->viewLineEdit->value = "spectre_state2"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 4 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "TSPCFF"
+\a cdsLibManager->cellLineEdit->value = "TSPCFF"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "TSPCFF_v2"
+\a cdsLibManager->cellLineEdit->value = "TSPCFF_v2"
+\a cdsLibManager->cellListBox->value = "TSPCFF"
+\a cdsLibManager->cellLineEdit->value = "TSPCFF"
+\a cdsLibManager->cellListBox->value = "TSPCFF_v2"
+\a cdsLibManager->cellLineEdit->value = "TSPCFF_v2"
+\a cdsLibManager->cellListBox->value = "TSPCFF"
+\a cdsLibManager->cellLineEdit->value = "TSPCFF"
+\a cdsLibManager->cellListBox->value = "TSPCFF_v2"
+\a cdsLibManager->cellLineEdit->value = "TSPCFF_v2"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 4 0)
 \a nrSetCurrentWindow(cdsLibManager)

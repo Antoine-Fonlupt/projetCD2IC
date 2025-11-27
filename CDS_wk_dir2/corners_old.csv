@@ -1,0 +1,7 @@
+Corner,C0,C1
+Enable,f,t
+Temperature,,
+tsetup,{From/To}Auto:700p:20:200p{From/To},
+wmn2,,{From/To}Auto:120n:20:250n{From/To}
+wmp5,,{From/To}Auto:120n:20:350n{From/To}
+t Test::TSPCFF_LIB:TB_TSPCFF:1,t,t

@@ -1,0 +1,20 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Thu Nov 27 16:38:45 2025 
+Best design point: 1
+Design specs: 
+	TSPCFF_LIB:TB_TSPCFF:1	corner	Nominal - 
+	Dout50n		184.3n
+	Puissance		280.9n
+Design parameters: 
+	tsetup		150p
+	wmp5		200n
+	wmn2		300n
+	wmn4		300n
+	wmp2		200n
+
+Interactive.0
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.0 completed. 
+Current time: Thu Nov 27 16:38:57 2025 
