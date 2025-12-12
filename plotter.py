@@ -51,7 +51,7 @@ def processData(data):
             resTrace[wmn2][wmp5] = value
             resTime[wmn2][wmp5] = time
 
-    return res, resTime, re0sTrace
+    return res, resTime, resTrace
 
 
 res, resTime, resTrace = processData(data)

@@ -40,7 +40,7 @@ def process(data):
                 pass 
     return res
 
-data = loadRes("Eyves.csv")
+data = loadRes("Eantoine.csv")
 print(process(data))
 
 res = process(data)
